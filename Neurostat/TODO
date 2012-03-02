@@ -1,0 +1,15 @@
+Neurostat
+
+Status:
+Automatiseret neurostat, der tager filerne fra dicne og kører Neurostat på dem. 
+Resultaterne gemmes på scratch. Selve programmet autoneurostat.pl kører på 
+hopper:/srv/www/htdocs/dicne/ og bliver kaldt fra converting.pl (l. 142).
+
+
+TODO:
+- find eksakte z-værdier for at lave korrekt farvekodning
+- gem kun z7 og z4_MR
+- database-navn skal stå i QC-billedet
+- forstør QC (dvs. skær kanterne væk)
+- hvad skal der ske med patienter under 19 år? en advarsel? 
+- Ian Law har sikkert flere ideer til ændringer

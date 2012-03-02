@@ -1,0 +1,15 @@
+!data offset in bytes :=0
+!imagedata byte order :=LITTLEENDIAN
+!matrix size [1] :=128
+!matrix size [2] :=128
+!number format :=signed integer
+!number of bytes per pixel :=2
+scaling factor (mm/pixel) [1] :=2.000000
+scaling factor (mm/pixel) [2] :=2.000000
+!pixel scaling value :=32700.000000
+!number of slices :=74
+!slice thickness (mm/pixel) :=4.250000
+!the right brain on the left   :=0
+!the anterior to the posterior :=0
+!the superior to the inferior  :=0
+!END OF HEADER:=

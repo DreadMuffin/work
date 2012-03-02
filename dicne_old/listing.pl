@@ -1,0 +1,127 @@
+#!/usr/bin/perl -s
+
+### init
+
+$dumpnr = 5;
+$initdir = "/users/scratch/dicne/data"; # path for dicne-initdir
+chdir($initdir); # make sure we are in initdir, the presumed location for data
+
+#### mapping of datasets
+# search through data, using /usr/local/dicom/bin/./dcmdump all_files_in_data |grep "{tag}"
+# series-tag: (0020,000e), CPR-number: (0010,0020), patient's name (0010,0010), series date (0008,0021), series time (0008,0031).
+
+### recursive
+
+#Indsæt mere sudo
+#$findout = `/usr/bin/find /users/scratch/dicne/data/* -mtime +10 -delete`;
+
+sub dir_list
+{
+	my ($dir) = @_;
+	my @files;
+	
+	if (!opendir(DIR, ".")) {
+		return -1;
+	}else{
+		@files = readdir(DIR);
+		closedir(DIR);
+	}
+	foreach my $file (@files){
+		next if $file eq "." || $file eq "..";
+		if (-d $file){
+			if (chdir($file)){
+			push(@dirlist,$file);
+				&dir_list($dir eq "" ? $file : "$dir/$file");
+				chdir("..");
+			}
+		}elsif (-f $file){
+			push(@filelist,$file);		
+			open (DCMDUMP, "/usr/local/dicom/bin/./dcmdump $file +P 0008,0031 +P 0008,0021 +P 0010,0010 +P 0010,0020 +P 0020,000e -s
+			|");
+			while (<DCMDUMP>) {
+			$_ =~ /\[(.+)\]/;			
+			push(@header,$1); # @header is now $dumpnr N, and [nN, (1+n)N, (2+n)N, (3+n)N, (4+n)N] equals [series, CPR, name, date, time]
+			$header_path_tmp = `pwd`;
+			chop($header_path_tmp);		
+			push(@header_path,$header_path_tmp); # @header_path is now $dumpnr, and all equals path of corresponding @header
+			}
+			close DCMDUMP;
+		}
+	}
+	return 0;
+}
+
+#####################
+
+### /recursive
+
+### Initiate recursive mapping-sub
+&dir_list;
+
+#### conversion of datasets
+
+# with the complete header, we can sort those out that are recurring and put the rest in @series, %name and %cpr
+
+## define initial series
+@series = $header[0];
+$cpr{"$series[$#series]"} = "$header[1]";
+$name{"$series[$#series]"} = "$header[2]";
+$path{"$series[$#series]"} = "$header_path[0]";
+$date{"$series[$#series]"} = "$header[3]";
+$time{"$series[$#series]"} = "$header[4]";
+
+
+
+## loop through @header, defining unique series and drawing out relevant information
+
+for ($i = 0; $i < (scalar @header)/$dumpnr; $i++) {
+	if ($header[$i*$dumpnr] ne $series[$#series]) {
+		my $found = 0;
+		foreach (@series){
+			if ($header[$i*$dumpnr] eq $_) {
+				$found = 1;
+			}
+		}
+		unless ($found == 1) {		
+			$series[$#series+1] = $header[$i*$dumpnr];
+			$cpr{"$series[$#series]"} = "$header[$i*$dumpnr+1]";
+			$name{"$series[$#series]"} = "$header[$i*$dumpnr+2]";
+			$path{"$series[$#series]"} = "$header_path[$i*$dumpnr]";
+			$date{"$series[$#series]"} = "$header[$i*$dumpnr+3]";
+			$time{"$series[$#series]"} = "$header[$i*$dumpnr+4]";
+		}
+	}
+}
+
+### troublesome output-form for use in perl
+
+foreach (@series) {
+	$cpr_ph = $cpr{"$_"};
+	print "$cpr_ph| ";
+	$name_ph = $name{"$_"};
+## Look for any ^ indicating LASTNAME^FIRSTNAME
+#	$name_ph =~ s/Æ/www/;
+	$name_ph =~ s/([A-ZÆØÅ]{1}?)([A-ZÆØÅ]*)\^\s?([A-ZÆØÅ]{1}?)([A-ZÆØÅ]*)\s?([A-ZÆØÅ]{0,1})([A-ZÆØÅ]*)\s?([A-ZÆØÅ]{0,1})([A-ZÆØÅ]*)/$1\L$2\E,\ $3\L$4\E\ $5\L$6\E\ $7\L$8\E/;
+	# $name_ph =~ s/([A-Z]{1})([A-Z]*)\^\s?([A-Z]{1})([A-Z]*)/$1\L$2\E,\ $3\L$4\E/; # Backup
+## Look for ÆØÅ, as these cannot be lowercased by \L\E	
+	$name_ph =~ s/([A-ZÆØÅa-zæøå]+)(Æ)/$1æ/;
+	$name_ph =~ s/([A-ZÆØÅa-zæøå]+)(Ø)/$1ø/;
+	$name_ph =~ s/([A-ZÆØÅa-zæøå]+)(Å)/$1å/;
+	print "$name_ph| ";
+	print "$_| ";
+	$path_ph = $path{"$_"};
+	print "$path_ph| ";
+	$date_ph = $date{"$_"};
+	$date_ph =~ s/([0-9]{4})([0-9]{2})([0-9]{2})/$3\_$2\_$1/;
+	print "$date_ph| ";	
+	$time_ph = $time{"$_"};
+	$time_ph =~ s/\..+//;
+	$time_ph =~ s/([0-9]{2})([0-9]{2})([0-9]{2})/$1\_$2/;
+	print "$time_ph| ";
+}
+
+### /Prints
+
+#### assumptions
+
+# every scanned enddirectory contains only one series

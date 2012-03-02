@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+
+use CGI;
+
+my $cgi = new CGI;
+print $cgi->header('text/html');
+
+
+my %params = $cgi->Vars;
+print "Foelgende serier er valgt: ${params{check}}<br><br>";
+
+print "Foelgende paths er otputtet: ${params{path}}<br>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
