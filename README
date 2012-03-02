@@ -1,11 +1,9 @@
 Denne mappe indeholder følgende:
 
 - Kugle_fantom          DICOM-filer af kuglefantom-scanning taget den 28/9-2010
-- Sinogram_data         patientdata til sinogramsummering inkl. to ældre resultater
-- SumSinograms          program til sinogramsummering, der kører på Windows inkl. src
-- TO_RECON              to summeringer foretaget med ny version af if2dicom, skal rekonstrueres og testes
-- Unfinished business   Neurostat og sinogramsum, de to projekter der ikke er færdigudviklede endnu
-
-
-MVH
-Andreas Hjortgaard Danielsen
+- Sinogram_data         Patientdata til sinogramsummering inkl. to ældre resultater
+- SumSinograms          Program til sinogramsummering, der kører på Windows inkl. src
+- TO_RECON              To summeringer foretaget med ny version af if2dicom, skal rekonstrueres og testes
+- Neurostat             Script til automatisering af Neurostat
+- sinogramsum
+- VAL                   csv-parser til dispatch-system

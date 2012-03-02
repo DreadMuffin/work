@@ -1,0 +1,461 @@
+#!/usr/bin/perl -w
+
+require 5.001;
+use strict;
+use File::Copy;
+use File::Find;
+use File::Temp qw/ tempfile tempdir /;
+use Time::gmtime;
+use File::stat;
+use DBI;
+use DBD::mysql;
+use "csv-parser.pl";
+
+use vars qw/*name *dir *prune $host $port/;
+*name   = *File::Find::name;
+*dir    = *File::Find::dir;
+*prune  = *File::Find::prune;
+
+our $host = "127.0.0.1";
+our $port = "7777";
+
+#sub wanted;
+
+MAIN:
+{
+  
+# setup tunnel for tracershop
+  my $pid = fork();
+  if (not defined $pid) {
+    die "Not enough resources to fork a new process\n";
+  } elsif ($pid == 0) {
+# the child process runs the tunnel
+    exec("ssh tracershop\@pet.rh.dk -L $port:$host:3306 -N");
+    exit(0);
+  }
+# the rest of the script is the parent process and $pid is the child process id
+
+# wait for tunnel to be set up
+  sleep(10);
+
+  while (1) {
+    # Traverse desired filesystems
+    File::Find::find({wanted => \&wantedcsv}, '/users/scratch/dispenser');
+    File::Find::find({wanted => \&wanted}, '/users/scratch/dispenser');
+    File::Find::find({wanted => \&wantedbp}, '/users/scratch/dispenser');
+    sleep 10;
+  }
+# kill tunnel
+  kill 9,$pid;
+}
+
+sub wanted {
+    my ($dev,$ino,$mode,$nlink,$uid,$gid);
+
+    /^VAL\..*\z/s &&
+    (($dev,$ino,$mode,$nlink,$uid,$gid) = lstat($_)) &&
+    -f _ &&
+    move_print($File::Find::name);
+}
+
+sub wantedbp {
+    my ($dev,$ino,$mode,$nlink,$uid,$gid);
+
+    /^BP\.MES\z/s &&
+    (($dev,$ino,$mode,$nlink,$uid,$gid) = lstat($_)) &&
+    -f _ &&
+    movebp_print($File::Find::name);
+}
+
+sub wantedcsv {
+    my ($dev,$ino,$mode,$nlink,$uid,$gid);
+
+    /^VAL\..*\z/s &&
+    (($dev,$ino,$mode,$nlink,$uid,$gid) = lstat($_)) &&
+    -f _ &&
+    csv-parser($File::Find::name);
+}
+
+sub plot_BP {
+  my $gnuplot = "/usr/bin/gnuplot";
+  my ($fbpname,$nsamples,%bp_data) = @_;;
+
+  use File::Temp qw/ tempfile tempdir /;
+  my ($fh, $filename) = tempfile( DIR => $dir );
+  
+  print $fh "set terminal postscript color\n";
+  print $fh "set nokey\n";
+  print $fh "set ylabel \"Tryk (bar)\" \n";
+  print $fh "set xlabel \"Tid (sek)\" \n";
+  print $fh "set nokey\n";
+  print $fh "set title \"Bubble Point / Filter Integrity Test \\n \\n \\\n";
+  print $fh "Batch nr.: $bp_data{charge}  \\\n";
+  print $fh "Dato: $bp_data{date}  \\\n";
+  print $fh "Tidspunkt: $bp_data{time}\\n \\\n";
+  print $fh "Duration: $bp_data{duration} sek.  \\\n";
+  print $fh "Maksimum tryk: $bp_data{maxpress} bar \\\n";
+  print $fh "Sample rate: $bp_data{samplerate} /sek. \\\n";
+  print $fh "Antal samples: $bp_data{samplenumber}\"\n";
+  print $fh "plot '-' smooth csplines with lines\n";
+  `tail -$nsamples $fbpname >> $filename`;
+
+  `$gnuplot $filename|lp -dhelene -oMedia=Plain`;
+  
+}
+
+sub movebp_print {
+  my($s) = @_;
+  my ($st,$now,$tm,$r);
+  my $print_dir = '/users/production/dispenser/BP';
+  my $BP;
+  my (%bp_data);
+
+
+  $st = stat($s);
+  $now = time();
+  $tm = gmtime($now - $st->mtime);
+  if ($tm->sec() > 3) {
+
+    open(UPFILE, "<$s");
+    while (<UPFILE>) {
+      if (/^(\w+):\s+(.*)$/) {
+	$bp_data{$1} = $2;
+	chop ($bp_data{$1});
+      }
+    }
+    $BP = "$print_dir/BP_$bp_data{'date'}_$bp_data{'time'}";
+    move($s,$BP);
+    close (UPFILE);
+    plot_BP($BP, $bp_data{samplenumber}, %bp_data);
+    $r = 1;
+  }
+  else {
+    $r = 0;
+  }
+  return $r;
+}
+
+sub move_print  {
+  my($s) = @_;
+  my $print_dir = '/users/production/dispenser/print';
+  my $archive_dir = '/users/production/dispenser/VAL_archive';
+  my $VAL_ARCHIVE;
+  my $VAL = "$print_dir/$_";
+  my ($st,$now,$tm,$r);
+  my $glabels_out;
+  my $i;
+  my (%vial_data);
+  my ($outfile, $cdate, $batch, $activity, $customer,$filltime,$exptime);
+  my $glabels_batch = '/usr/bin/glabels-batch';
+  my $printer_string = "|lp -n 3 -djulie -o Media=Plain";
+  my $printer_string_transport = "|lp -n 2 -djulie -o Media=Plain";
+  my $ydre_glabels = "/users/production/dispenser/ydre_label.glabels";
+  my $print_string = 'lp -dlabels -o Media=Preprinted';
+  my $reverse_string = "/users/production/dispenser/levin_reverse";
+  my $print_raw = 'lp -dlevin_raw';
+  my $ydre_glabels2 = "/users/production/dispenser/ydre_zlabel_text.glabels";
+  my $print_string2 = 'lp -dlevin -o Media=Preprinted';
+  my ($platform,$database,$tablename,$user,$pw,$dsn,$dbtracershop);
+  my ($query,$query_handle);
+  my ($db_shortname,$db_title,$db_addr1,$db_addr2,$db_addr3,$db_addr4);
+  my ($charge,$depotpos, $filldate, $volume, $gros, $tare, $net, $product);
+
+
+  $outfile = "/users/production/dispenser/ydrelabel.txt";
+  
+  # ser label printer in reverse mode 
+  `$print_raw $reverse_string`;
+  (undef,$glabels_out) = tempfile(SUFFIX => '.ps',DIR => $print_dir, OPEN => 0);
+  $st = stat($s);
+  $now = time();
+  $tm = gmtime($now - $st->mtime);
+  if ($tm->sec() > 3) {
+    move($s,$print_dir);
+    
+    open(UPFILE, "<$VAL");
+    while (<UPFILE>) {
+      if (/^(\w+):\s+(.*)$/) {
+	$vial_data{$1} = $2;
+	chop ($vial_data{$1});
+      }
+    }
+    close (UPFILE);
+    $VAL_ARCHIVE = "$archive_dir/VAL_$vial_data{'filldate'}_$vial_data{'filltime'}";
+    
+    open (OUT,">$outfile");
+    $vial_data{'filldate'} =~ /((\d\d)\.(\d\d)\.(\d\d))/;
+    $cdate = "$2/$3/$4";
+    
+    if ($vial_data{'customer'} =~ /(\d\d?)\w*/){
+      $customer = $1;
+    }
+    else {
+     $customer = 0;
+    }
+
+## load customer from tracershop database
+# OUTLINE:
+# - setup ssh tunnel
+# - connect to database
+# - fetch customer
+# - insert VAL data
+# - disconnect
+# - close tunnel
+
+# database connection parameters
+$platform = "mysql";
+$database = "TracerShop";
+$tablename = "Users";
+$user = "tracershop";
+$pw = "fdg4sale";
+
+
+
+# data source name
+$dsn = "dbi:$platform:$database:$host:$port";
+
+# connect to the database
+$dbtracershop = DBI->connect($dsn,$user,$pw) or die "Unable to connect: $DBI::errstr\n";
+#$dbtracershop->do(qq{SET NAMES 'utf8';});
+
+#  find customer
+$query = qq{SELECT Shortname,title,addr1,addr2,addr3,addr4 FROM $tablename WHERE Kundenr = $customer};
+$query_handle = $dbtracershop->prepare($query);
+$query_handle->execute() or die "Unable to execute: $DBI::errstr\n";
+
+# check for existence and uniqueness of the customer
+if ($query_handle->rows == 0) {
+  die "No matches found for Kundenr $customer";
+} elsif ($query_handle->rows > 1) {
+  die "More than one customer with Kundenr $customer";
+}
+
+# fetch customer
+$query_handle->bind_columns(\$db_shortname,\$db_title,\$db_addr1,\$db_addr2,\$db_addr3,\$db_addr4);
+$query_handle->fetch();
+$query_handle->finish();
+
+# insert val data into database
+$charge = $vial_data{'charge'};
+$charge =~ s/:/-/g;
+$depotpos = $vial_data{'depotpos'};
+$vial_data{'filldate'} =~ /((\d\d)\.(\d\d)\.(\d\d))/;
+$filldate = "20$4-$3-$2";
+$filltime = $vial_data{'filltime'};
+$vial_data{activity} =~ /(\d+\.?\d*)( MBq)/;
+$activity = $1;
+$vial_data{volume} =~ /(\d+\.?\d*)( ml)/;
+$volume = $1;
+$vial_data{gros} =~ /(\d+\.?\d*)( g)/;
+$gros = $1;
+$vial_data{tare} =~ /(\d+\.?\d*)( g)/;
+$tare = $1;
+$vial_data{net} =~ /(\d+\.?\d*)( g)/;
+$net = $1;
+$product = $vial_data{'product'};
+
+$dbtracershop->do("INSERT INTO VAL  (customer,
+             		             charge,
+                        	     depotpos,
+                                     filldate,
+                                     filltime,
+                                     activity,
+                                     volume,
+                                     gros,
+                                     tare,
+                                     net,
+                                     product)
+        VALUES (" . $dbtracershop->quote($customer)   . ","  
+                  . $dbtracershop->quote($charge)     . ","
+                  . $dbtracershop->quote($depotpos)   . ","
+                  . $dbtracershop->quote($filldate)   . ","
+                  . $dbtracershop->quote($filltime)   . ","
+                  . $dbtracershop->quote($activity)   . ","
+                  . $dbtracershop->quote($volume)     . ","
+                  . $dbtracershop->quote($gros)       . ","
+                  . $dbtracershop->quote($tare)       . ","
+                  . $dbtracershop->quote($net)        . ","
+                  . $dbtracershop->quote($product) . ")");
+
+
+# disconnect from database
+$dbtracershop->disconnect();
+
+
+
+
+#    if ($customer != 99)   {
+      $batch = $vial_data{'charge'};
+      $batch =~ s/:/-/g;
+      $vial_data{'filltime'} =~ /(\d\d):(\d\d):(\d\d)/;
+      $filltime = $1 . ':' . $2;
+      $exptime = ($1 + 10)%24 . ':' . $2;
+      $vial_data{activity} =~ /(\d+\.?\d*)( MBq)/;
+      $activity = int($1) . $2;
+      print OUT "$db_shortname,$cdate,$batch,$activity,$vial_data{volume},$filltime,$exptime";
+      close (OUT);
+      `$glabels_batch $ydre_glabels2 -c 3 --output=$glabels_out`;
+      `$print_string2 $glabels_out`;
+      if ( -f $glabels_out) {
+        unlink ($glabels_out)
+      }
+      if ($customer != 01) {
+	open(REPORT, $printer_string) || die("Couldn't open printing pipe for packinglist");
+      
+      format REPORT=
+			F Ø L G E S E D D E L
+
+							Dato: @<<<<<<<<
+$cdate
+	Modtager:
+
+	  @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_title
+	  @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_addr1
+	  @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_addr2
+	  @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_addr3
+          @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_addr4
+
+
+        Afsender:
+
+          PET- og Cyklotronenheden, KF-3982
+          Rigshospitalet
+          Blegdamsvej 9, 2100 KBH Ø			
+          Telefon: +45 3545 3949
+          Fax: +45 3545 3898
+
+
+
+
+        Indhold:          Radioaktivt lægemiddel
+                          Fludeoxyglucose [18F] injektion (DK R14)
+        Origin            DK
+        Batch nr.:        @<<<<<<<<<<<<<
+$batch
+        Aktivitet:        @<<<<<<<<<< @ kl @<<<<<
+$vial_data{activity},"@",$filltime
+        Volume:           @<<<<<<<
+$vial_data{volume}
+
+
+
+
+
+
+
+	
+	Det attesteres hermed at produktet er fremstillet, analyseret
+	og pakket på ovennævnte site i fuld overensstemmelse med kravene
+	til GMP og gældende markedsføringstilladelse.
+
+
+
+        P.v.a. Nic Gillings, QP
+
+
+                              Signatur: ................................
+
+
+
+	
+
+
+.
+
+      write REPORT;
+      close (REPORT);
+
+### Begyndelsen på Transportdokumentet ###
+
+open(REPORT_TRANS, $printer_string_transport) || die("Couldn't open printing pipe for packinglist");
+
+      format REPORT_TRANS=
+		T R A N S P O R T D O K U M E N T
+		
+	   for vejtransport af farligt gods, klasse 7                        
+
+
+                                                        Dato: @<<<<<<<<
+$cdate
+        Modtager:
+
+          @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_title
+          @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_addr1
+          @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_addr2
+          @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_addr3
+          @<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$db_addr4
+
+
+        Afsender:
+
+          PET- og Cyklotronenheden, KF-3982
+          Rigshospitalet
+          Blegdamsvej 9, 2100 KBH Ø
+          Telefon: +45 3545 3949
+          Fax: +45 3545 3898
+
+
+	Denne forsendelse omfatter 1 kolli, for hvilke nedenstående 
+	oplysninger gælder.
+
+	UN-2915 RADIOAKTIVT STOF, TYPE A KOLLI, ikke-speciel form, 
+	ikke-fissilt eller undtaget-fissilt, 7.
+
+
+        Radioaktivt stof:	F-18
+        Fysisk-kemisk form:	Væske
+        Aktivitet:		@<<<<<<<<<< @ kl @<<<<<
+$vial_data{activity},"@",$filltime
+        Kollikategori:		II-GUL
+	Transportindeks:	< 1.0
+
+
+
+	Ved uheld ring straks til "Statens Institut for Strålebeskyttelse", 
+	tlf. +45 4494 3773 og følg instrukserne i udleveret sikkerhedsinstruks.
+
+
+
+	Ved spørgsmål om transporten, kontakt PET-og Cyklotronenheden på 
+	tlf. +45 3545 3949.
+
+
+
+
+
+        P.v.a. ansvarlig leder Holger Jensen
+
+
+                              Dato og signatur: ................................
+
+
+
+
+
+
+.
+
+      write REPORT_TRANS;
+      close (REPORT_TRANS);
+      }
+#    }
+    $r = 1;
+  }
+  else {
+    $r = 0;
+  }
+  return $r;
+}
+
+
+
