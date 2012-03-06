@@ -9,7 +9,7 @@ use Time::gmtime;
 use File::stat;
 use DBI;
 use DBD::mysql;
-use "csv-parser.pl";
+require "csv-parser.pl";
 
 use vars qw/*name *dir *prune $host $port/;
 *name   = *File::Find::name;
@@ -70,10 +70,10 @@ sub wantedbp {
 sub wantedcsv {
     my ($dev,$ino,$mode,$nlink,$uid,$gid);
 
-    /^VAL\..*\z/s &&
+    /^.*\.csv\z/s &&
     (($dev,$ino,$mode,$nlink,$uid,$gid) = lstat($_)) &&
     -f _ &&
-    csv-parser($File::Find::name);
+    &csv_parser($File::Find::name);
 }
 
 sub plot_BP {
@@ -255,8 +255,8 @@ $net = $1;
 $product = $vial_data{'product'};
 
 $dbtracershop->do("INSERT INTO VAL  (customer,
-             		             charge,
-                        	     depotpos,
+             		                 charge,
+                        	         depotpos,
                                      filldate,
                                      filltime,
                                      activity,
