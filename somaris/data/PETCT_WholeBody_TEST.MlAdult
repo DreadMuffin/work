@@ -3,15 +3,15 @@ MlScanProtocol_Begin:	138
 MlScanProtocolAttributes_Begin:	138
 
 ActiveEntry:	-1
-AEC_SlopeObese:	0.33
-AEC_SlopeSmall:	0.50
+AEC_SlopeObese:	0.40
+AEC_SlopeSmall:	0.42
 AutoReferenceLinesMode:	MlAutoReferenceLinesModeOff
 BedIndexPosition:	0
 BodySizeOld:	MlAdult
 BreathHold:	99.000
 BreathingDefault:	15.000
 Cardiac:	0
-CustomProtocol: 0
+CustomProtocol:	1
 DefPatPos:	MlFaceUpHeadFirst
 Ident:	22003600
 Partial:	0
@@ -19,7 +19,7 @@ PatientID:	""
 PatientName:	""
 PatientPosition:	MlPositionUndefined
 PreCond4Displ:	8453119
-ProtocolName:	"PETCT_WholeBody"
+ProtocolName:	"PETCT_WholeBody_TEST"
 Region:	MlPET
 Service:	0
 StudyDescription:	""
@@ -77,7 +77,7 @@ AEC_CurrentMean:	1
 AEC_CurrentProfileAP:	""
 AEC_CurrentProfileLat:	""
 AEC_DoseProfile:	""
-AEC_EndPos:	-1024.000
+AEC_EndPos:	342.500
 AEC_MDS:	""
 AEC_NMax:	0
 AEC_PDS:	""
@@ -89,7 +89,7 @@ AEC_TopoExceed:	0
 AEC_WithoutBiopsy:	MlCareDose
 AECDoseModulationType:	MlAutomaticExposureControl
 AECReferenceMAs:	0
-AngleType:	MlTubePosAp
+AngleType:	MlTubePosPa
 ApiId:	-1
 ApiLengthA:	0.000
 ApiLengthB:	0.000
@@ -118,12 +118,12 @@ Contrast:	0
 CoolingTime:	0.000
 CTDIw:	0
 CTDIwEffective:	0
-Current:	35
+Current:	36
 CurrentCorrection:	1
-CurrentEffective:	35
-CurrentPeak:	35
-CurrentStd:	35
-CustomMAs:	367
+CurrentEffective:	36
+CurrentPeak:	36
+CurrentStd:	36
+CustomMAs:	132
 CycleTime:	1.000
 CycleTimeMin:	0.000
 CycleTimeUser:	0.000
@@ -134,8 +134,8 @@ DiscCheckSource:	MlDiscCheckNone
 Displayed:	0
 DLPEffective:	0
 DoseModulationType:	MlNoModulation
-EffectiveMAs:	367
-EndPos:	-1024.000
+EffectiveMAs:	132
+EndPos:	342.500
 FeedLastScan:	0.0
 FeedScan:	0.0
 Focus:	MlLargeFocus
@@ -149,22 +149,22 @@ IrsAcceptsMissingTables:	0
 KeepFBAD:	0
 Kind:	MlTopo
 MapScanUID:	1
-mAs:	367
+mAs:	132
 MasterAdjustOrTestNumber:	0
 MasterAsymmetricStartAngle:	0
 MasterCombActive:	0
 MasterCompensatorActive:	1
 MasterDataTransfer:	1
-MasterDose:	322
+MasterDose:	471
 MasterDoseAmplification:	6
 MasterDoseControl:	1
 MasterFFSControl:	0
 MasterFilament:	1
-MasterFilamentCurrent:	5863
+MasterFilamentCurrent:	5575
 MasterFixedReadings:	0
 MasterFocusAmplitude:	0
 MasterFocusDelay:	0
-MasterFocusOffset:	-16
+MasterFocusOffset:	32
 MasterGantryDisplay:	1
 MasterGantryRotation:	1
 MasterIgnoreTubeArcing:	1
@@ -183,7 +183,7 @@ MasterSyntheticTrigger:	0
 MasterTestPattern:	0
 MasterTubeCollimatorMovement:	1
 MasterTubeCurrent:	34
-MasterTubeVoltage:	120000
+MasterTubeVoltage:	140000
 MasterUseNominalValues:	1
 MasterUseStartAngle:	0
 MasterXray:	1
@@ -214,19 +214,19 @@ Pitch:	1.0
 PitchFactor:	1.0000000
 PitchLowerLimit:	1.0
 PitchUpperLimit:	8.0
-Power:	4200
+Power:	5040
 PreLoad:	0
 ProcessSteps:	4294950911
 ProspectiveDoseSaving:	0
 RangeName[READ_ONLY]:	"Topogram"
 RangeName.ResID:	72
-RangeStart:	MlRangeStartConsole
+RangeStart:	MlRangeStartFoot
 RawDataFile:	""
 RawDataLoid:	""
-Readings:	24266
+Readings:	8468
 ReconRangeBeginPos:	0.000
 ReconRangeBeginTime:	0.000
-ReconRangeEndPos:	-1024.000
+ReconRangeEndPos:	342.500
 ReconRangeEndTime:	1.000
 ReconRangeFirstImageTime:	"0"
 ReconRangeLastImageTime:	"0"
@@ -241,7 +241,7 @@ RPP_Z:	MlRpp1
 ScanLabel:	""
 ScanNumber:	1
 ScanState:	MlStateNotScanned
-ScanTime:	10.460
+ScanTime:	3.650
 ScanTrigger:	MlScanTriggerAuto
 SequenceGap:	0.0
 SequenceReconRangeEndPos:	-512.000
@@ -267,18 +267,18 @@ StartDelayUser:	4.000
 StaticRotTime:	0.500
 StaticTime:	1.000
 SystemState:	MlMeasurement
-TableDirection:	MlIn
-TableDirectionPatient:	MlCraniocaudal
+TableDirection:	MlOut
+TableDirectionPatient:	MlCaudocranial
 TiltPos:	0.0
-TopoLength:	1024.0
-TopoLengthList:	1024.0
+TopoLength:	342.5
+TopoLengthList:	1536.0
 TopoLoid:	""
-TopoReconRangeEndPos:	-1024.000
-TopoScanTime:	10.460
+TopoReconRangeEndPos:	342.500
+TopoScanTime:	3.650
 TubeCollimator:	2600
 TubeCollimatorClosed:	0
 TubeNotify:	1
-TubePosition:	270.0
+TubePosition:	90.0
 UHR:	MlOff
 UHRplus:	MlOff
 UseAdjustAirCal:	0
@@ -286,7 +286,7 @@ UseAdjustBeamHard:	0
 UseMasterGeneratorSettings:	0
 VertPos:	125.0
 VertPosValid:	0
-Voltage:	120.000
+Voltage:	140.000
 
 
 MlModeScan_End:	138
@@ -297,10 +297,10 @@ No_Of_Valid_Recons: 1
 
 MlModeRecon_Begin:	138
 
-Comment1:	""
-Comment1Source:	MlInherited
-Comment2:	""
-Comment2Source:	MlInherited
+Comment1:	"Resp.kontrol"
+Comment1Source:	MlEdited
+Comment2:	"Standard resp kontrol"
+Comment2Source:	MlEdited
 ImagesPerScan:	6
 PhysioTriggerDelay:	""
 ReconMode:	MlReconSliceMode
@@ -315,7 +315,7 @@ AutoRecon:	0
 AutoReferenceLinesActive:	MlOff
 Balancing:	0
 BalancingSteps:	0
-BodyPartExamined:	"ABDOMEN"
+BodyPartExamined:	"CSPINE"
 CardioMultisegmentACV:	MlNophase
 CardioNoOfTimeStampLists:	"0"
 CareViewHead:	MlLeft
@@ -323,13 +323,13 @@ CenterX:	0
 CenterY:	0
 CrossSectionChanged:	0
 CTScale:	MlCTScaleStandard
-EffectiveMirror:	MlMirrorLeftRight
+EffectiveMirror:	MlMirrorUpDown
 ExtendedFOV:	0
 FailedReason:	""
 FilmImageInterval:	1
-Filming:	0
+Filming:	1
 FirstReconSlice:	0
-FOV:	1024
+FOV:	1536
 FoVHorLength:	0
 FoVHorVec:	1.000000;0.000000;0.000000
 FoVVertLength:	0
@@ -346,7 +346,7 @@ IRSReconTime:	0.001
 Kernel:	"T80s sharp"
 MapReconUID:	2
 MCA:	0
-Mirror:	MlMirrorLeftRight
+Mirror:	MlMirrorUpDown
 ModeReconJMUID:	""
 ModeReconUID:	0
 MultiReconIncr:	1.000
@@ -373,7 +373,7 @@ ReconBeginPos:	0.000
 ReconBeginTime:	0.000
 ReconBeginVec:	0.000000;0.000000;0.000000
 ReconDirection:	MlAxial
-ReconEndPos:	-1024.000
+ReconEndPos:	342.500
 ReconEndTime:	1.000
 ReconEndVec:	0.000000;0.000000;0.000000
 ReconIncrementManualChange:	MlUnchanged
@@ -391,7 +391,7 @@ ReferenceSeriesLoid:	""
 RequestedProcedureCode:	""
 RequestedProcedureDescription:	""
 Resolution:	ResModeStandard
-SeriesDescription:	"Topogram  0.6  T80s"
+SeriesDescription:	"Topogram series"
 SeriesLoid:	""
 SeriesLoidKind:	MlSeriesNew
 SpiralPrePostLengthCorrection:	0.000
@@ -399,14 +399,14 @@ SpiralReconIncr:	0.100
 ToBeReconBeginPos:	0.000
 ToBeReconBeginTime:	0.000
 ToBeReconBeginVec:	0.000000;0.000000;0.000000
-ToBeReconEndPos:	-1024.000
+ToBeReconEndPos:	342.500
 ToBeReconEndTime:	1.000
 ToBeReconEndVec:	0.000000;0.000000;0.000000
-TopoZoom:	0.5
+TopoZoom:	0.333333
 Transfer:	MlOff
-Transfer1:	""
-Transfer2:	""
-Transfer3:	""
+Transfer1:	"Neurostat"
+Transfer2:	"LEO1"
+Transfer3:	"CD-Writer"
 Ui3DViewCurrentPlanningVolumeLoid:	""
 Ui3DViewCutlineDirectionVec:	0.000000;0.000000;0.000000
 Ui3DViewFoVSegmentIndex:	0
@@ -423,14 +423,14 @@ Ui3DViewWindowWidth1:	400.000000;400.000000;400.000000
 Ui3DViewWindowWidth2:	400.000000;400.000000;400.000000
 Ui3DViewZoomX:	1.000000;1.000000;1.000000
 Ui3DViewZoomY:	1.000000;1.000000;1.000000
-Viewing:	MlOff
+Viewing:	MlOn
 ViewingDirection:	MlIO_Caudocranial
-Window[READ_ONLY]:	"Topogram Body"
-Window.ResID:	31
-Window1Center:	50
+Window[READ_ONLY]:	"Spine"
+Window.ResID:	29
+Window1Center:	40
 Window1Width:	350
-Window2Center:	300
-Window2Width:	2000
+Window2Center:	450
+Window2Width:	1500
 WindowImageLoid:	""
 
 
@@ -470,28 +470,28 @@ ImagesPerScan:	24
 PhysioTriggerDelay:	""
 ReconMode:	MlReconVolumeMode
 Reserve:	""
-SliceEffective:	5.00
-SliceEffectiveTiltCorrected:	5
+SliceEffective:	8.00
+SliceEffectiveTiltCorrected:	8
 SlicesPerScan:	24
-SpiralPrePostRotation:	0.776
+SpiralPrePostRotation:	0.775
 AddScan:	0
 AEC_Aref:	1000
 AEC_AttenuationDataAP:	""
 AEC_AttenuationDataLat:	""
-AEC_BeginPos:	-95.500
-AEC_CurrentDOMmax:	272
-AEC_CurrentMean:	272
-AEC_CurrentProfileAP:	"272"
-AEC_CurrentProfileLat:	"272"
-AEC_DoseProfile:	"272 272 272 272 272 272 272 272 272 272 272 272 272 "
-			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
-			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
-			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
-			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
-			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
-			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
-			"272 272 272 272 272 272 272 272 272"
-AEC_EndPos:	-954.500
+AEC_BeginPos:	1441.500
+AEC_CurrentDOMmax:	289
+AEC_CurrentMean:	289
+AEC_CurrentProfileAP:	"289"
+AEC_CurrentProfileLat:	"289"
+AEC_DoseProfile:	"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+			"289 289 289 289 289 289 289 289 289"
+AEC_EndPos:	580.500
 AEC_MDS:	"10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 "
 			"10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 "
 			"10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 "
@@ -506,7 +506,7 @@ AEC_PDS:	"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
 AEC_PDSMean:	0
 AEC_PositionExceed:	1
 AEC_PowerExceed:	0
-AEC_Range:	-8.67677
+AEC_Range:	-8.69697
 AEC_TopoExceed:	1
 AEC_WithoutBiopsy:	MlCareDoseAEC
 AECDoseModulationType:	MlAutomaticExposureControl
@@ -522,9 +522,9 @@ AutoFeed:	0
 AutoLoad:	0
 AutoTilt:	0
 AverageRawData:	MlAverageRDOff
-BaseReconRangeBegin:	0.000
-BaseReconRangeEnd:	-1024.000
-BeginPos:	-88.500
+BaseReconRangeBegin:	1536.000
+BaseReconRangeEnd:	0.000
+BeginPos:	1450.000
 Biopsy:	0
 BodyRegion:	MlBodyRegionBody
 Breathing:	18.000
@@ -538,12 +538,12 @@ Clustered:	0
 ClusteredUsed:	0
 Contrast:	0
 CoolingTime:	0.000
-CTDIw:	11.4779
-CTDIwEffective:	11.4779
-Current:	272
-CurrentCorrection:	0.8
-CurrentEffective:	272
-CurrentPeak:	272
+CTDIw:	6.65856
+CTDIwEffective:	6.65856
+Current:	289
+CurrentCorrection:	0.85
+CurrentEffective:	289
+CurrentPeak:	289
 CurrentStd:	340
 CustomMAs:	50
 CycleTime:	0.000
@@ -554,10 +554,10 @@ DASCont2:	0
 DestinationRequestID:	""
 DiscCheckSource:	MlDiscCheckNone
 Displayed:	0
-DLPEffective:	985.954
+DLPEffective:	573.302
 DoseModulationType:	MlAutomaticExposureControl
 EffectiveMAs:	170
-EndPos:	-961.500
+EndPos:	572.000
 FeedLastScan:	0.0
 FeedScan:	0.0
 Focus:	MlSmallFocus
@@ -565,7 +565,7 @@ FrameOfReferenceUID:	""
 GantryRotating:	1
 HandCare:	MlNone
 InjectorCoupling:	MlCouplingOff
-InterPosHori:	-88.500
+InterPosHori:	1450.000
 InterPosTilt:	0.0
 IrsAcceptsMissingTables:	0
 KeepFBAD:	0
@@ -577,16 +577,16 @@ MasterAsymmetricStartAngle:	0
 MasterCombActive:	0
 MasterCompensatorActive:	1
 MasterDataTransfer:	1
-MasterDose:	2181
-MasterDoseAmplification:	1
+MasterDose:	1247
+MasterDoseAmplification:	6
 MasterDoseControl:	1
 MasterFFSControl:	0
 MasterFilament:	1
-MasterFilamentCurrent:	6859
+MasterFilamentCurrent:	6624
 MasterFixedReadings:	0
 MasterFocusAmplitude:	0
 MasterFocusDelay:	0
-MasterFocusOffset:	-16
+MasterFocusOffset:	32
 MasterGantryDisplay:	1
 MasterGantryRotation:	1
 MasterIgnoreTubeArcing:	1
@@ -604,8 +604,8 @@ MasterRotatingAnode:	1
 MasterSyntheticTrigger:	0
 MasterTestPattern:	0
 MasterTubeCollimatorMovement:	1
-MasterTubeCurrent:	232
-MasterTubeVoltage:	120000
+MasterTubeCurrent:	245
+MasterTubeVoltage:	100000
 MasterUseNominalValues:	1
 MasterUseStartAngle:	0
 MasterXray:	1
@@ -632,11 +632,11 @@ PhysioPulsing:	MlOff
 PhysioPulsingEnd:	""
 PhysioPulsingStart:	""
 PhysioSyntheticTrigger:	0
-Pitch:	19.2
-PitchFactor:	0.8000000
+Pitch:	20.4
+PitchFactor:	0.8500000
 PitchLowerLimit:	1.0
 PitchUpperLimit:	8.0
-Power:	32640
+Power:	28900
 PreLoad:	0
 ProcessSteps:	4294967295
 ProspectiveDoseSaving:	0
@@ -644,17 +644,17 @@ RangeName:	"CT WB"
 RangeStart:	MlRangeStartConsole
 RawDataFile:	""
 RawDataLoid:	""
-Readings:	43314
-ReconRangeBeginPos:	-114.500
+Readings:	40786
+ReconRangeBeginPos:	1421.500
 ReconRangeBeginTime:	0.000
-ReconRangeEndPos:	-935.500
+ReconRangeEndPos:	600.500
 ReconRangeEndTime:	0.000
 ReconRangeFirstImageTime:	"0"
 ReconRangeLastImageTime:	"0"
 Respiratory:	0
 RevolAngle:	360
 RotKind:	MlRotNormal
-RotNum:	37.331
+RotNum:	35.143
 RotTime:	0.500
 RPP:	MlRpp1
 RPP_Override:	0
@@ -662,7 +662,7 @@ RPP_Z:	MlRpp1
 ScanLabel:	""
 ScanNumber:	1
 ScanState:	MlStateNotScanned
-ScanTime:	18.670
+ScanTime:	17.580
 ScanTrigger:	MlScanTriggerAuto
 SequenceGap:	0.0
 SequenceReconRangeEndPos:	-936.500
@@ -676,15 +676,15 @@ SlicePhysical:	1.20
 SliceSelect:	97
 SourceRequestID:	""
 SpecialMeas:	MlSpecialMeasNone
-SpiralFeedRot:	23.0
+SpiralFeedRot:	24.5
 SpiralLength:	821.0
-SpiralReconRangeEndPos:	-935.500
+SpiralReconRangeEndPos:	600.500
 SpiralRotTime:	0.500
-SpiralScanTime:	18.670
+SpiralScanTime:	17.580
 StartAngleNumber:	90.0
-StartDelay:	4.000
+StartDelay:	5.000
 StartDelayCalc:	2.000
-StartDelayUser:	4.000
+StartDelayUser:	5.000
 StaticRotTime:	0.500
 StaticTime:	1.000
 SystemState:	MlMeasurement
@@ -707,174 +707,35 @@ UseAdjustBeamHard:	0
 UseMasterGeneratorSettings:	0
 VertPos:	125.0
 VertPosValid:	1
-Voltage:	120.000
+Voltage:	100.000
 
 
 MlModeScan_End:	138
 
-No_Of_Valid_Recons: 3
+First_MlModeRecon_Is_NULL: 
+
+No_Of_Valid_Recons: 2
 
 MlModeRecon_Begin:	138
 
-Comment1:	""
-Comment1Source:	MlInherited
-Comment2:	""
-Comment2Source:	MlInherited
-ImagesPerScan:	12
-PhysioTriggerDelay:	""
-ReconMode:	MlReconSliceMode
-Reserve:	""
-SliceEffective:	5.00
-SliceEffectiveTiltCorrected:	5
-SlicesPerScan:	12
-SpiralPrePostRotation:	0.812
-AdaptFilter:	1
-Algorithm:	MlSlim
-AutoRecon:	1
-AutoReferenceLinesActive:	MlOff
-Balancing:	1
-BalancingSteps:	5
-BodyPartExamined:	"ABDOMEN"
-CardioMultisegmentACV:	MlNophase
-CardioNoOfTimeStampLists:	"0"
-CareViewHead:	MlLeft
-CenterX:	0
-CenterY:	0
-CrossSectionChanged:	0
-CTScale:	MlCTScaleStandard
-EffectiveMirror:	MlMirrorNone
-ExtendedFOV:	1
-FailedReason:	""
-FilmImageInterval:	1
-Filming:	0
-FirstReconSlice:	0
-FOV:	0
-FoVHorLength:	700
-FoVHorVec:	1.000000;0.000000;0.000000
-FoVVertLength:	700
-FoVVertVec:	0.000000;1.000000;0.000000
-FuseModesP30:	0
-ImaDisplay:	1
-ImageMatrix:	512
-ImageMatrixHor:	512
-ImageMatrixVert:	512
-ImageOrder:	MlIO_Craniocaudal
-ImageReconType:	MlPrimary
-ImaStore:	0
-IRSReconTime:	0.001
-Kernel:	"B19f PET very smooth"
-MapReconUID:	6
-MCA:	0
-Mirror:	MlMirrorNone
-ModeReconJMUID:	""
-ModeReconUID:	0
-MultiReconIncr:	1.000
-NonLinearLookUpTable:	0
-NoOfImages:	72
-NoOfImagesEntryDone:	0
-Obese:	1
-OnlineReconPossible:	0
-ORAFilter:	0
-OrganFoV:	380
-OriginalScanBegin3D:	-114.500
-OriginalScanEnd3D:	-983.000
-PFO:	MlOff
-PhysioListOfEditSyncs:	""
-PhysioListOfTimeStamps:	""
-PhysioMultiPhase:	0
-PhysioNoOfMultiPhase:	0
-PhysioReadyForRecon:	0
-PostProcessingCommand:	"NON"
-PostProcessingID:	"Ml3DNone"
-QuickRecon:	MlOff
-ReconAngle:	360
-ReconBeginPos:	0.000
-ReconBeginTime:	0.000
-ReconBeginVec:	0.000000;0.000000;-115.300000
-ReconDirection:	MlAxial
-ReconEndPos:	0.000
-ReconEndTime:	0.000
-ReconEndVec:	0.000000;0.000000;-934.700000
-ReconIncrementManualChange:	MlUnchanged
-ReconKind:	MlRtd
-ReconLabel:	""
-ReconPriority:	0
-ReconSelected:	0
-ReconState:	MlReconStateInactive
-ReconStateJM:	MlReconStateJMCreated
-ReconstructionVolumeBeginVec:	0.000000;0.000000;0.000000
-ReconstructionVolumeEndVec:	0.000000;0.000000;0.000000
-ReconTaskNumber:	0
-ReconType:	MlAxialRJ
-ReferenceSeriesLoid:	""
-RequestedProcedureCode:	""
-RequestedProcedureDescription:	""
-Resolution:	ResModeUltraFast
-SeriesDescription:	"tmp  CT WB  RTD"
-SeriesLoid:	""
-SeriesLoidKind:	MlSeriesNew
-SpiralPrePostLengthCorrection:	-0.800
-SpiralReconIncr:	11.500
-ToBeReconBeginPos:	0.000
-ToBeReconBeginTime:	0.000
-ToBeReconBeginVec:	0.000000;0.000000;-115.300000
-ToBeReconEndPos:	0.000
-ToBeReconEndTime:	0.000
-ToBeReconEndVec:	0.000000;0.000000;-934.700000
-TopoZoom:	1
-Transfer:	MlOff
-Transfer1:	""
-Transfer2:	""
-Transfer3:	""
-Ui3DViewCurrentPlanningVolumeLoid:	""
-Ui3DViewCutlineDirectionVec:	0.000000;0.000000;0.000000
-Ui3DViewFoVSegmentIndex:	0
-Ui3DViewPanX:	0.000000;0.000000;0.000000
-Ui3DViewPanY:	0.000000;0.000000;0.000000
-Ui3DViewPivotVec:	0.000000;0.000000;0.000000
-Ui3DViewPVImageType:	MlMPR
-Ui3DViewTopographicsSegmentIndex:	0
-Ui3DViewTransformationVec1:	0.000000;0.000000;0.000000
-Ui3DViewTransformationVec2:	0.000000;0.000000;0.000000
-Ui3DViewWindowCenter1:	40.000000;40.000000;40.000000
-Ui3DViewWindowCenter2:	40.000000;40.000000;40.000000
-Ui3DViewWindowWidth1:	400.000000;400.000000;400.000000
-Ui3DViewWindowWidth2:	400.000000;400.000000;400.000000
-Ui3DViewZoomX:	1.000000;1.000000;1.000000
-Ui3DViewZoomY:	1.000000;1.000000;1.000000
-Viewing:	MlOff
-ViewingDirection:	MlIO_Craniocaudal
-Window[READ_ONLY]:	"Abdomen"
-Window.ResID:	17
-Window1Center:	40
-Window1Width:	300
-Window2Center:	300
-Window2Width:	1500
-WindowImageLoid:	""
-
-
-MlModeRecon_End:	138
-
-MlModeRecon_Begin:	138
-
-Comment1:	""
-Comment1Source:	MlInherited
-Comment2:	""
+Comment1:	"Standard resp kontrol"
+Comment1Source:	MlEdited
+Comment2:	"Standard resp kontrol"
 Comment2Source:	MlInherited
 ImagesPerScan:	24
 PhysioTriggerDelay:	""
 ReconMode:	MlReconVolumeMode
 Reserve:	""
-SliceEffective:	5.00
-SliceEffectiveTiltCorrected:	5
+SliceEffective:	8.00
+SliceEffectiveTiltCorrected:	8
 SlicesPerScan:	24
-SpiralPrePostRotation:	0.776
+SpiralPrePostRotation:	0.775
 AdaptFilter:	1
 Algorithm:	MlAlgCone
-AutoRecon:	1
+AutoRecon:	0
 AutoReferenceLinesActive:	MlOff
-Balancing:	1
-BalancingSteps:	5
+Balancing:	0
+BalancingSteps:	0
 BodyPartExamined:	"ABDOMEN"
 CardioMultisegmentACV:	MlNophase
 CardioNoOfTimeStampLists:	"0"
@@ -882,16 +743,16 @@ CareViewHead:	MlLeft
 CenterX:	0
 CenterY:	0
 CrossSectionChanged:	0
-CTScale:	MlCTScaleStandard
-EffectiveMirror:	MlMirrorNone
+CTScale:	MlCTScaleExtended
+EffectiveMirror:	MlMirrorLeftRight
 ExtendedFOV:	1
 FailedReason:	""
 FilmImageInterval:	1
-Filming:	0
+Filming:	1
 FirstReconSlice:	0
 FOV:	0
 FoVHorLength:	700
-FoVHorVec:	1.000000;0.000000;0.000000
+FoVHorVec:	-1.000000;0.000000;0.000000
 FoVVertLength:	700
 FoVVertVec:	0.000000;1.000000;0.000000
 FuseModesP30:	0
@@ -906,36 +767,36 @@ IRSReconTime:	2147483.647
 Kernel:	"B19f PET very smooth"
 MapReconUID:	4
 MCA:	0
-Mirror:	MlMirrorNone
+Mirror:	MlMirrorLeftRight
 ModeReconJMUID:	""
 ModeReconUID:	0
 MultiReconIncr:	1.000
 NonLinearLookUpTable:	0
-NoOfImages:	274
+NoOfImages:	103
 NoOfImagesEntryDone:	0
 Obese:	1
 OnlineReconPossible:	0
 ORAFilter:	0
 OrganFoV:	380
 OriginalScanBegin3D:	-114.500
-OriginalScanEnd3D:	-983.000
+OriginalScanEnd3D:	-935.500
 PFO:	MlOff
 PhysioListOfEditSyncs:	""
 PhysioListOfTimeStamps:	""
 PhysioMultiPhase:	0
 PhysioNoOfMultiPhase:	0
 PhysioReadyForRecon:	0
-PostProcessingCommand:	"NON"
-PostProcessingID:	"Ml3DNone"
+PostProcessingCommand:	"TDF DP"
+PostProcessingID:	"MlMPRReference"
 QuickRecon:	MlOff
 ReconAngle:	360
 ReconBeginPos:	0.000
 ReconBeginTime:	0.000
-ReconBeginVec:	0.000000;0.000000;-114.500000
+ReconBeginVec:	0.000000;0.000000;1421.500000
 ReconDirection:	MlAxial
 ReconEndPos:	0.000
 ReconEndTime:	0.000
-ReconEndVec:	0.000000;0.000000;-935.500000
+ReconEndVec:	0.000000;0.000000;600.500000
 ReconIncrementManualChange:	MlUnchanged
 ReconKind:	MlMetroRecon
 ReconLabel:	""
@@ -951,17 +812,17 @@ ReferenceSeriesLoid:	""
 RequestedProcedureCode:	""
 RequestedProcedureDescription:	""
 Resolution:	ResModeUltraFast
-SeriesDescription:	"AC_CT"
+SeriesDescription:	"CT_WB 1"
 SeriesLoid:	""
 SeriesLoidKind:	MlSeriesNew
 SpiralPrePostLengthCorrection:	0.000
-SpiralReconIncr:	3.000
+SpiralReconIncr:	8.000
 ToBeReconBeginPos:	0.000
 ToBeReconBeginTime:	0.000
-ToBeReconBeginVec:	0.000000;0.000000;-114.500000
+ToBeReconBeginVec:	0.000000;0.000000;1421.500000
 ToBeReconEndPos:	0.000
 ToBeReconEndTime:	0.000
-ToBeReconEndVec:	0.000000;0.000000;-935.500000
+ToBeReconEndVec:	0.000000;0.000000;600.500000
 TopoZoom:	1
 Transfer:	MlOff
 Transfer1:	""
@@ -983,13 +844,13 @@ Ui3DViewWindowWidth1:	400.000000;400.000000;400.000000
 Ui3DViewWindowWidth2:	400.000000;400.000000;400.000000
 Ui3DViewZoomX:	1.000000;1.000000;1.000000
 Ui3DViewZoomY:	1.000000;1.000000;1.000000
-Viewing:	MlOff
+Viewing:	MlOn
 ViewingDirection:	MlIO_Craniocaudal
-Window[READ_ONLY]:	"Abdomen"
-Window.ResID:	17
-Window1Center:	40
-Window1Width:	300
-Window2Center:	300
+Window[READ_ONLY]:	"Larynx"
+Window.ResID:	16
+Window1Center:	50
+Window1Width:	250
+Window2Center:	400
 Window2Width:	1500
 WindowImageLoid:	""
 
@@ -998,18 +859,18 @@ MlModeRecon_End:	138
 
 MlModeRecon_Begin:	138
 
-Comment1:	""
+Comment1:	"Standard resp kontrol"
 Comment1Source:	MlInherited
-Comment2:	""
+Comment2:	"Standard resp kontrol"
 Comment2Source:	MlInherited
 ImagesPerScan:	24
 PhysioTriggerDelay:	""
 ReconMode:	MlReconVolumeMode
 Reserve:	""
-SliceEffective:	3.00
-SliceEffectiveTiltCorrected:	3
+SliceEffective:	8.00
+SliceEffectiveTiltCorrected:	8
 SlicesPerScan:	24
-SpiralPrePostRotation:	0.776
+SpiralPrePostRotation:	0.775
 AdaptFilter:	1
 Algorithm:	MlAlgCone
 AutoRecon:	1
@@ -1052,14 +913,14 @@ ModeReconJMUID:	""
 ModeReconUID:	0
 MultiReconIncr:	1.000
 NonLinearLookUpTable:	0
-NoOfImages:	411
+NoOfImages:	103
 NoOfImagesEntryDone:	0
 Obese:	1
 OnlineReconPossible:	0
 ORAFilter:	0
 OrganFoV:	380
 OriginalScanBegin3D:	-114.500
-OriginalScanEnd3D:	-983.000
+OriginalScanEnd3D:	-935.500
 PFO:	MlOff
 PhysioListOfEditSyncs:	""
 PhysioListOfTimeStamps:	""
@@ -1072,11 +933,11 @@ QuickRecon:	MlOff
 ReconAngle:	360
 ReconBeginPos:	0.000
 ReconBeginTime:	0.000
-ReconBeginVec:	0.000000;0.000000;-114.500000
+ReconBeginVec:	0.000000;0.000000;1421.500000
 ReconDirection:	MlAxial
 ReconEndPos:	0.000
 ReconEndTime:	0.000
-ReconEndVec:	0.000000;0.000000;-935.500000
+ReconEndVec:	0.000000;0.000000;600.500000
 ReconIncrementManualChange:	MlUnchanged
 ReconKind:	MlMetroRecon
 ReconLabel:	""
@@ -1092,17 +953,17 @@ ReferenceSeriesLoid:	""
 RequestedProcedureCode:	""
 RequestedProcedureDescription:	""
 Resolution:	ResModeUltraFast
-SeriesDescription:	"CT WB  3.0  B30f"
+SeriesDescription:	"CT WB 2"
 SeriesLoid:	""
 SeriesLoidKind:	MlSeriesNew
 SpiralPrePostLengthCorrection:	0.000
-SpiralReconIncr:	2.000
+SpiralReconIncr:	8.000
 ToBeReconBeginPos:	0.000
 ToBeReconBeginTime:	0.000
-ToBeReconBeginVec:	0.000000;0.000000;-114.500000
+ToBeReconBeginVec:	0.000000;0.000000;1421.500000
 ToBeReconEndPos:	0.000
 ToBeReconEndTime:	0.000
-ToBeReconEndVec:	0.000000;0.000000;-935.500000
+ToBeReconEndVec:	0.000000;0.000000;600.500000
 TopoZoom:	1
 Transfer:	MlOff
 Transfer1:	""
@@ -1195,21 +1056,21 @@ ScanState:	MlStateNotScanned
 ScanTime:	180.000
 StartDelay:	2.000
 TopoLoid:	""
-VertPos:	120.0
+VertPos:	481.0
 
 OtherModalityModeScanAttributes_Begin:
 LLD:     435
 ULD:     650
-Isotope:	F-18
-Pharmaceutical: FDG
-InjectionDate:	20061030
-InjectionTime:	103000.000000
-InjectedDose:	10(PtMillicuries)
-NumberOfBeds: 5
-BedDuration:	2(PtMinutes)
+Isotope:	Cu-64
+Pharmaceutical: Liquid Solution
+InjectionDate:	20120625
+InjectionTime:	155700.000000
+InjectedDose:	10(PtMicrocuries)
+NumberOfBeds: 1
+BedDuration:	3(PtSeconds)
 VertPos:	120
-BeginPos:		-716.5
-EndPos:	-116.5
+BeginPos:		594.916
+EndPos:	595
 BedStep:	149.998
 TableDirectionPatient: MlCaudocranial
 XOffset:	1.3139
@@ -1220,19 +1081,19 @@ SinogramDicomUIDList:
 NormLoid:	
 NormDicomUID:	
 RebinnerLut:	0
-RebinnerMode:	PtOnlineHistogram
+RebinnerMode:	PtListMode32
 HistogramMode:	PtTrues
 GantryModel:	1094
 PostProcessing:	
 StartMode: PtManual
-SourceType:	PtPatient
-Volume:	31400
-DefaultPlan: 1
+SourceType:	PtPhantom
+Volume:	31500
+DefaultPlan: 0
 PostProcessingType: 0
-CrossCalibrationFactor: 1
+CrossCalibrationFactor: 2
 PhantomRadius: 10
 NumberOfBedsCompleted: 0
-PhysioInputType: PtPhysioNone
+PhysioInputType: PtPhysioECG
 OtherModalityModeScanAttributes_End:
 
 MlModeScan_End:	1
@@ -1241,9 +1102,9 @@ First_MlOtherModalityModeRecon_Is_NULL:
 
 No_Of_Valid_Recons: 2
 
-MlModeRecon_Begin:	2
+MlModeRecon_Begin:	3
 ModalityReconType:	"OSEM"
-Version:	2
+Version:	3
 SeriesLoid:	""
 AutoRecon:	1
 FailedReason:	""
@@ -1259,7 +1120,7 @@ ReconTaskNumber:	1
 OtherModalityModeReconAttributes_Begin:
 CTAttenCorrModeList:     (1,1)
 CTAttenCorrDicomUIDList:     
-OutputImageType: PtCorrected
+OutputImageType: PtNoRecon
 ReconMethod: PtIterative
 SinogramRebinMethod: PtFORE
 ImageSize: 168
@@ -1290,16 +1151,18 @@ BedEnd:	-1
 XOffset:	0
 YOffset:	0
 PostProcessingType:	0
-MaxSinoRebinBins:	0
+MaxSinoRebinBins:	    0
 SaveIntermediateData: 0
 BodyPartExamined: ABDOMEN
+FilterOrder:      3
+ImageComments:	
 OtherModalityModeReconAttributes_End:
 
-MlModeRecon_End:	2
+MlModeRecon_End:	3
 
-MlModeRecon_Begin:	2
+MlModeRecon_Begin:	3
 ModalityReconType:	"OSEM"
-Version:	2
+Version:	3
 SeriesLoid:	""
 AutoRecon:	1
 FailedReason:	""
@@ -1307,7 +1170,7 @@ ModeReconJMUID:	""
 ModeReconUID:	0
 NoOfImages:	1
 NoOfImagesEntryDone:	0
-ReconSelected:	1
+ReconSelected:	0
 ReconState:	MlReconStateInactive
 ReconStateJM:	MlReconStateJMCreated
 ReconTaskNumber:	2
@@ -1315,7 +1178,7 @@ ReconTaskNumber:	2
 OtherModalityModeReconAttributes_Begin:
 CTAttenCorrModeList:     (1,1)
 CTAttenCorrDicomUIDList:     
-OutputImageType: PtUncorrected
+OutputImageType: PtNoRecon
 ReconMethod: PtIterative
 SinogramRebinMethod: PtFORE
 ImageSize: 168
@@ -1346,12 +1209,14 @@ BedEnd:	-1
 XOffset:	0
 YOffset:	0
 PostProcessingType:	0
-MaxSinoRebinBins:	0
+MaxSinoRebinBins:	    0
 SaveIntermediateData: 0
 BodyPartExamined: ABDOMEN
+FilterOrder:      3
+ImageComments:	
 OtherModalityModeReconAttributes_End:
 
-MlModeRecon_End:	2
+MlModeRecon_End:	3
 
 
 MlOtherModalityEntry_End:	138
