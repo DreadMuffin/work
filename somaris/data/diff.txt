@@ -1,0 +1,723 @@
+6,7c6,7
+< AEC_SlopeObese:	0.33
+< AEC_SlopeSmall:	0.50
+---
+> AEC_SlopeObese:	0.40
+> AEC_SlopeSmall:	0.42
+14c14
+< CustomProtocol: 0
+---
+> CustomProtocol:	1
+22c22
+< ProtocolName:	"PETCT_WholeBody"
+---
+> ProtocolName:	"PETCT_WholeBody_TEST"
+80c80
+< AEC_EndPos:	-1024.000
+---
+> AEC_EndPos:	342.500
+92c92
+< AngleType:	MlTubePosAp
+---
+> AngleType:	MlTubePosPa
+121c121
+< Current:	35
+---
+> Current:	36
+123,126c123,126
+< CurrentEffective:	35
+< CurrentPeak:	35
+< CurrentStd:	35
+< CustomMAs:	367
+---
+> CurrentEffective:	36
+> CurrentPeak:	36
+> CurrentStd:	36
+> CustomMAs:	132
+137,138c137,138
+< EffectiveMAs:	367
+< EndPos:	-1024.000
+---
+> EffectiveMAs:	132
+> EndPos:	342.500
+152c152
+< mAs:	367
+---
+> mAs:	132
+158c158
+< MasterDose:	322
+---
+> MasterDose:	471
+163c163
+< MasterFilamentCurrent:	5863
+---
+> MasterFilamentCurrent:	5575
+167c167
+< MasterFocusOffset:	-16
+---
+> MasterFocusOffset:	32
+186c186
+< MasterTubeVoltage:	120000
+---
+> MasterTubeVoltage:	140000
+217c217
+< Power:	4200
+---
+> Power:	5040
+223c223
+< RangeStart:	MlRangeStartConsole
+---
+> RangeStart:	MlRangeStartFoot
+226c226
+< Readings:	24266
+---
+> Readings:	8468
+229c229
+< ReconRangeEndPos:	-1024.000
+---
+> ReconRangeEndPos:	342.500
+244c244
+< ScanTime:	10.460
+---
+> ScanTime:	3.650
+270,271c270,271
+< TableDirection:	MlIn
+< TableDirectionPatient:	MlCraniocaudal
+---
+> TableDirection:	MlOut
+> TableDirectionPatient:	MlCaudocranial
+273,274c273,274
+< TopoLength:	1024.0
+< TopoLengthList:	1024.0
+---
+> TopoLength:	342.5
+> TopoLengthList:	1536.0
+276,277c276,277
+< TopoReconRangeEndPos:	-1024.000
+< TopoScanTime:	10.460
+---
+> TopoReconRangeEndPos:	342.500
+> TopoScanTime:	3.650
+281c281
+< TubePosition:	270.0
+---
+> TubePosition:	90.0
+289c289
+< Voltage:	120.000
+---
+> Voltage:	140.000
+300,303c300,303
+< Comment1:	""
+< Comment1Source:	MlInherited
+< Comment2:	""
+< Comment2Source:	MlInherited
+---
+> Comment1:	"Resp.kontrol"
+> Comment1Source:	MlEdited
+> Comment2:	"Standard resp kontrol"
+> Comment2Source:	MlEdited
+318c318
+< BodyPartExamined:	"ABDOMEN"
+---
+> BodyPartExamined:	"CSPINE"
+326c326
+< EffectiveMirror:	MlMirrorLeftRight
+---
+> EffectiveMirror:	MlMirrorUpDown
+330c330
+< Filming:	0
+---
+> Filming:	1
+332c332
+< FOV:	1024
+---
+> FOV:	1536
+349c349
+< Mirror:	MlMirrorLeftRight
+---
+> Mirror:	MlMirrorUpDown
+376c376
+< ReconEndPos:	-1024.000
+---
+> ReconEndPos:	342.500
+394c394
+< SeriesDescription:	"Topogram  0.6  T80s"
+---
+> SeriesDescription:	"Topogram series"
+402c402
+< ToBeReconEndPos:	-1024.000
+---
+> ToBeReconEndPos:	342.500
+405c405
+< TopoZoom:	0.5
+---
+> TopoZoom:	0.333333
+407,409c407,409
+< Transfer1:	""
+< Transfer2:	""
+< Transfer3:	""
+---
+> Transfer1:	"Neurostat"
+> Transfer2:	"LEO1"
+> Transfer3:	"CD-Writer"
+426c426
+< Viewing:	MlOff
+---
+> Viewing:	MlOn
+428,430c428,430
+< Window[READ_ONLY]:	"Topogram Body"
+< Window.ResID:	31
+< Window1Center:	50
+---
+> Window[READ_ONLY]:	"Spine"
+> Window.ResID:	29
+> Window1Center:	40
+432,433c432,433
+< Window2Center:	300
+< Window2Width:	2000
+---
+> Window2Center:	450
+> Window2Width:	1500
+473,474c473,474
+< SliceEffective:	5.00
+< SliceEffectiveTiltCorrected:	5
+---
+> SliceEffective:	8.00
+> SliceEffectiveTiltCorrected:	8
+476c476
+< SpiralPrePostRotation:	0.776
+---
+> SpiralPrePostRotation:	0.775
+481,494c481,494
+< AEC_BeginPos:	-95.500
+< AEC_CurrentDOMmax:	272
+< AEC_CurrentMean:	272
+< AEC_CurrentProfileAP:	"272"
+< AEC_CurrentProfileLat:	"272"
+< AEC_DoseProfile:	"272 272 272 272 272 272 272 272 272 272 272 272 272 "
+< 			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
+< 			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
+< 			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
+< 			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
+< 			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
+< 			"272 272 272 272 272 272 272 272 272 272 272 272 272 "
+< 			"272 272 272 272 272 272 272 272 272"
+< AEC_EndPos:	-954.500
+---
+> AEC_BeginPos:	1441.500
+> AEC_CurrentDOMmax:	289
+> AEC_CurrentMean:	289
+> AEC_CurrentProfileAP:	"289"
+> AEC_CurrentProfileLat:	"289"
+> AEC_DoseProfile:	"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+> 			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+> 			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+> 			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+> 			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+> 			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+> 			"289 289 289 289 289 289 289 289 289 289 289 289 289 "
+> 			"289 289 289 289 289 289 289 289 289"
+> AEC_EndPos:	580.500
+509c509
+< AEC_Range:	-8.67677
+---
+> AEC_Range:	-8.69697
+525,527c525,527
+< BaseReconRangeBegin:	0.000
+< BaseReconRangeEnd:	-1024.000
+< BeginPos:	-88.500
+---
+> BaseReconRangeBegin:	1536.000
+> BaseReconRangeEnd:	0.000
+> BeginPos:	1450.000
+541,546c541,546
+< CTDIw:	11.4779
+< CTDIwEffective:	11.4779
+< Current:	272
+< CurrentCorrection:	0.8
+< CurrentEffective:	272
+< CurrentPeak:	272
+---
+> CTDIw:	6.65856
+> CTDIwEffective:	6.65856
+> Current:	289
+> CurrentCorrection:	0.85
+> CurrentEffective:	289
+> CurrentPeak:	289
+557c557
+< DLPEffective:	985.954
+---
+> DLPEffective:	573.302
+560c560
+< EndPos:	-961.500
+---
+> EndPos:	572.000
+568c568
+< InterPosHori:	-88.500
+---
+> InterPosHori:	1450.000
+580,581c580,581
+< MasterDose:	2181
+< MasterDoseAmplification:	1
+---
+> MasterDose:	1247
+> MasterDoseAmplification:	6
+585c585
+< MasterFilamentCurrent:	6859
+---
+> MasterFilamentCurrent:	6624
+589c589
+< MasterFocusOffset:	-16
+---
+> MasterFocusOffset:	32
+607,608c607,608
+< MasterTubeCurrent:	232
+< MasterTubeVoltage:	120000
+---
+> MasterTubeCurrent:	245
+> MasterTubeVoltage:	100000
+635,636c635,636
+< Pitch:	19.2
+< PitchFactor:	0.8000000
+---
+> Pitch:	20.4
+> PitchFactor:	0.8500000
+639c639
+< Power:	32640
+---
+> Power:	28900
+647,648c647,648
+< Readings:	43314
+< ReconRangeBeginPos:	-114.500
+---
+> Readings:	40786
+> ReconRangeBeginPos:	1421.500
+650c650
+< ReconRangeEndPos:	-935.500
+---
+> ReconRangeEndPos:	600.500
+657c657
+< RotNum:	37.331
+---
+> RotNum:	35.143
+665c665
+< ScanTime:	18.670
+---
+> ScanTime:	17.580
+679c679
+< SpiralFeedRot:	23.0
+---
+> SpiralFeedRot:	24.5
+681c681
+< SpiralReconRangeEndPos:	-935.500
+---
+> SpiralReconRangeEndPos:	600.500
+683c683
+< SpiralScanTime:	18.670
+---
+> SpiralScanTime:	17.580
+685c685
+< StartDelay:	4.000
+---
+> StartDelay:	5.000
+687c687
+< StartDelayUser:	4.000
+---
+> StartDelayUser:	5.000
+710c710
+< Voltage:	120.000
+---
+> Voltage:	100.000
+715,854c715
+< No_Of_Valid_Recons: 3
+< 
+< MlModeRecon_Begin:	138
+< 
+< Comment1:	""
+< Comment1Source:	MlInherited
+< Comment2:	""
+< Comment2Source:	MlInherited
+< ImagesPerScan:	12
+< PhysioTriggerDelay:	""
+< ReconMode:	MlReconSliceMode
+< Reserve:	""
+< SliceEffective:	5.00
+< SliceEffectiveTiltCorrected:	5
+< SlicesPerScan:	12
+< SpiralPrePostRotation:	0.812
+< AdaptFilter:	1
+< Algorithm:	MlSlim
+< AutoRecon:	1
+< AutoReferenceLinesActive:	MlOff
+< Balancing:	1
+< BalancingSteps:	5
+< BodyPartExamined:	"ABDOMEN"
+< CardioMultisegmentACV:	MlNophase
+< CardioNoOfTimeStampLists:	"0"
+< CareViewHead:	MlLeft
+< CenterX:	0
+< CenterY:	0
+< CrossSectionChanged:	0
+< CTScale:	MlCTScaleStandard
+< EffectiveMirror:	MlMirrorNone
+< ExtendedFOV:	1
+< FailedReason:	""
+< FilmImageInterval:	1
+< Filming:	0
+< FirstReconSlice:	0
+< FOV:	0
+< FoVHorLength:	700
+< FoVHorVec:	1.000000;0.000000;0.000000
+< FoVVertLength:	700
+< FoVVertVec:	0.000000;1.000000;0.000000
+< FuseModesP30:	0
+< ImaDisplay:	1
+< ImageMatrix:	512
+< ImageMatrixHor:	512
+< ImageMatrixVert:	512
+< ImageOrder:	MlIO_Craniocaudal
+< ImageReconType:	MlPrimary
+< ImaStore:	0
+< IRSReconTime:	0.001
+< Kernel:	"B19f PET very smooth"
+< MapReconUID:	6
+< MCA:	0
+< Mirror:	MlMirrorNone
+< ModeReconJMUID:	""
+< ModeReconUID:	0
+< MultiReconIncr:	1.000
+< NonLinearLookUpTable:	0
+< NoOfImages:	72
+< NoOfImagesEntryDone:	0
+< Obese:	1
+< OnlineReconPossible:	0
+< ORAFilter:	0
+< OrganFoV:	380
+< OriginalScanBegin3D:	-114.500
+< OriginalScanEnd3D:	-983.000
+< PFO:	MlOff
+< PhysioListOfEditSyncs:	""
+< PhysioListOfTimeStamps:	""
+< PhysioMultiPhase:	0
+< PhysioNoOfMultiPhase:	0
+< PhysioReadyForRecon:	0
+< PostProcessingCommand:	"NON"
+< PostProcessingID:	"Ml3DNone"
+< QuickRecon:	MlOff
+< ReconAngle:	360
+< ReconBeginPos:	0.000
+< ReconBeginTime:	0.000
+< ReconBeginVec:	0.000000;0.000000;-115.300000
+< ReconDirection:	MlAxial
+< ReconEndPos:	0.000
+< ReconEndTime:	0.000
+< ReconEndVec:	0.000000;0.000000;-934.700000
+< ReconIncrementManualChange:	MlUnchanged
+< ReconKind:	MlRtd
+< ReconLabel:	""
+< ReconPriority:	0
+< ReconSelected:	0
+< ReconState:	MlReconStateInactive
+< ReconStateJM:	MlReconStateJMCreated
+< ReconstructionVolumeBeginVec:	0.000000;0.000000;0.000000
+< ReconstructionVolumeEndVec:	0.000000;0.000000;0.000000
+< ReconTaskNumber:	0
+< ReconType:	MlAxialRJ
+< ReferenceSeriesLoid:	""
+< RequestedProcedureCode:	""
+< RequestedProcedureDescription:	""
+< Resolution:	ResModeUltraFast
+< SeriesDescription:	"tmp  CT WB  RTD"
+< SeriesLoid:	""
+< SeriesLoidKind:	MlSeriesNew
+< SpiralPrePostLengthCorrection:	-0.800
+< SpiralReconIncr:	11.500
+< ToBeReconBeginPos:	0.000
+< ToBeReconBeginTime:	0.000
+< ToBeReconBeginVec:	0.000000;0.000000;-115.300000
+< ToBeReconEndPos:	0.000
+< ToBeReconEndTime:	0.000
+< ToBeReconEndVec:	0.000000;0.000000;-934.700000
+< TopoZoom:	1
+< Transfer:	MlOff
+< Transfer1:	""
+< Transfer2:	""
+< Transfer3:	""
+< Ui3DViewCurrentPlanningVolumeLoid:	""
+< Ui3DViewCutlineDirectionVec:	0.000000;0.000000;0.000000
+< Ui3DViewFoVSegmentIndex:	0
+< Ui3DViewPanX:	0.000000;0.000000;0.000000
+< Ui3DViewPanY:	0.000000;0.000000;0.000000
+< Ui3DViewPivotVec:	0.000000;0.000000;0.000000
+< Ui3DViewPVImageType:	MlMPR
+< Ui3DViewTopographicsSegmentIndex:	0
+< Ui3DViewTransformationVec1:	0.000000;0.000000;0.000000
+< Ui3DViewTransformationVec2:	0.000000;0.000000;0.000000
+< Ui3DViewWindowCenter1:	40.000000;40.000000;40.000000
+< Ui3DViewWindowCenter2:	40.000000;40.000000;40.000000
+< Ui3DViewWindowWidth1:	400.000000;400.000000;400.000000
+< Ui3DViewWindowWidth2:	400.000000;400.000000;400.000000
+< Ui3DViewZoomX:	1.000000;1.000000;1.000000
+< Ui3DViewZoomY:	1.000000;1.000000;1.000000
+< Viewing:	MlOff
+< ViewingDirection:	MlIO_Craniocaudal
+< Window[READ_ONLY]:	"Abdomen"
+< Window.ResID:	17
+< Window1Center:	40
+< Window1Width:	300
+< Window2Center:	300
+< Window2Width:	1500
+< WindowImageLoid:	""
+< 
+---
+> First_MlModeRecon_Is_NULL: 
+856c717
+< MlModeRecon_End:	138
+---
+> No_Of_Valid_Recons: 2
+860,862c721,723
+< Comment1:	""
+< Comment1Source:	MlInherited
+< Comment2:	""
+---
+> Comment1:	"Standard resp kontrol"
+> Comment1Source:	MlEdited
+> Comment2:	"Standard resp kontrol"
+868,869c729,730
+< SliceEffective:	5.00
+< SliceEffectiveTiltCorrected:	5
+---
+> SliceEffective:	8.00
+> SliceEffectiveTiltCorrected:	8
+871c732
+< SpiralPrePostRotation:	0.776
+---
+> SpiralPrePostRotation:	0.775
+874c735
+< AutoRecon:	1
+---
+> AutoRecon:	0
+876,877c737,738
+< Balancing:	1
+< BalancingSteps:	5
+---
+> Balancing:	0
+> BalancingSteps:	0
+885,886c746,747
+< CTScale:	MlCTScaleStandard
+< EffectiveMirror:	MlMirrorNone
+---
+> CTScale:	MlCTScaleExtended
+> EffectiveMirror:	MlMirrorLeftRight
+890c751
+< Filming:	0
+---
+> Filming:	1
+894c755
+< FoVHorVec:	1.000000;0.000000;0.000000
+---
+> FoVHorVec:	-1.000000;0.000000;0.000000
+909c770
+< Mirror:	MlMirrorNone
+---
+> Mirror:	MlMirrorLeftRight
+914c775
+< NoOfImages:	274
+---
+> NoOfImages:	103
+921c782
+< OriginalScanEnd3D:	-983.000
+---
+> OriginalScanEnd3D:	-935.500
+928,929c789,790
+< PostProcessingCommand:	"NON"
+< PostProcessingID:	"Ml3DNone"
+---
+> PostProcessingCommand:	"TDF DP"
+> PostProcessingID:	"MlMPRReference"
+934c795
+< ReconBeginVec:	0.000000;0.000000;-114.500000
+---
+> ReconBeginVec:	0.000000;0.000000;1421.500000
+938c799
+< ReconEndVec:	0.000000;0.000000;-935.500000
+---
+> ReconEndVec:	0.000000;0.000000;600.500000
+954c815
+< SeriesDescription:	"AC_CT"
+---
+> SeriesDescription:	"CT_WB 1"
+958c819
+< SpiralReconIncr:	3.000
+---
+> SpiralReconIncr:	8.000
+961c822
+< ToBeReconBeginVec:	0.000000;0.000000;-114.500000
+---
+> ToBeReconBeginVec:	0.000000;0.000000;1421.500000
+964c825
+< ToBeReconEndVec:	0.000000;0.000000;-935.500000
+---
+> ToBeReconEndVec:	0.000000;0.000000;600.500000
+986c847
+< Viewing:	MlOff
+---
+> Viewing:	MlOn
+988,992c849,853
+< Window[READ_ONLY]:	"Abdomen"
+< Window.ResID:	17
+< Window1Center:	40
+< Window1Width:	300
+< Window2Center:	300
+---
+> Window[READ_ONLY]:	"Larynx"
+> Window.ResID:	16
+> Window1Center:	50
+> Window1Width:	250
+> Window2Center:	400
+1001c862
+< Comment1:	""
+---
+> Comment1:	"Standard resp kontrol"
+1003c864
+< Comment2:	""
+---
+> Comment2:	"Standard resp kontrol"
+1009,1010c870,871
+< SliceEffective:	3.00
+< SliceEffectiveTiltCorrected:	3
+---
+> SliceEffective:	8.00
+> SliceEffectiveTiltCorrected:	8
+1012c873
+< SpiralPrePostRotation:	0.776
+---
+> SpiralPrePostRotation:	0.775
+1055c916
+< NoOfImages:	411
+---
+> NoOfImages:	103
+1062c923
+< OriginalScanEnd3D:	-983.000
+---
+> OriginalScanEnd3D:	-935.500
+1075c936
+< ReconBeginVec:	0.000000;0.000000;-114.500000
+---
+> ReconBeginVec:	0.000000;0.000000;1421.500000
+1079c940
+< ReconEndVec:	0.000000;0.000000;-935.500000
+---
+> ReconEndVec:	0.000000;0.000000;600.500000
+1095c956
+< SeriesDescription:	"CT WB  3.0  B30f"
+---
+> SeriesDescription:	"CT WB 2"
+1099c960
+< SpiralReconIncr:	2.000
+---
+> SpiralReconIncr:	8.000
+1102c963
+< ToBeReconBeginVec:	0.000000;0.000000;-114.500000
+---
+> ToBeReconBeginVec:	0.000000;0.000000;1421.500000
+1105c966
+< ToBeReconEndVec:	0.000000;0.000000;-935.500000
+---
+> ToBeReconEndVec:	0.000000;0.000000;600.500000
+1198c1059
+< VertPos:	120.0
+---
+> VertPos:	481.0
+1203,1209c1064,1070
+< Isotope:	F-18
+< Pharmaceutical: FDG
+< InjectionDate:	20061030
+< InjectionTime:	103000.000000
+< InjectedDose:	10(PtMillicuries)
+< NumberOfBeds: 5
+< BedDuration:	2(PtMinutes)
+---
+> Isotope:	Cu-64
+> Pharmaceutical: Liquid Solution
+> InjectionDate:	20120625
+> InjectionTime:	155700.000000
+> InjectedDose:	10(PtMicrocuries)
+> NumberOfBeds: 1
+> BedDuration:	3(PtSeconds)
+1211,1212c1072,1073
+< BeginPos:		-716.5
+< EndPos:	-116.5
+---
+> BeginPos:		594.916
+> EndPos:	595
+1223c1084
+< RebinnerMode:	PtOnlineHistogram
+---
+> RebinnerMode:	PtListMode32
+1228,1230c1089,1091
+< SourceType:	PtPatient
+< Volume:	31400
+< DefaultPlan: 1
+---
+> SourceType:	PtPhantom
+> Volume:	31500
+> DefaultPlan: 0
+1232c1093
+< CrossCalibrationFactor: 1
+---
+> CrossCalibrationFactor: 2
+1235c1096
+< PhysioInputType: PtPhysioNone
+---
+> PhysioInputType: PtPhysioECG
+1244c1105
+< MlModeRecon_Begin:	2
+---
+> MlModeRecon_Begin:	3
+1246c1107
+< Version:	2
+---
+> Version:	3
+1262c1123
+< OutputImageType: PtCorrected
+---
+> OutputImageType: PtNoRecon
+1293c1154
+< MaxSinoRebinBins:	0
+---
+> MaxSinoRebinBins:	    0
+1295a1157,1158
+> FilterOrder:      3
+> ImageComments:	
+1298c1161
+< MlModeRecon_End:	2
+---
+> MlModeRecon_End:	3
+1300c1163
+< MlModeRecon_Begin:	2
+---
+> MlModeRecon_Begin:	3
+1302c1165
+< Version:	2
+---
+> Version:	3
+1310c1173
+< ReconSelected:	1
+---
+> ReconSelected:	0
+1318c1181
+< OutputImageType: PtUncorrected
+---
+> OutputImageType: PtNoRecon
+1349c1212
+< MaxSinoRebinBins:	0
+---
+> MaxSinoRebinBins:	    0
+1351a1215,1216
+> FilterOrder:      3
+> ImageComments:	
+1354c1219
+< MlModeRecon_End:	2
+---
+> MlModeRecon_End:	3
