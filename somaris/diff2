@@ -1,0 +1,80 @@
+22c22
+< ProtocolName:	"Test_WB_FDG_PET_CT_5"
+---
+> ProtocolName:	"WB_FDG_PET_CT_5"
+80c80
+< AEC_EndPos:	0.000
+---
+> AEC_EndPos:	-1024.000
+126c126
+< CustomMAs:	8
+---
+> CustomMAs:	367
+137,138c137,138
+< EffectiveMAs:	8
+< EndPos:	0.000
+---
+> EffectiveMAs:	367
+> EndPos:	-1024.000
+152c152
+< mAs:	8
+---
+> mAs:	367
+158c158
+< MasterDose:	293
+---
+> MasterDose:	286
+163c163
+< MasterFilamentCurrent:	5647
+---
+> MasterFilamentCurrent:	5450
+226c226
+< Readings:	510
+---
+> Readings:	24266
+229c229
+< ReconRangeEndPos:	0.000
+---
+> ReconRangeEndPos:	-1024.000
+244c244
+< ScanTime:	0.220
+---
+> ScanTime:	10.460
+273c273
+< TopoLength:	0.0
+---
+> TopoLength:	1024.0
+276,277c276,277
+< TopoReconRangeEndPos:	0.000
+< TopoScanTime:	0.220
+---
+> TopoReconRangeEndPos:	-1024.000
+> TopoScanTime:	10.460
+376c376
+< ReconEndPos:	0.000
+---
+> ReconEndPos:	-1024.000
+402c402
+< ToBeReconEndPos:	0.000
+---
+> ToBeReconEndPos:	-1024.000
+580c580
+< MasterDose:	3920
+---
+> MasterDose:	4075
+585c585
+< MasterFilamentCurrent:	7076
+---
+> MasterFilamentCurrent:	6859
+607c607
+< MasterTubeCurrent:	458
+---
+> MasterTubeCurrent:	490
+1314c1314
+< EntrySelected:	0
+---
+> EntrySelected:	1
+1341c1341
+< VertPos:	481.0
+---
+> VertPos:	315.0
