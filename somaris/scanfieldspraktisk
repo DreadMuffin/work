@@ -1,66 +1,31 @@
-MlScanProtocol_Begin
-
 MlScanProtocolAttributes_Begin
-
 BodySizeOld
 ProtocolName
-
-MlScanProtocolAttributes_End
-
 PROTOCOL_ENTRY_NO
-
-MlModeEntry_Begin
-
-MlModeEntryAttributes_Begin
-
-MlModeEntryAttributes_End
-
-#MlModeScanNotNULL
-
 MlModeScan_Begin
-
 SliceEffectiveTiltCorrected
 ApiId
 Current
 ScanTime
-StartDelay (Vises i scan)
+StartDelay
 TableDirectionPatient
 TopoLength
 TubePosition
 Voltage
-
 MlModeScan_End
-
-#First_MlModeRecon_Is_NULL
-
-No_Of_Valid_Recons (READ NUMBER)
-
+No_Of_Valid_Recons
 MlModeRecon_Begin
-
 BodyPartExamined
 Kernel
 Transfer
 Transfer1
 Transfer2
 Transfer3
-Window[READ_ONLY] men den ændrer ikke bodypartexamined
-
-MlModeRecon_End:
-
-MlModeEntry_End:
-
-PROTOCOL_ENTRY_NO:
-
-MlModeEntry_Begin:
-
-MlModeEntryAttributes_Begin:
-
-MlModeEntryAttributes_End:
-
-MlModeScanNotNULL:
-
-MlModeScan_Begin:
-
+Window[READ_ONLY]
+MlModeRecon_End
+PROTOCOL_ENTRY_NO
+MlModeScanNotNULL
+MlModeScan_Begin
 SliceEffective
 ApiId
 Care
@@ -73,16 +38,10 @@ RotTime
 ScanTime
 StartDelay
 Voltage
-
-
 MlModeScan_End:
-
-First_MlModeRecon_Is_NULL:
-
-No_Of_Valid_Recons: (Læs tallet!)
-{
-MlModeRecon_Begin:
-
+First_MlModeRecon_Is_NULL
+No_Of_Valid_Recons
+MlModeRecon_Begin
 SliceEffective
 CenterX
 CenterY
@@ -97,23 +56,13 @@ ReconType
 SeriesDescription
 SpiralReconIncr
 Window[READ_ONLY]
-
 MlModeRecon_End
-
-MlModeEntry_End:	138
-
-PROTOCOL_ENTRY_NO:	3
-
-MlPause_Begin:	138
-
-MlPause_End:	138
-
-PROTOCOL_ENTRY_NO:	4
-
-MlOtherModalityEntry_Begin:	138
-
-MlModeScanNotNULL:
-
+MlModeEntry_End
+PROTOCOL_ENTRY_NO
+MlPause_Begin
+MlPause_End
+PROTOCOL_ENTRY_NO
+MlModeScanNotNULL
 AutoLoad
 LLD
 Isotope
@@ -126,16 +75,12 @@ NumberOfBeds
 BedDuration
 TableDirectionPatient
 RebinnerLut
-RebinnerMode (PtOnlineHistogram eller PtListMode32)
+RebinnerMode
 HistogramMode
 PhysioInputType
-
-MlModeScan_End:	1
-
-First_MlOtherModalityModeRecon_Is_NULL: 
-
-No_Of_Valid_Recons: (Læs tallet)
-
+MlModeScan_End
+First_MlOtherModalityModeRecon_Is_NULL
+No_Of_Valid_Recons
 CTAttenCorrModeList
 OutputImageType
 ReconMethod
@@ -151,5 +96,4 @@ SeriesDescription
 XOffset
 YOffset
 SaveIntermediateData
-
 MlScanProtocol_End

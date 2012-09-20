@@ -101,7 +101,7 @@ CrossCalibrationFactor
 
 Recon:
 No_Of_Valid_Recons: 2
-Recon range (bed) (possibly dependent on NumberOfBeds
+Recon range (bed) (possibly dependent on NumberOfBeds and BedBegin+BedEnd (-1 for auto?))
 OutputImageType (PtCorrected or PtUncorrected)
 ReconMethod
 Iterations
