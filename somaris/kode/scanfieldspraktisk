@@ -65,12 +65,12 @@ PROTOCOL_ENTRY_NO
 MlModeScanNotNULL
 AutoLoad
 LLD
-Isotope
 ULD
+Isotope
 Pharmaceutical
-InjectedDose
 InjectionDate
 InjectionTime
+InjectedDose
 NumberOfBeds
 BedDuration
 TableDirectionPatient

@@ -22,21 +22,40 @@ for item in proto:
         newProto.append(item)
 
 proto = newProto
-print proto
 
 screens = {0 : dict()}
 screenno = 0
+index = 0
+rindex = -1
+recon = [0,0,0]
+foo = 0
+
 
 for item in proto:
+    foo+=1
+    
     # Identify series
-    if item.startswith("PROTOCOL_ENTRY_NO:"):
-        screenno = item.split()[1]
-        screens[screenno] = dict()
-        continue
+    if item.startswith(fields[index]):
+        print index
+        print foo
+        if item.startswith("No_Of_Valid_Recons"):
+            rindex+=1
+            recon[rindex] = int(item.split(" ")[1])
+        if item.startswith("MlModeRecon_End"):
+            recon[rindex]-= 1
+            if recon[rindex] > 0:
+                print index
+                if rindex == 0:
+                    index = 15
+                elif rindex == 1:
+                    index = 42
+                else: index = 82
+        index+=1
+#        print item
 
-    try:
-        screens[screenno][item.split()[0]] = item.split()[1]
-    except:
-        pass
 
-print screens[0]
+print recon
+print index
+print rindex
+print len(proto)
+
