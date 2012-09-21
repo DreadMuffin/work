@@ -24,7 +24,6 @@ Transfer3: ""
 Window[READ_ONLY]: "Topogram Body"
 MlModeRecon_End: 138
 PROTOCOL_ENTRY_NO: 2
-MlModeScanNotNULL:
 MlModeScan_Begin: 138
 SliceEffective: 3.00
 ApiId: -1
@@ -39,7 +38,6 @@ ScanTime: 14.840
 StartDelay: 60.000
 Voltage: 120.000
 MlModeScan_End: 138
-First_MlModeRecon_Is_NULL: 
 No_Of_Valid_Recons: 4
 MlModeRecon_Begin: 138
 SliceEffective: 3.00
@@ -110,7 +108,6 @@ PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
 MlPause_End: 138
 PROTOCOL_ENTRY_NO: 4
-MlModeScanNotNULL:
 AutoLoad: 1
 LLD: 435
 ULD: 650
@@ -127,7 +124,6 @@ RebinnerMode: PtOnlineHistogram
 HistogramMode: PtTrues
 PhysioInputType: PtPhysioNone
 MlModeScan_End: 1
-First_MlOtherModalityModeRecon_Is_NULL: 
 No_Of_Valid_Recons: 2
 MlModeRecon_Begin: 3
 CTAttenCorrModeList: (1,1)

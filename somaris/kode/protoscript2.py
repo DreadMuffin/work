@@ -12,9 +12,9 @@ fields = fields.split("\n")
 path = "protokoller/"
 path2 = "fprotokoller/"
 listing = os.listdir(path)
-for infile in listing:
+for file in listing:
 
-    f = open(path + infile,'r')
+    f = open(path + file,'r')
     proto = f.read()
     proto = proto.split("\n")
 
@@ -35,6 +35,7 @@ for infile in listing:
     rindex = -1
     recon = [0,0,0]
     fieldlist = ""
+    reconpos = [i for i, x in enumerate(fields) if x == "No_Of_Valid_Recons"]
 
     for item in proto:
         if item.startswith(fields[index]):
@@ -45,15 +46,20 @@ for infile in listing:
                 recon[rindex]-= 1
                 if recon[rindex] > 0:
                     if rindex == 0:
-                        index = 15
+                        index = reconpos[0]
                     elif rindex == 1:
-                        index = 42
-                    else: index = 82
+                        index = reconpos[1]
+                    else: index = reconpos[2]
             index+=1
             fieldlist+=item + "\n"
 
+
+
+
     fieldlist = fieldlist[:-1]
-    f = open(path2 + "fields_" + infile,'w')
+    f = open(path2 + "fields_" + file,'w')
     f.write(fieldlist)
     f.close()
+
+
 

@@ -24,7 +24,6 @@ Transfer3
 Window[READ_ONLY]
 MlModeRecon_End
 PROTOCOL_ENTRY_NO
-MlModeScanNotNULL
 MlModeScan_Begin
 SliceEffective
 ApiId
@@ -39,7 +38,6 @@ ScanTime
 StartDelay
 Voltage
 MlModeScan_End
-First_MlModeRecon_Is_NULL
 No_Of_Valid_Recons
 MlModeRecon_Begin
 SliceEffective
@@ -62,7 +60,6 @@ PROTOCOL_ENTRY_NO
 MlPause_Begin
 MlPause_End
 PROTOCOL_ENTRY_NO
-MlModeScanNotNULL
 AutoLoad
 LLD
 ULD
@@ -79,7 +76,6 @@ RebinnerMode
 HistogramMode
 PhysioInputType
 MlModeScan_End
-First_MlOtherModalityModeRecon_Is_NULL
 No_Of_Valid_Recons
 MlModeRecon_Begin
 CTAttenCorrModeList

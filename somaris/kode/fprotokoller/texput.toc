@@ -1,0 +1,4 @@
+\select@language {danish}
+\contentsline {section}{\numberline {1}Topogram}{1}
+\contentsline {subsection}{\numberline {1.1}Routine}{1}
+\contentsline {section}{\numberline {2}CT scan}{1}
