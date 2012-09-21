@@ -48,8 +48,8 @@ CenterY
 CTScale
 ExtendedFOV
 FoVHorLength
-Kernel
 ImageOrder
+Kernel
 Mirror
 NoOfImages
 ReconType
@@ -81,6 +81,7 @@ PhysioInputType
 MlModeScan_End
 First_MlOtherModalityModeRecon_Is_NULL
 No_Of_Valid_Recons
+MlModeRecon_Begin
 CTAttenCorrModeList
 OutputImageType
 ReconMethod
@@ -96,4 +97,6 @@ SeriesDescription
 XOffset
 YOffset
 SaveIntermediateData
+MlModeRecon_End
 MlScanProtocol_End
+Ha, det her slutter den ikke med
