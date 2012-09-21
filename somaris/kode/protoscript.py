@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
 import re
+import os
 
+path = "/protokoller"
 FIELDS = "scanfieldspraktisk"
 PROTOKOL = "WB_FDG_PET_CT_5.MlAdult"
 
@@ -30,7 +32,7 @@ screenno = 0
 index = 0
 rindex = -1
 recon = [0,0,0]
-
+fieldlist = ""
 
 for item in proto:
     if item.startswith(fields[index]):
@@ -46,11 +48,10 @@ for item in proto:
                     index = 42
                 else: index = 82
         index+=1
-        print item
+        fieldlist+=item + "\n"
 
-
-#print recon
-#print index
-#print rindex
-#print len(proto)
+fieldlist = fieldlist[:-1]
+f = open("fields_" + PROTOKOL,'w')
+f.write(fieldlist)
+f.close()
 
