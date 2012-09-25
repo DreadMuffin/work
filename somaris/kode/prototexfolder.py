@@ -9,8 +9,6 @@ path = "fprotokoller/"
 path2 = "tprotokoller/"
 listing = os.listdir(path)
 for file in listing:
-
-    
     
     f = open(path + file,'r')
     proto = f.read()
@@ -104,7 +102,8 @@ for file in listing:
 
     output = page + "\\section{Topogram}\n\\subsection{Routine}\n "+Troutine+"\n\\subsection{Scan}\n"+ Tscan + "\n\\section{CT WB}\n\\subsection{Routine}\n" + Croutine + "\n\\subsection{Scan}\n" + Cscan + "\n\\subsection{Recon}\n" + Crecon + "\n\\section{Pause}\n" + Pause + "\n\\section{PET WB}\n\\subsection{Routine}\n" + Proutine + "\n\\subsection{Scan}\n" + Pscan + "\n\\subsection{Recon}\n" + Precon + "\n\\end{itemize}" + "\n\\end{document}"
 
-    f = open(path2 + "fields_" + file,'w')
+    savename = file[7:]
+    f = open(path2 + savename,'w')
     f.write(output)
     f.close()
 
