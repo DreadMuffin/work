@@ -1,15 +1,15 @@
 MlScanProtocolAttributes_Begin: 138
 BodySizeOld: MlAdult
-ProtocolName: "WB_FDG_PET_CT_IV_5"
+ProtocolName: "WB_FDG_PET_CT_5"
 PROTOCOL_ENTRY_NO: 1
 MlModeScan_Begin: 138
 SliceEffectiveTiltCorrected: 0.6
 ApiId: -1
 Current: 35
-ScanTime: 0.220
+ScanTime: 10.460
 StartDelay: 4.000
 TableDirectionPatient: MlCraniocaudal
-TopoLength: 0.0
+TopoLength: 1024.0
 TubePosition: 270.0
 Voltage: 120.000
 MlModeScan_End: 138
@@ -37,10 +37,10 @@ mAs: 225
 PitchFactor: 1.2000000
 RotTime: 0.500
 ScanTime: 14.840
-StartDelay: 60.000
+StartDelay: 4.000
 Voltage: 120.000
 MlModeScan_End: 138
-No_Of_Valid_Recons: 4
+No_Of_Valid_Recons: 1
 MlModeRecon_Begin: 138
 SliceEffective: 3.00
 CenterX: 0
@@ -58,57 +58,6 @@ SeriesDescription: "AC_CT"
 SpiralReconIncr: 3.000
 Window[READ_ONLY]: "Abdomen"
 MlModeRecon_End: 138
-MlModeRecon_Begin: 138
-SliceEffective: 3.00
-CenterX: 0
-CenterY: 0
-CTScale: MlCTScaleStandard
-ExtendedFOV: 0
-FoVHorLength: 500
-ImageOrder: MlIO_Craniocaudal
-Kernel: "B30f medium smooth"
-Mirror: MlMirrorNone
-NoOfImages: 324
-ReconDirection: MlAxial
-ReconType: MlAxialRJ
-SeriesDescription: "CT WB 3.0 B30f"
-SpiralReconIncr: 3.000
-Window[READ_ONLY]: "Abdomen"
-MlModeRecon_End: 138
-MlModeRecon_Begin: 138
-SliceEffective: 3.00
-CenterX: 0
-CenterY: 0
-CTScale: MlCTScaleStandard
-ExtendedFOV: 0
-FoVHorLength: 971
-ImageOrder: MlIO_AP
-Kernel: "B30f medium smooth"
-Mirror: MlMirrorNone
-NoOfImages: 167
-ReconDirection: MlCoronal
-ReconType: MlVolumeRJ
-SeriesDescription: "CT WB 3.0 SPO cor"
-SpiralReconIncr: 3.000
-Window[READ_ONLY]: "Abdomen"
-MlModeRecon_End: 138
-MlModeRecon_Begin: 138
-SliceEffective: 3.00
-CenterX: 0
-CenterY: 0
-CTScale: MlCTScaleStandard
-ExtendedFOV: 0
-FoVHorLength: 971
-ImageOrder: MlIO_LeftToRight
-Kernel: "B30f medium smooth"
-Mirror: MlMirrorNone
-NoOfImages: 324
-ReconDirection: MlSagittal
-ReconType: MlVolumeRJ
-SeriesDescription: "CT WB 3.0 SPO sag"
-SpiralReconIncr: 3.000
-Window[READ_ONLY]: "Abdomen"
-MlModeRecon_End: 138
 MlModeEntry_End: 138
 PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
@@ -119,11 +68,11 @@ LLD: 435
 ULD: 650
 Isotope: F-18
 Pharmaceutical: FDG
-InjectionDate: 20120808
-InjectionTime: 141700.000000
-InjectedDose: 1(PtMegaBequerels)
+InjectionDate: 20110615
+InjectionTime: 103700.000000
+InjectedDose: 400(PtMegaBequerels)
 NumberOfBeds: 6
-BedDuration: 3(PtMinutes)
+BedDuration: 150(PtSeconds)
 TableDirectionPatient: MlCaudocranial
 RebinnerLut: 0
 RebinnerMode: PtOnlineHistogram

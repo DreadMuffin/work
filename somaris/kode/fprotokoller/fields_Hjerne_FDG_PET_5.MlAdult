@@ -26,12 +26,14 @@ MlModeRecon_End: 138
 PROTOCOL_ENTRY_NO: 2
 MlModeScan_Begin: 138
 SliceEffective: 3.00
+AECReferenceMAs: 380
 ApiId: -1
 Care: MlOff
 CareDoseType: MlCareDoseAEC
 CTDIw: 4.12323
 EffectiveMAs: 30
 InterPosTilt: 0.0
+mAs: 30
 PitchFactor: 1.2000000
 RotTime: 1.000
 ScanTime: 8.010
@@ -50,6 +52,7 @@ ImageOrder: MlIO_Caudocranial
 Kernel: "H19s PET very smooth"
 Mirror: MlMirrorNone
 NoOfImages: 74
+ReconDirection: MlAxial
 ReconType: MlAxialRJ
 SeriesDescription: "AC_CT"
 SpiralReconIncr: 3.000
