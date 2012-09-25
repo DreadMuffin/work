@@ -7,7 +7,7 @@
 \usepackage{pdfpages}
 \usepackage{listings}
 
-\title{"<open file 'fprotokoller/fields_Hjerne_FDG_PET_5.MlAdult', mode 'r' at 0xb76a41d8>"}
+\title{Hjerne\_FDG\_PET\_5.MlAdult}
 
 \begin{document}
 \pagenumbering{roman}
@@ -47,7 +47,7 @@
 \item Recon increment: 3.000
 \item No. of images: 74
 \section{Pause}
-LoL, I dunno
+
 \section{PET WB}
 \subsection{Routine}
 \item Isotope: F-18

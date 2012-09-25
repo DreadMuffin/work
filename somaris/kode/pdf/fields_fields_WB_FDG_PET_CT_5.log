@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  25 SEP 2012 16:00
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  25 SEP 2012 16:15
 entering extended mode
  %&-line parsing enabled.
 **tprotokoller/fields_fields_WB_FDG_PET_CT_5.MlAdult
@@ -466,14 +466,8 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 Package color Info: Driver file: pdftex.def on input line 130.
 )
 \c@lstlisting=\count118
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.14 \maketitle
-               
-? 
 LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
@@ -482,32 +476,6 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 14.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-! Missing $ inserted.
-<inserted text> 
-                $
-l.14 \maketitle
-               
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.14 \maketitle
-               
-? 
-
-Overfull \hbox (140.97816pt too wide) in paragraph at lines 14--14
- \OT1/cmr/m/n/20.74 'fprotokoller/fields$[]\OML/cmm/m/it/20.74 B[]DG[]ET[]T[]:M
-lAdult[]; mode[]r[]at\OT1/cmr/m/n/20.74 0\OML/cmm/m/it/20.74 xb\OT1/cmr/m/n/20.
-74 76\OML/cmm/m/it/20.74 a\OT1/cmr/m/n/20.74 41\OML/cmm/m/it/20.74 d\OT1/cmr/m/
-n/20.74 8 \OML/cmm/m/it/20.74 > 
- []
-
-! Extra }, or forgotten \endgroup.
-\@maketitle ...note \thanks {\LARGE \@title \par }
-                                                  \vskip 1.5em{\large \lines...
-l.14 \maketitle
-               
-? 
 
 LaTeX Warning: No \author given.
 
@@ -529,22 +497,22 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [1] [2] [3] [4] [5]
 [6] [7] (pdf//fields_fields_WB_FDG_PET_CT_5.aux) ) 
 Here is how much of TeX's memory you used:
- 4521 strings out of 493848
- 59193 string characters out of 1152823
- 121663 words of memory out of 3000000
- 7726 multiletter control sequences out of 15000+50000
- 13650 words of font info for 53 fonts, out of 3000000 for 9000
+ 4517 strings out of 493848
+ 59127 string characters out of 1152823
+ 121603 words of memory out of 3000000
+ 7722 multiletter control sequences out of 15000+50000
+ 12403 words of font info for 48 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  28i,6n,32p,322b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on pdf//fields_fields_WB_FDG_PET_CT_5.pdf (9 pages, 77353 bytes)
+blic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb>
+Output written on pdf//fields_fields_WB_FDG_PET_CT_5.pdf (9 pages, 62145 bytes)
 .
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

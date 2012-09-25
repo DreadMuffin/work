@@ -16,8 +16,11 @@ for file in listing:
     proto = f.read()
     proto = proto.split("\n")
     p2 = []
-    
-    page = template % {'title' : os.path.splitext(f)[1]}
+
+    title = file[7:]
+    title = re.sub("_","\_",title)
+
+    page = template % {"title" : title}
 
     for item in proto:
         item = item.split(" ")[1:]
@@ -62,6 +65,8 @@ for file in listing:
 
     i-=1
 
+    Pause = ""
+
     scanoutput = ""
     if CF(77) == "PtOnlineHistogram":
         scanoutput = "Sinogram"
@@ -97,7 +102,7 @@ for file in listing:
     j-=1
 
 
-    output = page + "\\section{Topogram}\n\\subsection{Routine}\n "+Troutine+"\n\\subsection{Scan}\n"+ Tscan + "\n\\section{CT WB}\n\\subsection{Routine}\n" + Croutine + "\n\\subsection{Scan}\n" + Cscan + "\n\\subsection{Recon}\n" + Crecon + "\n\\section{Pause}\nLoL, I dunno" + "\n\\section{PET WB}\n\\subsection{Routine}\n" + Proutine + "\n\\subsection{Scan}\n" + Pscan + "\n\\subsection{Recon}\n" + Precon + "\n\\end{itemize}" + "\n\\end{document}"
+    output = page + "\\section{Topogram}\n\\subsection{Routine}\n "+Troutine+"\n\\subsection{Scan}\n"+ Tscan + "\n\\section{CT WB}\n\\subsection{Routine}\n" + Croutine + "\n\\subsection{Scan}\n" + Cscan + "\n\\subsection{Recon}\n" + Crecon + "\n\\section{Pause}\n" + Pause + "\n\\section{PET WB}\n\\subsection{Routine}\n" + Proutine + "\n\\subsection{Scan}\n" + Pscan + "\n\\subsection{Recon}\n" + Precon + "\n\\end{itemize}" + "\n\\end{document}"
 
     f = open(path2 + "fields_" + file,'w')
     f.write(output)
