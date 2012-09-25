@@ -26,12 +26,14 @@ MlModeRecon_End
 PROTOCOL_ENTRY_NO
 MlModeScan_Begin
 SliceEffective
+AECReferenceMAs
 ApiId
 Care
 CareDoseType
 CTDIw
 EffectiveMAs
 InterPosTilt
+mAs
 PitchFactor
 RotTime
 ScanTime
@@ -50,6 +52,7 @@ ImageOrder
 Kernel
 Mirror
 NoOfImages
+ReconDirection
 ReconType
 SeriesDescription
 SpiralReconIncr

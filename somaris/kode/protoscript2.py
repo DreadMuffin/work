@@ -52,6 +52,7 @@ for file in listing:
                     else: index = reconpos[2]
             index+=1
             fieldlist+=item + "\n"
+    
 
 
 
