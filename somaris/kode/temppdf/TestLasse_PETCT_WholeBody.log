@@ -1,8 +1,8 @@
 This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  27 SEP 2012 13:27
 entering extended mode
  %&-line parsing enabled.
-**tprotokoller/WB_FDG_PET_CT_5.MlAdult
-(./tprotokoller/WB_FDG_PET_CT_5.MlAdult
+**tprotokoller/TestLasse_PETCT_WholeBody.MlAdult
+(./tprotokoller/TestLasse_PETCT_WholeBody.MlAdult
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
@@ -428,8 +428,8 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(temppdf//WB_FDG_PET_CT_5.aux)
-\openout1 = `WB_FDG_PET_CT_5.aux'.
+(temppdf//TestLasse_PETCT_WholeBody.aux)
+\openout1 = `TestLasse_PETCT_WholeBody.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -443,7 +443,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
- (/usr/share/texmf/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count113
 \scratchdimen=\dimen121
@@ -481,9 +482,9 @@ LaTeX Warning: No \author given.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(temppdf//WB_FDG_PET_CT_5.toc)
+(temppdf//TestLasse_PETCT_WholeBody.toc)
 \tf@toc=\write3
-\openout3 = `WB_FDG_PET_CT_5.toc'.
+\openout3 = `TestLasse_PETCT_WholeBody.toc'.
 
  [2]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
@@ -494,22 +495,23 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
  [1] [2] [3] [4] [5]
-[6] [7] (temppdf//WB_FDG_PET_CT_5.aux) ) 
+[6] (temppdf//TestLasse_PETCT_WholeBody.aux) ) 
 Here is how much of TeX's memory you used:
  4517 strings out of 493848
- 59009 string characters out of 1152823
- 121603 words of memory out of 3000000
+ 59119 string characters out of 1152823
+ 121613 words of memory out of 3000000
  7722 multiletter control sequences out of 15000+50000
  12403 words of font info for 48 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 28i,6n,32p,308b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on temppdf//WB_FDG_PET_CT_5.pdf (9 pages, 62145 bytes).
+ 28i,6n,32p,315b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on temppdf//TestLasse_PETCT_WholeBody.pdf (8 pages, 61161 bytes)
+.
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
