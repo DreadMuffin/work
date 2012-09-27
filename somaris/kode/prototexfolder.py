@@ -7,6 +7,7 @@ template = open("template.tex","r").read()
 
 path = "fprotokoller/"
 path2 = "tprotokoller/"
+path3 = "fejlkorsler/"
 listing = os.listdir(path)
 
 def onoff(oneorzero):
@@ -127,6 +128,9 @@ for file in listing:
         f.write(output)
         f.close()
     except:
-        print file
+        fejlnavn = file[7:]
+        f = open(path3 + fejlnavn,'w')
+        f.write("fejl fejl fejl")
+        f.close()
 
 
