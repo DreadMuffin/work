@@ -140,7 +140,7 @@ Subsets: 8
 Iterations: 4
 Zoom: 1
 FilterFWHM: 5
-ScatterCorrect: 1
+ScatterCorrect: 0
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 1
 SeriesDescription: PET WB Uncorrected

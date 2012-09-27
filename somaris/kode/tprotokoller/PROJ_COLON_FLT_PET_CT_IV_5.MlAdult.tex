@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[danish]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage{pdfpages}
+\usepackage{listings}
+
+\title{PROJ\_COLON\_FLT\_PET\_CT\_IV\_5.MlAdult}
+
+\begin{document}
+\pagenumbering{roman}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+
+\section{Topogram}
+\subsection{Routine}
+ \begin{itemize}\item mA: 35\item kV: 120\item Topogram length: 1024 mm\item Tube position: Top
+\subsection{Scan}
+\item mA: 35\item kV: 120\item Delay: 4s\item Topogram length: 1024 mm\item Direction: Craniocaudal\item Tube position: Top\item API: None\item Kernel: T80s sharp\item Window: Topogram Body
+\section{CT WB}
+\subsection{Routine}
+\item Eff. mAs: 225\item kV: 14\item CARE Dose4D: On\item CTDlvol: 15.1475mGy\item Scan time: 1.2000000 s\item Delay: 60.000 s\item Slice: 3.00 mm\item No. of images: Samme som i foerste recon, slet?(y/n)\item Tilt: 225 grader
+\subsection{Scan}
+\item Quality ref. mAs: 225\item Eff. mAs: 225\item kV: 120\item Scan time: 14.840 s\item Rotation time: 0.500 s\item Delay: 60.000 s\item Slice: 0.6 mm\item Pitch: 1.2000000\item Direction: Craniocaudal
+\subsection{Recon}
+
+\subsubsection{Recon 1}
+\item Series description: AC CT
+\item Slice: 3.00
+\item Kernel: "B19f PET very smooth"
+\item Window: "Abdomen"
+\item Extended FoV: On
+\item FoV: 700
+\item Center X: 0
+\item Center Y: 0
+\item Mirroring: None
+\item Extended CT scale: Standard
+\item Recon job: Axial
+\item Recon Axis: Axial
+\item Image order: Craniocaudal
+\item Recon increment: 3.000
+\item No. of images: 324
+\subsubsection{Recon 2}
+\item Series description: CT WB 3.0 B30f
+\item Slice: 3.00
+\item Kernel: "B30f medium smooth"
+\item Window: "Abdomen"
+\item Extended FoV: Off
+\item FoV: 500
+\item Center X: 0
+\item Center Y: 0
+\item Mirroring: None
+\item Extended CT scale: Standard
+\item Recon job: Axial
+\item Recon Axis: Axial
+\item Image order: Craniocaudal
+\item Recon increment: 3.000
+\item No. of images: 324
+\subsubsection{Recon 3}
+\item Series description: CT WB 3.0 SPO cor
+\item Slice: 3.00
+\item Kernel: "B30f medium smooth"
+\item Window: "Abdomen"
+\item Extended FoV: Off
+\item FoV: 971
+\item Center X: 0
+\item Center Y: 0
+\item Mirroring: None
+\item Extended CT scale: Standard
+\item Recon job: 3D
+\item Recon Axis: Coronal
+\item Image order: AP
+\item Recon increment: 3.000
+\item No. of images: 167
+\subsubsection{Recon 4}
+\item Series description: CT WB 3.0 SPO sag
+\item Slice: 3.00
+\item Kernel: "B30f medium smooth"
+\item Window: "Abdomen"
+\item Extended FoV: Off
+\item FoV: 971
+\item Center X: 0
+\item Center Y: 0
+\item Mirroring: None
+\item Extended CT scale: Standard
+\item Recon job: 3D
+\item Recon Axis: Sagittal
+\item Image order: LeftToRight
+\item Recon increment: 3.000
+\item No. of images: 324
+\section{Pause}
+
+\section{PET WB}
+\subsection{Routine}
+\item Isotope: F-18
+\item Pharm.: FLT
+\item Inj. Dose: 1 MegaBequerels
+\item Inj. date (date/month - year): 26/06 - 2012
+\item Inj. time: 14:13:00
+\item Scan mode: Sinogram
+\item Scan range: Match CT FOV
+\item No. of beds: 1
+\item Scan duration/bed: 3 PtMinute
+\subsection{Scan}
+\item Autoload: On
+\item Rebinner LUT: Off
+\item Scan output: Sinogram
+\item Sinogram mode: Trues
+\item Input trigger signal: None
+\item LLD (keV): 435
+\item ULD (keV): 650
+\subsection{Recon}
+
+\subsubsection{Recon 1}
+\item Series description: PET WB Image check 
+\item Recon range (bed): ups..
+\item Output image type: Corrected
+\item Recon method: Iterative
+\item Iterations: 4
+\item Subsets: 8
+\item Image size: 168
+\item Zoom: 1
+\item Filter: Gaussian
+\item FWHM (mm): 4
+\item Offset X: 0 mm
+\item Offset Y: 0 mm
+\item Attenuation correction: On (1)
+\item Scatter correction: On
+\item Match CT slice location: On
+\item Save intermediate data: Off
+\subsubsection{Recon 2}
+\item Series description: PET FLT Corr True X 2 mm
+\item Recon range (bed): ups..
+\item Output image type: Corrected
+\item Recon method: TrueX
+\item Iterations: 3
+\item Subsets: 21
+\item Image size: 336
+\item Zoom: 1
+\item Filter: Gaussian
+\item FWHM (mm): 2
+\item Offset X: 0 mm
+\item Offset Y: 0 mm
+\item Attenuation correction: On (1)
+\item Scatter correction: On
+\item Match CT slice location: On
+\item Save intermediate data: Off
+\end{itemize}
+\end{document}
