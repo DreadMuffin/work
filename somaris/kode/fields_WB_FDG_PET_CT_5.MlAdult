@@ -24,22 +24,22 @@ Transfer3: ""
 Window[READ_ONLY]: "Topogram Body"
 MlModeRecon_End: 138
 PROTOCOL_ENTRY_NO: 2
-MlModeScanNotNULL:
 MlModeScan_Begin: 138
 SliceEffective: 3.00
+AECReferenceMAs: 225
 ApiId: -1
 Care: MlOn
 CareDoseType: MlCareDoseAEC
 CTDIw: 15.1475
 EffectiveMAs: 225
 InterPosTilt: 0.0
+mAs: 225
 PitchFactor: 1.2000000
 RotTime: 0.500
 ScanTime: 14.840
 StartDelay: 4.000
 Voltage: 120.000
 MlModeScan_End: 138
-First_MlModeRecon_Is_NULL: 
 No_Of_Valid_Recons: 4
 MlModeRecon_Begin: 138
 SliceEffective: 3.00
@@ -52,6 +52,7 @@ ImageOrder: MlIO_Craniocaudal
 Kernel: "B19f PET very smooth"
 Mirror: MlMirrorNone
 NoOfImages: 324
+ReconDirection: MlAxial
 ReconType: MlAxialRJ
 SeriesDescription: "AC_CT"
 SpiralReconIncr: 3.000
@@ -68,6 +69,7 @@ ImageOrder: MlIO_Craniocaudal
 Kernel: "B30f medium smooth"
 Mirror: MlMirrorNone
 NoOfImages: 324
+ReconDirection: MlAxial
 ReconType: MlAxialRJ
 SeriesDescription: "CT WB 3.0 B30f"
 SpiralReconIncr: 3.000
@@ -84,6 +86,7 @@ ImageOrder: MlIO_AP
 Kernel: "B30f medium smooth"
 Mirror: MlMirrorNone
 NoOfImages: 267
+ReconDirection: MlCoronal
 ReconType: MlVolumeRJ
 SeriesDescription: "CT WB 3.0 SPO cor"
 SpiralReconIncr: 3.000
@@ -100,6 +103,7 @@ ImageOrder: MlIO_LeftToRight
 Kernel: "B30f medium smooth"
 Mirror: MlMirrorNone
 NoOfImages: 267
+ReconDirection: MlSagittal
 ReconType: MlVolumeRJ
 SeriesDescription: "CT WB 3.0 SPO sag"
 SpiralReconIncr: 3.000
@@ -110,7 +114,6 @@ PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
 MlPause_End: 138
 PROTOCOL_ENTRY_NO: 4
-MlModeScanNotNULL:
 AutoLoad: 1
 LLD: 435
 ULD: 650
@@ -127,7 +130,6 @@ RebinnerMode: PtOnlineHistogram
 HistogramMode: PtTrues
 PhysioInputType: PtPhysioNone
 MlModeScan_End: 1
-First_MlOtherModalityModeRecon_Is_NULL: 
 No_Of_Valid_Recons: 2
 MlModeRecon_Begin: 3
 CTAttenCorrModeList: (1,1)
@@ -146,7 +148,6 @@ XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0
 MlModeRecon_End: 3
-MlModeRecon_Begin: 3
 CTAttenCorrModeList: (1,1)
 OutputImageType: PtCorrected
 ReconMethod: PtTrueX

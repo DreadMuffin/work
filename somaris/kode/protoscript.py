@@ -55,3 +55,4 @@ f = open("fields_" + PROTOKOL,'w')
 f.write(fieldlist)
 f.close()
 
+print "banananan"
