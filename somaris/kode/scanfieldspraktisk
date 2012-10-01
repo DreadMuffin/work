@@ -63,6 +63,7 @@ PROTOCOL_ENTRY_NO
 MlPause_Begin
 MlPause_End
 PROTOCOL_ENTRY_NO
+MlModeScan_Begin
 AutoLoad
 LLD
 ULD

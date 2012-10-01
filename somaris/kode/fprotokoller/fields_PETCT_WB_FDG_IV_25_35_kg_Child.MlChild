@@ -80,6 +80,7 @@ PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
 MlPause_End: 138
 PROTOCOL_ENTRY_NO: 4
+MlModeScan_Begin: 1
 AutoLoad: 1
 LLD: 425
 ULD: 650

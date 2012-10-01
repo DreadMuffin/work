@@ -1,4 +1,5 @@
-2042
+[1, 4]
+MlScanProtocolAttributes_Begin: 138
 ActiveEntry -1
 AEC_SlopeObese 0.52
 AEC_SlopeSmall 0.50
@@ -2041,3 +2042,4 @@ WaveformReplayMode PtOptimal
 XOffset 0
 YOffset 0
 Zoom 1
+MlScanProtocol_End: 138

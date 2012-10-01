@@ -88,25 +88,25 @@ for file in listing:
         Pause = ""
 
         scanoutput = ""
-        if CF(77) == "PtOnlineHistogram":
+        if CF(78) == "PtOnlineHistogram":
             scanoutput = "Sinogram"
         else: scanoutput = "List mode"
 
         scanrange = ""
-        if int(CF(93)) == 1:
+        if int(CF(94)) == 1:
             scanrange = "Match CT FOV"
         else: scanrange = "Do not match CT FOV"
 
-        injdose = CF(72)[:-1].split("(")
-        scanduration = CF(74)[:-1].split("(")
+        injdose = CF(73)[:-1].split("(")
+        scanduration = CF(75)[:-1].split("(")
         
 
-        Proutine = "\\item Isotope: " + CF(68) + "\n\\item Pharm.: " + CF(69) + "\n\\item Inj. Dose: " + injdose[0] + " " + injdose[1][2:] + "\n\\item Inj. date (date/month - year): " + CF(70)[6:] + "/" + CF(70)[4:6] + " - " + CF(70)[:4] + "\n\\item Inj. time: " + CF(71)[:2] + ":" + CF(71)[2:4] + ":" + CF(71)[4:6] + "\n\\item Scan mode: " + scanoutput + "\n\\item Scan range: " + scanrange + "\n\\item No. of beds: " + CF(73) + "\n\\item Scan duration/bed: " + scanduration[0] + " " + scanduration[1][:-1]
+        Proutine = "\\item Isotope: " + CF(69) + "\n\\item Pharm.: " + CF(70) + "\n\\item Inj. Dose: " + injdose[0] + " " + injdose[1][2:] + "\n\\item Inj. date (date/month - year): " + CF(71)[6:] + "/" + CF(71)[4:6] + " - " + CF(71)[:4] + "\n\\item Inj. time: " + CF(72)[:2] + ":" + CF(72)[2:4] + ":" + CF(72)[4:6] + "\n\\item Scan mode: " + scanoutput + "\n\\item Scan range: " + scanrange + "\n\\item No. of beds: " + CF(74) + "\n\\item Scan duration/bed: " + scanduration[0] + " " + scanduration[1][:-1]
 
-        Pscan = "\\item Autoload: " + onoff(CF(65)) + "\n\\item Rebinner LUT: " + onoff(CF(76)) + "\n\\item Scan output: " + scanoutput + "\n\\item Sinogram mode: " + CF(78)[2:] + "\n\\item Input trigger signal: " + CF(79)[8:] + "\n\\item LLD (keV): " + CF(66) + "\n\\item ULD (keV): " + CF(67)
+        Pscan = "\\item Autoload: " + onoff(CF(66)) + "\n\\item Rebinner LUT: " + onoff(CF(77)) + "\n\\item Scan output: " + scanoutput + "\n\\item Sinogram mode: " + CF(79)[2:] + "\n\\item Input trigger signal: " + CF(80)[8:] + "\n\\item LLD (keV): " + CF(67) + "\n\\item ULD (keV): " + CF(68)
 
 
-        Precons = int(CF(81))
+        Precons = int(CF(82))
 
         j = 0
 
@@ -116,7 +116,7 @@ for file in listing:
         Precon = ""
 
         while j < Precons:
-            Precon +="\n\\subsubsection{Recon " + str(j + 1) + "}" + "\n\\item Series description: " + PF(94) + "\n\\item Recon range (bed): ups.." + "\n\\item Output image type: " + PF(84)[2:] + "\n\\item Recon method: " + PF(85)[2:] + "\n\\item Iterations: " + PF(88) + "\n\\item Subsets: " + PF(87) + "\n\\item Image size: " + PF(86) + "\n\\item Zoom: " + PF(89) + "\n\\item Filter: " + PF(92)[2:] + "\n\\item FWHM (mm): " + PF(90) + "\n\\item Offset X: " + PF(95) + " mm" + "\n\\item Offset Y: " + PF(96) + " mm" + "\n\\item Attenuation correction: " + onoff(PF(83)[1:2]) + " (" + PF(83)[3:4] + ")" + "\n\\item Scatter correction: " + onoff(PF(91)) + "\n\\item Match CT slice location: " + onoff(PF(93)) + "\n\\item Save intermediate data: " + onoff(PF(97))
+            Precon +="\n\\subsubsection{Recon " + str(j + 1) + "}" + "\n\\item Series description: " + PF(95) + "\n\\item Recon range (bed): ups.." + "\n\\item Output image type: " + PF(85)[2:] + "\n\\item Recon method: " + PF(86)[2:] + "\n\\item Iterations: " + PF(89) + "\n\\item Subsets: " + PF(88) + "\n\\item Image size: " + PF(87) + "\n\\item Zoom: " + PF(90) + "\n\\item Filter: " + PF(93)[2:] + "\n\\item FWHM (mm): " + PF(91) + "\n\\item Offset X: " + PF(96) + " mm" + "\n\\item Offset Y: " + PF(97) + " mm" + "\n\\item Attenuation correction: " + onoff(PF(84)[1:2]) + " (" + PF(84)[3:4] + ")" + "\n\\item Scatter correction: " + onoff(PF(92)) + "\n\\item Match CT slice location: " + onoff(PF(94)) + "\n\\item Save intermediate data: " + onoff(PF(98))
             j+=1
         j-=1
 
