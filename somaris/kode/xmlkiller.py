@@ -12,7 +12,7 @@ proto = xmldoc.toxml()
 
 proto = proto.split("\n")[2:-4]
 #print len(proto)
-
+"""
 goo = ""
 
 for item in proto:
@@ -21,48 +21,43 @@ for item in proto:
 f = open("goo.txt",'w')
 f.write(goo)
 f.close()
-
-
+"""
+reconnumber = [0,0,0]
+ri = 0
 foo = ""
+first = True
+startmsg = ""
 for item in proto:
     item = item.replace("\t"," ")
     item = item.split("/")[0]
     item = item.replace(">"," ")
+    item = item.replace("&quot;","\"")
     item = item.lstrip(" ")[1:-1]
-    foo += item + "\n"
     if item.startswith("MlModeEntryType EntryNo="):
-        item = "PROTOCOL_ENTRY_NO: " + item[25] + "\nMlModeRecon_Begin: 138"
+        reconnumber[ri] = int(item[64])
+        if item[25] == "2":
+            startmsg = "MlModeRecon_End: 138\n"
+        item = startmsg + "PROTOCOL_ENTRY_NO: " + item[25] + "\nMlModeScan_Begin: 138"
+        ri +=1
+        first = True
+    elif item.startswith("MlPauseType"):
+        item = "MlModeRecon_End: 138\nMlModeEntry_End: 138\nPROTOCOL_ENTRY_NO: 3\nMlPause_Begin: 138\nMlPause_End: 138"
+    elif item.startswith("Window ReadOnly"):
+        item = item.split(" ")
+        item = "Window[READ_ONLY]: " + item[3]
+    elif item.startswith("MlOtherModalityEntryType"):
+        reconnumber[ri] = int(item[93])
+        item = startmsg + "PROTOCOL_ENTRY_NO: " + item[34] + "\nMlModeScan_Begin: 138"
+        ri +=1
+        first = True
+    elif item.startswith("MlModeReconType ReconJob"):
+        if first:
+            item = "MlModeScan_End: 138\nNo_Of_Valid_Recons: " + str(reconnumber[ri-1]) + "\nMlModeRecon_Begin: 138"
+            first = False
+        else: item = "MlModeRecon_End: 138\nMlModeRecon_Begin: 138"
+    foo += item + "\n"
 
 
-foo = "MlScanProtocolAttributes_Begin: 138\n" + foo[:-1] + "\nMlScanProtocol_End: 138"
+foo = "MlScanProtocolAttributes_Begin: 138\n" + foo[:-1] + "\nMlModeRecon_End: 3\n\nMlScanProtocol_End: 138"
 
-
-reconnumber = [0,0,0]
-ri = -1
-
-
-for item in foo.split("\n"):
-    if item.startswith("MlModeReconType ReconJob"):
-        if int(item[26]) == 1:
-            ri += 1
-            reconnumber[ri] += 1
-        elif int(item[26]) > 1:
-            reconnumber[ri] += 1
-
-print reconnumber
-
-
-
-
- #   if item.startswith("MlModeReconType ReconJob="1"):
-   #     item = "MlModeScan_End: 138\nNo_Of_Valid_Recons: 1\nMlModeRecon_Begin: 138"
-
-
-
-
-
-
-
-#for i in proto:
-#    print i + "\n"
 print foo

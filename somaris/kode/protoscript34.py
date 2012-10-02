@@ -3,13 +3,13 @@
 import re
 import os
 
-FIELDS = "scanfieldspraktisk"
+FIELDS = "scanfieldspraktisk34"
 
 f = open(FIELDS,'r')
 fields = f.read()
 fields = fields.split("\n")
 
-path = "test4/"
+path = "test34/"
 path2 = "fprotokoller/"
 listing = os.listdir(path)
 for file in listing:
@@ -18,12 +18,14 @@ for file in listing:
     proto = f.read()
     proto = proto.split("\n")
 
+
     newProto = []
     for item in proto:
         item = item.rstrip('\r\n')
         item = item.replace("\t"," ")
         item = re.sub(' +',' ',item)
         newProto.append(item)
+
 
     proto = newProto
 
@@ -36,6 +38,8 @@ for file in listing:
     recon = [0,0,0]
     fieldlist = ""
     reconpos = [i for i, x in enumerate(fields) if x == "No_Of_Valid_Recons"]
+    tempi = 0
+
 
     for item in proto:
         if item.startswith(fields[index]):
@@ -51,7 +55,8 @@ for file in listing:
                         index = reconpos[1]
                     else: index = reconpos[2]
             index+=1
-            fieldlist+=item + "\n"
+            fieldlist+=item + " " +str(tempi) + "\n"
+        tempi+=1
     
 
 

@@ -37,6 +37,7 @@ for file in listing:
     fieldlist = ""
     reconpos = [i for i, x in enumerate(fields) if x == "No_Of_Valid_Recons"]
 
+
     for item in proto:
         if item.startswith(fields[index]):
             if item.startswith("No_Of_Valid_Recons"):
