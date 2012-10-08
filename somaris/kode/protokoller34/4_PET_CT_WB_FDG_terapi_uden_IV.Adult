@@ -1887,13 +1887,9 @@ InjectedDose 300000000.000000
 InjectionDate 20120514
 InjectionTime 142007.000000
 Isotope F-18
-two words
-two words
 MatchCTRange true
 PETScanNumber 2
-BedDuration: 2.000000(PtMinutes)
-RebinnerMode PtOnlineHistogram
-HistogramMode: Ptfalse
+PetBedsInformation &lt;![CDATA[&lt;PetAcqPassesArray&gt;&lt;AcquisitionPass&gt;&lt;BedInformationArray&gt;&lt;BedInformation&gt;&lt;BedDuration&gt;2.000000&lt
 ]&gt;
 Pharmaceutical Fluorodeoxyglucose
 PhysioInputType PtPhysioNone
@@ -1902,6 +1898,17 @@ ResidualDose 0.000000
 ResidualTim
 ScanType PtWholeBodyStep
 SourceMode PtPatient
+InjectedDose 300000000.000000
+InjectionDate 20120514
+InjectionTime 142007.000000
+Isotope F-18
+BedDuration: 2.000000(PtMinutes)
+RebinnerMode PtOnlineHistogram
+HistogramMode: Ptfalse
+Pharmaceutical Fluorodeoxyglucose
+PhysioInputType PtPhysioNone
+
+
 TableDirectionPatient PtCaudocranial
 Version 3
 

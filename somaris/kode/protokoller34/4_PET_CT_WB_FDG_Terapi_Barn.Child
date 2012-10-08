@@ -1870,8 +1870,6 @@ InjectedDose 100000000.000000
 InjectionDate 20110401
 InjectionTime 143547.000000
 Isotope F-18
-BedDuration 2.000000(PtMinutes)
-HistogramMode PtPromptsRandoms
 ListmodeDicomUIDLis
 ListmodeLoidLis
 MatchCTRange true
@@ -1895,6 +1893,17 @@ SinogramDicomUIDLis
 SinogramLoidLis
 SourceMode PtPatient
 StartMode PtManual
+InjectedDose 100000000.000000
+InjectionDate 20110401
+InjectionTime 143547.000000
+Isotope F-18
+BedDuration 2.000000(PtMinutes)
+RebinnerMode PtOnlineHistogram
+HistogramMode PtPromptsRandoms
+Pharmaceutical FDG
+PhysioInputType PtPhysioNone
+
+
 TableDirectionPatient PtCraniocaudal
 Version 2
 

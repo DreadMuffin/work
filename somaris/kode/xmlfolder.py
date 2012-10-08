@@ -7,31 +7,32 @@ path = "xml34/"
 path2 = "protokoller34/"
 listing = os.listdir(path)
 for file in listing:
-    try:
+#    try:
+        print file
         f = open(path + file,'r')
         proto = minidom.parse(path + file).toxml()
         f.close()
     
         proto = proto.split("\n")[2:-4]
+        PETCTfields = [""] * 11
     
         def hellsolver(helldex):
             hellreturn = ""
             helvedelist = proto[helldex].split("gt;&lt;")
-            hellreturn = "BedDuration: " + helvedelist[4].split(";")[1][:-3] + "(" + helvedelist[5].split(";")[1][:-3] + ")\n"
+            PETCTfields[4] = "BedDuration: " + helvedelist[4].split(";")[1][:-3] + "(" + helvedelist[5].split(";")[1][:-3] + ")"
             if helvedelist[12].split(";")[1][:-3] == "PtSinogramData":
-                hellreturn += "RebinnerMode PtOnlineHistogram\n"
-            else: hellreturn += "RebinnerMode PtListMode32\n"
-            hellreturn += "HistogramMode: Pt" + helvedelist[11].split(";")[1][:-3]
-            return hellreturn
+                PETCTfields[5] = "RebinnerMode PtOnlineHistogram"
+            else: PETCTfields[5] = "RebinnerMode PtListMode32\n"
+            PETCTfields[6] = "HistogramMode: Pt" + helvedelist[11].split(";")[1][:-3]
     
         reconnumber = [0,0,0]
         ri = 0
         fieldlist = ""
         first = True
         startmsg = ""
-        pastIsotope = False
-        bedDur = "two words"
-        hisMode = "two words"
+        PETstart = False
+
+
         for i, item in enumerate(proto):
             item = item.replace("\t"," ")
             item = item.split("/")[0]
@@ -39,6 +40,7 @@ for file in listing:
             item = item.replace("&quot;","\"")
             item = item.lstrip(" ")[1:-1]
             if item.startswith("MlModeEntryType EntryNo="):
+                print item
                 reconnumber[ri] = int(item[64])
                 if item[25] == "2":
                     startmsg = "MlModeRecon_End: 138\n"
@@ -54,23 +56,55 @@ for file in listing:
                 reconnumber[ri] = int(item[93])
                 item = startmsg + "PROTOCOL_ENTRY_NO: 4\nMlModeScan_Begin: 138"
                 ri +=1
+                PETstart = True
                 first = True
             elif item.startswith("MlModeReconType ReconJob") or item.startswith("MlOtherModalityModeReconType"):
                 if first:
                     item = "MlModeScan_End: 138\nNo_Of_Valid_Recons: " + str(reconnumber[ri-1]) + "\nMlModeRecon_Begin: 138"
                     first = False
                 else: item = "MlModeRecon_End: 138\nMlModeRecon_Begin: 138"
-            elif item.startswith("PetBedsInformation"):
-                item = hellsolver(i)
-            elif item.startswith("Isotope"):
-                pastIsotope = True
-                item = item + "\n" + bedDur + "\n" + hisMode
-            elif item.startswith("BedDuration"):
-                bedDur = item
-            elif item.startswith("HistogramMode"):
-                hisMode = item
+            elif item.startswith("TableDirectionPatient") and PETstart:
+                PETstart = False
+                temp = ""
+                for field in PETCTfields:
+                    temp += field + "\n"
+                item = temp + item
+            elif PETstart:
+                if item.startswith("InjectedDose"):
+                    PETCTfields[0] = item
+                    pass
+                elif item.startswith("InjectionDate"):
+                    PETCTfields[1] = item
+                    pass
+                elif item.startswith("InjectionTime"):
+                    PETCTfields[2] = item
+                    pass
+                elif item.startswith("Isotope"):
+                    PETCTfields[3] = item
+                    pass
+                elif item.startswith("BedDuration"):
+                    PETCTfields[4] = item
+                    pass
+                elif item.startswith("RebinnerMode"):
+                    PETCTfields[5] = item
+                    pass
+                elif item.startswith("HistogramMode"):
+                    PETCTfields[6] = item
+                    pass
+                elif item.startswith("Pharmaceutical"):
+                    PETCTfields[7] = item
+                    pass
+                elif item.startswith("PhysioInputType"):
+                    PETCTfields[8] = item
+                    pass
+                elif item.startswith("HistogramMode"):
+                    PETCTfields[9] = item
+                    pass
+                elif item.startswith("PetBedsInformation"):
+                    hellsolver(i)
+                    pass
             fieldlist += item + "\n"
-            
+          
         
         
         fieldlist = "MlScanProtocolAttributes_Begin: 138\n" + fieldlist[:-1] + "\nMlModeRecon_End: 3\n\nMlScanProtocol_End: 138"
@@ -78,6 +112,6 @@ for file in listing:
         f.write(fieldlist)
         f.close()
 
-    except:
+#    except:
         print file
 

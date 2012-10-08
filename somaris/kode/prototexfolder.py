@@ -25,7 +25,7 @@ def reconjob(index):
 
 for file in listing:
 
-#    try:
+    try:
         print file
     
         f = open(path + file,'r')
@@ -208,7 +208,7 @@ for file in listing:
             f.close()
 
 
-#    except:
+    except:
         fejlnavn = file[6:]
         f = open(path3 + fejlnavn,'w')
         f.write("fejl fejl fejl")

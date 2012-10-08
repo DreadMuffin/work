@@ -9,7 +9,7 @@ f = open(FIELDS,'r')
 fields = f.read()
 fields = fields.split("\n")
 
-path = "test4/"
+path = "protokoller2/"
 path2 = "fprotokoller/"
 listing = os.listdir(path)
 for file in listing:
@@ -52,6 +52,8 @@ for file in listing:
                     else: index = reconpos[2]
             index+=1
             fieldlist+=item + "\n"
+#        if item.startswith("MapProtocolEntryUID:") and int(item[-1]) == 6:
+#            print file + " " + item
     
 
 

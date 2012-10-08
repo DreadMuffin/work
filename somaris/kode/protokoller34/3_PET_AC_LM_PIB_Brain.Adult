@@ -1510,13 +1510,9 @@ InjectedDose 185000000.0
 InjectionDate 20120514
 InjectionTime 134124.000000
 Isotope C-11
-two words
-two words
 MatchCTRange true
 PETScanNumber 2
-BedDuration: 30.000000(PtMinutes)
-RebinnerMode PtListMode32
-HistogramMode: Ptfalse
+PetBedsInformation &lt;![CDATA[&lt;PetAcqPassesArray&gt;&lt;AcquisitionPass&gt;&lt;BedInformationArray&gt;&lt;BedInformation&gt;&lt;BedDuration&gt;30.000000&lt
 ]&gt;
 Pharmaceutical C11-PIB
 PhysioInputType PtPhysioNone
@@ -1525,6 +1521,18 @@ ResidualDose 0.000000
 ResidualTim
 ScanType PtDynamic
 SourceMode PtPatient
+InjectedDose 185000000.0
+InjectionDate 20120514
+InjectionTime 134124.000000
+Isotope C-11
+BedDuration: 30.000000(PtMinutes)
+RebinnerMode PtListMode32
+
+HistogramMode: Ptfalse
+Pharmaceutical C11-PIB
+PhysioInputType PtPhysioNone
+
+
 TableDirectionPatient PtCraniocaudal
 Version 3
 

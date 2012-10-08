@@ -1327,13 +1327,9 @@ InjectedDose 59200000.000000
 InjectionDate 20080624
 InjectionTime 141243.000000
 Isotope Ge-68
-two words
-two words
 MatchCTRange true
 PETScanNumber 2
-BedDuration: 10000000.000000(PtCounts)
-RebinnerMode PtOnlineHistogram
-HistogramMode: Ptfalse
+PetBedsInformation &lt;![CDATA[&lt;PetAcqPassesArray&gt;&lt;AcquisitionPass&gt;&lt;BedInformationArray&gt;&lt;BedInformation&gt;&lt;BedDuration&gt;10000000.000000&lt
 ]&gt;
 Pharmaceutical Crossed Rods
 PhysioInputType PtPhysioNone
@@ -1342,6 +1338,17 @@ ResidualDose 0.000000
 ResidualTim
 ScanType PtWholeBodyStep
 SourceMode PtGantryOffset
+InjectedDose 59200000.000000
+InjectionDate 20080624
+InjectionTime 141243.000000
+Isotope Ge-68
+BedDuration: 10000000.000000(PtCounts)
+RebinnerMode PtOnlineHistogram
+HistogramMode: Ptfalse
+Pharmaceutical Crossed Rods
+PhysioInputType PtPhysioNone
+
+
 TableDirectionPatient PtCraniocaudal
 Version 3
 

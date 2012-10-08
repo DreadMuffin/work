@@ -1327,13 +1327,9 @@ InjectedDose 370000000.000000
 InjectionDate 20100906
 InjectionTime 080156.000000
 Isotope Rb-82
-two words
-two words
 MatchCTRange true
 PETScanNumber 2
-BedDuration: 10.000000(PtMinutes)
-RebinnerMode PtListMode32
-HistogramMode: Pttrue
+PetBedsInformation &lt;![CDATA[&lt;PetAcqPassesArray&gt;&lt;AcquisitionPass&gt;&lt;BedInformationArray&gt;&lt;BedInformation&gt;&lt;BedDuration&gt;10.000000&lt
 ]&gt;
 Pharmaceutical Rubidium chloride
 PhysioInputType PtPhysioECG
@@ -1342,6 +1338,18 @@ ResidualDose 0.000000
 ResidualTim
 ScanType PtCardiac
 SourceMode PtPatient
+InjectedDose 370000000.000000
+InjectionDate 20100906
+InjectionTime 080156.000000
+Isotope Rb-82
+BedDuration: 10.000000(PtMinutes)
+RebinnerMode PtListMode32
+
+HistogramMode: Pttrue
+Pharmaceutical Rubidium chloride
+PhysioInputType PtPhysioECG
+
+
 TableDirectionPatient PtCaudocranial
 Version 3
 
