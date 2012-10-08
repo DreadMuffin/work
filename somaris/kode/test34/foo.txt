@@ -1833,7 +1833,7 @@ m_PauseTime 0
 NewExamination false
 
 MlModeRecon_End: 138
-PROTOCOL_ENTRY_NO: 3
+PROTOCOL_ENTRY_NO: 4
 MlModeScan_Begin: 138
 ItemList_MlOtherModalityEntryType
 ActivityID ""
@@ -1889,7 +1889,9 @@ InjectionTime 142007.000000
 Isotope F-18
 MatchCTRange true
 PETScanNumber 2
-PetBedsInformation &lt;![CDATA[&lt;PetAcqPassesArray&gt;&lt;AcquisitionPass&gt;&lt;BedInformationArray&gt;&lt;BedInformation&gt;&lt;BedDuration&gt;2.000000&lt
+BedDuration: 2.000000(PtMinutes)
+RebinnerMode PtOnlineHistogram
+HistogramMode: Ptfalse
 ]&gt;
 Pharmaceutical Fluorodeoxyglucose
 PhysioInputType PtPhysioNone
@@ -1902,7 +1904,9 @@ TableDirectionPatient PtCaudocranial
 Version 3
 
 
-MlOtherModalityModeReconType ReconJob="1"
+MlModeScan_End: 138
+No_Of_Valid_Recons: 2
+MlModeRecon_Begin: 138
 ItemList_MlOtherModalityModeReconType
 AutoRecon true
 ConfirmDeletion false
@@ -1981,7 +1985,8 @@ YOffset 0
 Zoom 1
 
 
-MlOtherModalityModeReconType ReconJob="2"
+MlModeRecon_End: 138
+MlModeRecon_Begin: 138
 ItemList_MlOtherModalityModeReconType
 AutoRecon true
 ConfirmDeletion false

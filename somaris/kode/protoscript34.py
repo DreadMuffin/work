@@ -9,7 +9,7 @@ f = open(FIELDS,'r')
 fields = f.read()
 fields = fields.split("\n")
 
-path = "test34/"
+path = "protokoller34/"
 path2 = "fprotokoller/"
 listing = os.listdir(path)
 for file in listing:
@@ -38,7 +38,6 @@ for file in listing:
     recon = [0,0,0]
     fieldlist = ""
     reconpos = [i for i, x in enumerate(fields) if x == "No_Of_Valid_Recons"]
-    tempi = 0
 
 
     for item in proto:
@@ -55,15 +54,14 @@ for file in listing:
                         index = reconpos[1]
                     else: index = reconpos[2]
             index+=1
-            fieldlist+=item + " " +str(tempi) + "\n"
-        tempi+=1
+            fieldlist+=item + "\n"
     
 
 
 
 
     fieldlist = fieldlist[:-1]
-    f = open(path2 + "fields_" + file,'w')
+    f = open(path2 + "fields34_" + file,'w')
     f.write(fieldlist)
     f.close()
 

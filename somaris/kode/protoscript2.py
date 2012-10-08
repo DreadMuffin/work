@@ -58,7 +58,7 @@ for file in listing:
 
 
     fieldlist = fieldlist[:-1]
-    f = open(path2 + "fields_" + file,'w')
+    f = open(path2 + "fields56_" + file,'w')
     f.write(fieldlist)
     f.close()
 

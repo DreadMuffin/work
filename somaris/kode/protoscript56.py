@@ -9,7 +9,7 @@ f = open(FIELDS,'r')
 fields = f.read()
 fields = fields.split("\n")
 
-path = "test4/"
+path = "protokoller/"
 path2 = "fprotokoller/"
 listing = os.listdir(path)
 for file in listing:

@@ -1,0 +1,184 @@
+MlScanProtocolAttributes_Begin: 138
+ActiveEntry -1
+AEC_SlopeObese 0.40
+AEC_SlopeSmall 0.50
+ApiLanguageIdDefault "en"
+AutoReferenceLinesMode MlAutoReferenceLinesModeOff
+BedIndexPosition 0
+BodySizeOld MlAdult
+BreathHold 15.000
+BreathingDefault 15.000
+CustomProtocol true
+DefPatPos MlFaceUpHeadFirst
+DisableAutoFoV4Prot false
+EPID "20111216122720.375000"
+Ident "070_1201_4630"
+InterventionTransfer ""
+Partial false
+PatientID ""
+PatientName ""
+PreCond4Displ 2097152
+PreCond4DisplCombi 4294967295
+ProtocolCode ""
+ProtocolName "PETonly_withoutTopo"
+Region MlPET
+Service false
+StudyDescription ""
+StudyID ""
+StudyUIDs ""
+TotalmAs 0
+TotalNoOfScans 0
+
+PROTOCOL_ENTRY_NO: 4
+MlModeScan_Begin: 138
+ItemList_MlOtherModalityEntryType
+ActivityID ""
+AutoRange MlAutoRangeNone
+EntrySelected true
+MapProtocolEntryUID 3
+PatientPositionFoR MlPositionUndefined
+ProtocolEntryUID 0
+Visible true
+BaseProtID "PETCT_WholeBody.Adult*070_1201_4630*3*06.12.2007 13:34"
+EcgFilename ""
+ModeEntryUID 0
+RespiratoryFilename ""
+PhysioFileValid false
+
+OmItems_MlOtherModalityEntryTyp
+MlOtherModalityModeScanType ModeScan="A"
+ItemList_MlOtherModalityModeScanType
+ApiId ""
+ApiLanguageId "en"
+AutoLoad false
+BeginPos -221.000
+Cardio false
+Contrast false
+FrameOfReferenceUID ""
+Physio false
+PhysioAverage MlPhysioAverageLast3
+PhysioSyntheticTrigger false
+RangeName "PET WB"
+RangeStart MlRangeStartConsole
+RawDataLoid ""
+Reserve ""
+Respiratory false
+ScanNumber 1
+ScanParameterInfo "220.9 mm   2 min   370 MBq"
+ScanState MlStateNotScanned
+ScanTime 1.000
+StartDelay 2.000
+VertPos 168.5
+
+OmItems_MlOtherModalityModeScanType
+AutoMove false
+AutoStart false
+DecayReferenceDateTim
+EndPos 0.000000
+GantryModel 1104
+GantryOffsetX -1.574250
+GantryOffsetY -1.592000
+GantryOffsetZ 756.148010
+InjectedDose 370000000.000000
+InjectionDate 20111216
+InjectionTime 125735.000000
+Isotope F-18
+MatchCTRange false
+PETScanNumber 1
+BedDuration: 2.000000(PtMinutes)
+RebinnerMode PtOnlineHistogram
+HistogramMode: Ptfalse
+]&gt;
+Pharmaceutical Fluorodeoxyglucose
+PhysioInputType PtPhysioNone
+ResidualDat
+ResidualDose 0.000000
+ResidualTim
+ScanType PtWholeBodyStep
+SourceMode PtPatient
+TableDirectionPatient PtCaudocranial
+Version 3
+
+
+MlModeScan_End: 138
+No_Of_Valid_Recons: 1
+MlModeRecon_Begin: 138
+ItemList_MlOtherModalityModeReconType
+AutoRecon true
+ConfirmDeletion false
+FailedReason ""
+ModeReconJMUID ""
+ModeReconUID 0
+NoOfImages 32
+NoOfImagesEntryDone 0
+PhysioGatedRecon false
+PhysioGatingDelay ""
+PhysioListOfEditSyncs ""
+PhysioListOfTimeStamps ""
+PhysioMultiPhase false
+PhysioNoOfMultiPhase 0
+PhysioReadyForRecon false
+ReconSelected true
+ReconState MlReconStateInactive
+ReconStateJM MlReconStateJMCreated
+ReconTaskNumber 1
+ReferenceSeriesIndex -1
+ReserveRecon ""
+SeriesLoid ""
+SeriesUID ""
+StampImageSourcePath ""
+StudyLoid ""
+StudyUID ""
+
+OmItems_MlOtherModalityModeReconType
+AutoCardiacRegistration false
+AutoDisplayAppNam
+BedBegin 1
+BedEnd 1
+BodyPartExamine
+CTAttenCorrModeList -999,-999
+CTSeriesDescriptionforA
+CTSeriesDicomUIDforA
+CTSeriesLoidForA
+DynamicReplayDefinitio
+FilterFWHM 5
+FilterOrder 3
+ImageComment
+ImageSize 200
+Iterations 2
+MatchCTSliceLocation false
+MetalArtifactReduction false
+NumberOfGates 1
+OutputImageType PtUncorrected
+PassBegin 1
+PassEnd 1
+PercentOfPetCounts 35
+PostProcessingAp
+ReconFilter PtGaussian
+ReconMethod PtIterative3D
+RegMatrixDicomUI
+ReplayDela
+ReplayDuratio
+ReplayType PtNoReplay
+SaveIntermediateData false
+SaveSinograms true
+ScatterCorrect false
+SeriesDescription PET WB Uncorrected
+Subsets 24
+Transfer
+Transfer
+Transfer
+TriggerLimitLower 1
+TriggerLimitUpper 254
+TriggersToSkipAfterBad 0
+Version 2
+VolumeScaling true
+WaveformAmplitudeLower -99
+WaveformAmplitudeUpper -99
+WaveformReplayMode PtOptimal
+XOffset 0
+YOffset 0
+Zoom 1
+MlModeRecon_End: 3
+
+MlScanProtocol_End: 138
