@@ -1,117 +1,117 @@
-MlScanProtocolAttributes_Begin: 138
-BodySizeOld: MlAdult
-ProtocolName: "HUND_64Cu_Liposom_Dag1"
-PROTOCOL_ENTRY_NO: 1
-MlModeScan_Begin: 138
-SliceEffectiveTiltCorrected: 0.6
-ApiId: -1
-Current: 35
-ScanTime: 0.220
-StartDelay: 4.000
-TableDirectionPatient: MlCraniocaudal
-TopoLength: 0.0
-TubePosition: 270.0
-Voltage: 120.000
-MlModeScan_End: 138
-No_Of_Valid_Recons: 1
-MlModeRecon_Begin: 138
-BodyPartExamined: "ABDOMEN"
-Kernel: "T80s sharp"
-Transfer1: ""
-Transfer2: ""
-Transfer3: ""
-Window[READ_ONLY]: "Topogram Body"
-MlModeRecon_End: 138
-PROTOCOL_ENTRY_NO: 2
-MlModeScan_Begin: 138
-SliceEffective: 3.00
-AECReferenceMAs: 225
-ApiId: -1
-Care: MlOff
-CareDoseType: MlCareDoseAEC
-CTDIw: 11.4448
-EffectiveMAs: 170
-InterPosTilt: 0.0
-mAs: 170
-PitchFactor: 1.2000000
-RotTime: 0.500
-ScanTime: 12.680
-StartDelay: 4.000
-Voltage: 120.000
-MlModeScan_End: 138
-No_Of_Valid_Recons: 2
-MlModeRecon_Begin: 138
-SliceEffective: 3.00
-CenterX: 0
-CenterY: 0
-CTScale: MlCTScaleStandard
-ExtendedFOV: 1
-FoVHorLength: 700
-ImageOrder: MlIO_Craniocaudal
-Kernel: "B19f PET very smooth"
-Mirror: MlMirrorNone
-NoOfImages: 274
-ReconDirection: MlAxial
-ReconType: MlAxialRJ
-SeriesDescription: "AC_CT"
-SpiralReconIncr: 3.000
-Window[READ_ONLY]: "Abdomen"
-MlModeRecon_End: 138
-MlModeRecon_Begin: 138
-SliceEffective: 3.00
-CenterX: 0
-CenterY: 0
-CTScale: MlCTScaleStandard
-ExtendedFOV: 0
-FoVHorLength: 500
-ImageOrder: MlIO_Craniocaudal
-Kernel: "B30f medium smooth"
-Mirror: MlMirrorNone
-NoOfImages: 274
-ReconDirection: MlAxial
-ReconType: MlAxialRJ
-SeriesDescription: "CT 3.0 B30f medium smooth"
-SpiralReconIncr: 3.000
-Window[READ_ONLY]: "Abdomen"
-MlModeRecon_End: 138
-MlModeEntry_End: 138
-PROTOCOL_ENTRY_NO: 3
-MlPause_Begin: 138
-MlPause_End: 138
-PROTOCOL_ENTRY_NO: 4
-MlModeScan_Begin: 1
-AutoLoad: 1
-LLD: 435
-ULD: 650
-Isotope: Cu-64
-Pharmaceutical: liposome
-InjectionDate: 20120208
-InjectionTime: 160300.000000
-InjectedDose: 1(PtMegaBequerels)
-NumberOfBeds: 1
-BedDuration: 40(PtMinutes)
-TableDirectionPatient: MlCraniocaudal
-RebinnerLut: 0
-RebinnerMode: PtListMode32
-HistogramMode: PtTrues
-PhysioInputType: PtPhysioNone
-MlModeScan_End: 1
-No_Of_Valid_Recons: 1
-MlModeRecon_Begin: 3
-CTAttenCorrModeList: (1,1)
-OutputImageType: PtNoRecon
-ReconMethod: PtIterative
-ImageSize: 128
-Subsets: 8
-Iterations: 4
-Zoom: 1
-FilterFWHM: 4
-ScatterCorrect: 1
-XYFilterType: PtGaussian
-MatchCTSliceLocation: 1
-SeriesDescription: PET WB Image check
-XOffset: 0
-YOffset: 0
-SaveIntermediateData: 0
-MlModeRecon_End: 3
-MlScanProtocol_End: 138
+MlScanProtocolAttributes_Begin: 138 2
+BodySizeOld: MlAdult 9
+ProtocolName: "HUND_64Cu_Liposom_Dag1" 21
+PROTOCOL_ENTRY_NO: 1 34
+MlModeScan_Begin: 138 55
+SliceEffectiveTiltCorrected: 0.6 66
+ApiId: -1 92
+Current: 35 120
+ScanTime: 0.220 243
+StartDelay: 4.000 263
+TableDirectionPatient: MlCraniocaudal 270
+TopoLength: 0.0 272
+TubePosition: 270.0 280
+Voltage: 120.000 288
+MlModeScan_End: 138 291
+No_Of_Valid_Recons: 1 295
+MlModeRecon_Begin: 138 297
+BodyPartExamined: "ABDOMEN" 317
+Kernel: "T80s sharp" 345
+Transfer1: "" 406
+Transfer2: "" 407
+Transfer3: "" 408
+Window[READ_ONLY]: "Topogram Body" 427
+MlModeRecon_End: 138 436
+PROTOCOL_ENTRY_NO: 2 441
+MlModeScan_Begin: 138 462
+SliceEffective: 3.00 472
+AECReferenceMAs: 225 497
+ApiId: -1 499
+Care: MlOff 517
+CareDoseType: MlCareDoseAEC 518
+CTDIw: 11.4448 525
+EffectiveMAs: 170 543
+InterPosTilt: 0.0 553
+mAs: 170 558
+PitchFactor: 1.2000000 620
+RotTime: 0.500 642
+ScanTime: 12.680 649
+StartDelay: 4.000 669
+Voltage: 120.000 694
+MlModeScan_End: 138 697
+No_Of_Valid_Recons: 2 701
+MlModeRecon_Begin: 138 703
+SliceEffective: 3.00 713
+CenterX: 0 727
+CenterY: 0 728
+CTScale: MlCTScaleStandard 730
+ExtendedFOV: 1 732
+FoVHorLength: 700 738
+ImageOrder: MlIO_Craniocaudal 747
+Kernel: "B19f PET very smooth" 751
+Mirror: MlMirrorNone 754
+NoOfImages: 274 759
+ReconDirection: MlAxial 780
+ReconType: MlAxialRJ 794
+SeriesDescription: "AC_CT" 799
+SpiralReconIncr: 3.000 803
+Window[READ_ONLY]: "Abdomen" 833
+MlModeRecon_End: 138 842
+MlModeRecon_Begin: 138 844
+SliceEffective: 3.00 854
+CenterX: 0 868
+CenterY: 0 869
+CTScale: MlCTScaleStandard 871
+ExtendedFOV: 0 873
+FoVHorLength: 500 879
+ImageOrder: MlIO_Craniocaudal 888
+Kernel: "B30f medium smooth" 892
+Mirror: MlMirrorNone 895
+NoOfImages: 274 900
+ReconDirection: MlAxial 921
+ReconType: MlAxialRJ 935
+SeriesDescription: "CT 3.0 B30f medium smooth" 940
+SpiralReconIncr: 3.000 944
+Window[READ_ONLY]: "Abdomen" 974
+MlModeRecon_End: 138 983
+MlModeEntry_End: 138 986
+PROTOCOL_ENTRY_NO: 3 988
+MlPause_Begin: 138 990
+MlPause_End: 138 1005
+PROTOCOL_ENTRY_NO: 4 1007
+MlModeScan_Begin: 1 1027
+AutoLoad: 1 1031
+LLD: 435 1046
+ULD: 650 1047
+Isotope: Cu-64 1048
+Pharmaceutical: liposome 1049
+InjectionDate: 20120208 1050
+InjectionTime: 160300.000000 1051
+InjectedDose: 1(PtMegaBequerels) 1052
+NumberOfBeds: 1 1053
+BedDuration: 40(PtMinutes) 1054
+TableDirectionPatient: MlCraniocaudal 1059
+RebinnerLut: 0 1067
+RebinnerMode: PtListMode32 1068
+HistogramMode: PtTrues 1069
+PhysioInputType: PtPhysioNone 1080
+MlModeScan_End: 1 1083
+No_Of_Valid_Recons: 1 1087
+MlModeRecon_Begin: 3 1089
+CTAttenCorrModeList: (1,1) 1105
+OutputImageType: PtNoRecon 1107
+ReconMethod: PtIterative 1108
+ImageSize: 128 1110
+Subsets: 8 1111
+Iterations: 4 1112
+Zoom: 1 1113
+FilterFWHM: 4 1114
+ScatterCorrect: 1 1115
+XYFilterType: PtGaussian 1117
+MatchCTSliceLocation: 1 1126
+SeriesDescription: PET WB Image check 1132
+XOffset: 0 1135
+YOffset: 0 1136
+SaveIntermediateData: 0 1139
+MlModeRecon_End: 3 1145
+MlScanProtocol_End: 138 1312

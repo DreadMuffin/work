@@ -1,0 +1,177 @@
+MlScanProtocol_Begin:	138
+
+MlScanProtocolAttributes_Begin:	138
+
+ActiveEntry:	-1
+AEC_SlopeObese:	0.33
+AEC_SlopeSmall:	0.50
+AutoReferenceLinesMode:	MlAutoReferenceLinesModeOff
+BedIndexPosition:	0
+BodySizeOld:	MlAdult
+BreathHold:	99.000
+BreathingDefault:	15.000
+Cardiac:	1
+CustomProtocol: 0
+DefPatPos:	MlFaceUpHeadFirst
+Ident:	22003600
+Partial:	0
+PatientID:	""
+PatientName:	""
+PatientPosition:	MlPositionUndefined
+PreCond4Displ:	8453119
+ProtocolName:	"PETonly_withoutTopo"
+Region:	MlPET
+Service:	0
+StudyDescription:	""
+StudyID:	""
+TotalmAs:	0
+TotalNoOfScans:	0
+
+CursorPos: 0
+
+
+MlScanProtocolAttributes_End:	138
+
+PROTOCOL_ENTRY_NO:	1
+
+MlOtherModalityEntry_Begin:	138
+
+ModalityEntryType:	"PET_WholeBody"
+Version:	-1
+
+ActivityID:	""
+AutoRange:	MlAutoRangeNone
+EntrySelected:	1
+MapProtocolEntryUID:	3
+PatientPositionFoR:	MlPositionUndefined
+ProtocolEntryUID:	0
+Visible:	1
+ModeEntryUID:	0
+OtherModalityEntryAttributes_Begin:
+OtherModalityEntryAttributes_End:
+
+MlModeScanNotNULL:
+
+MlModeScan_Begin:	1
+ModalityScanType:	"Static_MultiBed"
+Version:	1
+SeriesLoid:	""
+AutoLoad:	1
+BeginPos:	0.000
+Contrast:	0
+FrameOfReferenceUID:	""
+RangeName:	"PET WB"
+RangeStart:	MlRangeStartConsole
+RawDataLoid:	""
+ScanNumber:	1
+ScanState:	MlStateNotScanned
+ScanTime:	10.000
+StartDelay:	2.000
+TopoLoid:	""
+VertPos:	163.0
+
+OtherModalityModeScanAttributes_Begin:
+LLD: 435
+ULD:     650
+Isotope:	F-18
+Pharmaceutical: FDG
+InjectionDate:	20051219
+InjectionTime:	121200.000000
+InjectedDose:	10(PtMillicuries)
+NumberOfBeds: 5
+BedDuration:	2(PtMinutes)
+VertPos:	0
+BeginPos:		-708
+EndPos:	-3.5
+BedStep:	117.45
+TableDirectionPatient: MlCaudocranial
+XOffset:	0
+YOffset:	0
+ZOffset:	0
+SinogramLoidList:	
+SinogramDicomUIDList:	
+NormLoid:	
+NormDicomUID:	
+RebinnerLut:	0
+RebinnerMode:	PtOnlineHistogram
+HistogramMode:	PtTrues
+GantryModel:	
+PostProcessing:	
+StartMode: PtManual
+SourceType:	PtPatient
+Volume:	0
+DefaultPlan: 0
+PostProcessingType: 0
+CrossCalibrationFactor: 1
+PhantomRadius: 10
+NumberOfBedsCompleted: 0
+PhysioInputType: PtPhysioNone
+OtherModalityModeScanAttributes_End:
+
+MlModeScan_End:	1
+
+First_MlOtherModalityModeRecon_Is_NULL: 
+
+No_Of_Valid_Recons: 1
+
+MlModeRecon_Begin:	2
+ModalityReconType:	"OSEM"
+Version:	2
+SeriesLoid:	""
+AutoRecon:	1
+FailedReason:	""
+ModeReconJMUID:	""
+ModeReconUID:	0
+NoOfImages:	16
+NoOfImagesEntryDone:	0
+ReconSelected:	1
+ReconState:	MlReconStateInactive
+ReconStateJM:	MlReconStateJMCreated
+ReconTaskNumber:	1
+
+OtherModalityModeReconAttributes_Begin:
+CTAttenCorrModeList:     
+CTAttenCorrDicomUIDList:     
+OutputImageType: PtUncorrected
+ReconMethod: PtIterative
+SinogramRebinMethod: PtFORE
+ImageSize: 168
+Subsets: 8
+Iterations: 4
+Zoom: 1
+FilterFWHM: 5
+ScatterCorrect: 0
+Trim:	1
+XYFilterType: PtGaussian
+ZFilterType: PtGaussian
+SinogramLoidList:	
+ACFLoidList:	
+BedLoidList:	
+Normalize:	1
+NormLoid:	
+PostProcessing: 
+SegmentCT:	1
+MatchCTSliceLocation: 1
+AutoTransfer: 0
+Transfer1: 
+Transfer2: 
+Transfer3: 
+ScatterScale: 3.14
+SeriesDescription:	PET WB Uncorrected
+BedBegin:	0
+BedEnd:	0
+XOffset:	0
+YOffset:	0
+PostProcessingType: 0
+MaxSinoRebinBins:	0
+SaveIntermediateData: 0
+BodyPartExamined: ABDOMEN
+OtherModalityModeReconAttributes_End:
+
+MlModeRecon_End:	2
+
+
+MlOtherModalityEntry_End:	138
+
+MlScanProtocol_End:	138
+
