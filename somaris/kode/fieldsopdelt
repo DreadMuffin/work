@@ -7,6 +7,7 @@ MlModeScan_Begin
 SliceEffectiveTiltCorrected
 ApiId
 Current
+RangeName[READ_ONLY]
 ScanTime
 StartDelay
 TableDirectionPatient
@@ -36,9 +37,11 @@ EffectiveMAs
 InterPosTilt
 mAs
 PitchFactor
+RangeName
 RotTime
 ScanTime
 StartDelay
+TableDirectionPatient
 Voltage
 MlModeScan_End
 No_Of_Valid_Recons
@@ -68,6 +71,7 @@ newmode:
 PROTOCOL_ENTRY_NO
 MlModeScan_Begin
 AutoLoad
+RangeName
 LLD
 ULD
 Isotope
@@ -101,4 +105,3 @@ XOffset
 YOffset
 SaveIntermediateData
 MlModeRecon_End
-MlScanProtocol_End

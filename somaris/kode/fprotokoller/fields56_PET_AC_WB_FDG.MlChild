@@ -1,11 +1,13 @@
 MlScanProtocolAttributes_Begin: 138
 BodySizeOld: MlChild
 ProtocolName: "PET_AC_WB_FDG"
+topo
 PROTOCOL_ENTRY_NO: 1
 MlModeScan_Begin: 138
 SliceEffectiveTiltCorrected: 0.6
 ApiId: -1
 Current: 50
+RangeName[READ_ONLY]: "Topogram"
 ScanTime: 0.220
 StartDelay: 4.000
 TableDirectionPatient: MlCraniocaudal
@@ -22,6 +24,7 @@ Transfer2: ""
 Transfer3: ""
 Window[READ_ONLY]: "Topogram Body"
 MlModeRecon_End: 138
+ct
 PROTOCOL_ENTRY_NO: 2
 MlModeScan_Begin: 138
 SliceEffective: 3.00
@@ -34,9 +37,11 @@ EffectiveMAs: 30
 InterPosTilt: 0.0
 mAs: 30
 PitchFactor: 1.4000000
+RangeName: "CT lavdosis"
 RotTime: 0.500
 ScanTime: 11.000
 StartDelay: 4.000
+TableDirectionPatient: MlCraniocaudal
 Voltage: 80.000
 MlModeScan_End: 138
 No_Of_Valid_Recons: 1
@@ -58,12 +63,15 @@ SpiralReconIncr: 3.000
 Window[READ_ONLY]: "Baby Abdomen"
 MlModeRecon_End: 138
 MlModeEntry_End: 138
+pause
 PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
 MlPause_End: 138
+pet
 PROTOCOL_ENTRY_NO: 4
 MlModeScan_Begin: 1
 AutoLoad: 1
+RangeName: "PET WB"
 LLD: 425
 ULD: 650
 Isotope: F-18

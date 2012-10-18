@@ -1,27 +1,46 @@
 MlScanProtocolAttributes_Begin: 138
 BodySizeOld: MlAdult
 ProtocolName: "Ben_Flourid_PET_5"
+ct
 PROTOCOL_ENTRY_NO: 1
 MlModeScan_Begin: 138
-SliceEffectiveTiltCorrected: 0.6
+SliceEffective: 0.60
+AECReferenceMAs: 0
 ApiId: -1
-Current: 35
+Care: MlOff
+CareDoseType: MlCareDose
+CTDIw: 0
+EffectiveMAs: 20
+InterPosTilt: 0.0
+mAs: 20
+PitchFactor: 1.0000000
+RangeName: "Topogram Ben"
+RotTime: 0.500
 ScanTime: 0.570
 StartDelay: 4.000
 TableDirectionPatient: MlCaudocranial
-TopoLength: 34.5
-TubePosition: 270.0
 Voltage: 120.000
 MlModeScan_End: 138
 No_Of_Valid_Recons: 1
 MlModeRecon_Begin: 138
-BodyPartExamined: "ABDOMEN"
+SliceEffective: 0.60
+CenterX: 0
+CenterY: 0
+CTScale: MlCTScaleStandard
+ExtendedFOV: 0
+FoVHorLength: 0
+ImageOrder: MlIO_Craniocaudal
 Kernel: "T80s sharp"
-Transfer1: ""
-Transfer2: ""
-Transfer3: ""
+Mirror: MlMirrorBoth
+NoOfImages: 1
+ReconDirection: MlAxial
+ReconType: MlAxialRJ
+SeriesDescription: "Topogram Ben 0.6 T80s"
+SpiralReconIncr: 0.100
 Window[READ_ONLY]: "Topogram Body"
 MlModeRecon_End: 138
+MlModeEntry_End: 138
+ct
 PROTOCOL_ENTRY_NO: 2
 MlModeScan_Begin: 138
 SliceEffective: 3.00
@@ -34,9 +53,11 @@ EffectiveMAs: 40
 InterPosTilt: 0.0
 mAs: 40
 PitchFactor: 1.2000000
+RangeName: "Lav CT knogle"
 RotTime: 0.500
 ScanTime: 12.680
 StartDelay: 4.000
+TableDirectionPatient: MlCraniocaudal
 Voltage: 120.000
 MlModeScan_End: 138
 No_Of_Valid_Recons: 1
@@ -58,12 +79,15 @@ SpiralReconIncr: 3.000
 Window[READ_ONLY]: "Abdomen"
 MlModeRecon_End: 138
 MlModeEntry_End: 138
+pause
 PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
 MlPause_End: 138
+pet
 PROTOCOL_ENTRY_NO: 4
 MlModeScan_Begin: 1
 AutoLoad: 1
+RangeName: "PET knogle"
 LLD: 435
 ULD: 650
 Isotope: F-18

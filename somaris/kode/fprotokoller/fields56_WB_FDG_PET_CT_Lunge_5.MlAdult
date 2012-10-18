@@ -1,11 +1,13 @@
 MlScanProtocolAttributes_Begin: 138
 BodySizeOld: MlAdult
 ProtocolName: "WB_FDG_PET_CT_Lunge_5"
+topo
 PROTOCOL_ENTRY_NO: 1
 MlModeScan_Begin: 138
 SliceEffectiveTiltCorrected: 0.6
 ApiId: 32
 Current: 35
+RangeName[READ_ONLY]: "Topogram"
 ScanTime: 15.580
 StartDelay: 4.000
 TableDirectionPatient: MlCraniocaudal
@@ -22,6 +24,7 @@ Transfer2: ""
 Transfer3: ""
 Window[READ_ONLY]: "Topogram Body"
 MlModeRecon_End: 138
+ct
 PROTOCOL_ENTRY_NO: 2
 MlModeScan_Begin: 138
 SliceEffective: 5.00
@@ -34,9 +37,11 @@ EffectiveMAs: 100
 InterPosTilt: 0.0
 mAs: 100
 PitchFactor: 1.4000000
+RangeName: "CT Lung"
 RotTime: 0.500
 ScanTime: 12.140
 StartDelay: 8.000
+TableDirectionPatient: MlCaudocranial
 Voltage: 120.000
 MlModeScan_End: 138
 No_Of_Valid_Recons: 2
@@ -75,12 +80,109 @@ SpiralReconIncr: 1.500
 Window[READ_ONLY]: "Lung"
 MlModeRecon_End: 138
 MlModeEntry_End: 138
+pause
 PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
 MlPause_End: 138
+ct
 PROTOCOL_ENTRY_NO: 4
 MlModeScan_Begin: 138
-AutoLoad: 0
+SliceEffective: 3.00
+AECReferenceMAs: 225
+ApiId: -1
+Care: MlOn
+CareDoseType: MlCareDoseAEC
+CTDIw: 15.169
+EffectiveMAs: 225
+InterPosTilt: 0.0
+mAs: 225
+PitchFactor: 1.0500000
+RangeName: "CT WB"
+RotTime: 0.500
+ScanTime: 14.410
+StartDelay: 6.000
+TableDirectionPatient: MlCraniocaudal
+Voltage: 120.000
+MlModeScan_End: 138
+No_Of_Valid_Recons: 4
+MlModeRecon_Begin: 138
+SliceEffective: 3.00
+CenterX: 0
+CenterY: 0
+CTScale: MlCTScaleStandard
+ExtendedFOV: 1
+FoVHorLength: 700
+ImageOrder: MlIO_Craniocaudal
+Kernel: "B19f PET very smooth"
+Mirror: MlMirrorNone
+NoOfImages: 274
+ReconDirection: MlAxial
+ReconType: MlAxialRJ
+SeriesDescription: "AC CT"
+SpiralReconIncr: 3.000
+Window[READ_ONLY]: "Abdomen"
+MlModeRecon_End: 138
+MlModeRecon_Begin: 138
+SliceEffective: 3.00
+CenterX: 0
+CenterY: 0
+CTScale: MlCTScaleStandard
+ExtendedFOV: 0
+FoVHorLength: 500
+ImageOrder: MlIO_Craniocaudal
+Kernel: "B30f medium smooth"
+Mirror: MlMirrorNone
+NoOfImages: 274
+ReconDirection: MlAxial
+ReconType: MlAxialRJ
+SeriesDescription: "CT WB 3.0 B30f"
+SpiralReconIncr: 3.000
+Window[READ_ONLY]: "Abdomen"
+MlModeRecon_End: 138
+MlModeRecon_Begin: 138
+SliceEffective: 3.00
+CenterX: 0
+CenterY: 0
+CTScale: MlCTScaleStandard
+ExtendedFOV: 0
+FoVHorLength: 821
+ImageOrder: MlIO_AP
+Kernel: "B30f medium smooth"
+Mirror: MlMirrorNone
+NoOfImages: 167
+ReconDirection: MlCoronal
+ReconType: MlVolumeRJ
+SeriesDescription: "CT WB 3.0 COR"
+SpiralReconIncr: 3.000
+Window[READ_ONLY]: "Abdomen"
+MlModeRecon_End: 138
+MlModeRecon_Begin: 138
+SliceEffective: 3.00
+CenterX: 0
+CenterY: 0
+CTScale: MlCTScaleStandard
+ExtendedFOV: 0
+FoVHorLength: 821
+ImageOrder: MlIO_LeftToRight
+Kernel: "B30f medium smooth"
+Mirror: MlMirrorNone
+NoOfImages: 274
+ReconDirection: MlSagittal
+ReconType: MlVolumeRJ
+SeriesDescription: "CT WB 3.0 SAG"
+SpiralReconIncr: 3.000
+Window[READ_ONLY]: "Abdomen"
+MlModeRecon_End: 138
+MlModeEntry_End: 138
+pause
+PROTOCOL_ENTRY_NO: 5
+MlPause_Begin: 138
+MlPause_End: 138
+pet
+PROTOCOL_ENTRY_NO: 6
+MlModeScan_Begin: 1
+AutoLoad: 1
+RangeName: "PET WB"
 LLD: 435
 ULD: 650
 Isotope: F-18

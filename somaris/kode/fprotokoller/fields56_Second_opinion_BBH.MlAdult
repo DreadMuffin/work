@@ -1,11 +1,13 @@
 MlScanProtocolAttributes_Begin: 138
 BodySizeOld: MlAdult
 ProtocolName: "Second_opinion_BBH"
+topo
 PROTOCOL_ENTRY_NO: 1
 MlModeScan_Begin: 138
 SliceEffectiveTiltCorrected: 0.6
 ApiId: -1
 Current: 35
+RangeName[READ_ONLY]: "Topogram"
 ScanTime: 0.220
 StartDelay: 4.000
 TableDirectionPatient: MlCraniocaudal
@@ -22,3 +24,4 @@ Transfer2: ""
 Transfer3: ""
 Window[READ_ONLY]: "Topogram Body"
 MlModeRecon_End: 138
+MlScanProtocol_End: 138

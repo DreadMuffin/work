@@ -1,11 +1,13 @@
 MlScanProtocolAttributes_Begin: 138
 BodySizeOld: MlAdult
 ProtocolName: "PETonly_Topo"
+topo
 PROTOCOL_ENTRY_NO: 1
 MlModeScan_Begin: 138
 SliceEffectiveTiltCorrected: 0.6
 ApiId: -1
 Current: 35
+RangeName[READ_ONLY]: "Topogram"
 ScanTime: 10.460
 StartDelay: 4.000
 TableDirectionPatient: MlCraniocaudal
@@ -22,5 +24,42 @@ Transfer2: ""
 Transfer3: ""
 Window[READ_ONLY]: "Topogram Body"
 MlModeRecon_End: 138
+pet
 PROTOCOL_ENTRY_NO: 2
 MlModeScan_Begin: 1
+AutoLoad: 1
+RangeName: "PET WB"
+LLD: 435
+ULD: 650
+Isotope: F-18
+Pharmaceutical: FDG
+InjectionDate: 20051227
+InjectionTime: 121200.000000
+InjectedDose: 10(PtMillicuries)
+NumberOfBeds: 5
+BedDuration: 2(PtMinutes)
+TableDirectionPatient: MlCaudocranial
+RebinnerLut: 0
+RebinnerMode: PtOnlineHistogram
+HistogramMode: PtTrues
+PhysioInputType: PtPhysioNone
+MlModeScan_End: 1
+No_Of_Valid_Recons: 1
+MlModeRecon_Begin: 2
+CTAttenCorrModeList: 
+OutputImageType: PtUncorrected
+ReconMethod: PtIterative
+ImageSize: 168
+Subsets: 8
+Iterations: 4
+Zoom: 1
+FilterFWHM: 5
+ScatterCorrect: 0
+XYFilterType: PtGaussian
+MatchCTSliceLocation: 1
+SeriesDescription: PET WB Uncorrected
+XOffset: 0
+YOffset: 0
+SaveIntermediateData: 0
+MlModeRecon_End: 2
+MlScanProtocol_End: 138

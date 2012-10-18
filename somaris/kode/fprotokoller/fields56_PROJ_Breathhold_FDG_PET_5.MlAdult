@@ -1,11 +1,13 @@
 MlScanProtocolAttributes_Begin: 138
 BodySizeOld: MlAdult
 ProtocolName: "PROJ_Breathhold_FDG_PET_5"
+topo
 PROTOCOL_ENTRY_NO: 1
 MlModeScan_Begin: 138
 SliceEffectiveTiltCorrected: 0.6
 ApiId: -1
 Current: 35
+RangeName[READ_ONLY]: "Topogram"
 ScanTime: 0.220
 StartDelay: 4.000
 TableDirectionPatient: MlCraniocaudal
@@ -22,6 +24,7 @@ Transfer2: ""
 Transfer3: ""
 Window[READ_ONLY]: "Topogram Body"
 MlModeRecon_End: 138
+ct
 PROTOCOL_ENTRY_NO: 2
 MlModeScan_Begin: 138
 SliceEffective: 3.00
@@ -34,9 +37,11 @@ EffectiveMAs: 225
 InterPosTilt: 0.0
 mAs: 225
 PitchFactor: 1.2000000
+RangeName: "CT Lung"
 RotTime: 0.500
 ScanTime: 14.840
 StartDelay: 4.000
+TableDirectionPatient: MlCraniocaudal
 Voltage: 120.000
 MlModeScan_End: 138
 No_Of_Valid_Recons: 2
@@ -75,12 +80,15 @@ SpiralReconIncr: 3.000
 Window[READ_ONLY]: "Mediastinum"
 MlModeRecon_End: 138
 MlModeEntry_End: 138
+pause
 PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
 MlPause_End: 138
+pet
 PROTOCOL_ENTRY_NO: 4
 MlModeScan_Begin: 1
 AutoLoad: 1
+RangeName: "PET Lung"
 LLD: 435
 ULD: 650
 Isotope: F-18
@@ -144,6 +152,158 @@ ScatterCorrect: 1
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 1
 SeriesDescription: PET 1 Lung Corr OSEM
+XOffset: 0
+YOffset: 0
+SaveIntermediateData: 0
+MlModeRecon_End: 3
+pause
+PROTOCOL_ENTRY_NO: 5
+MlPause_Begin: 138
+MlPause_End: 138
+pet
+PROTOCOL_ENTRY_NO: 6
+MlModeScan_Begin: 1
+AutoLoad: 1
+RangeName: "PET Lung"
+LLD: 435
+ULD: 650
+Isotope: F-18
+Pharmaceutical: FDG
+InjectionDate: 20120816
+InjectionTime: 154000.000000
+InjectedDose: 1(PtMegaBequerels)
+NumberOfBeds: 1
+BedDuration: 20(PtSeconds)
+TableDirectionPatient: MlCaudocranial
+RebinnerLut: 0
+RebinnerMode: PtOnlineHistogram
+HistogramMode: PtTrues
+PhysioInputType: PtPhysioNone
+MlModeScan_End: 1
+No_Of_Valid_Recons: 3
+MlModeRecon_Begin: 3
+CTAttenCorrModeList: (1,1)
+OutputImageType: PtCorrected
+ReconMethod: PtIterative
+ImageSize: 168
+Subsets: 8
+Iterations: 4
+Zoom: 1
+FilterFWHM: 4
+ScatterCorrect: 1
+XYFilterType: PtGaussian
+MatchCTSliceLocation: 1
+SeriesDescription: PET 2 Lung Corrected 
+XOffset: 0
+YOffset: 0
+SaveIntermediateData: 0
+MlModeRecon_End: 3
+MlModeRecon_Begin: 3
+CTAttenCorrModeList: (1,1)
+OutputImageType: PtCorrected
+ReconMethod: PtTrueX
+ImageSize: 336
+Subsets: 21
+Iterations: 3
+Zoom: 1
+FilterFWHM: 2
+ScatterCorrect: 1
+XYFilterType: PtGaussian
+MatchCTSliceLocation: 1
+SeriesDescription: PET 2 Lung Corr True X 2 mm
+XOffset: 0
+YOffset: 0
+SaveIntermediateData: 0
+MlModeRecon_End: 3
+MlModeRecon_Begin: 3
+CTAttenCorrModeList: (1,1)
+OutputImageType: PtCorrected
+ReconMethod: PtIterative
+ImageSize: 256
+Subsets: 8
+Iterations: 4
+Zoom: 1
+FilterFWHM: 4
+ScatterCorrect: 1
+XYFilterType: PtGaussian
+MatchCTSliceLocation: 1
+SeriesDescription: PET 2 Lung Corrected OSEM
+XOffset: 0
+YOffset: 0
+SaveIntermediateData: 0
+MlModeRecon_End: 3
+pause
+PROTOCOL_ENTRY_NO: 7
+MlPause_Begin: 138
+MlPause_End: 138
+pet
+PROTOCOL_ENTRY_NO: 8
+MlModeScan_Begin: 1
+AutoLoad: 1
+RangeName: "PET Lung"
+LLD: 435
+ULD: 650
+Isotope: F-18
+Pharmaceutical: FDG
+InjectionDate: 20120816
+InjectionTime: 154000.000000
+InjectedDose: 1(PtMegaBequerels)
+NumberOfBeds: 1
+BedDuration: 20(PtSeconds)
+TableDirectionPatient: MlCaudocranial
+RebinnerLut: 0
+RebinnerMode: PtOnlineHistogram
+HistogramMode: PtTrues
+PhysioInputType: PtPhysioNone
+MlModeScan_End: 1
+No_Of_Valid_Recons: 3
+MlModeRecon_Begin: 3
+CTAttenCorrModeList: (1,1)
+OutputImageType: PtCorrected
+ReconMethod: PtIterative
+ImageSize: 168
+Subsets: 8
+Iterations: 4
+Zoom: 1
+FilterFWHM: 4
+ScatterCorrect: 1
+XYFilterType: PtGaussian
+MatchCTSliceLocation: 1
+SeriesDescription: PET 3 Lung Corrected 
+XOffset: 0
+YOffset: 0
+SaveIntermediateData: 0
+MlModeRecon_End: 3
+MlModeRecon_Begin: 3
+CTAttenCorrModeList: (1,1)
+OutputImageType: PtCorrected
+ReconMethod: PtTrueX
+ImageSize: 336
+Subsets: 21
+Iterations: 3
+Zoom: 1
+FilterFWHM: 2
+ScatterCorrect: 1
+XYFilterType: PtGaussian
+MatchCTSliceLocation: 1
+SeriesDescription: PET 3 Lung Corr True X 2 mm
+XOffset: 0
+YOffset: 0
+SaveIntermediateData: 0
+MlModeRecon_End: 3
+MlModeRecon_Begin: 3
+CTAttenCorrModeList: (1,1)
+OutputImageType: PtCorrected
+ReconMethod: PtIterative
+ImageSize: 256
+Subsets: 8
+Iterations: 4
+Zoom: 1
+FilterFWHM: 4
+ScatterCorrect: 1
+XYFilterType: PtGaussian
+MatchCTSliceLocation: 1
+SeriesDescription: PET 3 Lung Corrected OSEM
 XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0
