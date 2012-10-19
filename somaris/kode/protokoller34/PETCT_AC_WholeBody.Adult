@@ -1268,7 +1268,7 @@ NewExamination false
 
 MlModeRecon_End: 138
 PROTOCOL_ENTRY_NO: 4
-MlModeScan_Begin: 138
+MlOtherModalityEntry_Begin: 138
 ItemList_MlOtherModalityEntryType
 ActivityID ""
 AutoRange MlAutoRangeNone

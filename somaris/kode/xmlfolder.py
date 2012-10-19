@@ -25,12 +25,13 @@ for file in listing:
             else: PETCTfields[5] = "RebinnerMode PtListMode32\n"
             PETCTfields[6] = "HistogramMode: Pt" + helvedelist[11].split(";")[1][:-3]
     
-        reconnumber = [0,0,0]
+        reconnumber = []
         ri = 0
         fieldlist = ""
         first = True
         startmsg = ""
         PETstart = False
+        protonumber = 1
 
 
         for i, item in enumerate(proto):
@@ -40,21 +41,23 @@ for file in listing:
             item = item.replace("&quot;","\"")
             item = item.lstrip(" ")[1:-1]
             if item.startswith("MlModeEntryType EntryNo="):
-                print item
-                reconnumber[ri] = int(item[64])
+                reconnumber.append(int(item[64]))
                 if item[25] == "2":
                     startmsg = "MlModeRecon_End: 138\n"
-                item = startmsg + "PROTOCOL_ENTRY_NO: " + item[25] + "\nMlModeScan_Begin: 138"
+                item = startmsg + "PROTOCOL_ENTRY_NO: " + str(protonumber) + "\nMlModeScan_Begin: 138"
+                protonumber+=1
                 ri +=1
                 first = True
             elif item.startswith("MlPauseType"):
-                item = "MlModeRecon_End: 138\nMlModeEntry_End: 138\nPROTOCOL_ENTRY_NO: 3\nMlPause_Begin: 138\nMlPause_End: 138"
+                item = "MlModeRecon_End: 138\nMlModeEntry_End: 138\nPROTOCOL_ENTRY_NO: " + str(protonumber) + "\nMlPause_Begin: 138\nMlPause_End: 138"
+                protonumber+=1
             elif item.startswith("Window ReadOnly"):
                 item = item.split(" ")
                 item = "Window[READ_ONLY]: " + item[3]
             elif item.startswith("MlOtherModalityEntryType"):
-                reconnumber[ri] = int(item[93])
-                item = startmsg + "PROTOCOL_ENTRY_NO: 4\nMlModeScan_Begin: 138"
+                reconnumber.append(int(item[93]))
+                item = startmsg + "PROTOCOL_ENTRY_NO: " + str(protonumber) + "\nMlOtherModalityEntry_Begin: 138"
+                protonumber+=1
                 ri +=1
                 PETstart = True
                 first = True
@@ -113,5 +116,5 @@ for file in listing:
         f.close()
 
 #    except:
-        print file
+#        print file
 

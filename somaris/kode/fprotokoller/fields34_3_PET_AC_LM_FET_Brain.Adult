@@ -1,9 +1,11 @@
 MlScanProtocolAttributes_Begin: 138
 BodySizeOld MlAdult
 ProtocolName "3_PET_AC_LM_FET_Brain_4"
+topo
 PROTOCOL_ENTRY_NO: 1
 MlModeScan_Begin: 138
 ApiId ""
+RangeName ReadOnly="1" ResID="72" "Topogram"
 ScanTime 2.730
 StartDelay 4.000
 Current 35
@@ -22,9 +24,11 @@ Transfer2 ""
 Transfer3 ""
 Window[READ_ONLY]: "Topogram
 MlModeRecon_End: 138
+ct
 PROTOCOL_ENTRY_NO: 2
 MlModeScan_Begin: 138
 ApiId ""
+RangeName "Lavdosis CT"
 ScanTime 26.200
 StartDelay 2.000
 AECReferenceMAs 350
@@ -36,6 +40,7 @@ mAs 30
 PitchFactor 1.50
 RotTime 1.000
 SliceWidthEffectiveTiltCorrected 3
+TableDirectionPatient MlCaudocranial
 TiltPos 0.0
 Voltage 120.000
 MlModeScan_End: 138
@@ -74,13 +79,15 @@ SeriesDescription "AC Lavdosis CT"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY]: "Cerebrum"
 MlModeRecon_End: 138
-MlModeEntry_End: 138
+pause
 PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
 MlPause_End: 138
+pet
 PROTOCOL_ENTRY_NO: 4
-MlModeScan_Begin: 138
+MlOtherModalityEntry_Begin: 138
 AutoLoad false
+RangeName "PET Brain LM"
 InjectedDose 185000000.0
 InjectionDate 20111219
 InjectionTime 153135.000000
