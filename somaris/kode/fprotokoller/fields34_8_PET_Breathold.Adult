@@ -114,10 +114,13 @@ RebinnerMode PtOnlineHistogram
 HistogramMode: Ptfalse
 Pharmaceutical Fluorodeoxyglucose
 PhysioInputType PtPhysioNone
+NumberOfBeds Not given. Check recon range
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End: 138
 No_Of_Valid_Recons: 3
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 200
@@ -135,6 +138,8 @@ YOffset 0
 Zoom 1
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 400
@@ -152,6 +157,8 @@ YOffset 0
 Zoom 1
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 256
@@ -186,10 +193,13 @@ RebinnerMode PtOnlineHistogram
 HistogramMode: Ptfalse
 Pharmaceutical Fluorodeoxyglucose
 PhysioInputType PtPhysioNone
+NumberOfBeds Not given. Check recon range
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End: 138
 No_Of_Valid_Recons: 3
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 200
@@ -207,6 +217,8 @@ YOffset 0
 Zoom 1
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 400
@@ -224,6 +236,8 @@ YOffset 0
 Zoom 1
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 256
@@ -258,10 +272,13 @@ RebinnerMode PtOnlineHistogram
 HistogramMode: Ptfalse
 Pharmaceutical Fluorodeoxyglucose
 PhysioInputType PtPhysioNone
+NumberOfBeds Not given. Check recon range
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End: 138
 No_Of_Valid_Recons: 3
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 200
@@ -279,6 +296,8 @@ YOffset 0
 Zoom 1
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 400
@@ -296,6 +315,8 @@ YOffset 0
 Zoom 1
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 256

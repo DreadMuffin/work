@@ -1348,6 +1348,7 @@ RebinnerMode PtListMode32
 HistogramMode PtPromptsRandoms
 Pharmaceutical Liquid Solution
 PhysioInputType PtPhysioECG
+NumberOfBedsCompleted 0
 
 
 TableDirectionPatient PtCraniocaudal
@@ -1510,6 +1511,7 @@ RebinnerMode PtListMode32
 HistogramMode PtPromptsRandoms
 Pharmaceutical Liquid Solution
 PhysioInputType PtPhysioECG
+NumberOfBedsCompleted 0
 
 
 TableDirectionPatient PtCraniocaudal

@@ -97,10 +97,13 @@ RebinnerMode PtListMode32
 HistogramMode: Ptfalse
 Pharmaceutical FET
 PhysioInputType PtPhysioNone
+NumberOfBeds Not given. Check recon range
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End: 138
 No_Of_Valid_Recons: 6
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 5.000000
 ImageSize 400
@@ -118,6 +121,8 @@ YOffset 0
 Zoom 2.500000
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 5.000000
 ImageSize 400
@@ -135,6 +140,8 @@ YOffset 0
 Zoom 2.500000
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 1.000000
 ImageSize 400
@@ -152,6 +159,8 @@ YOffset 0
 Zoom 2.500000
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 5.000000
 ImageSize 400
@@ -169,6 +178,8 @@ YOffset 0
 Zoom 2.500000
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 1.000000
 ImageSize 400
@@ -186,6 +197,8 @@ YOffset 0
 Zoom 2.500000
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 5.000000
 ImageSize 400

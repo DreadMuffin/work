@@ -186,10 +186,13 @@ RebinnerMode PtOnlineHistogram
 HistogramMode PtPromptsRandoms
 Pharmaceutical FDG
 PhysioInputType PtPhysioNone
+NumberOfBedsCompleted 0
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End: 138
 No_Of_Valid_Recons: 2
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 7
 CTAttenCorrModeList 2,1
 FilterFWHM 4.000000
 ImageSize 200
@@ -207,6 +210,8 @@ YOffset 0
 Zoom 1
 MlModeRecon_End: 138
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 7
 CTAttenCorrModeList 2,1
 FilterFWHM 4.000000
 ImageSize 400

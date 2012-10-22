@@ -97,10 +97,13 @@ RebinnerMode PtListMode32
 HistogramMode PtPromptsRandoms
 Pharmaceutical Liquid Solution
 PhysioInputType PtPhysioECG
+NumberOfBedsCompleted 0
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End: 138
 No_Of_Valid_Recons: 1
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 5
 ImageSize 200
@@ -135,10 +138,13 @@ RebinnerMode PtListMode32
 HistogramMode PtPromptsRandoms
 Pharmaceutical Liquid Solution
 PhysioInputType PtPhysioECG
+NumberOfBedsCompleted 0
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End: 138
 No_Of_Valid_Recons: 1
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 5
 ImageSize 200

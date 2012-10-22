@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  1 OCT 2012 12:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  22 OCT 2012 15:13
 entering extended mode
  %&-line parsing enabled.
 **tprotokoller/TUMOR_HYPOXI_HUND_DAG_4.MlAdult.tex
@@ -28,25 +28,20 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/a4wide.sty
+) (/usr/share/texmf-texlive/tex/latex/ltxmisc/a4wide.sty
 Package: a4wide 1994/08/30
-
 (/usr/share/texmf-texlive/tex/latex/ntgclass/a4.sty
 Package: a4 2004/04/15 v1.2g A4 based page layout
-))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+)) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
 (/usr/share/texmf-texlive/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
-
 (/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
@@ -196,7 +191,6 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
-
 (/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
@@ -227,7 +221,6 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
-
 (/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
@@ -251,25 +244,20 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+)) (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
-
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
-
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen103
-))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+)) (/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
-)
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+) (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
@@ -309,18 +297,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-)
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+) (/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
-
 (/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
-))
-(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+)) (/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks21
 \thm@bodyfont=\toks22
@@ -331,52 +316,40 @@ Package: amsthm 2004/08/06 v2.20
 \thm@postskip=\skip47
 \thm@headsep=\skip48
 \dth@everypar=\toks26
-)
-(/var/lib/texmf/tex/generic/babel/babel.sty
+) (/var/lib/texmf/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
-
 (/usr/share/texmf-texlive/tex/generic/babel/danish.ldf
 Language: danish 2009/09/19 v1.3r Danish support from the babel system
-
 (/usr/share/texmf-texlive/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count99
 \U@D=\dimen112
 )
 Package babel Info: Making " an active character on input line 82.
-))
-(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+)) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
 (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks27
-)
-(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+) (/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
 (/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/etc/texmf/tex/latex/config/graphics.cfg
+) (/etc/texmf/tex/latex/config/graphics.cfg
 File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
-
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \Gread@gobject=\count100
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
-)
-(/usr/share/texmf-texlive/tex/latex/pdfpages/pdfpages.sty
+) (/usr/share/texmf-texlive/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2009/02/07 v0.4g Insert pages of external PDF documents (AM)
-
 (/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+) (/usr/share/texmf-texlive/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count101
 \calc@Bcount=\count102
@@ -388,22 +361,18 @@ LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count103
 \calc@Cskip=\skip51
-)
-(/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
+) (/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2006/07/14 v1.1d eso-pic (RN)
-
 (/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(/usr/share/texmf-texlive/tex/latex/pdfpages/pppdftex.def
+)) (/usr/share/texmf-texlive/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2009/02/07 v0.4g Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box28
 \AM@toc@title=\toks28
 \c@AM@survey=\count104
 \AM@templatesizebox=\box29
-)
-(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+) (/usr/share/texmf-texlive/tex/latex/listings/listings.sty
 \lst@mode=\count105
 \lst@gtempboxa=\box30
 \lst@token=\toks29
@@ -416,18 +385,15 @@ File: pppdftex.def 2009/02/07 v0.4g Pdfpages driver for pdfTeX (AM)
 \lst@newlines=\count109
 \lst@lineno=\count110
 \lst@maxwidth=\dimen120
-
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count111
 \lst@skipnumbers=\count112
 \lst@framebox=\box31
-)
-(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+) (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
-
 (temppdf//TUMOR_HYPOXI_HUND_DAG_4.MlAdult.aux)
 \openout1 = `TUMOR_HYPOXI_HUND_DAG_4.MlAdult.aux'.
 
@@ -443,7 +409,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
-
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count113
@@ -456,10 +421,9 @@ LaTeX Font Info:    ... okay on input line 12.
 \MPscratchDim=\dimen122
 \MPnumerator=\count117
 \everyMPtoPDFconversion=\toks31
-) ABD: EveryShipout initializing macros
-(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+) ABD: EveryShipout initializing macros (/usr/share/texmf-texlive/tex/latex/gra
+phics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
 (/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
@@ -467,12 +431,10 @@ Package color Info: Driver file: pdftex.def on input line 130.
 )
 \c@lstlisting=\count118
 LaTeX Font Info:    Try loading font information for U+msa on input line 14.
-
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 14.
-
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
@@ -481,35 +443,33 @@ LaTeX Warning: No \author given.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(temppdf//TUMOR_HYPOXI_HUND_DAG_4.MlAdult.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (temppdf//TUMOR_HYPOXI_HUN
+D_DAG_4.MlAdult.toc)
 \tf@toc=\write3
 \openout3 = `TUMOR_HYPOXI_HUND_DAG_4.MlAdult.toc'.
 
- [2]
+[2]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
-
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
- [1] [2] [3] [4] [5]
-[6] (temppdf//TUMOR_HYPOXI_HUND_DAG_4.MlAdult.aux) ) 
+[1] [2] [3] [4] [5] [6] (temppdf//TUMOR_HYPOXI_HUND_DAG_4.MlAdult.aux) ) 
 Here is how much of TeX's memory you used:
- 4516 strings out of 493848
- 59169 string characters out of 1152823
- 121611 words of memory out of 3000000
- 7722 multiletter control sequences out of 15000+50000
+ 4510 strings out of 493848
+ 59088 string characters out of 1152823
+ 121613 words of memory out of 3000000
+ 7716 multiletter control sequences out of 15000+50000
  12403 words of font info for 48 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 28i,6n,32p,291b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb>
-Output written on temppdf//TUMOR_HYPOXI_HUND_DAG_4.MlAdult.pdf (8 pages, 61447 
+ 28i,6n,32p,320b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb>
+Output written on temppdf//TUMOR_HYPOXI_HUND_DAG_4.MlAdult.pdf (8 pages, 61937 
 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)

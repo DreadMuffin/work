@@ -101,6 +101,8 @@ ScatterCorrect
 XYFilterType
 MatchCTSliceLocation
 SeriesDescription
+BedBegin
+BedEnd
 XOffset
 YOffset
 SaveIntermediateData

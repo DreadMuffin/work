@@ -101,6 +101,8 @@ ScatterCorrect: 0
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 0
 SeriesDescription: PET Gantry Offset
+BedBegin: -1
+BedEnd: -1
 XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0

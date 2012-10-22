@@ -3,6 +3,8 @@
 import re
 import os
 
+print "Extracting data"
+
 FIELDS = "scanfields56"
 
 f = open(FIELDS,'r')
@@ -25,7 +27,7 @@ def listappend(list,input):
         list.append(item)
 
 for file in listing:
-#    try:
+    try:
 
 
         f = open(path + file,'r')
@@ -103,6 +105,6 @@ for file in listing:
         f.write(fieldlist)
         f.close()
 
-#    except:
-#        pass
+    except:
+        print file
 

@@ -1897,6 +1897,7 @@ RebinnerMode PtListMode32
 HistogramMode: Ptfalse
 Pharmaceutical FET
 PhysioInputType PtPhysioNone
+NumberOfBeds Not given. Check recon range
 
 
 TableDirectionPatient PtCraniocaudal

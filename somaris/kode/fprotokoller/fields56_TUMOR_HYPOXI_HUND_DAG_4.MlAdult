@@ -118,6 +118,8 @@ ScatterCorrect: 1
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 1
 SeriesDescription: PET TUMOR Corrected 180 min
+BedBegin: -1
+BedEnd: -1
 XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0
@@ -135,6 +137,8 @@ ScatterCorrect: 0
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 1
 SeriesDescription: PET TUMOR Uncorrected 180 min
+BedBegin: -1
+BedEnd: -1
 XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0

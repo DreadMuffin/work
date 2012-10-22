@@ -131,10 +131,13 @@ RebinnerMode PtListMode32
 HistogramMode: Pttrue
 Pharmaceutical Fluorodeoxyglucose
 PhysioInputType PtPhysioResp
+NumberOfBeds Not given. Check recon range
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End: 138
 No_Of_Valid_Recons: 1
 MlModeRecon_Begin: 138
+BedBegin 1
+BedEnd 1
 CTAttenCorrModeList 1,1
 FilterFWHM 5
 ImageSize 400

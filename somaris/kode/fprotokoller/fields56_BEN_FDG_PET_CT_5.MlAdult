@@ -134,6 +134,8 @@ ScatterCorrect: 1
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 1
 SeriesDescription: PET WB Corrected 
+BedBegin: -1
+BedEnd: -1
 XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0
@@ -151,6 +153,8 @@ ScatterCorrect: 0
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 1
 SeriesDescription: PET WB Uncorrected
+BedBegin: -1
+BedEnd: -1
 XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0

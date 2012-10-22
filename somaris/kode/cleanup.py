@@ -4,7 +4,8 @@ import re
 import os
 
 
-paths = ["fprotokoller/","pdf/","tprotokoller/","temppdf/","fejlkorsler/","protokoller34/"]
+paths = ["fprotokoller/","pdf/","tprotokoller/","temppdf/","fejlkorsler/"]
+#paths.append("protokoller34/")
 
 if os.getcwd()[-13:] == "/somaris/kode":
     for path in paths:

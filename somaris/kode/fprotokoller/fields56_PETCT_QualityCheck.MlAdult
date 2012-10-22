@@ -101,6 +101,8 @@ ScatterCorrect: 1
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 0
 SeriesDescription: Norm Review
+BedBegin: -1
+BedEnd: -1
 XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0

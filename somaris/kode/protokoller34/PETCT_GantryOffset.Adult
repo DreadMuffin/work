@@ -1347,6 +1347,7 @@ RebinnerMode PtOnlineHistogram
 HistogramMode: Ptfalse
 Pharmaceutical Crossed Rods
 PhysioInputType PtPhysioNone
+NumberOfBeds Not given. Check recon range
 
 
 TableDirectionPatient PtCraniocaudal

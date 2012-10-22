@@ -1344,6 +1344,7 @@ RebinnerMode PtListMode32
 HistogramMode PtPromptsRandoms
 Pharmaceutical FDG
 PhysioInputType PtPhysioECG
+NumberOfBedsCompleted 0
 
 
 TableDirectionPatient PtCraniocaudal

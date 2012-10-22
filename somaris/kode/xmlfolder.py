@@ -3,18 +3,19 @@ import re
 from xml.dom import minidom 
 import os
 
+print "Converting xml to plaintext"
+
 path = "xml34/"
 path2 = "protokoller34/"
 listing = os.listdir(path)
 for file in listing:
-#    try:
-        print file
+    try:
         f = open(path + file,'r')
         proto = minidom.parse(path + file).toxml()
         f.close()
     
         proto = proto.split("\n")[2:-4]
-        PETCTfields = [""] * 11
+        PETCTfields = [""] * 12
     
         def hellsolver(helldex):
             hellreturn = ""
@@ -32,6 +33,7 @@ for file in listing:
         startmsg = ""
         PETstart = False
         protonumber = 1
+        bednum = False
 
 
         for i, item in enumerate(proto):
@@ -69,6 +71,8 @@ for file in listing:
             elif item.startswith("TableDirectionPatient") and PETstart:
                 PETstart = False
                 temp = ""
+                if bednum == False:
+                    PETCTfields[9] = "NumberOfBeds Not given. Check recon range"
                 for field in PETCTfields:
                     temp += field + "\n"
                 item = temp + item
@@ -100,8 +104,9 @@ for file in listing:
                 elif item.startswith("PhysioInputType"):
                     PETCTfields[8] = item
                     pass
-                elif item.startswith("HistogramMode"):
+                elif item.startswith("NumberOfBeds"):
                     PETCTfields[9] = item
+                    bednum = True
                     pass
                 elif item.startswith("PetBedsInformation"):
                     hellsolver(i)
@@ -115,6 +120,6 @@ for file in listing:
         f.write(fieldlist)
         f.close()
 
-#    except:
-#        print file
+    except:
+        print file
 

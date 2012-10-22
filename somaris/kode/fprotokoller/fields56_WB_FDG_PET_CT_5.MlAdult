@@ -1,11 +1,13 @@
 MlScanProtocolAttributes_Begin: 138
 BodySizeOld: MlAdult
 ProtocolName: "WB_FDG_PET_CT_5"
+topo
 PROTOCOL_ENTRY_NO: 1
 MlModeScan_Begin: 138
 SliceEffectiveTiltCorrected: 0.6
 ApiId: -1
 Current: 35
+RangeName[READ_ONLY]: "Topogram"
 ScanTime: 10.460
 StartDelay: 4.000
 TableDirectionPatient: MlCraniocaudal
@@ -22,6 +24,7 @@ Transfer2: ""
 Transfer3: ""
 Window[READ_ONLY]: "Topogram Body"
 MlModeRecon_End: 138
+ct
 PROTOCOL_ENTRY_NO: 2
 MlModeScan_Begin: 138
 SliceEffective: 3.00
@@ -34,9 +37,11 @@ EffectiveMAs: 225
 InterPosTilt: 0.0
 mAs: 225
 PitchFactor: 1.2000000
+RangeName: "CT WB"
 RotTime: 0.500
 ScanTime: 14.840
 StartDelay: 4.000
+TableDirectionPatient: MlCraniocaudal
 Voltage: 120.000
 MlModeScan_End: 138
 No_Of_Valid_Recons: 4
@@ -109,12 +114,15 @@ SpiralReconIncr: 3.000
 Window[READ_ONLY]: "Abdomen"
 MlModeRecon_End: 138
 MlModeEntry_End: 138
+pause
 PROTOCOL_ENTRY_NO: 3
 MlPause_Begin: 138
 MlPause_End: 138
+pet
 PROTOCOL_ENTRY_NO: 4
 MlModeScan_Begin: 1
 AutoLoad: 1
+RangeName: "PET WB"
 LLD: 435
 ULD: 650
 Isotope: F-18
@@ -144,6 +152,8 @@ ScatterCorrect: 1
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 1
 SeriesDescription: PET WB Image check 
+BedBegin: -1
+BedEnd: -1
 XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0
@@ -161,6 +171,8 @@ ScatterCorrect: 1
 XYFilterType: PtGaussian
 MatchCTSliceLocation: 1
 SeriesDescription: PET WB Corr True X 2 mm
+BedBegin: -1
+BedEnd: -1
 XOffset: 0
 YOffset: 0
 SaveIntermediateData: 0

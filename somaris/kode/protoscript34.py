@@ -3,6 +3,8 @@
 import re
 import os
 
+print "Extracting data"
+
 FIELDS = "scanfields34"
 
 f = open(FIELDS,'r')
@@ -25,8 +27,7 @@ def listappend(list,input):
         list.append(item)
 
 for file in listing:
-#    try:
-
+    try:
 
         f = open(path + file,'r')
         proto = f.read()
@@ -71,7 +72,6 @@ for file in listing:
                     searchingtc = False
             elif item.startswith("PROTOCOL_ENTRY_NO"):
                 searching = True
-        print protoorder
 
 
         fields.append("MlScanProtocol_End")
@@ -82,8 +82,10 @@ for file in listing:
         protonr = 0
         fieldlist = ""
         reconpos = [i for i, x in enumerate(fields) if x == "No_Of_Valid_Recons"]
+        bednumbercounter = 0
     
         for i,item in enumerate(proto):
+            
             if item.startswith(fields[findex]):
                 if item.startswith("No_Of_Valid_Recons"):
                     rindex+=1
@@ -104,5 +106,6 @@ for file in listing:
         f.write(fieldlist)
         f.close()
 
-#    except:
-# 
+    except:
+        print file
+ 

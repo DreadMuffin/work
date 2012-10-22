@@ -80,10 +80,13 @@ RebinnerMode
 HistogramMode
 Pharmaceutical
 PhysioInputType
+NumberOfBeds
 TableDirectionPatient
 MlModeScan_End
 No_Of_Valid_Recons
 MlModeRecon_Begin
+BedBegin
+BedEnd
 CTAttenCorrModeList
 FilterFWHM
 ImageSize

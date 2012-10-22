@@ -1525,6 +1525,7 @@ RebinnerMode PtOnlineHistogram
 HistogramMode PtPromptsRandoms
 Pharmaceutical FDG
 PhysioInputType PtPhysioNone
+NumberOfBedsCompleted 0
 
 
 TableDirectionPatient PtCraniocaudal

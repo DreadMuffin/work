@@ -1348,6 +1348,7 @@ RebinnerMode PtListMode32
 HistogramMode: Ptfalse
 Pharmaceutical C11-PIB
 PhysioInputType PtPhysioNone
+NumberOfBeds Not given. Check recon range
 
 
 TableDirectionPatient PtCraniocaudal

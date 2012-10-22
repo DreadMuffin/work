@@ -1907,6 +1907,7 @@ RebinnerMode PtOnlineHistogram
 HistogramMode: Ptfalse
 Pharmaceutical Fluorodeoxyglucose
 PhysioInputType PtPhysioNone
+NumberOfBeds Not given. Check recon range
 
 
 TableDirectionPatient PtCaudocranial
