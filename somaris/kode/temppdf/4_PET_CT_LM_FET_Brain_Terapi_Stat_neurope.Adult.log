@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  22 OCT 2012 15:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  23 OCT 2012 13:26
 entering extended mode
  %&-line parsing enabled.
 **tprotokoller/4_PET_CT_LM_FET_Brain_Terapi_Stat_neurope.Adult.tex
@@ -430,12 +430,6 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 Package color Info: Driver file: pdftex.def on input line 130.
 )
 \c@lstlisting=\count118
-
-Overfull \hbox (10.05652pt too wide) in paragraph at lines 14--14
- \OT1/cmr/m/n/20.74 4[]4[]PET[]CT[]LM[]FET[]Brain[]Terapi[]Stat[]neurope.Adult 
-
- []
-
 LaTeX Font Info:    Try loading font information for U+msa on input line 14.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
@@ -466,7 +460,7 @@ _neurope.Adult.aux) )
 Here is how much of TeX's memory you used:
  4510 strings out of 493848
  59264 string characters out of 1152823
- 121629 words of memory out of 3000000
+ 121627 words of memory out of 3000000
  7716 multiletter control sequences out of 15000+50000
  12403 words of font info for 48 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -476,7 +470,7 @@ mbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/te
 xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on temppdf//4_PET_CT_LM_FET_Brain_Terapi_Stat_neurope.Adult.pdf 
-(11 pages, 66013 bytes).
+(11 pages, 66023 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

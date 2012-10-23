@@ -8,7 +8,21 @@ print "Converting xml to plaintext"
 path = "xml34/"
 path2 = "protokoller34/"
 listing = os.listdir(path)
+
+def hellsolver(helldex):
+    """If a file contains the dreaded PetBedsInformation line instead of dividing 
+    the information into seperate lines, this will extract the info."""
+    hellreturn = ""
+    helvedelist = proto[helldex].split("gt;&lt;")
+    PETCTfields[4] = "BedDuration: " + helvedelist[4].split(";")[1][:-3] + "(" + helvedelist[5].split(";")[1][:-3] + ")"
+    if helvedelist[12].split(";")[1][:-3] == "PtSinogramData":
+        PETCTfields[5] = "RebinnerMode PtOnlineHistogram"
+    else: PETCTfields[5] = "RebinnerMode PtListMode32\n"
+    PETCTfields[6] = "HistogramMode: Pt" + helvedelist[11].split(";")[1][:-3]
+
 for file in listing:
+    """Loops over the files in the directory and parses the xml to plaintext.
+    Additionally it replaces some lines with a style that matches PET 5 and 6."""
     try:
         f = open(path + file,'r')
         proto = minidom.parse(path + file).toxml()
@@ -16,15 +30,6 @@ for file in listing:
     
         proto = proto.split("\n")[2:-4]
         PETCTfields = [""] * 12
-    
-        def hellsolver(helldex):
-            hellreturn = ""
-            helvedelist = proto[helldex].split("gt;&lt;")
-            PETCTfields[4] = "BedDuration: " + helvedelist[4].split(";")[1][:-3] + "(" + helvedelist[5].split(";")[1][:-3] + ")"
-            if helvedelist[12].split(";")[1][:-3] == "PtSinogramData":
-                PETCTfields[5] = "RebinnerMode PtOnlineHistogram"
-            else: PETCTfields[5] = "RebinnerMode PtListMode32\n"
-            PETCTfields[6] = "HistogramMode: Pt" + helvedelist[11].split(";")[1][:-3]
     
         reconnumber = []
         ri = 0

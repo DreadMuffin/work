@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  22 OCT 2012 15:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  23 OCT 2012 13:26
 entering extended mode
  %&-line parsing enabled.
 **tprotokoller/4_PET_CT_WB_FDG_Terapi_Barn.Child.tex
@@ -460,7 +460,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Here is how much of TeX's memory you used:
  4510 strings out of 493848
  59110 string characters out of 1152823
- 121615 words of memory out of 3000000
+ 121613 words of memory out of 3000000
  7716 multiletter control sequences out of 15000+50000
  12403 words of font info for 48 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -470,7 +470,7 @@ are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on temppdf//4_PET_CT_WB_FDG_Terapi_Barn.Child.pdf (10 pages, 629
-52 bytes).
+39 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

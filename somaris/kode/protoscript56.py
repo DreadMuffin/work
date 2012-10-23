@@ -23,13 +23,13 @@ path2 = "fprotokoller/"
 listing = os.listdir(path)
 
 def listappend(list,input):
+    """Concatenates lists"""
     for item in input:
         list.append(item)
 
 for file in listing:
+    """Extracts data from all the files and writes it into a new seperate files."""
     try:
-
-
         f = open(path + file,'r')
         proto = f.read()
         proto = proto.split("\n")
@@ -50,6 +50,7 @@ for file in listing:
         protoorder = []
     
         for i,item in enumerate(proto):
+            """Creates a fieldlist which fits the file"""
             if searching:
                 if item.startswith("MlPause_Begin"):
                     searching = False
@@ -85,6 +86,7 @@ for file in listing:
         reconpos = [i for i, x in enumerate(fields) if x == "No_Of_Valid_Recons"]
     
         for i,item in enumerate(proto):
+            """Copies all the valid fields into the output list"""
             if item.startswith(fields[findex]):
                 if item.startswith("No_Of_Valid_Recons"):
                     rindex+=1

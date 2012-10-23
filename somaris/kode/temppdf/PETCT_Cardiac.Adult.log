@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  22 OCT 2012 15:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.21)  23 OCT 2012 13:26
 entering extended mode
  %&-line parsing enabled.
 **tprotokoller/PETCT_Cardiac.Adult.tex
@@ -459,7 +459,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Here is how much of TeX's memory you used:
  4510 strings out of 493848
  58956 string characters out of 1152823
- 121601 words of memory out of 3000000
+ 121599 words of memory out of 3000000
  7716 multiletter control sequences out of 15000+50000
  12403 words of font info for 48 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -469,7 +469,7 @@ ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
 msy10.pfb>
-Output written on temppdf//PETCT_Cardiac.Adult.pdf (7 pages, 58363 bytes).
+Output written on temppdf//PETCT_Cardiac.Adult.pdf (7 pages, 58195 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

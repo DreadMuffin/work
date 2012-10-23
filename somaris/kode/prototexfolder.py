@@ -14,27 +14,32 @@ listing = os.listdir(path)
 
 
 def onoff(oneorzero):
+    """Used to convert 0 and 1 to false or true"""
     if int(oneorzero) == 1:
         return "On"
     else:
         return "Off"
 
 def reconjob(value):
+    """Returns which kind of job is being carried out."""
     if value == "MlAxialRJ":
         return "Axial"
     else:
         return "3D"
 
 def get(index):
+    """A dynamic list lookup"""
     return p2[index + gindex]
     
 def reconrange(start,end):
-    if int(start) == -1:
+    """Translates bedstart and bedend to a string"""
+    if int(start) == int(end):
         return "Automatic/All/dunno"
     else: return start + " to " + end
 
 
 def tubeposis(value):
+    """Translates degrees to something readable."""
     if value == "270.0":
         return "Top"
     elif value == "90.0":
@@ -42,11 +47,13 @@ def tubeposis(value):
     else: return "Lateral"
 
 def apiid(value):
+    """Checks whether an API is used"""
     if value == "-1":
         return "None"
     else: return "API " + value 
 
 def topo56():
+    """Converts a topogram from PET 5 or 6 to tex"""
     returnstring = ""
     toporoutine = "\\section{" + get(6) + "}\n\\subsection{Routine}\n" + "\\item mA: " + get(5) + "\\item kV: " + get(12)[:-4] + "\\item Topogram length: " + get(10)[:-2] + " mm\\item Tube position: " + tubeposis(get(11)) 
     tscan = "\n\\subsection{Scan}" + "\\item mA: " + get(5) + "\\item kV: " + get(12)[:-4] + "\\item Delay: " + get(8)[:-4] + "s\\item Topogram length: " + get(11)[:-2] + " mm\\item Direction: " + get(9)[2:] + "\\item Tube position: " + tubeposis(get(11)) + "\\item API: " + apiid(get(4)) + "\\item Kernel: " + get(17)[1:-1] + "\\item Window: " + get(21)
@@ -54,6 +61,7 @@ def topo56():
     return returnstring
 
 def ct56():
+    """Converts a CT scan from PET 5 or 6 to tex"""
     returnstring = ""
     croutine = "\n\\section{" + get(13) + "}\n\\subsection{Routine}\n" + "\\item Eff. mAs: " + get(11) + "\\item kV: " + get(18)[:-4] + "\\item CARE Dose4D: " + get(6)[2:] + "\\item CareDoseType: " + get(7)[2:] + "\\item CTDlvol: " + get(8) + "mGy\\item Scan time: " + get(15) + " s\\item Delay: " + get(16) + " s\\item Slice: " + get(3) + " mm\\item No. of images: " + "Samme som i foerste recon, slet?(y/n)" + "\\item Tilt: " + get(11) + " grader"
 
@@ -77,6 +85,7 @@ def pause56():
 
 
 def pet56():
+    """Converts a PET scan from PET 5 or 6 to tex"""
     returnstring = ""
     injdose = get(11).split("(")[0] + " " + get(11).split("(")[1][2:-1]
 
@@ -110,6 +119,7 @@ def pet56():
     return returnstring
 
 def topo34():
+    """Converts a topogram from PET 3 or 4 to tex"""
     returnstring = ""
     toporoutine = "\\section{" + get(4).split(" ")[2] + "}\n\\subsection{Routine}\n" + "\\item mA: " + get(7) + "\\item kV: " + get(12)[:-4] + "\\item Topogram length: " + get(10)[:-2] + " mm\\item Tube position: " + tubeposis(get(11)) 
     tscan = "\n\\subsection{Scan}" + "\\item mA: " + get(7) + "\\item kV: " + get(12)[:-4] + "\\item Delay: " + get(6)[:-4] + "s\\item Topogram length: " + get(10)[:-2] + " mm\\item Direction: " + get(9)[2:] + "\\item Tube position: " + tubeposis(get(11)) + "\\item API: " + apiid(get(3)) + "\\item Kernel: " + get(17)[1:-1] + "\\item Window: " + get(21)
@@ -117,6 +127,7 @@ def topo34():
     return returnstring
 
 def ct34():
+    """Converts a CT scan from PET 3 or 4 to tex"""
     returnstring = ""
     croutine = "\n\\section{" + get(4) + "}\n\\subsection{Routine}\n" + "\\item Eff. mAs: " + get(11) + "\\item kV: " + get(18)[:-4] + "\\item CARE Dose4D: " + get(8)[2:] + "\\item CareDoseType: " + get(9)[2:] + "\\item CTDlvol: " + get(10) + "mGy\\item Scan time: " + get(5) + " s\\item Delay: " + get(6) + " s\\item Slice: " + get(15) + " mm\\item No. of images: " + "Samme som i foerste recon, slet?(y/n)" + "\\item Tilt: " + get(17) + " grader"
 
@@ -140,6 +151,7 @@ def pause34():
 
 
 def pet34():
+    """Converts a PET scan from PET 3 or 4 to tex"""
     returnstring = ""
     global gindex
 
@@ -175,7 +187,7 @@ def pet34():
 
 
 for file in listing:
-
+    """Converts protocols to tex-files"""
     try:
         f = open(path + file,'r')
         proto = f.read()
@@ -184,7 +196,7 @@ for file in listing:
 
         f.close
 
-        title = file[7:]
+        title = file[9:]
         title = re.sub("_","\_",title)
 
         page = template % {"title" : title}
@@ -205,16 +217,19 @@ for file in listing:
         protoorder = []
 
         for i,item in enumerate(proto):
+            """Creates a list of the modes the protocol contains"""
             if item == "topo" or item == "pet" or item == "ct" or item == "pause":
                 protoorder.append(item)
 
         if file[6:8] == "56":
+            """Processes protocols from PET 5 and 6"""
             protonavn = p2[2]
             size = p2[1]
 
             output = ""
-            gindex = 3
+            gindex = 3 #Global index used to indicate where the current phase starts
             for item in protoorder:
+                """Iterates through protoorder and converts the individual phases to tex."""
                 if item == "topo":
                     output+= topo56()
                     gindex+=23
@@ -227,7 +242,6 @@ for file in listing:
                 elif item == "pause":
                     output +=pause56()
                     gindex +=4
-                else: print "You fucked up brah"
 
 
             output = page + "\\begin{itemize}" + output + "\n\\end{itemize}" + "\n\\end{document}"
@@ -239,13 +253,14 @@ for file in listing:
             
 
         else:
-              
+            """Processes protocols from PET 3 and 4."""              
             protonavn = p2[2]
             size = p2[1]
 
             output = ""
-            gindex = 3
+            gindex = 3 #Global index used to indicate where the current phase starts
             for item in protoorder:
+                """Iterates through protoorder and converts the individual phases to tex."""
                 if item == "topo":
                     output+= topo34()
                     gindex+=23
@@ -270,6 +285,8 @@ for file in listing:
 
 
     except:
+        """If an exception occurs a file will be created in fejlkoersler/ with
+        the same name as the protocol which went wrong."""
         fejlnavn = file[6:]
         f = open(path3 + fejlnavn,'w')
         f.write("fejl fejl fejl")
