@@ -106,5 +106,5 @@ def loop(source,mname):
 
         except:
             print file
-loop(path5,"(PET 5)")
-loop(path6,"(PET 6)")
+loop(path5,"_PET5")
+loop(path6,"_PET6")

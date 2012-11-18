@@ -4,8 +4,11 @@ import re
 import os
 
 
-paths = ["fprotokoller/","pdf/","tprotokoller/","temppdf/","fejlkorsler/"]
-paths.append("protokoller34/") #In seperate line so it's easy to comment out
+paths = ["fprotokoller/","pdf/","tprotokoller/","temppdf/","fejlkorsler/",
+        "dprotokoller"]
+
+"""In seperate line so it's easy to comment out"""
+#paths.extend("protokoller4/","protokoller3/")
 
 if os.getcwd()[-13:] == "/somaris/kode":
     """Empties all the directories in 'paths'. A check is made to ensure that

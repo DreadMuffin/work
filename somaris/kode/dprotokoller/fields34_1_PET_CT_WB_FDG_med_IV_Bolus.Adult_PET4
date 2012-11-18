@@ -1,0 +1,16 @@
+insert into Protocols values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','Adult','6','NOW()');
+insert into Topograms values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','1','Topogram','35','120','1024','Top','4','Craniocaudal','','80','Topogram');
+insert into CT values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','2','1','PreMonitoring','20','120','Off','CareDoseAEC','1.186','0.500','2.000','10','0.0','225','0.500','0.00','Craniocaudal');
+insert into CTrecon values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','2','1','PreMonitoring 10.0 eFoV','10','B19s','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','10.000','1');
+insert into CT values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','3','1','Monitoring','20','120','Off','CareDoseAEC','35.58','0.500','10.000','10','0.0','225','0.500','0.00','Craniocaudal');
+insert into CTrecon values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','3','1','Monitoring 10.0 eFoV','10','B19s','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','10.000','30');
+insert into CT values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','4','5','CT WB','225','120','On','CareDoseAEC','16.38','28.450','25.000','2','0.0','225','0.500','0.80','Craniocaudal');
+insert into CTrecon values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','4','1','tmp CT WB RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','213');
+insert into CTrecon values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','4','2','AC CT 2 mm','2','B19f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','426');
+insert into CTrecon values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','4','3','CT WB 2.0 B30f','2','B30f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','426');
+insert into CTrecon values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','4','4','CT WB 2.0 cor B30f','2','B30f','Abdomen','Off','1103','0','0','None','Standard','3D','Coronal','AP','2.000','185');
+insert into CTrecon values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','4','5','CT WB 2.0 sag B30f','2','B30f','Abdomen','Off','1103','0','0','None','Standard','3D','Sagittal','LeftToRight','2.000','250');
+insert into Pause values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','5');
+insert into PET values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','6','2','PET WB','F-18','Fluorodeoxyglucose','226000000.000000','11/05 - 2012','12:41:00','Sinogram','Match CT FOV','Null','2.000000 Minutes','On','Null','Sinogram','false','None','Null','Null');
+insert into PETrecon values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','6','1','PET WB Image check HD','1 to 6','Corrected','TrueX','2','12','200','1','Gaussian','4.000000','0','0','Off (1)','On','On','Off');
+insert into PETrecon values ('1_PET_CT_WB_FDG_med_IV_Bolus.Adult','PET4','6','2','PET WB Corr TrueX+TOF 2 mm','1 to 6','Corrected','TrueXTOF','2','21','400','1','Gaussian','2.000000','0','0','Off (1)','On','On','Off');

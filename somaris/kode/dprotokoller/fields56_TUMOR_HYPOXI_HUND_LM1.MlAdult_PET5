@@ -1,0 +1,7 @@
+insert into Protocols values ('TUMOR_HYPOXI_HUND_LM1.MlAdult','PET5','Adult','4','NOW()');
+insert into Topograms values ('TUMOR_HYPOXI_HUND_LM1.MlAdult','PET5','1','Topogram','35','120','1024','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
+insert into CT values ('TUMOR_HYPOXI_HUND_LM1.MlAdult','PET5','2','1','CT WB ','11','120','Off','CareDoseAEC','0.7414','3.360','4.000','3.00','0.0','170','0.500','1.5000000','Craniocaudal');
+insert into CTrecon values ('TUMOR_HYPOXI_HUND_LM1.MlAdult','PET5','2','1','AC CT','3.00','B18f very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','111');
+insert into Pause values ('TUMOR_HYPOXI_HUND_LM1.MlAdult','PET5','3');
+insert into PET values ('TUMOR_HYPOXI_HUND_LM1.MlAdult','PET5','4','1','PET LM','Cu-64','ATSM','10 MegaBequerels','03/11 - 2009','15:30:00','List mode','Match CT FOV','1','60 Minutes','On','Off','List mode','Trues','ECG','435','650');
+insert into PETrecon values ('TUMOR_HYPOXI_HUND_LM1.MlAdult','PET5','4','1','PET Cardiac','Automatic/All/dunno','NoRecon','Iterative','4','8','168','2','Gaussian','2','0','0','On (1)','On','On','Off');

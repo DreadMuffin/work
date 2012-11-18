@@ -1,0 +1,11 @@
+insert into Protocols values ('PETCT_WholeBody_HD.Adult','PET4','Adult','4','NOW()');
+insert into Topograms values ('PETCT_WholeBody_HD.Adult','PET4','1','Topogram','35','120','1024','Top','4','Craniocaudal','','80','Topogram');
+insert into CT values ('PETCT_WholeBody_HD.Adult','PET4','2','4','CT WB','210','120','On','CareDoseAEC','15.288','24.310','2.000','5','0.0','210','0.500','0.80','Craniocaudal');
+insert into CTrecon values ('PETCT_WholeBody_HD.Adult','PET4','2','1','tmp CT WB RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','182');
+insert into CTrecon values ('PETCT_WholeBody_HD.Adult','PET4','2','2','AC CT WB','5','B19f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','242');
+insert into CTrecon values ('PETCT_WholeBody_HD.Adult','PET4','2','3','CT WB 3.0 B30f','3','B30f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','363');
+insert into CTrecon values ('PETCT_WholeBody_HD.Adult','PET4','2','4','CT LUNG 3.0 B70f','3','B70f','Lung','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','363');
+insert into Pause values ('PETCT_WholeBody_HD.Adult','PET4','3');
+insert into PET values ('PETCT_WholeBody_HD.Adult','PET4','4','2','PET WB','F-18','Fluorodeoxyglucose','370000000.000000','02/10 - 2008','10:12:53','Sinogram','Match CT FOV','Null','2.000000 Minutes','On','Null','Sinogram','false','None','Null','Null');
+insert into PETrecon values ('PETCT_WholeBody_HD.Adult','PET4','4','1','PET WB','1 to 5','Corrected','TrueX','3','24','200','1','Gaussian','2.000000','0','0','On (1)','On','On','Off');
+insert into PETrecon values ('PETCT_WholeBody_HD.Adult','PET4','4','2','PET WB Uncorrected','1 to 5','Uncorrected','Iterative3D','3','24','200','1','Gaussian','2.000000','0','0','On (1)','On','On','Off');

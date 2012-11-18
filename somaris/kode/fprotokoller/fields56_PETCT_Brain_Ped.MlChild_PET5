@@ -1,0 +1,127 @@
+MlScanProtocolAttributes_Begin: 138
+BodySizeOld: MlChild
+ProtocolName: "PETCT_Brain_Ped"
+topo
+PROTOCOL_ENTRY_NO: 1
+MlModeScan_Begin: 138
+SliceEffectiveTiltCorrected: 0.6
+ApiId: -1
+Current: 50
+RangeName[READ_ONLY]: "Topogram"
+ScanTime: 2.780
+StartDelay: 4.000
+TableDirectionPatient: MlCraniocaudal
+TopoLength: 256.0
+TubePosition: 0.0
+Voltage: 80.000
+MlModeScan_End: 138
+No_Of_Valid_Recons: 1
+MlModeRecon_Begin: 138
+BodyPartExamined: "HEAD"
+Kernel: "T20s standard"
+Transfer1: ""
+Transfer2: ""
+Transfer3: ""
+Window[READ_ONLY]: "Topogram Head"
+MlModeRecon_End: 138
+ct
+PROTOCOL_ENTRY_NO: 2
+MlModeScan_Begin: 138
+SliceEffective: 3.00
+AECReferenceMAs: 380
+ApiId: -1
+Care: MlOff
+CareDoseType: MlCareDoseAEC
+CTDIw: 28.798
+EffectiveMAs: 170
+InterPosTilt: 0.0
+mAs: 170
+PitchFactor: 0.8000000
+RangeName: "CT Brain"
+RotTime: 1.000
+ScanTime: 24.750
+StartDelay: 4.000
+TableDirectionPatient: MlCaudocranial
+Voltage: 120.000
+MlModeScan_End: 138
+No_Of_Valid_Recons: 2
+MlModeRecon_Begin: 138
+SliceEffective: 3.00
+CenterX: 0
+CenterY: 0
+CTScale: MlCTScaleStandard
+ExtendedFOV: 0
+FoVHorLength: 300
+ImageOrder: MlIO_Caudocranial
+Kernel: "H19s PET very smooth"
+Mirror: MlMirrorNone
+NoOfImages: 148
+ReconDirection: MlAxial
+ReconType: MlAxialRJ
+SeriesDescription: "AC_CT"
+SpiralReconIncr: 1.500
+Window[READ_ONLY]: "Cerebrum"
+MlModeRecon_End: 138
+MlModeRecon_Begin: 138
+SliceEffective: 3.00
+CenterX: 0
+CenterY: 0
+CTScale: MlCTScaleStandard
+ExtendedFOV: 0
+FoVHorLength: 250
+ImageOrder: MlIO_Caudocranial
+Kernel: "C30s medium smooth"
+Mirror: MlMirrorNone
+NoOfImages: 148
+ReconDirection: MlAxial
+ReconType: MlAxialRJ
+SeriesDescription: "CT Brain 3.0 C30s"
+SpiralReconIncr: 1.500
+Window[READ_ONLY]: "Baby Brain"
+MlModeRecon_End: 138
+MlModeEntry_End: 138
+pause
+PROTOCOL_ENTRY_NO: 3
+MlPause_Begin: 138
+MlPause_End: 138
+pet
+PROTOCOL_ENTRY_NO: 4
+MlModeScan_Begin: 1
+AutoLoad: 1
+RangeName: "PET Brain"
+LLD: 435
+ULD: 650
+Isotope: F-18
+Pharmaceutical: FDG
+InjectionDate: 20070613
+InjectionTime: 111800.000000
+InjectedDose: 2.5(PtMillicuries)
+NumberOfBeds: 1
+BedDuration: 10(PtMinutes)
+TableDirectionPatient: MlCraniocaudal
+RebinnerLut: 0
+RebinnerMode: PtOnlineHistogram
+HistogramMode: PtTrues
+PhysioInputType: PtPhysioNone
+MlModeScan_End: 1
+No_Of_Valid_Recons: 1
+MlModeRecon_Begin: 3
+CTAttenCorrModeList: (1,1)
+OutputImageType: PtCorrected
+ReconMethod: PtIterative
+ImageSize: 336
+Subsets: 16
+Iterations: 6
+Zoom: 2
+FilterFWHM: 2
+ScatterCorrect: 1
+XYFilterType: PtGaussian
+MatchCTSliceLocation: 1
+SeriesDescription: PET Brain
+BedBegin: -1
+BedEnd: -1
+XOffset: 0
+YOffset: 0
+SaveIntermediateData: 0
+MlModeRecon_End: 3
+MlScanProtocol_End: 138

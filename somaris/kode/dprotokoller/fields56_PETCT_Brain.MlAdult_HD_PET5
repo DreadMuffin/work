@@ -1,0 +1,8 @@
+insert into Protocols values ('PETCT_Brain.MlAdult_HD','PET5','Adult','4','NOW()');
+insert into Topograms values ('PETCT_Brain.MlAdult_HD','PET5','1','Topogram','35','120','256','Lateral','4','Craniocaudal','Null','T20s standard','Topogram Head');
+insert into CT values ('PETCT_Brain.MlAdult_HD','PET5','2','2','CT Brain','380','120','Off','CareDoseAEC','59.4292','16.010','4.000','3.00','0.0','380','1.000','0.8000000','Caudocranial');
+insert into CTrecon values ('PETCT_Brain.MlAdult_HD','PET5','2','1','AC CT','3.00','H19s PET very smooth','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','1.500','148');
+insert into CTrecon values ('PETCT_Brain.MlAdult_HD','PET5','2','2','CT Brain 3.0 H31s','3.00','H31s medium smooth +','Cerebrum','Off','250','0','0','None','Standard','Axial','Axial','Caudocranial','1.500','148');
+insert into Pause values ('PETCT_Brain.MlAdult_HD','PET5','3');
+insert into PET values ('PETCT_Brain.MlAdult_HD','PET5','4','1','PET Brain','F-18','FDG','5 Millicuries','30/10 - 2006','08:50:00','Sinogram','Match CT FOV','1','10 Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PETrecon values ('PETCT_Brain.MlAdult_HD','PET5','4','1','PET Brain','Automatic/All/dunno','Corrected','TrueX','3','21','336','2','Gaussian','4','0','0','On (1)','On','On','Off');

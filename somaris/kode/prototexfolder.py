@@ -13,9 +13,9 @@ path3 = "fejlkorsler/"
 listing = os.listdir(path)
 
 
-def onoff(oneorzero):
-    """Used to convert 0 and 1 to false or true"""
-    if int(oneorzero) == 1:
+def onoff(value):
+    """Used to convert values to on or off"""
+    if value == "1" or value == "true":
         return "On"
     else:
         return "Off"
@@ -30,7 +30,7 @@ def reconjob(value):
 def get(index):
     """A dynamic list lookup"""
     return p2[index + gindex]
-    
+
 def reconrange(start,end):
     """Translates bedstart and bedend to a string"""
     if int(start) == int(end):
@@ -55,15 +55,20 @@ def apiid(value):
 def topo56():
     """Converts a topogram from PET 5 or 6 to tex"""
     returnstring = ""
-    toporoutine = "\\section{" + get(6) + "}\n\\subsection{Routine}\n" + "\\item mA: " + get(5) + "\\item kV: " + get(12)[:-4] + "\\item Topogram length: " + get(10)[:-2] + " mm\\item Tube position: " + tubeposis(get(11)) 
-    tscan = "\n\\subsection{Scan}" + "\\item mA: " + get(5) + "\\item kV: " + get(12)[:-4] + "\\item Delay: " + get(8)[:-4] + "s\\item Topogram length: " + get(11)[:-2] + " mm\\item Direction: " + get(9)[2:] + "\\item Tube position: " + tubeposis(get(11)) + "\\item API: " + apiid(get(4)) + "\\item Kernel: " + get(17)[1:-1] + "\\item Window: " + get(21)
+    toporoutine = "\\section{" + get(6) + "}\n\\subsection{Routine}\n" + "\\item mA: " + get(5) + "\\item kV: " + get(12)[:-4] + "\\item Topogram length: " + get(10)[:-2] + " mm\\item Tube position: " + tubeposis(get(11))
+    tscan = ("\n\\subsection{Scan}" + "\\item mA: " + get(5) + "\\item kV: " + 
+            get(12)[:-4] + "\\item Delay: " + get(8)[:-4] + "s\\item Topogram" +
+            " length: " + get(10)[:-2] + " mm\\item Direction: " + get(9)[2:] +
+            "\\item Tube position: " + tubeposis(get(11)) + "\\item API: " + 
+            apiid(get(4)) + "\\item Kernel: " + get(17)[1:-1] + "\\item " + 
+            "Window: " + get(21))
     returnstring = toporoutine + tscan
     return returnstring
 
 def ct56():
     """Converts a CT scan from PET 5 or 6 to tex"""
     returnstring = ""
-    croutine = "\n\\section{" + get(13) + "}\n\\subsection{Routine}\n" + "\\item Eff. mAs: " + get(11) + "\\item kV: " + get(18)[:-4] + "\\item CARE Dose4D: " + get(6)[2:] + "\\item CareDoseType: " + get(7)[2:] + "\\item CTDlvol: " + get(8) + "mGy\\item Scan time: " + get(15) + " s\\item Delay: " + get(16) + " s\\item Slice: " + get(3) + " mm\\item No. of images: " + "Samme som i foerste recon, slet?(y/n)" + "\\item Tilt: " + get(11) + " grader"
+    croutine = "\n\\section{" + get(13) + "}\n\\subsection{Routine}\n" + "\\item Eff. mAs: " + get(11) + "\\item kV: " + get(18)[:-4] + "\\item CARE Dose4D: " + get(6)[2:] + "\\item CareDoseType: " + get(7)[2:] + "\\item CTDlvol: " + get(8) + "mGy\\item Scan time: " + get(15) + " s\\item Delay: " + get(16) + " s\\item Slice: " + get(3) + " mm\\item No. of images: " + "Samme som i foerste recon, slet?(y/n)" + "\\item Tilt: " + get(10) + " grader"
 
     cscan =  "\n\\subsection{Scan}\n\\item Quality ref. mAs: " + get(4) + "\\item Eff. mAs: " + get(11) + "\\item kV: " + get(18)[:-4] + "\\item Scan time: " + get(15) + " s\\item Rotation time: " + get(14) + " s\\item Delay: " + get(16) + " s\\item Slice: " +  get(3) + " mm\\item Pitch: " + get(12) + "\\item Direction: " + get(17)[2:]
 
@@ -76,7 +81,6 @@ def ct56():
         crecon +="\n\\subsubsection{Recon " + str(i + 1) + "}" + "\n\\item Series description: " + get(34) + "\n\\item Slice: " + get(22) + "\n\\item Kernel: " + get(29) + "\n\\item Window: " + get(36) + "\n\\item Extended FoV: " + onoff(get(26)) + "\n\\item FoV: " + get(27) + "\n\\item Center X: " + get(23) + "\n\\item Center Y: " + get(24) + "\n\\item Mirroring: " + get(30)[8:] + "\n\\item Extended CT scale: " + get(25)[9:] + "\n\\item Recon job: " + reconjob(get(33)) + "\n\\item Recon Axis: " + get(32)[2:] + "\n\\item Image order: " + get(28)[5:] + "\n\\item Recon increment: " + get(35) + "\n\\item No. of images: " + get(31)
         i+=1
         gindex +=17
-    
     returnstring = croutine + cscan + crecon
     return returnstring
 
@@ -114,7 +118,6 @@ def pet56():
         precon +="\n\\subsubsection{Recon " + str(i + 1) + "}" + "\n\\item Series description: " + get(33) + "\n\\item Recon range (bed): " + reconrange(get(34),get(35)) + "\n\\item Output image type: " + get(23)[2:] + "\n\\item Recon method: " + get(24)[2:] + "\n\\item Iterations: " + get(27) + "\n\\item Subsets: " + get(26) + "\n\\item Image size: " + get(25) + "\n\\item Zoom: " + get(28) + "\n\\item Filter: " + get(31)[2:] + "\n\\item FWHM (mm): " + get(29) + "\n\\item Offset X: " + get(36) + " mm" + "\n\\item Offset Y: " + get(37) + " mm" + "\n\\item Attenuation correction: " + onoff(get(22)[1:2]) + " (" + get(22)[3:4] + ")" + "\n\\item Scatter correction: " + onoff(get(30)) + "\n\\item Match CT slice location: " + onoff(get(32)) + "\n\\item Save intermediate data: " + onoff(get(36))
         i+=1
         gindex +=19
-    
     returnstring = proutine + pscan + precon
     return returnstring
 
@@ -139,10 +142,19 @@ def ct34():
     crecon = "\\subsection{Recons}\n"
     global gindex
     while i < crecons:
-        crecon +="\n\\subsubsection{Recon " + str(i + 1) + "}" + "\n\\item Series description: " + get(34) + "\n\\item Slice: " + get(35) + "\n\\item Kernel: " + get(29) + "\n\\item Window: " + get(36) + "\n\\item Extended FoV: " + get(26) + "\n\\item FoV: " + get(27) + "\n\\item Center X: " + get(23) + "\n\\item Center Y: " + get(24) + "\n\\item Mirroring: " + get(30)[8:] + "\n\\item Extended CT scale: " + get(25)[9:] + "\n\\item Recon job: " + reconjob(get(33)) + "\n\\item Recon Axis: " + get(31)[2:] + "\n\\item Image order: " + get(28)[5:] + "\n\\item Recon increment: " + get(32) + "\n\\item No. of images: " + get(22)
+        crecon += ("\n\\subsubsection{Recon " + str(i + 1) + "}" + "\n\\item " +
+        "Series description: " + get(34) + "\n\\item Slice: " + get(35) +
+        "\n\\item Kernel: " + get(29) + "\n\\item Window: " + get(36) +
+        "\n\\item Extended FoV: " + onoff(get(26)) + "\n\\item FoV: " + get(27)
+        + "\n\\item Center X: " + get(23) + "\n\\item Center Y: " + get(24) +
+        "\n\\item Mirroring: " + get(30)[8:] + "\n\\item Extended CT scale: " +
+        get(25)[9:] + "\n\\item Recon job: " + reconjob(get(33)) + "\n\\item " +
+        "Recon Axis: " + get(31)[2:] + "\n\\item Image order: " + get(28)[5:] +
+        "\n\\item Recon increment: " + get(32) + "\n\\item No. of images: " +
+        get(22))
         i+=1
         gindex +=17
-    
+
     returnstring = croutine + cscan + crecon
     return returnstring
 
@@ -167,10 +179,9 @@ def pet34():
     else: scanrange = "Do not match CT FOV"
 
     scanduration = get(9)[:-1].split("(")
-
     proutine = "\\section{" + get(4) + "}\\subsection{Routine}\n" + "\\item Isotope: " + get(8) + "\n\\item Pharm.: " + get(12) + "\n\\item Inj. Dose: " + get(5) + " Bequerels" + "\n\\item Inj. date (date/month - year): " + get(6)[6:] + "/" + get(6)[4:6] + " - " + get(6)[:4] + "\n\\item Inj. time: " + get(7)[:2] + ":" + get(7)[2:4] + ":" + get(7)[4:6] + "\n\\item Scan mode: " + scanoutput + "\n\\item Scan range: " + scanrange + "\n\\item No. of beds: " + get(14) + "\n\\item Scan duration/bed: " + scanduration[0] + " " + scanduration[1][2:]
 
-    pscan =  "\n\\subsection{Scan}\n" + "\\item Autoload: " + get(3) + "\n\\item Rebinner LUT: " + "N/A" + "\n\\item Scan output: " + scanoutput + "\n\\item Sinogram mode: " + get(11)[2:] + "\n\\item Input trigger signal: " + get(13)[8:] + "\n\\item LLD (keV): " + "N/A" + "\n\\item ULD (keV): " + "N/A"
+    pscan =  "\n\\subsection{Scan}\n" + "\\item Autoload: " + onoff(get(3)) + "\n\\item Rebinner LUT: " + "N/A" + "\n\\item Scan output: " + scanoutput + "\n\\item Sinogram mode: " + get(11)[2:] + "\n\\item Input trigger signal: " + get(13)[8:] + "\n\\item LLD (keV): " + "N/A" + "\n\\item ULD (keV): " + "N/A"
 
     precons = int(get(17))
     i = 0
@@ -178,10 +189,21 @@ def pet34():
     precon = "\n\\subsection{Recons}"
 
     while i < precons:
-        precon +="\n\\subsubsection{Recon " + str(i + 1) + "}" + "\n\\item Series description: " + get(31) + "\n\\item Recon range (bed): " + reconrange(get(19),get(20)) + "\n\\item Output image type: " + get(26)[2:] + "\n\\item Recon method: " + get(28)[2:] + "\n\\item Iterations: " + get(24) + "\n\\item Subsets: " + get(32) + "\n\\item Image size: " + get(23) + "\n\\item Zoom: " + get(35) + "\n\\item Filter: " + get(27)[2:] + "\n\\item FWHM (mm): " + get(22) + "\n\\item Offset X: " + get(33) + " mm" + "\n\\item Offset Y: " + get(34) + " mm" + "\n\\item Attenuation correction: " + onoff(get(21).split(",")[0]) + " (" + get(21).split(",")[1] + ")" + "\n\\item Scatter correction: " + get(30) + "\n\\item Match CT slice location: " + get(25) + "\n\\item Save intermediate data: " + get(29)
+        precon += ("\n\\subsubsection{Recon " + str(i + 1) + "}" + "\n\\item " +
+        "Series description: " + get(31) + "\n\\item Recon range (bed): " +
+        reconrange(get(19),get(20)) + "\n\\item Output image type: " +
+        get(26)[2:] + "\n\\item Recon method: " + get(28)[2:] + "\n\\item " +
+        "Iterations: " + get(24) + "\n\\item Subsets: " + get(32) + "\n\\item" +
+        " Image size: " + get(23) + "\n\\item Zoom: " + get(35) + "\n\\item " +
+        "Filter: " + get(27)[2:] + "\n\\item FWHM (mm): " + get(22) + "\n\\item"
+        " Offset X: " + get(33) + " mm" + "\n\\item Offset Y: " + get(34) +
+        " mm\n\\item Attenuation correction: " + onoff(get(21).split(",")[0]) +
+        " (" + get(21).split(",")[1] + ")" + "\n\\item Scatter correction: " +
+        onoff(get(30)) + "\n\\item Match CT slice location: " + onoff(get(25)) +
+        "\n\\item Save intermediate data: " + onoff(get(29)))
         i+=1
         gindex +=19
-    
+
     returnstring = proutine + pscan + precon
     return returnstring
 
@@ -250,10 +272,9 @@ for file in listing:
             f.write(output)
             f.close()
 
-            
 
         else:
-            """Processes protocols from PET 3 and 4."""              
+            """Processes protocols from PET 3 and 4."""
             protonavn = p2[2]
             size = p2[1]
 
@@ -273,8 +294,6 @@ for file in listing:
                 elif item == "pause":
                     output +=pause34()
                     gindex +=4
-                else: print "You fucked up brah"
-
 
 
             output = page + "\\begin{itemize}" + output + "\n\\end{itemize}" + "\n\\end{document}"

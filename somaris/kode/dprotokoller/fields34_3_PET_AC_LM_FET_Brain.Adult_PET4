@@ -1,0 +1,10 @@
+insert into Protocols values ('3_PET_AC_LM_FET_Brain.Adult','PET4','Adult','4','NOW()');
+insert into Topograms values ('3_PET_AC_LM_FET_Brain.Adult','PET4','1','Topogram','35','120','256','Lateral','4','Craniocaudal','','20','Topogram');
+insert into CT values ('3_PET_AC_LM_FET_Brain.Adult','PET4','2','2','Lavdosis CT','30','120','Off','CareDoseAEC','5.124','26.200','2.000','3','0.0','350','1.000','1.50','Caudocranial');
+insert into CTrecon values ('3_PET_AC_LM_FET_Brain.Adult','PET4','2','1','tmp Lavdosis CT RTD','5','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','5.000','45');
+insert into CTrecon values ('3_PET_AC_LM_FET_Brain.Adult','PET4','2','2','AC Lavdosis CT','3','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','3.000','74');
+insert into Pause values ('3_PET_AC_LM_FET_Brain.Adult','PET4','3');
+insert into PET values ('3_PET_AC_LM_FET_Brain.Adult','PET4','4','3','PET Brain LM','F-18','FET','185000000.0','19/12 - 2011','15:31:35','List mode','Match CT FOV','Null','20.000000 Minutes','Off','Null','List mode','false','None','Null','Null');
+insert into PETrecon values ('3_PET_AC_LM_FET_Brain.Adult','PET4','4','1','FET stat 1 mm','Automatic/All/dunno','Corrected','Iterative3D','4','12','400','1','Gaussian','1.000000','0','0','On (1)','On','On','Off');
+insert into PETrecon values ('3_PET_AC_LM_FET_Brain.Adult','PET4','4','2','FET stat 5 mm','Automatic/All/dunno','Corrected','Iterative3D','4','12','400','1','Gaussian','5.000000','0','0','On (1)','On','On','Off');
+insert into PETrecon values ('3_PET_AC_LM_FET_Brain.Adult','PET4','4','3','FET stat 4Fdyn 5 mm','Automatic/All/dunno','Corrected','Iterative3D','4','12','400','1','Gaussian','5.000000','0','0','On (1)','On','On','Off');

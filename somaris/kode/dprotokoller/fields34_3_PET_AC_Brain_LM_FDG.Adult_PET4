@@ -1,0 +1,8 @@
+insert into Protocols values ('3_PET_AC_Brain_LM_FDG.Adult','PET4','Adult','4','NOW()');
+insert into Topograms values ('3_PET_AC_Brain_LM_FDG.Adult','PET4','1','Topogram','35','120','256','Lateral','4','Craniocaudal','','20','Topogram');
+insert into CT values ('3_PET_AC_Brain_LM_FDG.Adult','PET4','2','2','Lav CT Brain','32','120','Off','CareDoseAEC','5.69782','17.570','2.000','3','0.0','350','0.500','0.55','Caudocranial');
+insert into CTrecon values ('3_PET_AC_Brain_LM_FDG.Adult','PET4','2','1','tmp Lav CT Brain RTD','4','H31f','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','4.000','56');
+insert into CTrecon values ('3_PET_AC_Brain_LM_FDG.Adult','PET4','2','2','AC CT','3','H31f','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','3.000','74');
+insert into Pause values ('3_PET_AC_Brain_LM_FDG.Adult','PET4','3');
+insert into PET values ('3_PET_AC_Brain_LM_FDG.Adult','PET4','4','1','PET Brain LM','F-18','Fluorodeoxyglucose','185000000.0','14/05 - 2012','10:40:28','List mode','Do not match CT FOV','Null','10.000000 Minutes','Off','Null','List mode','false','None','Null','Null');
+insert into PETrecon values ('3_PET_AC_Brain_LM_FDG.Adult','PET4','4','1','Brain LM','Automatic/All/dunno','Uncorrected','Iterative3D','4','12','400','1','Gaussian','5','0','0','On (1)','Off','Off','Off');

@@ -1,0 +1,9 @@
+insert into Protocols values ('PETCT_Brain_Ped.Child','PET4','Child','4','NOW()');
+insert into Topograms values ('PETCT_Brain_Ped.Child','PET4','1','Topogram','35','120','256','Lateral','4','Craniocaudal','','20','Topogram');
+insert into CT values ('PETCT_Brain_Ped.Child','PET4','2','3','CT Brain','170','120','On','CareDoseAEC','29.7553','35.130','2.000','3','0.0','170','1.000','0.55','Caudocranial');
+insert into CTrecon values ('PETCT_Brain_Ped.Child','PET4','2','1','tmp CT Brain RTD','4','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','4.000','56');
+insert into CTrecon values ('PETCT_Brain_Ped.Child','PET4','2','2','AC CT Brain','3','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','1.500','148');
+insert into CTrecon values ('PETCT_Brain_Ped.Child','PET4','2','3','CT Brain 3.0 C30s','3','C30s','Baby','Off','250','0','0','None','Standard','Axial','Axial','Caudocranial','1.500','148');
+insert into Pause values ('PETCT_Brain_Ped.Child','PET4','3');
+insert into PET values ('PETCT_Brain_Ped.Child','PET4','4','1','PET Brain','F-18','FDG','92500000.000000','02/10 - 2008','07:33:56','Sinogram','Match CT FOV','Null','10.000000 Minutes','On','Null','Sinogram','PromptsRandoms','None','Null','Null');
+insert into PETrecon values ('PETCT_Brain_Ped.Child','PET4','4','1','PET Brain','Automatic/All/dunno','Corrected','Iterative3D','4','24','400','2.000000','Gaussian','4.000000','0','0','On (1)','On','On','Off');

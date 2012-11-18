@@ -1,0 +1,7 @@
+insert into Protocols values ('17_PET_AC_Brain_LM_FDG_WYETH.MlAdult','PET5','Adult','4','NOW()');
+insert into Topograms values ('17_PET_AC_Brain_LM_FDG_WYETH.MlAdult','PET5','1','Topogram','35','120','256','Lateral','4','Craniocaudal','Null','T20s standard','Topogram Head');
+insert into CT values ('17_PET_AC_Brain_LM_FDG_WYETH.MlAdult','PET5','2','1','CT Brain','30','120','Off','CareDoseAEC','4.12323','8.010','4.000','3.00','0.0','380','1.000','1.2000000','Craniocaudal');
+insert into CTrecon values ('17_PET_AC_Brain_LM_FDG_WYETH.MlAdult','PET5','2','1','AC CT','3.00','H19s PET very smooth','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','74');
+insert into Pause values ('17_PET_AC_Brain_LM_FDG_WYETH.MlAdult','PET5','3');
+insert into PET values ('17_PET_AC_Brain_LM_FDG_WYETH.MlAdult','PET5','4','1','PET Brain LM','F-18','FDG','200 MegaBequerels','18/03 - 2010','12:37:00','List mode','Match CT FOV','1','20 Minutes','On','Off','List mode','Trues','None','435','650');
+insert into PETrecon values ('17_PET_AC_Brain_LM_FDG_WYETH.MlAdult','PET5','4','1','PET Brain LM','Automatic/All/dunno','NoRecon','Iterative','6','16','256','2','Gaussian','2','0','0','On (1)','On','On','Off');

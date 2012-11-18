@@ -1,0 +1,12 @@
+insert into Protocols values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','Adult','6','NOW()');
+insert into Topograms values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','1','Topogram','35','120','512','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
+insert into CT values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','2','2','CT TUMOR','170','120','Off','CareDoseAEC','11.4448','4.000','4.000','3.00','0.0','170','0.500','1.2000000','Craniocaudal');
+insert into CTrecon values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','2','1','AC CT','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','74');
+insert into CTrecon values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','2','2','CT TUMOR 3.0 B30f','3.00','B30f medium smooth','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','74');
+insert into Pause values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','3');
+insert into PET values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','4','2','PET STATIC ','Cu-64','ATSM','1e-006 MegaBequerels','13/01 - 2009','16:49:00','Sinogram','Match CT FOV','1','20 Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PETrecon values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','4','1','PET TUMOR Corrected 24 hr','Automatic/All/dunno','Corrected','Iterative','4','8','256','1','Gaussian','3','0','0','On (1)','On','On','Off');
+insert into PETrecon values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','4','2','PET TUMOR Uncorrected 24 hr','Automatic/All/dunno','Uncorrected','Iterative','4','8','256','1','Gaussian','3','0','0','On (1)','Off','On','Off');
+insert into Pause values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','5');
+insert into CT values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','6','1','DynMulti','170','120','Off','CareDose','1032.37','90.100','4.000','7.20','0.0','100','1.000','1.0000000','Craniocaudal');
+insert into CTrecon values ('TUMOR_HYPOXI_HUND_DAG_3.MlAdult','PET5','6','1','DynMulti 7.2 B30s','7.20','B30s medium smooth','Abdomen','Off','0','-3','0','None','Standard','Axial','Axial','Craniocaudal','1.000','360');

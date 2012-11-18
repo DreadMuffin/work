@@ -1,0 +1,9 @@
+insert into Protocols values ('PETCT_Body_LM.MlAdult','PET5','Adult','4','NOW()');
+insert into Topograms values ('PETCT_Body_LM.MlAdult','PET5','1','Topogram','35','120','512','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
+insert into CT values ('PETCT_Body_LM.MlAdult','PET5','2','3','CT Body','170','120','On','CareDoseAEC','11.4779','5.630','4.000','5.00','0.0','170','0.500','0.8000000','Craniocaudal');
+insert into CTrecon values ('PETCT_Body_LM.MlAdult','PET5','2','1','tmp CT Body RTD','5.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','11.500','20');
+insert into CTrecon values ('PETCT_Body_LM.MlAdult','PET5','2','2','AC CT','5.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','74');
+insert into CTrecon values ('PETCT_Body_LM.MlAdult','PET5','2','3','CT Body 3.0 B30f','3.00','B30f medium smooth','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','111');
+insert into Pause values ('PETCT_Body_LM.MlAdult','PET5','3');
+insert into PET values ('PETCT_Body_LM.MlAdult','PET5','4','1','PET Body LM','F-18','FDG','10 Millicuries','14/09 - 2006','11:24:00','List mode','Match CT FOV','1','60 Minutes','On','Off','List mode','Trues','None','435','650');
+insert into PETrecon values ('PETCT_Body_LM.MlAdult','PET5','4','1','PET WB ','Automatic/All/dunno','NoRecon','Iterative','4','8','168','1','Gaussian','5','0','0','On (1)','On','On','Off');

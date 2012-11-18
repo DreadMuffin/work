@@ -1,0 +1,10 @@
+insert into Protocols values ('2_PET_AC_WB_FDG_Barn.Child','PET4','Child','4','NOW()');
+insert into Topograms values ('2_PET_AC_WB_FDG_Barn.Child','PET4','1','Topogram','30','80','768','Bottom','4','Craniocaudal','','80','Topogram');
+insert into CT values ('2_PET_AC_WB_FDG_Barn.Child','PET4','2','3','LavDosis CT','50','80','On','CareDoseAEC','1.025','11.070','6.000','2','0.0','50','0.500','1.20','Craniocaudal');
+insert into CTrecon values ('2_PET_AC_WB_FDG_Barn.Child','PET4','2','1','tmp LavDosis CT RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','119');
+insert into CTrecon values ('2_PET_AC_WB_FDG_Barn.Child','PET4','2','2','AC LavDosis CT','2','B19f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','237');
+insert into CTrecon values ('2_PET_AC_WB_FDG_Barn.Child','PET4','2','3','LavDosis CT 3.0 B30f','3','B30f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','158');
+insert into Pause values ('2_PET_AC_WB_FDG_Barn.Child','PET4','3');
+insert into PET values ('2_PET_AC_WB_FDG_Barn.Child','PET4','4','2','PET WB','F-18','FDG','100000000.000000','01/04 - 2011','14:42:55','Sinogram','Match CT FOV','Null','2.000000 Minutes','On','Null','Sinogram','PromptsRandoms','None','Null','Null');
+insert into PETrecon values ('2_PET_AC_WB_FDG_Barn.Child','PET4','4','1','PET WB image check','1 to 3','Corrected','TrueX','2','12','200','1','Gaussian','3.000000','0','0','On (1)','On','On','Off');
+insert into PETrecon values ('2_PET_AC_WB_FDG_Barn.Child','PET4','4','2','PET WB Corr-TrueX','1 to 3','Corrected','TrueXTOF','2','21','400','1','Gaussian','2.000000','0','0','On (1)','On','On','Off');

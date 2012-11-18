@@ -1,0 +1,32 @@
+\select@language {danish}
+\contentsline {section}{\numberline {1}Topogram}{1}
+\contentsline {subsection}{\numberline {1.1}Routine}{1}
+\contentsline {subsection}{\numberline {1.2}Scan}{1}
+\contentsline {section}{\numberline {2}CT}{1}
+\contentsline {subsection}{\numberline {2.1}Routine}{1}
+\contentsline {subsection}{\numberline {2.2}Scan}{2}
+\contentsline {subsection}{\numberline {2.3}Recons}{2}
+\contentsline {subsubsection}{\numberline {2.3.1}Recon 1}{2}
+\contentsline {subsubsection}{\numberline {2.3.2}Recon 2}{3}
+\contentsline {subsubsection}{\numberline {2.3.3}Recon 3}{4}
+\contentsline {subsubsection}{\numberline {2.3.4}Recon 4}{4}
+\contentsline {subsubsection}{\numberline {2.3.5}Recon 5}{5}
+\contentsline {section}{\numberline {3}Pause}{6}
+\contentsline {section}{\numberline {4}PET Brain LM}{6}
+\contentsline {subsection}{\numberline {4.1}Routine}{6}
+\contentsline {subsection}{\numberline {4.2}Scan}{6}
+\contentsline {subsection}{\numberline {4.3}Recons}{7}
+\contentsline {subsubsection}{\numberline {4.3.1}Recon 1}{7}
+\contentsline {subsubsection}{\numberline {4.3.2}Recon 2}{7}
+\contentsline {subsubsection}{\numberline {4.3.3}Recon 3}{8}
+\contentsline {subsubsection}{\numberline {4.3.4}Recon 4}{9}
+\contentsline {subsubsection}{\numberline {4.3.5}Recon 5}{9}
+\contentsline {section}{\numberline {5}Pause}{10}
+\contentsline {section}{\numberline {6}ReadOnly=1 ResID=892 DynMulti4D}{10}
+\contentsline {subsection}{\numberline {6.1}Routine}{10}
+\contentsline {subsection}{\numberline {6.2}Scan}{11}
+\contentsline {subsection}{\numberline {6.3}Recons}{11}
+\contentsline {subsubsection}{\numberline {6.3.1}Recon 1}{11}
+\contentsline {subsubsection}{\numberline {6.3.2}Recon 2}{12}
+\contentsline {subsubsection}{\numberline {6.3.3}Recon 3}{12}
+\contentsline {subsubsection}{\numberline {6.3.4}Recon 4}{13}

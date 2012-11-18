@@ -1,0 +1,8 @@
+insert into Protocols values ('PETCT_Cardiac_LM.MlAdult','PET5','Adult','4','NOW()');
+insert into Topograms values ('PETCT_Cardiac_LM.MlAdult','PET5','1','Topogram','35','120','256','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
+insert into CT values ('PETCT_Cardiac_LM.MlAdult','PET5','2','2','CT Cardiac ','11','120','Off','CareDoseAEC','0.7414','3.360','4.000','3.00','0.0','170','0.500','1.5000000','Craniocaudal');
+insert into CTrecon values ('PETCT_Cardiac_LM.MlAdult','PET5','2','1','tmp CT Cardiac RTD','5.00','B18f very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','21.600','12');
+insert into CTrecon values ('PETCT_Cardiac_LM.MlAdult','PET5','2','2','AC CT','3.00','B18f very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','111');
+insert into Pause values ('PETCT_Cardiac_LM.MlAdult','PET5','3');
+insert into PET values ('PETCT_Cardiac_LM.MlAdult','PET5','4','1','PET Card LM','F-18','FDG','10 Millicuries','30/10 - 2006','11:25:00','List mode','Match CT FOV','1','10 Minutes','On','Off','List mode','Trues','ECG','435','650');
+insert into PETrecon values ('PETCT_Cardiac_LM.MlAdult','PET5','4','1','PET Cardiac','Automatic/All/dunno','NoRecon','Iterative','4','8','168','2','Gaussian','2','0','0','On (1)','On','On','Off');

@@ -1,0 +1,8 @@
+insert into Protocols values ('PET_AC_WB_FDG.MlChild','PET5','Child','4','NOW()');
+insert into Topograms values ('PET_AC_WB_FDG.MlChild','PET5','1','Topogram','50','80','0','Top','4','Craniocaudal','Null','T20s standard','Topogram Body');
+insert into CT values ('PET_AC_WB_FDG.MlChild','PET5','2','1','CT lavdosis','30','80','Off','CareDoseAEC','0.540268','11.000','4.000','3.00','0.0','25','0.500','1.4000000','Craniocaudal');
+insert into CTrecon values ('PET_AC_WB_FDG.MlChild','PET5','2','1','AC CT lavdosis','3.00','B19f PET very smooth','Baby Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
+insert into Pause values ('PET_AC_WB_FDG.MlChild','PET5','3');
+insert into PET values ('PET_AC_WB_FDG.MlChild','PET5','4','2','PET WB','F-18','FDG','1 MegaBequerels','08/05 - 2012','17:05:00','Sinogram','Match CT FOV','5','2 Minutes','On','Off','Sinogram','Trues','None','425','650');
+insert into PETrecon values ('PET_AC_WB_FDG.MlChild','PET5','4','1','PET WB corrected ','Automatic/All/dunno','Corrected','Iterative','4','8','168','1','Gaussian','4','0','0','On (1)','On','On','Off');
+insert into PETrecon values ('PET_AC_WB_FDG.MlChild','PET5','4','2','PET WB True X','Automatic/All/dunno','Corrected','TrueX','2','21','336','1','Gaussian','2','0','0','On (1)','Off','On','Off');
