@@ -1,10 +1,10 @@
-insert into Protocols values ('BEN_FDG_PET_CT_5.MlAdult','PET5','Adult','4','NOW()');
+insert into Protocols values ('BEN_FDG_PET_CT_5.MlAdult','PET5','Adult','4',NOW());
 insert into CT values ('BEN_FDG_PET_CT_5.MlAdult','PET5','1','1','Topogram Ben','367','120','Off','CareDose','0','10.460','4.000','0.60','0.0','0','0.500','1.0000000','Craniocaudal');
 insert into CTrecon values ('BEN_FDG_PET_CT_5.MlAdult','PET5','1','1','Topogram Ben 0.6 T80s','0.60','T80s sharp','Topogram Body','Off','0','0','0','LeftRight','Standard','Axial','Axial','Craniocaudal','0.100','1');
 insert into CT values ('BEN_FDG_PET_CT_5.MlAdult','PET5','2','2','CT Ben','225','120','On','CareDoseAEC','15.1475','12.680','4.000','3.00','0.0','225','0.500','1.2000000','Craniocaudal');
 insert into CTrecon values ('BEN_FDG_PET_CT_5.MlAdult','PET5','2','1','AC CT','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
 insert into CTrecon values ('BEN_FDG_PET_CT_5.MlAdult','PET5','2','2','CT Ben 3.0 B30f','3.00','B30f medium smooth','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
 insert into Pause values ('BEN_FDG_PET_CT_5.MlAdult','PET5','3');
-insert into PET values ('BEN_FDG_PET_CT_5.MlAdult','PET5','4','2','PET Ben','F-18','FDG','10 MegaBequerels','14/08 - 2008','15:22:00','Sinogram','Match CT FOV','1','2 Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('BEN_FDG_PET_CT_5.MlAdult','PET5','4','2','PET Ben','F-18','FDG','10','MegaBequerels','14/08 - 2008','15:22:00','Sinogram','Match CT FOV','1','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('BEN_FDG_PET_CT_5.MlAdult','PET5','4','1','PET WB Corrected ','Automatic/All/dunno','Corrected','Iterative','4','8','256','1','Gaussian','4','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('BEN_FDG_PET_CT_5.MlAdult','PET5','4','2','PET WB Uncorrected','Automatic/All/dunno','Uncorrected','Iterative','4','8','256','1','Gaussian','4','0','0','On (1)','Off','On','Off');

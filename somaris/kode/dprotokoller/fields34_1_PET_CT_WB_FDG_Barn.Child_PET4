@@ -1,4 +1,4 @@
-insert into Protocols values ('1_PET_CT_WB_FDG_Barn.Child','PET4','Child','4','NOW()');
+insert into Protocols values ('1_PET_CT_WB_FDG_Barn.Child','PET4','Child','4',NOW());
 insert into Topograms values ('1_PET_CT_WB_FDG_Barn.Child','PET4','1','Topogram','30','120','768','Bottom','4','Craniocaudal','','80','Topogram');
 insert into CT values ('1_PET_CT_WB_FDG_Barn.Child','PET4','2','5','CT WB','40','120','On','CareDoseAEC','2.912','11.070','6.000','2','0.0','40','0.500','1.20','Craniocaudal');
 insert into CTrecon values ('1_PET_CT_WB_FDG_Barn.Child','PET4','2','1','tmp CT WB RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','119');
@@ -7,6 +7,6 @@ insert into CTrecon values ('1_PET_CT_WB_FDG_Barn.Child','PET4','2','3','CT WB 2
 insert into CTrecon values ('1_PET_CT_WB_FDG_Barn.Child','PET4','2','4','CT WB 2.0 cor B30f','2','B30f','Abdomen','Off','500','0','0','None','Standard','3D','Coronal','AP','2.000','251');
 insert into CTrecon values ('1_PET_CT_WB_FDG_Barn.Child','PET4','2','5','CT WB 2.0 sag B30f','2','B30f','Abdomen','Off','500','0','0','None','Standard','3D','Sagittal','LeftToRight','2.000','251');
 insert into Pause values ('1_PET_CT_WB_FDG_Barn.Child','PET4','3');
-insert into PET values ('1_PET_CT_WB_FDG_Barn.Child','PET4','4','2','PET WB','F-18','FDG','100000000.000000','01/04 - 2011','14:34:05','Sinogram','Match CT FOV','Null','2.000000 Minutes','On','Null','Sinogram','PromptsRandoms','None','Null','Null');
+insert into PET values ('1_PET_CT_WB_FDG_Barn.Child','PET4','4','2','PET WB','F-18','FDG','100000000.000000','Bequerels','01/04 - 2011','14:34:05','Sinogram','Match CT FOV','Null','2.000000','Minutes','On','Null','Sinogram','PromptsRandoms','None','Null','Null');
 insert into PETrecon values ('1_PET_CT_WB_FDG_Barn.Child','PET4','4','1','PET WB image check','1 to 3','Corrected','TrueX','2','12','200','1','Gaussian','3.000000','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('1_PET_CT_WB_FDG_Barn.Child','PET4','4','2','PET WB Corr-TrueX + TOF 2 mm','1 to 3','Corrected','TrueXTOF','2','21','400','1','Gaussian','3.000000','0','0','On (1)','On','On','Off');

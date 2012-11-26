@@ -50,7 +50,7 @@ def apiid(value):
     """Checks whether an API is used"""
     if value == "-1":
         return "None"
-    else: return "API " + value 
+    else: return "API " + value
 
 def topo56():
     """Converts a topogram from PET 5 or 6 to tex"""

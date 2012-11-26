@@ -1,10 +1,10 @@
-insert into Protocols values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','Adult','4','NOW()');
+insert into Protocols values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','Adult','4',NOW());
 insert into Topograms values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','1','Topogram','35','120','1024','Top','4','Craniocaudal','','80','Topogram');
 insert into CT values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','2','2','LavdoseCTWB','50','120','On','CareDoseAEC','3.64','32.530','2.000','2','0.0','50','0.500','0.80','Craniocaudal');
 insert into CTrecon values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','2','1','tmp LavdoseCTWB RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','245');
 insert into CTrecon values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','2','2','CT transmission scan','2','B19f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','489');
 insert into Pause values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','3');
-insert into PET values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','4','3','PET WB','F-18','Fluorodeoxyglucose','1000000.000000','24/05 - 2012','16:14:43','Sinogram','Match CT FOV','Null','2.000000 Minutes','On','Null','Sinogram','false','None','Null','Null');
+insert into PET values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','4','3','PET WB','F-18','Fluorodeoxyglucose','1000000.000000','Bequerels','24/05 - 2012','16:14:43','Sinogram','Match CT FOV','Null','2.000000','Minutes','On','Null','Sinogram','false','None','Null','Null');
 insert into PETrecon values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','4','1','PET WB Image check HD','1 to 7','Corrected','Iterative3D','4','8','200','1','Gaussian','4.000000','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','4','2','PET AC','1 to 7','Corrected','TrueXTOF','2','21','400','1','Gaussian','2.000000','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('2_PET_AC_WB_FDG_HER3.Adult','PET4','4','3','PET NAC','1 to 7','Uncorrected','Iterative3D','2','24','400','1','Gaussian','2.000000','0','0','On (1)','On','On','Off');

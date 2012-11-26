@@ -6,6 +6,10 @@ import re
 source = "fprotokoller/"
 dest = "dprotokoller/"
 
+"""Empties the destinationfolder, to avoid duplicates"""
+if os.getcwd()[-13:] == "/somaris/kode":
+    os.system("rm " + dest + "*")
+
 listing = os.listdir(source)
 globalindex = 0
 
@@ -33,7 +37,6 @@ def reconrange(start,end):
         return "Automatic/All/dunno"
     else: return start + " to " + end
 
-
 def tubeposis(value):
     """Translates degrees to something readable."""
     if value == "270.0":
@@ -50,12 +53,14 @@ def apiid(value):
 
 
 def topo56(nr):
+    """Returns a list containing the data of a topogram"""
     topo = [name,scanner,str(nr),get(6),get(5), get(12)[:-4], get(10)[:-2],
             tubeposis(get(11))]
     topo.extend([get(8)[:-4], get(9)[2:],apiid(get(4)), get(17), get(21)])
     return topo
 
 def ct56(nr):
+    """Returns a list containing the data of a CT-phase"""
     crecons = int(get(20))
     croutine = [name,scanner,nr,crecons,get(13),get(11),get(18)[:-4],get(6)[2:],
             get(7)[2:],get(8),get(15),get(16),get(3),get(10)]
@@ -74,10 +79,13 @@ def ct56(nr):
     return ct
 
 def pause56(nr):
+    """Returns a list containing the fields of a pause"""
     return [name,scanner,nr]
 
 def pet56(nr):
-    injdose = get(11).split("(")[0] + " " + get(11).split("(")[1][2:-1]
+    """Returns a list containing the fields of a PET-phase"""
+    injamount = get(11).split("(")[0]
+    injunit = get(11).split("(")[1][2:-1]
     injdate = get(9)[6:] + "/" + get(9)[4:6] + " - " + get(9)[:4]
     injtime = get(10)[:2] + ":" + get(10)[2:4] + ":" + get(10)[4:6]
     scanoutput = ""
@@ -94,9 +102,9 @@ def pet56(nr):
     precons = int(get(20))
     pet = []
 
-    petroutine = [name,scanner,nr,precons,get(4),get(7),get(8),injdose,injdate,
-            injtime,scanoutput,scanrange,get(12),(scanduration[0] + " " +
-            scanduration[1][2:])]
+    petroutine = [name,scanner,nr,precons,get(4),get(7),get(8),injamount,injunit
+            ,injdate,injtime,scanoutput,scanrange,get(12),scanduration[0],
+            scanduration[1][2:]]
     petroutine.extend([onoff(get(3)),onoff(get(15)),scanoutput,get(17)[2:],
         get(18)[8:],get(5),get(6)])
 
@@ -147,7 +155,6 @@ def pause34(nr):
 
 
 def pet34(nr):
-    """Converts a PET scan from PET 3 or 4 to tex"""
     returnstring = ""
     global gindex
 
@@ -166,9 +173,9 @@ def pet34(nr):
     precons = int(get(17))
 
     petroutine = [name,scanner,nr,precons,get(4),get(8),get(12),get(5),
-            get(6)[6:] + "/" + get(6)[4:6] + " - " + get(6)[:4],get(7)[:2] + 
-            ":" + get(7)[2:4] + ":" + get(7)[4:6],scanoutput,scanrange,"Null",
-            scanduration[0] + " " + scanduration[1][2:]]
+            "Bequerels",get(6)[6:] + "/" + get(6)[4:6] + " - " + get(6)[:4],
+            get(7)[:2] + ":" + get(7)[2:4] + ":" + get(7)[4:6],scanoutput,
+            scanrange,"Null",scanduration[0],scanduration[1][2:]]
     petroutine.extend([onoff(get(3)),"Null",scanoutput,get(11)[2:],get(13)[8:],
         "Null","Null"])
 
@@ -243,6 +250,7 @@ for file in listing:
                 output.append(pause56(i+1))
                 gindex +=4
     else:
+         """Processes protocols from PET 3 and 4"""
          for i,item in enumerate(protoorder):
             if item == "topo":
                 output.append(topo34(i+1))
@@ -257,7 +265,10 @@ for file in listing:
                 output.append(pause34(i+1))
                 gindex +=4
 
+    """Constructs a text file containing all the necessary SQL-statements to
+    insert it into a database"""
     lines = "insert into Protocols values (\'" + "','".join(protocol) + "\');\n"
+    lines = lines.replace("'NOW()'","NOW()") #Grim hacket løsning.
     for i,item in enumerate(protoorder):
         if item == "topo":
             lines += ("insert into Topograms values (\'" + "','".join(output[i])

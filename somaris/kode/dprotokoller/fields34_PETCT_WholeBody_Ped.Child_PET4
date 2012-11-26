@@ -1,4 +1,4 @@
-insert into Protocols values ('PETCT_WholeBody_Ped.Child','PET4','Child','4','NOW()');
+insert into Protocols values ('PETCT_WholeBody_Ped.Child','PET4','Child','4',NOW());
 insert into Topograms values ('PETCT_WholeBody_Ped.Child','PET4','1','Topogram','35','120','768','Top','4','Craniocaudal','','80','Topogram');
 insert into CT values ('PETCT_WholeBody_Ped.Child','PET4','2','4','CT WB','65','120','On','CareDoseAEC','4.732','9.580','2.000','5','0.0','65','0.500','1.40','Craniocaudal');
 insert into CTrecon values ('PETCT_WholeBody_Ped.Child','PET4','2','1','tmp CT WB RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','119');
@@ -6,6 +6,6 @@ insert into CTrecon values ('PETCT_WholeBody_Ped.Child','PET4','2','2','AC CT WB
 insert into CTrecon values ('PETCT_WholeBody_Ped.Child','PET4','2','3','CT WB 3.0 B30f','3','B30f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','237');
 insert into CTrecon values ('PETCT_WholeBody_Ped.Child','PET4','2','4','CT LUNG 3.0 B70f','3','B70f','Lung','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','237');
 insert into Pause values ('PETCT_WholeBody_Ped.Child','PET4','3');
-insert into PET values ('PETCT_WholeBody_Ped.Child','PET4','4','2','PET WB','F-18','FDG','92500000.000000','02/10 - 2008','12:01:17','Sinogram','Match CT FOV','Null','2.000000 Minutes','On','Null','Sinogram','PromptsRandoms','None','Null','Null');
+insert into PET values ('PETCT_WholeBody_Ped.Child','PET4','4','2','PET WB','F-18','FDG','92500000.000000','Bequerels','02/10 - 2008','12:01:17','Sinogram','Match CT FOV','Null','2.000000','Minutes','On','Null','Sinogram','PromptsRandoms','None','Null','Null');
 insert into PETrecon values ('PETCT_WholeBody_Ped.Child','PET4','4','1','PET WB','1 to 3','Corrected','Iterative3D','2','24','200','1','Gaussian','5.000000','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('PETCT_WholeBody_Ped.Child','PET4','4','2','PET WB Uncorrected','1 to 3','Uncorrected','Iterative3D','2','24','200','1','Gaussian','5.000000','0','0','On (1)','On','On','Off');

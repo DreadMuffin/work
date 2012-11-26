@@ -1,4 +1,4 @@
-insert into Protocols values ('Fantom.MlAdult','PET5','Adult','6','NOW()');
+insert into Protocols values ('Fantom.MlAdult','PET5','Adult','6',NOW());
 insert into Topograms values ('Fantom.MlAdult','PET5','1','Topogram','35','120','256','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
 insert into CT values ('Fantom.MlAdult','PET5','2','2','CT Uden spejl','225','120','On','CareDoseAEC','15.1475','4.000','4.000','3.00','0.0','225','0.500','1.2000000','Craniocaudal');
 insert into CTrecon values ('Fantom.MlAdult','PET5','2','1','tmp CT Uden spejl RTD','5.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','17.300','14');
@@ -8,6 +8,6 @@ insert into CT values ('Fantom.MlAdult','PET5','4','2','CT med spejl','225','120
 insert into CTrecon values ('Fantom.MlAdult','PET5','4','1','tmp CT med spejl RTD','5.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','17.300','14');
 insert into CTrecon values ('Fantom.MlAdult','PET5','4','2','AC CT Med Spejl','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','74');
 insert into Pause values ('Fantom.MlAdult','PET5','5');
-insert into PET values ('Fantom.MlAdult','PET5','6','2','PET med spejl','F-18','FDG','25 MegaBequerels','12/07 - 2012','14:47:00','Sinogram','Match CT FOV','1','5 Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('Fantom.MlAdult','PET5','6','2','PET med spejl','F-18','FDG','25','MegaBequerels','12/07 - 2012','14:47:00','Sinogram','Match CT FOV','1','5','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('Fantom.MlAdult','PET5','6','1','AC PET m spejl CT u spejl','Automatic/All/dunno','Corrected','TrueX','6','16','336','1','Gaussian','2','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('Fantom.MlAdult','PET5','6','2','AC PET m spejl CT m spejl','Automatic/All/dunno','Corrected','TrueX','6','16','336','1','Gaussian','2','0','0','Off (1)','On','On','Off');

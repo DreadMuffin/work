@@ -1,9 +1,9 @@
-insert into Protocols values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','Child','4','NOW()');
+insert into Protocols values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','Child','4',NOW());
 insert into Topograms values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','1','Topogram','50','80','768','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
 insert into CT values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','2','2','CT WB','25','120','Off','CareDoseAEC','1.685','6.830','4.000','5.00','0.0','50','0.500','1.5000000','Craniocaudal');
 insert into CTrecon values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','2','1','tmp CT WB RTD','5.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','21.600','26');
 insert into CTrecon values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','2','2','AC CT','5.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','174');
 insert into Pause values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','3');
-insert into PET values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','4','2','PET WB','F-18','FDG','2.5 Millicuries','25/06 - 2007','12:27:00','Sinogram','Match CT FOV','3','2 Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','4','2','PET WB','F-18','FDG','2.5','Millicuries','25/06 - 2007','12:27:00','Sinogram','Match CT FOV','3','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','4','1','PET WB ','Automatic/All/dunno','Corrected','Iterative','4','8','168','1','Gaussian','5','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('PETCT_AC_WholeBody_Ped.MlChild','PET5','4','2','PET WB Uncorrected','Automatic/All/dunno','Uncorrected','Iterative','4','8','168','1','Gaussian','5','0','0','On (1)','On','On','Off');
