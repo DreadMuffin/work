@@ -22,7 +22,7 @@ Kernel
 Transfer1
 Transfer2
 Transfer3
-Window[READ_ONLY]:
+Window[READ_ONLY]
 MlModeRecon_End
 newmode:
 PROTOCOL_ENTRY_NO
@@ -71,11 +71,14 @@ PROTOCOL_ENTRY_NO
 MlOtherModalityEntry_Begin
 AutoLoad
 RangeName
+LLD
+ULD
 InjectedDose
 InjectionDate
 InjectionTime
 Isotope
 BedDuration
+RebinnerLut
 RebinnerMode
 HistogramMode
 Pharmaceutical

@@ -20,12 +20,14 @@ pet = tfields[4].split("\n")[1:-1]
 
 path3 = "protokoller3/"
 path4 = "protokoller4/"
-destpath = "fprotokoller/"
+destpath = "fprotokoller34/"
 
-def listappend(list, input):
-    """Concatenates lists"""
-    for item in input:
-        list.append(item)
+def onoff(value):
+    """Used to convert values to 1 or 0"""
+    if value == "true":
+        return "1"
+    else:
+        return "0"
 
 def loop(source,mname):
     listing = os.listdir(source)
@@ -37,7 +39,7 @@ def loop(source,mname):
             proto = f.split("\n")
             newProto = []
             for item in proto:
-                item = item.rstrip('\r\n')
+                item = item.rstrip('\r\n:')
                 item = item.replace("\t", " ")
                 item = re.sub(' +', ' ', item)
                 newProto.append(item)
@@ -46,31 +48,31 @@ def loop(source,mname):
             searching = False
             searchingtc = False
             fields = []
-            listappend(fields, start)
+            fields.extend(start)
             protoorder = []
             for i, item in enumerate(proto):
                 """Creates a fieldlist which fits the file"""
                 if searching:
                     if item.startswith("MlPause_Begin"):
                         searching = False
-                        listappend(fields, pause)
+                        fields.extend(pause)
                         protoorder.append("pause")
                     elif item.startswith("MlOtherModalityEntry_Begin"):
                         searching = False
-                        listappend(fields, pet)
+                        fields.extend(pet)
                         protoorder.append("pet")
-                    elif item.startswith("MlModeScan_Begin:"):
+                    elif item.startswith("MlModeScan_Begin"):
                         searchingtc = True
                         searching = False
                 elif searchingtc:
                     if (item.startswith("RangeName") and
                             item.endswith("\"Topogram\"")):
                         protoorder.append("topo")
-                        listappend(fields,topogram)
+                        fields.extend(topogram)
                         searchingtc = False
                     elif item.startswith("RangeName"):
                         protoorder.append("ct")
-                        listappend(fields,ct)
+                        fields.extend(ct)
                         searchingtc = False
                 elif item.startswith("PROTOCOL_ENTRY_NO"):
                     searching = True
@@ -98,6 +100,11 @@ def loop(source,mname):
                     elif item.startswith("PROTOCOL_ENTRY_NO"):
                         item = protoorder[protonr] + "\n" + item
                         protonr+=1
+                    elif item.startswith("ExtendedFOV" or "AutoLoad" or
+                            "RebinnerL" or "ScatterCorrect" or
+                            "SaveIntermediateData" or "MatchCTSliceLocation"):
+                         item = (item.split(" ")[0] + " " +
+                                 onoff(item.split(" ")[1]))
                     findex+=1
                     fieldlist+=item + "\n"
             fieldlist = fieldlist[:-1]

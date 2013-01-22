@@ -8,7 +8,7 @@ paths = ["fprotokoller/","pdf/","tprotokoller/","temppdf/","fejlkorsler/",
         "dprotokoller"]
 
 """In seperate line so it's easy to comment out"""
-#paths.extend("protokoller4/","protokoller3/")
+paths.extend(["protokoller4/","protokoller3/","fprotokoller34/"])
 
 if os.getcwd()[-13:] == "/somaris/kode":
     """Empties all the directories in 'paths'. A check is made to ensure that

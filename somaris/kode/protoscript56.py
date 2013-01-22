@@ -37,9 +37,10 @@ def loop(source,mname):
             proto = f.split("\n")
             newProto = []
             for item in proto:
-                item = item.rstrip('\r\n')
+                item = item.rstrip('\r\n:')
                 item = item.replace("\t"," ")
                 item = re.sub(' +',' ',item)
+                item = item.replace(":","")
                 newProto.append(item)
             proto = newProto
 
@@ -59,11 +60,11 @@ def loop(source,mname):
                         searching = False
                         listappend(fields,pet)
                         protoorder.append("pet")
-                    elif item.startswith("MlModeEntry_Begin:"):
+                    elif item.startswith("MlModeEntry_Begin"):
                         searchingtc = True
                         searching = False
                 elif searchingtc:
-                    if item == "RangeName[READ_ONLY]: \"Topogram\"":
+                    if item == "RangeName[READ_ONLY] \"Topogram\"":
                         protoorder.append("topo")
                         listappend(fields,topogram)
                         searchingtc = False

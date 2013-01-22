@@ -1,10 +1,10 @@
 insert into Protocols values ('PETCT_Lung.Adult','PET4','Adult','4',NOW());
-insert into Topograms values ('PETCT_Lung.Adult','PET4','1','Topogram','35','120','768','Top','4','Craniocaudal','','80','Topogram');
+insert into Topograms values ('PETCT_Lung.Adult','PET4','1','Topogram','35','120','768','Top','4','Craniocaudal','','T80s','Topogram');
 insert into CT values ('PETCT_Lung.Adult','PET4','2','4','CT Lung','120','120','On','CareDoseAEC','9.12','7.250','2.000','5','0.0','120','0.500','1.40','Craniocaudal');
 insert into CTrecon values ('PETCT_Lung.Adult','PET4','2','1','tmp CT Lung RTD','5','B19f','Mediastinum','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','5.000','70');
 insert into CTrecon values ('PETCT_Lung.Adult','PET4','2','2','AC CT Lung','5','B19f','Mediastinum','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','116');
 insert into CTrecon values ('PETCT_Lung.Adult','PET4','2','3','CT Lung 2.0 B31f','2','B31f','Mediastinum','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','232');
 insert into CTrecon values ('PETCT_Lung.Adult','PET4','2','4','CT LUNG 2.0 B70f','2','B70f','Lung','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','232');
 insert into Pause values ('PETCT_Lung.Adult','PET4','3');
-insert into PET values ('PETCT_Lung.Adult','PET4','4','1','PET Lung','F-18','Fluorodeoxyglucose','370000000.000000','Bequerels','02/10 - 2008','08:48:06','Sinogram','Match CT FOV','Null','2.000000','Minutes','On','Null','Sinogram','false','None','Null','Null');
-insert into PETrecon values ('PETCT_Lung.Adult','PET4','4','1','PET Lung','1 to 2','Corrected','Iterative3D','2','24','200','1','Gaussian','5','0','0','On (1)','On','On','Off');
+insert into PET values ('PETCT_Lung.Adult','PET4','4','1','PET Lung','F-18','Fluorodeoxyglucose','370000000','Bequerels','02/10 - 2008','08:48:06','Sinogram','Match CT FOV','Not given. Check recon range','2.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
+insert into PETrecon values ('PETCT_Lung.Adult','PET4','4','1','PET Lung','1 to 2','Corrected','Iterative3D','2','24','200','1','Gaussian','5','0','0','Off ()','On','On','Off');

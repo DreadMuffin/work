@@ -3,6 +3,8 @@
 import os
 import pymysql
 
+print "Creating the database"
+
 source = "dprotokoller/"
 listing = os.listdir(source)
 
@@ -57,7 +59,7 @@ cur.execute("create table CT (Protocolname varchar(200),PETscanner char(10), Mod
         " int,Recons int, Name varchar(20)" +
         ",Eff_mAs int,kV int,Care_Dose4D varchar(10),CareDoseType varchar(30)" +
         ",CTDlvol int,ScanTime int,Delay int,Slice int,Tilt int," +
-        "QualityRefmAs int,Rotationtime int,Pitch int,Direction varchar(30)" +
+        "QualityRefmAs int,Rotationtime double,Pitch int,Direction varchar(30)" +
         ",Primary Key (Protocolname,PETscanner,Modenr))")
 
 cur.execute("create table CTrecon (Protocolname varchar(200),PETscanner char(10)," +
@@ -96,16 +98,13 @@ for file in listing:
         pass
     else:
         f = open(source+file,'r')
-        print file
         lines = f.read().split("\n")
         for line in lines[:-1]:
-            print line
             cur.execute(line)
 
 
 
 
-print cur.description
 
 # r = cur.fetchall()
 # print r

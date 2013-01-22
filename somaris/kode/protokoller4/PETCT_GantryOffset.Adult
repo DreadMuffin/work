@@ -1,4 +1,4 @@
-MlScanProtocolAttributes_Begin: 138
+MlScanProtocolAttributes_Begin 138
 ActiveEntry -1
 AEC_SlopeObese 0.40
 AEC_SlopeSmall 0.50
@@ -29,8 +29,8 @@ StudyUIDs ""
 TotalmAs 0
 TotalNoOfScans 0
 
-PROTOCOL_ENTRY_NO: 1
-MlModeScan_Begin: 138
+PROTOCOL_ENTRY_NO 1
+MlModeScan_Begin 138
 ItemList_MlModeEntryType
 ActivityID ""
 AutoRange MlAutoRangeNone
@@ -66,7 +66,7 @@ FrameOfReferenceUID ""
 Physio false
 PhysioAverage MlPhysioAverageLast3
 PhysioSyntheticTrigger false
-RangeName ReadOnly="1" ResID="72" "Topogram"
+RangeName "Topogram"
 RangeStart MlRangeStartConsole
 RawDataLoid ""
 Reserve ""
@@ -365,9 +365,9 @@ ZigZagScanTimeTolerance 1.03
 ZigZagSubMode MlZigZagSubModePerfusion
 ZigZagXRayPatterns ""
 
-MlModeScan_End: 138
-No_Of_Valid_Recons: 1
-MlModeRecon_Begin: 138
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
 AutoRecon false
 ConfirmDeletion false
 FailedReason ""
@@ -541,7 +541,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_Caudocranial
-Window[READ_ONLY]: "Topogram
+Window[READ_ONLY] "Topogram
 Window1Center 50
 Window1Width 350
 Window2Center 300
@@ -550,9 +550,9 @@ ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
 
-MlModeRecon_End: 138
-PROTOCOL_ENTRY_NO: 2
-MlModeScan_Begin: 138
+MlModeRecon_End 138
+PROTOCOL_ENTRY_NO 2
+MlModeScan_Begin 138
 ItemList_MlModeEntryType
 ActivityID ""
 AutoRange MlAutoRangeNone
@@ -887,9 +887,9 @@ ZigZagScanTimeTolerance 1.03
 ZigZagSubMode MlZigZagSubModePerfusion
 ZigZagXRayPatterns ""
 
-MlModeScan_End: 138
-No_Of_Valid_Recons: 2
-MlModeRecon_Begin: 138
+MlModeScan_End 138
+No_Of_Valid_Recons 2
+MlModeRecon_Begin 138
 AutoRecon false
 ConfirmDeletion false
 FailedReason ""
@@ -1063,7 +1063,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_Craniocaudal
-Window[READ_ONLY]: "Abdomen"
+Window[READ_ONLY] "Abdomen"
 Window1Center 40
 Window1Width 300
 Window2Center 300
@@ -1071,8 +1071,8 @@ Window2Width 1500
 ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
-MlModeRecon_End: 138
-MlModeRecon_Begin: 138
+MlModeRecon_End 138
+MlModeRecon_Begin 138
 AutoRecon true
 ConfirmDeletion false
 FailedReason ""
@@ -1246,7 +1246,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_Craniocaudal
-Window[READ_ONLY]: "Abdomen"
+Window[READ_ONLY] "Abdomen"
 Window1Center 40
 Window1Width 300
 Window2Center 300
@@ -1255,11 +1255,11 @@ ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
 
-MlModeRecon_End: 138
-MlModeEntry_End: 138
-PROTOCOL_ENTRY_NO: 3
-MlPause_Begin: 138
-MlPause_End: 138
+MlModeRecon_End 138
+MlModeEntry_End 138
+PROTOCOL_ENTRY_NO 3
+MlPause_Begin 138
+MlPause_End 138
 ActivityID ""
 AutoRange MlAutoRangeNone
 EntrySelected false
@@ -1272,9 +1272,9 @@ m_PauseText ""
 m_PauseTime 0
 NewExamination false
 
-MlModeRecon_End: 138
-PROTOCOL_ENTRY_NO: 4
-MlOtherModalityEntry_Begin: 138
+MlModeRecon_End 138
+PROTOCOL_ENTRY_NO 4
+MlOtherModalityEntry_Begin 138
 ItemList_MlOtherModalityEntryType
 ActivityID ""
 AutoRange MlAutoRangeNone
@@ -1303,6 +1303,8 @@ Physio false
 PhysioAverage MlPhysioAverageLast3
 PhysioSyntheticTrigger false
 RangeName "PET Offset"
+LLD n/a
+ULD n/a
 RangeStart MlRangeStartConsole
 RawDataLoid ""
 Reserve ""
@@ -1342,9 +1344,11 @@ InjectedDose 59200000.000000
 InjectionDate 20080624
 InjectionTime 141243.000000
 Isotope Ge-68
-BedDuration: 10000000.000000(PtCounts)
+BedDuration 10000000.000000(PtCounts)
+RebinnerLut Null
 RebinnerMode PtOnlineHistogram
-HistogramMode: Ptfalse
+
+HistogramMode Ptfalse
 Pharmaceutical Crossed Rods
 PhysioInputType PtPhysioNone
 NumberOfBeds Not given. Check recon range
@@ -1354,9 +1358,9 @@ TableDirectionPatient PtCraniocaudal
 Version 3
 
 
-MlModeScan_End: 138
-No_Of_Valid_Recons: 1
-MlModeRecon_Begin: 138
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
 ItemList_MlOtherModalityModeReconType
 AutoRecon true
 ConfirmDeletion false
@@ -1433,6 +1437,5 @@ WaveformReplayMode PtOptimal
 XOffset 0
 YOffset 0
 Zoom 1
-MlModeRecon_End: 3
-
-MlScanProtocol_End: 138
+MlModeRecon_End 3
+MlScanProtocol_End 138

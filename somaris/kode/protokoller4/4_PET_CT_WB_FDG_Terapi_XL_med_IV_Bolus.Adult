@@ -1,4 +1,4 @@
-MlScanProtocolAttributes_Begin: 138
+MlScanProtocolAttributes_Begin 138
 ActiveEntry -1
 AEC_SlopeObese 0.52
 AEC_SlopeSmall 0.50
@@ -40,8 +40,8 @@ Visible true
 m_MemoText "Husk i CT LIGE tal"
 m_NewPatPos MlPositionUndefined
 
-PROTOCOL_ENTRY_NO: 1
-MlModeScan_Begin: 138
+PROTOCOL_ENTRY_NO 1
+MlModeScan_Begin 138
 ItemList_MlModeEntryType
 ActivityID ""
 AutoRange MlAutoRangeNone
@@ -77,7 +77,7 @@ FrameOfReferenceUID ""
 Physio false
 PhysioAverage MlPhysioAverageLast3
 PhysioSyntheticTrigger false
-RangeName ReadOnly="1" ResID="72" "Topogram"
+RangeName "Topogram"
 RangeStart MlRangeStartConsole
 RawDataLoid ""
 Reserve ""
@@ -376,9 +376,9 @@ ZigZagScanTimeTolerance 1.03
 ZigZagSubMode MlZigZagSubModePerfusion
 ZigZagXRayPatterns ""
 
-MlModeScan_End: 138
-No_Of_Valid_Recons: 1
-MlModeRecon_Begin: 138
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
 AutoRecon false
 ConfirmDeletion false
 FailedReason ""
@@ -552,7 +552,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_Caudocranial
-Window[READ_ONLY]: "Topogram
+Window[READ_ONLY] "Topogram
 Window1Center 50
 Window1Width 350
 Window2Center 300
@@ -561,9 +561,9 @@ ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
 
-MlModeRecon_End: 138
-PROTOCOL_ENTRY_NO: 2
-MlModeScan_Begin: 138
+MlModeRecon_End 138
+PROTOCOL_ENTRY_NO 2
+MlModeScan_Begin 138
 ItemList_MlModeEntryType
 ActivityID ""
 AutoRange MlAutoRangeNone
@@ -898,9 +898,9 @@ ZigZagScanTimeTolerance 1.03
 ZigZagSubMode MlZigZagSubModePerfusion
 ZigZagXRayPatterns ""
 
-MlModeScan_End: 138
-No_Of_Valid_Recons: 1
-MlModeRecon_Begin: 138
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
 AutoRecon true
 ConfirmDeletion false
 FailedReason ""
@@ -1074,7 +1074,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_Craniocaudal
-Window[READ_ONLY]: "Abdomen"
+Window[READ_ONLY] "Abdomen"
 Window1Center 40
 Window1Width 300
 Window2Center 300
@@ -1134,9 +1134,9 @@ BolusTriggerAlgorithm MlBolusTriggerAlgorithmStandard
 BolusTriggerLevel 80
 BolusWeight 0.000
 
-MlModeRecon_End: 138
-PROTOCOL_ENTRY_NO: 3
-MlModeScan_Begin: 138
+MlModeRecon_End 138
+PROTOCOL_ENTRY_NO 3
+MlModeScan_Begin 138
 ItemList_MlModeEntryType
 ActivityID ""
 AutoRange MlAutoRangeBegin
@@ -1471,9 +1471,9 @@ ZigZagScanTimeTolerance 1.03
 ZigZagSubMode MlZigZagSubModePerfusion
 ZigZagXRayPatterns ""
 
-MlModeScan_End: 138
-No_Of_Valid_Recons: 1
-MlModeRecon_Begin: 138
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
 AutoRecon true
 ConfirmDeletion false
 FailedReason ""
@@ -1647,7 +1647,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_Craniocaudal
-Window[READ_ONLY]: "Abdomen"
+Window[READ_ONLY] "Abdomen"
 Window1Center 40
 Window1Width 300
 Window2Center 300
@@ -1656,9 +1656,9 @@ ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
 
-MlModeRecon_End: 138
-PROTOCOL_ENTRY_NO: 4
-MlModeScan_Begin: 138
+MlModeRecon_End 138
+PROTOCOL_ENTRY_NO 4
+MlModeScan_Begin 138
 ItemList_MlModeEntryType
 ActivityID ""
 AutoRange MlAutoRangeEnd
@@ -1993,9 +1993,9 @@ ZigZagScanTimeTolerance 1.03
 ZigZagSubMode MlZigZagSubModePerfusion
 ZigZagXRayPatterns ""
 
-MlModeScan_End: 138
-No_Of_Valid_Recons: 5
-MlModeRecon_Begin: 138
+MlModeScan_End 138
+No_Of_Valid_Recons 5
+MlModeRecon_Begin 138
 AutoRecon false
 ConfirmDeletion false
 FailedReason ""
@@ -2169,7 +2169,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_Craniocaudal
-Window[READ_ONLY]: "Abdomen"
+Window[READ_ONLY] "Abdomen"
 Window1Center 40
 Window1Width 300
 Window2Center 300
@@ -2177,8 +2177,8 @@ Window2Width 1500
 ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
-MlModeRecon_End: 138
-MlModeRecon_Begin: 138
+MlModeRecon_End 138
+MlModeRecon_Begin 138
 AutoRecon true
 ConfirmDeletion false
 FailedReason ""
@@ -2352,7 +2352,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_Craniocaudal
-Window[READ_ONLY]: "Abdomen"
+Window[READ_ONLY] "Abdomen"
 Window1Center 40
 Window1Width 300
 Window2Center 300
@@ -2360,8 +2360,8 @@ Window2Width 1500
 ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
-MlModeRecon_End: 138
-MlModeRecon_Begin: 138
+MlModeRecon_End 138
+MlModeRecon_Begin 138
 AutoRecon true
 ConfirmDeletion false
 FailedReason ""
@@ -2535,7 +2535,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_Craniocaudal
-Window[READ_ONLY]: "Abdomen"
+Window[READ_ONLY] "Abdomen"
 Window1Center 40
 Window1Width 300
 Window2Center 300
@@ -2543,8 +2543,8 @@ Window2Width 1500
 ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
-MlModeRecon_End: 138
-MlModeRecon_Begin: 138
+MlModeRecon_End 138
+MlModeRecon_Begin 138
 AutoRecon false
 ConfirmDeletion false
 FailedReason ""
@@ -2718,7 +2718,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_AP
-Window[READ_ONLY]: "Abdomen"
+Window[READ_ONLY] "Abdomen"
 Window1Center 40
 Window1Width 300
 Window2Center 300
@@ -2726,8 +2726,8 @@ Window2Width 1500
 ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
-MlModeRecon_End: 138
-MlModeRecon_Begin: 138
+MlModeRecon_End 138
+MlModeRecon_Begin 138
 AutoRecon false
 ConfirmDeletion false
 FailedReason ""
@@ -2901,7 +2901,7 @@ Ui3DViewZoomX 1.000000000000;1.000000000000;1.000000000000
 Ui3DViewZoomY 1.000000000000;1.000000000000;1.000000000000
 Viewing MlOff
 ViewingDirection MlIO_LeftToRight
-Window[READ_ONLY]: "Abdomen"
+Window[READ_ONLY] "Abdomen"
 Window1Center 40
 Window1Width 300
 Window2Center 300
@@ -2910,11 +2910,11 @@ ZigZagFirstReconPattern 0
 ZigZagLastReconPattern 0
 
 
-MlModeRecon_End: 138
-MlModeEntry_End: 138
-PROTOCOL_ENTRY_NO: 5
-MlPause_Begin: 138
-MlPause_End: 138
+MlModeRecon_End 138
+MlModeEntry_End 138
+PROTOCOL_ENTRY_NO 5
+MlPause_Begin 138
+MlPause_End 138
 ActivityID ""
 AutoRange MlAutoRangeNone
 EntrySelected false
@@ -2927,9 +2927,9 @@ m_PauseText ""
 m_PauseTime 0
 NewExamination false
 
-MlModeRecon_End: 138
-PROTOCOL_ENTRY_NO: 6
-MlOtherModalityEntry_Begin: 138
+MlModeRecon_End 138
+PROTOCOL_ENTRY_NO 6
+MlOtherModalityEntry_Begin 138
 ItemList_MlOtherModalityEntryType
 ActivityID ""
 AutoRange MlAutoRangeNone
@@ -2958,6 +2958,8 @@ Physio false
 PhysioAverage MlPhysioAverageLast3
 PhysioSyntheticTrigger false
 RangeName "PET WB"
+LLD n/a
+ULD n/a
 RangeStart MlRangeStartConsole
 RawDataLoid ""
 Reserve ""
@@ -2997,9 +2999,11 @@ InjectedDose 400000000.000000
 InjectionDate 20120514
 InjectionTime 142043.000000
 Isotope F-18
-BedDuration: 2.000000(PtMinutes)
+BedDuration 2.000000(PtMinutes)
+RebinnerLut Null
 RebinnerMode PtOnlineHistogram
-HistogramMode: Ptfalse
+
+HistogramMode Ptfalse
 Pharmaceutical Fluorodeoxyglucose
 PhysioInputType PtPhysioNone
 NumberOfBeds Not given. Check recon range
@@ -3009,9 +3013,9 @@ TableDirectionPatient PtCaudocranial
 Version 3
 
 
-MlModeScan_End: 138
-No_Of_Valid_Recons: 2
-MlModeRecon_Begin: 138
+MlModeScan_End 138
+No_Of_Valid_Recons 2
+MlModeRecon_Begin 138
 ItemList_MlOtherModalityModeReconType
 AutoRecon true
 ConfirmDeletion false
@@ -3090,8 +3094,8 @@ YOffset 0
 Zoom 1
 
 
-MlModeRecon_End: 138
-MlModeRecon_Begin: 138
+MlModeRecon_End 138
+MlModeRecon_Begin 138
 ItemList_MlOtherModalityModeReconType
 AutoRecon true
 ConfirmDeletion false
@@ -3168,6 +3172,5 @@ WaveformReplayMode PtOptimal
 XOffset 0
 YOffset 0
 Zoom 1
-MlModeRecon_End: 3
-
-MlScanProtocol_End: 138
+MlModeRecon_End 3
+MlScanProtocol_End 138
