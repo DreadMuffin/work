@@ -4,6 +4,6 @@ insert into CT values ('PETCT_AC_WholeBody_XXL.Adult','PET4','2','2','CT WB','50
 insert into CTrecon values ('PETCT_AC_WholeBody_XXL.Adult','PET4','2','1','tmp CT WB RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','182');
 insert into CTrecon values ('PETCT_AC_WholeBody_XXL.Adult','PET4','2','2','AC CT WB','5','B19f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','242');
 insert into Pause values ('PETCT_AC_WholeBody_XXL.Adult','PET4','3');
-insert into PET values ('PETCT_AC_WholeBody_XXL.Adult','PET4','4','2','PET WB','F-18','Fluorodeoxyglucose','370000000','Bequerels','08/12 - 2008','01:14:08','Sinogram','Match CT FOV','Not given. Check recon range','3.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
+insert into PET values ('PETCT_AC_WholeBody_XXL.Adult','PET4','4','2','PET WB','F-18','Fluorodeoxyglucose','370000000','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','3.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
 insert into PETrecon values ('PETCT_AC_WholeBody_XXL.Adult','PET4','4','1','PET WB','1 to 5','Corrected','Iterative3D','2','24','200','1','Gaussian','6.000000','0','0','Off ()','On','On','Off');
 insert into PETrecon values ('PETCT_AC_WholeBody_XXL.Adult','PET4','4','2','PET WB Uncorrected','1 to 5','Uncorrected','Iterative3D','2','24','200','1','Gaussian','6.000000','0','0','Off ()','On','On','Off');

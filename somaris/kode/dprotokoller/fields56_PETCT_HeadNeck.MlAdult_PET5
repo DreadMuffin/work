@@ -5,6 +5,6 @@ insert into CTrecon values ('PETCT_HeadNeck.MlAdult','PET5','2','1','tmp CT Head
 insert into CTrecon values ('PETCT_HeadNeck.MlAdult','PET5','2','2','AC CT','3.00','B19s PET very smooth','Larynx','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','111');
 insert into CTrecon values ('PETCT_HeadNeck.MlAdult','PET5','2','3','CT HeadNeck 2.0 B31s','2.00','B31s medium smooth +','Larynx','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','148');
 insert into Pause values ('PETCT_HeadNeck.MlAdult','PET5','3');
-insert into PET values ('PETCT_HeadNeck.MlAdult','PET5','4','2','PET HeadNeck','F-18','FDG','10','Millicuries','30/10 - 2006','09:41:00','Sinogram','Match CT FOV','1','10','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('PETCT_HeadNeck.MlAdult','PET5','4','2','PET HeadNeck','F-18','FDG','10','Millicuries','Sinogram','Match CT FOV','1','10','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('PETCT_HeadNeck.MlAdult','PET5','4','1','PET HeadNeck','Automatic/All/dunno','Corrected','Iterative','6','16','256','1','Gaussian','2','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('PETCT_HeadNeck.MlAdult','PET5','4','2','PET HeadNeck Uncorrected','Automatic/All/dunno','Uncorrected','Iterative','6','16','256','1','Gaussian','2','0','0','On (1)','Off','On','Off');

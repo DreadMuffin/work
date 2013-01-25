@@ -99,8 +99,6 @@ def pet(nr):
         if get(32) == "true":
             scanrange = "Match CT FOV"
         else: scanrange = "Match CT FOV"
-    injdate = get(9)[6:] + "/" + get(9)[4:6] + " - " + get(9)[:4]
-    injtime = get(10)[:2] + ":" + get(10)[2:4] + ":" + get(10)[4:6]
     scanoutput = ""
     if get(16) == "PtListMode32":
         scanoutput = "List mode"
@@ -111,7 +109,7 @@ def pet(nr):
     pet = []
 
     petroutine = [name,scanner,nr,precons,get(4),get(7),get(8),injamount,injunit
-            ,injdate,injtime,scanoutput,scanrange,get(12),scanduration[0],
+            ,scanoutput,scanrange,get(12),scanduration[0],
             scanduration[1][2:]]
     petroutine.extend([onoff(get(3)),onoff(get(15)),scanoutput,get(17)[2:],
         get(18)[8:],get(5),get(6)])

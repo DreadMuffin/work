@@ -86,7 +86,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET Rest LM"
 LLD n/a
 ULD n/a
@@ -95,7 +95,7 @@ InjectionDate 20090810
 InjectionTime 111335.000000
 Isotope Rb-82
 BedDuration 7.000000(PtMinutes)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtListMode32
 HistogramMode PtPromptsRandoms
 Pharmaceutical Liquid Solution
@@ -111,12 +111,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 5
 ImageSize 200
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtNoRecon
 ReconFilter PtGaussian
 ReconMethod PtBackprojection
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription Cardiac Rest LM
 Subsets 12
 XOffset 0
@@ -130,7 +130,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 6
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET Stress LM"
 LLD n/a
 ULD n/a
@@ -139,7 +139,7 @@ InjectionDate 20090810
 InjectionTime 111335.000000
 Isotope Rb-82
 BedDuration 7.000000(PtMinutes)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtListMode32
 HistogramMode PtPromptsRandoms
 Pharmaceutical Liquid Solution
@@ -155,12 +155,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 5
 ImageSize 200
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtNoRecon
 ReconFilter PtGaussian
 ReconMethod PtBackprojection
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription Cardiac Stress LM
 Subsets 12
 XOffset 0

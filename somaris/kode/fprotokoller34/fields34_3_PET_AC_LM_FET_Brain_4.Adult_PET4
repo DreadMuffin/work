@@ -86,7 +86,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad false
+AutoLoad 0
 RangeName "PET Brain LM"
 LLD n/a
 ULD n/a
@@ -95,7 +95,7 @@ InjectionDate 20120919
 InjectionTime 125000.000000
 Isotope F-18
 BedDuration 20.000000(PtMinutes)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtListMode32
 HistogramMode Ptfalse
 Pharmaceutical FET
@@ -111,12 +111,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 1.000000
 ImageSize 400
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription FET_stat_1 mm
 Subsets 12
 XOffset 0
@@ -130,12 +130,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 5.000000
 ImageSize 400
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription FET_stat_5 mm
 Subsets 12
 XOffset 0
@@ -149,12 +149,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 5.000000
 ImageSize 400
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription FET_stat_4Fdyn_5 mm
 Subsets 12
 XOffset 0
@@ -168,12 +168,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 1.000000
 ImageSize 400
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription FET_STAT_25-35min_5 mm
 Subsets 12
 XOffset 0

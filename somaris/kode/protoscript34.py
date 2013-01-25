@@ -22,6 +22,9 @@ path3 = "protokoller3/"
 path4 = "protokoller4/"
 destpath = "fprotokoller34/"
 
+boollist = ["ExtendedFOV","AutoLoad","RebinnerL","ScatterCorrect",
+            "SaveIntermediateData","MatchCTSliceLocation"]
+
 def onoff(value):
     """Used to convert values to 1 or 0"""
     if value == "true":
@@ -100,9 +103,7 @@ def loop(source,mname):
                     elif item.startswith("PROTOCOL_ENTRY_NO"):
                         item = protoorder[protonr] + "\n" + item
                         protonr+=1
-                    elif item.startswith("ExtendedFOV" or "AutoLoad" or
-                            "RebinnerL" or "ScatterCorrect" or
-                            "SaveIntermediateData" or "MatchCTSliceLocation"):
+                    elif filter(item.startswith,boollist):
                          item = (item.split(" ")[0] + " " +
                                  onoff(item.split(" ")[1]))
                     findex+=1

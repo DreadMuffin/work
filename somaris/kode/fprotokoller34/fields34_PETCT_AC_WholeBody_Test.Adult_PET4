@@ -137,7 +137,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET WB"
 LLD n/a
 ULD n/a
@@ -146,7 +146,7 @@ InjectionDate 20100913
 InjectionTime 150914.000000
 Isotope F-18
 BedDuration 3.000000(PtMinutes)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 Pharmaceutical Fluorodeoxyglucose
@@ -162,12 +162,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 200
 Iterations 2
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtTrueX
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET WB Corrected HD
 Subsets 12
 XOffset 0
@@ -181,12 +181,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 2.000000
 ImageSize 400
 Iterations 3
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtTrueXTOF
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET WB Corr TrueX+TOF
 Subsets 21
 XOffset 0

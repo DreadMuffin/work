@@ -5,6 +5,6 @@ insert into CT values ('BEN_FDG_PET_CT_5.MlAdult','PET5','2','2','CT Ben','225',
 insert into CTrecon values ('BEN_FDG_PET_CT_5.MlAdult','PET5','2','1','AC CT','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
 insert into CTrecon values ('BEN_FDG_PET_CT_5.MlAdult','PET5','2','2','CT Ben 3.0 B30f','3.00','B30f medium smooth','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
 insert into Pause values ('BEN_FDG_PET_CT_5.MlAdult','PET5','3');
-insert into PET values ('BEN_FDG_PET_CT_5.MlAdult','PET5','4','2','PET Ben','F-18','FDG','10','MegaBequerels','14/08 - 2008','15:22:00','Sinogram','Match CT FOV','1','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('BEN_FDG_PET_CT_5.MlAdult','PET5','4','2','PET Ben','F-18','FDG','10','MegaBequerels','Sinogram','Match CT FOV','1','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('BEN_FDG_PET_CT_5.MlAdult','PET5','4','1','PET WB Corrected ','Automatic/All/dunno','Corrected','Iterative','4','8','256','1','Gaussian','4','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('BEN_FDG_PET_CT_5.MlAdult','PET5','4','2','PET WB Uncorrected','Automatic/All/dunno','Uncorrected','Iterative','4','8','256','1','Gaussian','4','0','0','On (1)','Off','On','Off');

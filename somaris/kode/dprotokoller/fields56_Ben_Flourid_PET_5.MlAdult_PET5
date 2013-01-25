@@ -4,7 +4,7 @@ insert into CTrecon values ('Ben_Flourid_PET_5.MlAdult','PET5','1','1','Topogram
 insert into CT values ('Ben_Flourid_PET_5.MlAdult','PET5','2','1','Lav CT knogle','40','120','Off','CareDoseAEC','2.69288','12.680','4.000','3.00','0.0','225','0.500','1.2000000','Craniocaudal');
 insert into CTrecon values ('Ben_Flourid_PET_5.MlAdult','PET5','2','1','AC CT  ben  knogleskanning','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
 insert into Pause values ('Ben_Flourid_PET_5.MlAdult','PET5','3');
-insert into PET values ('Ben_Flourid_PET_5.MlAdult','PET5','4','4','PET knogle','F-18','Fluoride','10','MegaBequerels','21/08 - 2012','14:03:00','Sinogram','Match CT FOV','5','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('Ben_Flourid_PET_5.MlAdult','PET5','4','4','PET knogle','F-18','Fluoride','10','MegaBequerels','Sinogram','Match CT FOV','5','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('Ben_Flourid_PET_5.MlAdult','PET5','4','1','PET Image check','Automatic/All/dunno','Corrected','Iterative','4','8','168','1','Gaussian','4','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('Ben_Flourid_PET_5.MlAdult','PET5','4','2','PET knogleskanning  True X 2mm ','Automatic/All/dunno','Corrected','TrueX','3','21','336','1','Gaussian','2','0','0','On (1)','Off','On','Off');
 insert into PETrecon values ('Ben_Flourid_PET_5.MlAdult','PET5','4','3','PET BEN UDEN True X','Automatic/All/dunno','Corrected','Iterative','3','21','336','1','Gaussian','4','0','0','On (1)','Off','On','Off');

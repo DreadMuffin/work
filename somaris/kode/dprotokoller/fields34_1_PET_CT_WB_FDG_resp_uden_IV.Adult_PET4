@@ -12,6 +12,6 @@ insert into CTrecon values ('1_PET_CT_WB_FDG_resp_uden_IV.Adult','PET4','4','3',
 insert into CTrecon values ('1_PET_CT_WB_FDG_resp_uden_IV.Adult','PET4','4','4','CT WB 2.0 cor B30f','2','B30f','Abdomen','Off','977','0','0','None','Standard','3D','Coronal','AP','2.000','251');
 insert into CTrecon values ('1_PET_CT_WB_FDG_resp_uden_IV.Adult','PET4','4','5','CT WB 2.0 sag B30f','2','B30f','Abdomen','Off','977','0','0','None','Standard','3D','Sagittal','LeftToRight','2.000','489');
 insert into Pause values ('1_PET_CT_WB_FDG_resp_uden_IV.Adult','PET4','5');
-insert into PET values ('1_PET_CT_WB_FDG_resp_uden_IV.Adult','PET4','6','2','PET WB','F-18','Fluorodeoxyglucose','300000000','Bequerels','14/05 - 2012','10:38:54','Sinogram','Match CT FOV','Not given. Check recon range','2.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
+insert into PET values ('1_PET_CT_WB_FDG_resp_uden_IV.Adult','PET4','6','2','PET WB','F-18','Fluorodeoxyglucose','300000000','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','2.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
 insert into PETrecon values ('1_PET_CT_WB_FDG_resp_uden_IV.Adult','PET4','6','1','PET WB Image Check HD','1 to 7','Corrected','TrueX','2','12','200','1','Gaussian','4.000000','0','0','Off ()','On','On','Off');
 insert into PETrecon values ('1_PET_CT_WB_FDG_resp_uden_IV.Adult','PET4','6','2','PET WB TrueX + TOF 2 mm','1 to 7','Corrected','TrueXTOF','2','21','400','1','Gaussian','2.000000','0','0','Off ()','On','On','Off');

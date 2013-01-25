@@ -104,7 +104,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET Lunge "
 LLD n/a
 ULD n/a
@@ -116,7 +116,7 @@ InjectedDose 300000000.000000
 NumberOfBeds Not given. Check recon range
 BedDuration 20.000000(PtSeconds)
 TableDirectionPatient PtCraniocaudal
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 PhysioInputType PtPhysioNone
@@ -131,15 +131,15 @@ Subsets 8
 Iterations 4
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET Lunge Iterativ
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -150,15 +150,15 @@ Subsets 24
 Iterations 3
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET Lunge TrueX+TOF
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -169,15 +169,15 @@ Subsets 8
 Iterations 4
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET Lunge OSEM
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 pause
 PROTOCOL_ENTRY_NO 5
@@ -186,7 +186,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 6
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET Lunge "
 LLD n/a
 ULD n/a
@@ -198,7 +198,7 @@ InjectedDose 300000000.000000
 NumberOfBeds Not given. Check recon range
 BedDuration 20.000000(PtSeconds)
 TableDirectionPatient PtCraniocaudal
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 PhysioInputType PtPhysioNone
@@ -213,15 +213,15 @@ Subsets 8
 Iterations 4
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET Lunge Iterativ
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -232,15 +232,15 @@ Subsets 24
 Iterations 3
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET Lunge TrueX+TOF
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -251,15 +251,15 @@ Subsets 8
 Iterations 4
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET Lunge OSEM
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 pause
 PROTOCOL_ENTRY_NO 7
@@ -268,7 +268,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 8
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET Lunge "
 LLD n/a
 ULD n/a
@@ -280,7 +280,7 @@ InjectedDose 300000000.000000
 NumberOfBeds Not given. Check recon range
 BedDuration 20.000000(PtSeconds)
 TableDirectionPatient PtCraniocaudal
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 PhysioInputType PtPhysioNone
@@ -295,15 +295,15 @@ Subsets 8
 Iterations 4
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET Lunge Iterativ
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -314,15 +314,15 @@ Subsets 24
 Iterations 3
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET Lunge TrueX+TOF
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -333,14 +333,14 @@ Subsets 8
 Iterations 4
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET Lunge OSEM
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 3
 MlScanProtocol_End 138

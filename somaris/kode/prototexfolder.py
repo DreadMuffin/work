@@ -33,7 +33,7 @@ def get(index):
 
 def reconrange(start,end):
     """Translates bedstart and bedend to a string"""
-    if int(start) == int(end):
+    if int(start) == int(end) and int(start) > 1:
         return "Automatic/All/dunno"
     else: return start + " to " + end
 
@@ -73,8 +73,6 @@ def topo():
 def ct():
     """Converts a CT scan to tex"""
     returnstring = ""
-    print file
-    print  get(14)
     croutine = "\n\\section{" + get(13) + "}\n\\subsection{Routine}\n" + "\\item Eff. mAs: " + get(11) + "\\item kV: " + get(18)[:-4] + "\\item CARE Dose4D: " + get(6)[2:] + "\\item CareDoseType: " + get(7)[2:] + "\\item CTDlvol: " + get(8) + "mGy\\item Scan time: " + get(15) + " s\\item Delay: " + get(16) + " s\\item Slice: " + get(3) + " mm\\item No. of images: " + "Samme som i foerste recon, slet?(y/n)" + "\\item Tilt: " + get(10) + " grader"
 
     cscan =  "\n\\subsection{Scan}\n\\item Quality ref. mAs: " + get(4) + "\\item Eff. mAs: " + get(11) + "\\item kV: " + get(18)[:-4] + "\\item Scan time: " + get(15) + " s\\item Rotation time: " + get(14) + " s\\item Delay: " + get(16) + " s\\item Slice: " +  get(3) + " mm\\item Pitch: " + get(12) + "\\item Direction: " + get(17)[2:]
@@ -117,7 +115,7 @@ def pet():
 
     scanduration = get(13)[:-1].split("(")
 
-    proutine = "\\section{" + get(4) + "}\\subsection{Routine}\n" + "\\item Isotope: " + get(7) + "\n\\item Pharm.: " + get(8) + "\n\\item Inj. Dose: " + injdose + "\n\\item Inj. date (date/month - year): " + get(9)[6:] + "/" + get(9)[4:6] + " - " + get(9)[:4] + "\n\\item Inj. time: " + get(10)[:2] + ":" + get(10)[2:4] + ":" + get(10)[4:6] + "\n\\item Scan mode: " + scanoutput + "\n\\item Scan range: " + scanrange + "\n\\item No. of beds: " + get(12) + "\n\\item Scan duration/bed: " + scanduration[0] + " " + scanduration[1][2:]
+    proutine = "\\section{" + get(4) + "}\\subsection{Routine}\n" + "\\item Isotope: " + get(7) + "\n\\item Pharm.: " + get(8) + "\n\\item Inj. Dose: " + injdose + "\n\\item Scan mode: " + scanoutput + "\n\\item Scan range: " + scanrange + "\n\\item No. of beds: " + get(12) + "\n\\item Scan duration/bed: " + scanduration[0] + " " + scanduration[1][2:]
 
     pscan =  "\n\\subsection{Scan}\n" + "\\item Autoload: " + onoff(get(3)) + "\n\\item Rebinner LUT: " + onoff(get(15)) + "\n\\item Scan output: " + scanoutput + "\n\\item Sinogram mode: " + get(17)[2:] + "\n\\item Input trigger signal: " + get(18)[8:] + "\n\\item LLD (keV): " + get(5) + "\n\\item ULD (keV): " + get(6)
 

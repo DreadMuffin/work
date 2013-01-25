@@ -4,5 +4,5 @@ insert into CT values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET5','2','2','CT Brain
 insert into CTrecon values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET5','2','1','AC CT efov 700','5.00','B19f PET very smooth','Cerebrum','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
 insert into CTrecon values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET5','2','2','AC CT fov 500','5.00','B19f PET very smooth','Cerebrum','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
 insert into Pause values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET5','3');
-insert into PET values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET5','4','1','PET Brain 1','F-18','Florbetaben','300','MegaBequerels','13/01 - 2011','09:12:00','List mode','Match CT FOV','1','20','Minutes','On','Off','List mode','Trues','None','435','650');
+insert into PET values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET5','4','1','PET Brain 1','F-18','Florbetaben','300','MegaBequerels','List mode','Match CT FOV','1','20','Minutes','On','Off','List mode','Trues','None','435','650');
 insert into PETrecon values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET5','4','1','PET Brain 1 Corrected','Automatic/All/dunno','NoRecon','Iterative','4','14','128','2','Gaussian','5','0','0','On (1)','On','On','Off');

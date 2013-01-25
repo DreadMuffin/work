@@ -87,7 +87,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET WB"
 LLD n/a
 ULD n/a
@@ -99,7 +99,7 @@ InjectedDose 370000000.000000
 NumberOfBedsCompleted 0
 BedDuration 2.000000(PtMinutes)
 TableDirectionPatient PtCaudocranial
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode PtPromptsRandoms
 PhysioInputType PtPhysioNone
@@ -114,15 +114,15 @@ Subsets 24
 Iterations 2
 Zoom 1
 FilterFWHM 5
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET WB
 BedBegin 1
 BedEnd 5
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -133,14 +133,14 @@ Subsets 24
 Iterations 2
 Zoom 1
 FilterFWHM 5
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET WB NAC
 BedBegin 1
 BedEnd 5
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 3
 MlScanProtocol_End 138

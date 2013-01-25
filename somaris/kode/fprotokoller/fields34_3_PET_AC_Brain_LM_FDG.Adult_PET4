@@ -87,7 +87,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad false
+AutoLoad 0
 RangeName "PET Brain LM"
 LLD n/a
 ULD n/a
@@ -99,7 +99,7 @@ InjectedDose 185000000.0
 NumberOfBeds Not given. Check recon range
 BedDuration 10.000000(PtMinutes)
 TableDirectionPatient PtCraniocaudal
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtListMode32
 HistogramMode Ptfalse
 PhysioInputType PtPhysioNone
@@ -114,14 +114,14 @@ Subsets 12
 Iterations 4
 Zoom 1
 FilterFWHM 5
-ScatterCorrect false
+ScatterCorrect 0
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription Brain LM
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 3
 MlScanProtocol_End 138

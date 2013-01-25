@@ -9,8 +9,8 @@ execfile("protoscript34.py")
 execfile("fieldsaligner.py")
 execfile("protoscript56.py")
 execfile("prototexfolder.py")
-execfile("protopdf.py")
 execfile("databasify.py")
 execfile("protodb.py")
+execfile("protopdf.py")
 
 

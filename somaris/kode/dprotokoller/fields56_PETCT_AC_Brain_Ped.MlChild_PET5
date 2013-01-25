@@ -3,5 +3,5 @@ insert into Topograms values ('PETCT_AC_Brain_Ped.MlChild','PET5','1','Topogram'
 insert into CT values ('PETCT_AC_Brain_Ped.MlChild','PET5','2','1','CT Brain','85','120','Off','CareDoseAEC','14.399','17.000','4.000','3.00','0.0','380','1.000','1.2000000','Caudocranial');
 insert into CTrecon values ('PETCT_AC_Brain_Ped.MlChild','PET5','2','1','AC CT','3.00','H19s PET very smooth','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','1.500','148');
 insert into Pause values ('PETCT_AC_Brain_Ped.MlChild','PET5','3');
-insert into PET values ('PETCT_AC_Brain_Ped.MlChild','PET5','4','1','PET Brain','F-18','FDG','2.5','Millicuries','14/06 - 2007','07:58:00','Sinogram','Match CT FOV','1','10','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('PETCT_AC_Brain_Ped.MlChild','PET5','4','1','PET Brain','F-18','FDG','2.5','Millicuries','Sinogram','Match CT FOV','1','10','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('PETCT_AC_Brain_Ped.MlChild','PET5','4','1','PET Brain','Automatic/All/dunno','Corrected','Iterative','6','16','336','2','Gaussian','2','0','0','On (1)','On','On','Off');

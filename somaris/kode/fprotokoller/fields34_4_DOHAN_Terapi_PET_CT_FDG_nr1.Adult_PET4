@@ -216,7 +216,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 6
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET WB"
 LLD n/a
 ULD n/a
@@ -228,7 +228,7 @@ InjectedDose 244000000.000000
 NumberOfBeds Not given. Check recon range
 BedDuration 2.000000(PtMinutes)
 TableDirectionPatient PtCraniocaudal
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 PhysioInputType PtPhysioNone
@@ -243,15 +243,15 @@ Subsets 12
 Iterations 2
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET WB Image check HD
 BedBegin 1
 BedEnd 7
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 3,1
@@ -262,15 +262,15 @@ Subsets 21
 Iterations 2
 Zoom 1
 FilterFWHM 2.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET WB Corr TrueX+TOF 2 mm
 BedBegin 1
 BedEnd 7
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 3,1
@@ -281,15 +281,15 @@ Subsets 24
 Iterations 2
 Zoom 1
 FilterFWHM 2.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET WB Corr TrueX
 BedBegin 1
 BedEnd 7
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 3,1
@@ -300,15 +300,15 @@ Subsets 24
 Iterations 3
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET WB UDEN True X + TOF
 BedBegin 1
 BedEnd 7
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 3,1
@@ -319,14 +319,14 @@ Subsets 24
 Iterations 3
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET WB no AC
 BedBegin 1
 BedEnd 7
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 3
 MlScanProtocol_End 138

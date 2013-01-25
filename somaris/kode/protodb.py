@@ -58,17 +58,17 @@ cur.execute("create table Topograms (Protocolname varchar(200), PETscanner char(
 cur.execute("create table CT (Protocolname varchar(200),PETscanner char(10), Modenr" +
         " int,Recons int, Name varchar(20)" +
         ",Eff_mAs int,kV int,Care_Dose4D varchar(10),CareDoseType varchar(30)" +
-        ",CTDlvol int,ScanTime int,Delay int,Slice int,Tilt int," +
+        ",CTDlvol double,ScanTime double,Delay int,Slice int,Tilt int," +
         "QualityRefmAs int,Rotationtime double,Pitch int,Direction varchar(30)" +
         ",Primary Key (Protocolname,PETscanner,Modenr))")
 
 cur.execute("create table CTrecon (Protocolname varchar(200),PETscanner char(10)," +
         "Modenr int,Reconnumber int," +
-        "Seriesdescription varchar(40),Slice int,Kernel varchar(20),Window " +
+        "Seriesdescription varchar(40),Slice double,Kernel varchar(20),Window " +
         "varchar(30),ExtendedFoV varchar(10),FoV int, CenterX int, CenterY " +
         "int, Mirroring varchar(20),ExtendedCTscale varchar(20),ReconJob " +
         "varchar(20),ReconAxis varchar(20),ImageOrder varchar(20)," +
-        "ReconIncrement int,No_of_images int,Primary key (Protocolname," +
+        "ReconIncrement double,No_of_images int,Primary key (Protocolname," +
         "PETscanner,Modenr,Reconnumber))")
 
 cur.execute("create table Pause (Protocolname varchar(200),PETscanner char(10)," +
@@ -76,9 +76,9 @@ cur.execute("create table Pause (Protocolname varchar(200),PETscanner char(10),"
 
 cur.execute("create table PET (Protocolname varchar(200),PETscanner char(10)," +
         "Modenr int,Recons int, Name varchar(20), Isotope varchar(20)," +
-        "Pharm varchar(20),Injdose int,Injdoseunit varchar(15),Injdate " +
-        "varchar(20),Injtime varchar(15),Scanmode varchar(15)," +
-        "Scanrange varchar(20),Numberofbeds int,Scanduration int," +
+        "Pharm varchar(20),Injdose int,Injdoseunit varchar(15)," +
+        "Scanmode varchar(15)," +
+        "Scanrange varchar(20),Numberofbeds int,Scanduration double," +
         "Scandurationunit varchar(10)," +
         "Autoload varchar(5),Rebinnerlut varchar(5),Scanoutput varchar(15)," +
         "Sinogrammode varchar(10),Inputtriggersignal varchar(15),LLD int," +

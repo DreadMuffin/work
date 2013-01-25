@@ -4,5 +4,5 @@ insert into CT values ('PETCT_NEMA_2007_AC.Adult','PET4','2','2','NEMA CT','50',
 insert into CTrecon values ('PETCT_NEMA_2007_AC.Adult','PET4','2','1','tmp NEMA CT RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','42');
 insert into CTrecon values ('PETCT_NEMA_2007_AC.Adult','PET4','2','2','NEMA AC CT','5','B19f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','56');
 insert into Pause values ('PETCT_NEMA_2007_AC.Adult','PET4','3');
-insert into PET values ('PETCT_NEMA_2007_AC.Adult','PET4','4','1','NEMA PET','F-18','Fluorodeoxyglucose','370000000','Bequerels','26/02 - 2009','19:36:14','Sinogram','Match CT FOV','Not given. Check recon range','1.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
+insert into PET values ('PETCT_NEMA_2007_AC.Adult','PET4','4','1','NEMA PET','F-18','Fluorodeoxyglucose','370000000','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','1.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
 insert into PETrecon values ('PETCT_NEMA_2007_AC.Adult','PET4','4','1','PET NEMA AC Scan','Automatic/All/dunno','Corrected','Backprojection','2','24','200','1','Gaussian','5','0','0','Off ()','On','On','Off');

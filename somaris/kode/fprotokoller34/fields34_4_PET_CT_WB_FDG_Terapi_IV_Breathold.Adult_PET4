@@ -213,7 +213,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 6
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET WB"
 LLD n/a
 ULD n/a
@@ -222,7 +222,7 @@ InjectionDate 20120523
 InjectionTime 114701.000000
 Isotope F-18
 BedDuration 2.000000(PtMinutes)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 Pharmaceutical Fluorodeoxyglucose
@@ -238,12 +238,12 @@ CTAttenCorrModeList 3,1
 FilterFWHM 4.000000
 ImageSize 200
 Iterations 2
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtTrueX
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET WB Image check HD
 Subsets 12
 XOffset 0
@@ -257,12 +257,12 @@ CTAttenCorrModeList 3,1
 FilterFWHM 2.000000
 ImageSize 400
 Iterations 2
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtTrueXTOF
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET WB Corr TrueX+TOF 2 mm
 Subsets 21
 XOffset 0
@@ -352,7 +352,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 10
 MlOtherModalityEntry_Begin 138
-AutoLoad false
+AutoLoad 0
 RangeName "PET Lunge "
 LLD n/a
 ULD n/a
@@ -361,7 +361,7 @@ InjectionDate 20120523
 InjectionTime 114701.000000
 Isotope F-18
 BedDuration 20.000000(PtSeconds)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 Pharmaceutical Fluorodeoxyglucose
@@ -377,12 +377,12 @@ CTAttenCorrModeList 5,1
 FilterFWHM 4.000000
 ImageSize 200
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET Lunge Iterativ
 Subsets 8
 XOffset 0
@@ -396,12 +396,12 @@ CTAttenCorrModeList 5,1
 FilterFWHM 4.000000
 ImageSize 400
 Iterations 3
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET Lunge TrueX+TOF
 Subsets 24
 XOffset 0
@@ -415,12 +415,12 @@ CTAttenCorrModeList 5,1
 FilterFWHM 4.000000
 ImageSize 256
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET Lunge OSEM
 Subsets 8
 XOffset 0
@@ -434,7 +434,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 12
 MlOtherModalityEntry_Begin 138
-AutoLoad false
+AutoLoad 0
 RangeName "PET Lunge "
 LLD n/a
 ULD n/a
@@ -443,7 +443,7 @@ InjectionDate 20120523
 InjectionTime 114701.000000
 Isotope F-18
 BedDuration 20.000000(PtSeconds)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 Pharmaceutical Fluorodeoxyglucose
@@ -459,12 +459,12 @@ CTAttenCorrModeList 5,1
 FilterFWHM 4.000000
 ImageSize 200
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET Lunge Iterativ
 Subsets 8
 XOffset 0
@@ -478,12 +478,12 @@ CTAttenCorrModeList 5,1
 FilterFWHM 4.000000
 ImageSize 400
 Iterations 3
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET Lunge TrueX+TOF
 Subsets 24
 XOffset 0
@@ -497,12 +497,12 @@ CTAttenCorrModeList 5,1
 FilterFWHM 4.000000
 ImageSize 256
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET Lunge OSEM
 Subsets 8
 XOffset 0

@@ -5,6 +5,6 @@ insert into CTrecon values ('PETCT_HeadNeck.Adult','PET4','2','1','tmp CT HeadNe
 insert into CTrecon values ('PETCT_HeadNeck.Adult','PET4','2','2','AC CT HeadNeck','3','B19s','Larynx','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','111');
 insert into CTrecon values ('PETCT_HeadNeck.Adult','PET4','2','3','CT HeadNeck 2.0 B31s','2','B31s','Larynx','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','148');
 insert into Pause values ('PETCT_HeadNeck.Adult','PET4','3');
-insert into PET values ('PETCT_HeadNeck.Adult','PET4','4','2','PET HeadNeck','F-18','Fluorodeoxyglucose','370000000','Bequerels','07/12 - 2008','00:42:34','Sinogram','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
+insert into PET values ('PETCT_HeadNeck.Adult','PET4','4','2','PET HeadNeck','F-18','Fluorodeoxyglucose','370000000','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
 insert into PETrecon values ('PETCT_HeadNeck.Adult','PET4','4','1','PET HeadNeck','Automatic/All/dunno','Corrected','Iterative3D','4','24','400','1.000000','Gaussian','4.000000','0','0','Off ()','On','On','Off');
 insert into PETrecon values ('PETCT_HeadNeck.Adult','PET4','4','2','PET HeadNeck Uncorrected','Automatic/All/dunno','Uncorrected','Iterative3D','4','24','400','1.000000','Gaussian','4.000000','0','0','Off ()','On','On','Off');

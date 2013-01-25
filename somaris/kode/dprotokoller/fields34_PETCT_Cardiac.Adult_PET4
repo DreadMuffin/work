@@ -4,5 +4,5 @@ insert into CT values ('PETCT_Cardiac.Adult','PET4','2','2','CT Cardiac','11','1
 insert into CTrecon values ('PETCT_Cardiac.Adult','PET4','2','1','tmp CT Cardiac RTD','4','B18f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','56');
 insert into CTrecon values ('PETCT_Cardiac.Adult','PET4','2','2','AC CT Cardiac','3','B18f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','111');
 insert into Pause values ('PETCT_Cardiac.Adult','PET4','3');
-insert into PET values ('PETCT_Cardiac.Adult','PET4','4','1','PET Cardiac','F-18','Fluorodeoxyglucose','370000000','Bequerels','07/12 - 2008','01:37:05','Sinogram','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
+insert into PET values ('PETCT_Cardiac.Adult','PET4','4','1','PET Cardiac','F-18','Fluorodeoxyglucose','370000000','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
 insert into PETrecon values ('PETCT_Cardiac.Adult','PET4','4','1','PET Cardiac','Automatic/All/dunno','Corrected','Backprojection','2','24','200','2.000000','Gaussian','8.000000','0','0','Off ()','On','On','Off');

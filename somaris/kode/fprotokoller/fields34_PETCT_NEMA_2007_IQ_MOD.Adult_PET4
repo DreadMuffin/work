@@ -87,7 +87,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET NEMA IQ"
 LLD n/a
 ULD n/a
@@ -99,7 +99,7 @@ InjectedDose 370000000.000000
 NumberOfBedsCompleted 0
 BedDuration 540.000000(PtSeconds)
 TableDirectionPatient PtCaudocranial
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode PtPromptsRandoms
 PhysioInputType PtPhysioNone
@@ -114,14 +114,14 @@ Subsets 24
 Iterations 3
 Zoom 1
 FilterFWHM 5
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 SeriesDescription PET NEMA IQ
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData true
+SaveIntermediateData 1
 MlModeRecon_End 3
 MlScanProtocol_End 138

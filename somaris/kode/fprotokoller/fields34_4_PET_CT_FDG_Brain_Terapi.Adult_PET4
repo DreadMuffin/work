@@ -121,7 +121,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET Brain"
 LLD n/a
 ULD n/a
@@ -133,7 +133,7 @@ InjectedDose 1000000.000000
 NumberOfBeds Not given. Check recon range
 BedDuration 10.000000(PtMinutes)
 TableDirectionPatient PtCraniocaudal
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 PhysioInputType PtPhysioNone
@@ -148,15 +148,15 @@ Subsets 8
 Iterations 4
 Zoom 3.000000
 FilterFWHM 3.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET Brain Image Check
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,3
@@ -167,14 +167,14 @@ Subsets 24
 Iterations 4
 Zoom 2.000000
 FilterFWHM 3.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription Osem3D 4 it 24 sub 3 mm
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 3
 MlScanProtocol_End 138

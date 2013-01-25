@@ -6,5 +6,5 @@ insert into CTrecon values ('PETCT_Lung.MlAdult','PET5','2','2','AC CT','5.00','
 insert into CTrecon values ('PETCT_Lung.MlAdult','PET5','2','3','CT Lung 2.0 B31f','2.00','B31f medium smooth +','Mediastinum','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','248');
 insert into CTrecon values ('PETCT_Lung.MlAdult','PET5','2','4','CT Lung 2.0 B70f','2.00','B70f very sharp','Lung','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','248');
 insert into Pause values ('PETCT_Lung.MlAdult','PET5','3');
-insert into PET values ('PETCT_Lung.MlAdult','PET5','4','1','PET Lung','F-18','FDG','10','Millicuries','30/10 - 2006','09:46:00','Sinogram','Match CT FOV','2','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('PETCT_Lung.MlAdult','PET5','4','1','PET Lung','F-18','FDG','10','Millicuries','Sinogram','Match CT FOV','2','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('PETCT_Lung.MlAdult','PET5','4','1','PET Lung','Automatic/All/dunno','Corrected','Iterative','4','8','168','1','Gaussian','5','0','0','On (1)','On','On','Off');

@@ -1,4 +1,269 @@
-['MlScanProtocolAttributes_Begin', 'BodySizeOld', 'ProtocolName', 'PROTOCOL_ENTRY_NO', 'MlModeScan_Begin', 'SliceEffectiveTiltCorrected', 'ApiId', 'Current', 'ScanTime', 'StartDelay', 'TableDirectionPatient', 'TopoLength', 'TubePosition', 'Voltage', 'MlModeScan_End', 'No_Of_Valid_Recons', 'MlModeRecon_Begin', 'BodyPartExamined', 'Kernel', 'Transfer1', 'Transfer2', 'Transfer3', 'Window[READ_ONLY]', 'MlModeRecon_End', 'PROTOCOL_ENTRY_NO', 'MlModeScan_Begin', 'SliceEffective', 'AECReferenceMAs', 'ApiId', 'Care', 'CareDoseType', 'CTDIw', 'EffectiveMAs', 'InterPosTilt', 'mAs', 'PitchFactor', 'RotTime', 'ScanTime', 'StartDelay', 'Voltage', 'MlModeScan_End', 'No_Of_Valid_Recons', 'MlModeRecon_Begin', 'SliceEffective', 'CenterX', 'CenterY', 'CTScale', 'ExtendedFOV', 'FoVHorLength', 'ImageOrder', 'Kernel', 'Mirror', 'NoOfImages', 'ReconDirection', 'ReconType', 'SeriesDescription', 'SpiralReconIncr', 'Window[READ_ONLY]', 'MlModeRecon_End', 'MlModeEntry_End', 'PROTOCOL_ENTRY_NO', 'MlPause_Begin', 'MlPause_End', 'PROTOCOL_ENTRY_NO', 'MlModeScan_Begin', 'AutoLoad', 'LLD', 'ULD', 'Isotope', 'Pharmaceutical', 'InjectionDate', 'InjectionTime', 'InjectedDose', 'NumberOfBeds', 'BedDuration', 'TableDirectionPatient', 'RebinnerLut', 'RebinnerMode', 'HistogramMode', 'PhysioInputType', 'MlModeScan_End', 'No_Of_Valid_Recons', 'MlModeRecon_Begin', 'CTAttenCorrModeList', 'OutputImageType', 'ReconMethod', 'ImageSize', 'Subsets', 'Iterations', 'Zoom', 'FilterFWHM', 'ScatterCorrect', 'XYFilterType', 'MatchCTSliceLocation', 'SeriesDescription', 'XOffset', 'YOffset', 'SaveIntermediateData', 'MlModeRecon_End', 'MlScanProtocol_End', 'PROTOCOL_ENTRY_NO', 'MlPause_Begin', 'MlPause_End', 'PROTOCOL_ENTRY_NO', 'MlModeScan_Begin', 'AutoLoad', 'LLD', 'ULD', 'Isotope', 'Pharmaceutical', 'InjectionDate', 'InjectionTime', 'InjectedDose', 'NumberOfBeds', 'BedDuration', 'TableDirectionPatient', 'RebinnerLut', 'RebinnerMode', 'HistogramMode', 'PhysioInputType', 'MlModeScan_End', 'No_Of_Valid_Recons', 'MlModeRecon_Begin', 'CTAttenCorrModeList', 'OutputImageType', 'ReconMethod', 'ImageSize', 'Subsets', 'Iterations', 'Zoom', 'FilterFWHM', 'ScatterCorrect', 'XYFilterType', 'MatchCTSliceLocation', 'SeriesDescription', 'XOffset', 'YOffset', 'SaveIntermediateData', 'MlModeRecon_End', 'MlScanProtocol_End']
-[1, 0, 0, 0]
-[0, 2, 0, 0]
-[0, 0, 1, 0]
+ProtocolName "X_Cal_PET5_FDG"				      |	ProtocolName "4_DOHAN_Terapi_PET_CT_FDG_nr1"
+SliceEffectiveTiltCorrected 0.6				      |	SliceWidthEffectiveTiltCorrected 0.6
+ApiId -1						      |	ApiId ""
+RangeName[READ_ONLY] "Topogram"				      |	RangeName "Topogram"
+ScanTime 2.780						      |	ScanTime 10.410
+TopoLength 256.0					      |	TopoLength 1024.0
+Kernel "T80s sharp"					      |	Kernel "T80s"
+Window[READ_ONLY] "Topogram Body"			      |	Window[READ_ONLY] "Topogram
+SliceEffective 3.00					      |	SliceWidthEffectiveTiltCorrected 10
+ApiId -1						      |	ApiId ""
+							      >	Care MlOff
+							      >	CareDoseType MlCareDoseAEC
+							      >	CTDIw 1.186
+							      >	EffectiveMAs 20
+							      >	TiltPos 0.0
+							      >	mAs 20
+							      >	PitchFactor 0.00
+							      >	RangeName "PreMonitoring"
+							      >	RotTime 0.500
+							      >	ScanTime 0.500
+							      >	StartDelay 2.000
+							      >	TableDirectionPatient MlCraniocaudal
+							      >	Voltage 120.000
+							      >	MlModeScan_End 138
+							      >	No_Of_Valid_Recons 1
+							      >	MlModeRecon_Begin 138
+							      >	SliceWidthEffectiveTiltCorrected_Recon 10
+							      >	CenterX 0
+							      >	CenterY 0
+							      >	CTScale MlCTScaleStandard
+							      >	ExtendedFOV 1
+							      >	FoVHorLength 780
+							      >	ImageOrder MlIO_Craniocaudal
+							      >	Kernel "B19s"
+							      >	Mirror MlMirrorNone
+							      >	NoOfImages 1
+							      >	ReconDirection MlAxial
+							      >	ReconType MlAxialRJ
+							      >	SeriesDescription "PreMonitoring 10.0 eFoV"
+							      >	ReconIncr 10.000
+							      >	Window[READ_ONLY] "Abdomen"
+							      >	MlModeRecon_End 138
+							      >	MlModeEntry_End 138
+							      >	ct
+							      >	PROTOCOL_ENTRY_NO 3
+							      >	MlModeScan_Begin 138
+							      >	SliceWidthEffectiveTiltCorrected 10
+							      >	AECReferenceMAs 225
+							      >	ApiId ""
+							      >	Care MlOff
+							      >	CareDoseType MlCareDoseAEC
+							      >	CTDIw 35.58
+							      >	EffectiveMAs 20
+							      >	TiltPos 0.0
+							      >	mAs 20
+							      >	PitchFactor 0.00
+							      >	RangeName "Monitoring"
+							      >	RotTime 0.500
+							      >	ScanTime 0.500
+							      >	StartDelay 10.000
+							      >	TableDirectionPatient MlCraniocaudal
+							      >	Voltage 120.000
+							      >	MlModeScan_End 138
+							      >	No_Of_Valid_Recons 1
+							      >	MlModeRecon_Begin 138
+							      >	SliceWidthEffectiveTiltCorrected_Recon 10
+							      >	CenterX 0
+							      >	CenterY 0
+							      >	CTScale MlCTScaleStandard
+							      >	ExtendedFOV 1
+							      >	FoVHorLength 780
+							      >	ImageOrder MlIO_Craniocaudal
+							      >	Kernel "B19s"
+							      >	Mirror MlMirrorNone
+							      >	NoOfImages 30
+							      >	ReconDirection MlAxial
+							      >	ReconType MlAxialRJ
+							      >	SeriesDescription "Monitoring 10.0 eFoV"
+							      >	ReconIncr 10.000
+							      >	Window[READ_ONLY] "Abdomen"
+							      >	MlModeRecon_End 138
+							      >	MlModeEntry_End 138
+							      >	ct
+							      >	PROTOCOL_ENTRY_NO 4
+							      >	MlModeScan_Begin 138
+							      >	SliceWidthEffectiveTiltCorrected 2
+							      >	AECReferenceMAs 200
+							      >	ApiId ""
+CTDIw 15.1475						      |	CTDIw 14.56
+EffectiveMAs 225					      |	EffectiveMAs 200
+InterPosTilt 0.0					      |	TiltPos 0.0
+mAs 225							      |	mAs 200
+PitchFactor 1.2000000					      |	PitchFactor 0.80
+RangeName "CT WB"					      |	RangeName "WB CT"
+ScanTime 4.000						      |	ScanTime 32.530
+No_Of_Valid_Recons 1					      |	No_Of_Valid_Recons 5
+							      >	MlModeRecon_Begin 138
+							      >	SliceWidthEffectiveTiltCorrected_Recon 4
+							      >	CenterX 0
+							      >	CenterY 0
+							      >	CTScale MlCTScaleStandard
+							      >	ExtendedFOV 0
+							      >	FoVHorLength 500
+							      >	ImageOrder MlIO_Craniocaudal
+							      >	Kernel "B19f"
+							      >	Mirror MlMirrorNone
+							      >	NoOfImages 245
+							      >	ReconDirection MlAxial
+							      >	ReconType MlAxialRJ
+							      >	SeriesDescription "tmp WB CT RTD"
+							      >	ReconIncr 4.000
+							      >	Window[READ_ONLY] "Abdomen"
+							      >	MlModeRecon_End 138
+SliceEffective 3.00					      |	SliceWidthEffectiveTiltCorrected_Recon 2
+FoVHorLength 700					      |	FoVHorLength 780
+							      >	ImageOrder MlIO_Craniocaudal
+							      >	Kernel "B19f"
+							      >	Mirror MlMirrorNone
+							      >	NoOfImages 489
+							      >	ReconDirection MlAxial
+							      >	ReconType MlAxialRJ
+							      >	SeriesDescription "AC_CT 2 mm"
+							      >	ReconIncr 2.000
+							      >	Window[READ_ONLY] "Abdomen"
+							      >	MlModeRecon_End 138
+							      >	MlModeRecon_Begin 138
+							      >	SliceWidthEffectiveTiltCorrected_Recon 2
+							      >	CenterX 0
+							      >	CenterY 0
+							      >	CTScale MlCTScaleStandard
+							      >	ExtendedFOV 0
+							      >	FoVHorLength 500
+Kernel "B19f PET very smooth"				      |	Kernel "B30f"
+NoOfImages 74						      |	NoOfImages 489
+SeriesDescription "AC_CT"				      |	SeriesDescription "CT WB 2.0 B30f"
+SpiralReconIncr 3.000					      |	ReconIncr 2.000
+							      >	Window[READ_ONLY] "Abdomen"
+							      >	MlModeRecon_End 138
+							      >	MlModeRecon_Begin 138
+							      >	SliceWidthEffectiveTiltCorrected_Recon 2
+							      >	CenterX 0
+							      >	CenterY 0
+							      >	CTScale MlCTScaleStandard
+							      >	ExtendedFOV 0
+							      >	FoVHorLength 977
+							      >	ImageOrder MlIO_AP
+							      >	Kernel "B30f"
+							      >	Mirror MlMirrorNone
+							      >	NoOfImages 251
+							      >	ReconDirection MlCoronal
+							      >	ReconType MlVolumeRJ
+							      >	SeriesDescription "CT WB 2.0 cor B30f"
+							      >	ReconIncr 2.000
+							      >	Window[READ_ONLY] "Abdomen"
+							      >	MlModeRecon_End 138
+							      >	MlModeRecon_Begin 138
+							      >	SliceWidthEffectiveTiltCorrected_Recon 2
+							      >	CenterX 0
+							      >	CenterY 0
+							      >	CTScale MlCTScaleStandard
+							      >	ExtendedFOV 0
+							      >	FoVHorLength 977
+							      >	ImageOrder MlIO_LeftToRight
+							      >	Kernel "B30f"
+							      >	Mirror MlMirrorNone
+							      >	NoOfImages 489
+							      >	ReconDirection MlSagittal
+							      >	ReconType MlVolumeRJ
+							      >	SeriesDescription "CT WB 2.0 sag B30f"
+							      >	ReconIncr 2.000
+PROTOCOL_ENTRY_NO 3					      |	PROTOCOL_ENTRY_NO 5
+PROTOCOL_ENTRY_NO 4					      |	PROTOCOL_ENTRY_NO 6
+MlModeScan_Begin 1					      |	MlOtherModalityEntry_Begin 138
+LLD 435							      |	LLD n/a
+ULD 650							      |	ULD n/a
+Pharmaceutical FDG					      |	Pharmaceutical Fluorodeoxyglucose
+InjectionDate 20120621					      |	InjectionDate 20120821
+InjectionTime 125000.000000				      |	InjectionTime 103810.000000
+InjectedDose 86(PtMegaBequerels)			      |	InjectedDose 244000000.000000
+NumberOfBeds 1						      |	NumberOfBeds Not given. Check recon range
+BedDuration 5(PtMinutes)				      |	BedDuration 2.000000(PtMinutes)
+TableDirectionPatient MlCaudocranial			      |	TableDirectionPatient PtCraniocaudal
+HistogramMode PtTrues					      |	HistogramMode Ptfalse
+MlModeScan_End 1					      |	MlModeScan_End 138
+No_Of_Valid_Recons 1					      |	No_Of_Valid_Recons 5
+MlModeRecon_Begin 3					      |	MlModeRecon_Begin 138
+CTAttenCorrModeList (1,1)				      |	CTAttenCorrModeList 3,1
+ImageSize 336						      |	ImageSize 200
+							      >	Subsets 12
+							      >	Iterations 2
+							      >	Zoom 1
+							      >	FilterFWHM 4.000000
+							      >	ScatterCorrect 1
+							      >	ReconFilter PtGaussian
+							      >	MatchCTSliceLocation 1
+							      >	SeriesDescription PET WB Image check HD
+							      >	BedBegin 1
+							      >	BedEnd 7
+							      >	XOffset 0
+							      >	YOffset 0
+							      >	SaveIntermediateData 0
+							      >	MlModeRecon_End 138
+							      >	MlModeRecon_Begin 138
+							      >	CTAttenCorrModeList 3,1
+							      >	OutputImageType PtCorrected
+							      >	ReconMethod PtTrueXTOF
+							      >	ImageSize 400
+							      >	Iterations 2
+							      >	Zoom 1
+							      >	FilterFWHM 2.000000
+							      >	ScatterCorrect 1
+							      >	ReconFilter PtGaussian
+							      >	MatchCTSliceLocation 1
+							      >	SeriesDescription PET WB Corr TrueX+TOF 2 mm
+							      >	BedBegin 1
+							      >	BedEnd 7
+							      >	XOffset 0
+							      >	YOffset 0
+							      >	SaveIntermediateData 0
+							      >	MlModeRecon_End 138
+							      >	MlModeRecon_Begin 138
+							      >	CTAttenCorrModeList 3,1
+							      >	OutputImageType PtCorrected
+							      >	ReconMethod PtTrueX
+							      >	ImageSize 400
+							      >	Subsets 24
+							      >	Iterations 2
+							      >	Zoom 1
+							      >	FilterFWHM 2.000000
+							      >	ScatterCorrect 1
+							      >	ReconFilter PtGaussian
+							      >	MatchCTSliceLocation 1
+							      >	SeriesDescription PET WB Corr TrueX
+							      >	BedBegin 1
+							      >	BedEnd 7
+							      >	XOffset 0
+							      >	YOffset 0
+							      >	SaveIntermediateData 0
+							      >	MlModeRecon_End 138
+							      >	MlModeRecon_Begin 138
+							      >	CTAttenCorrModeList 3,1
+							      >	OutputImageType PtCorrected
+							      >	ReconMethod PtIterative3D
+							      >	ImageSize 400
+							      >	Subsets 24
+							      >	Iterations 3
+							      >	Zoom 1
+							      >	FilterFWHM 4.000000
+							      >	ScatterCorrect 1
+							      >	ReconFilter PtGaussian
+							      >	MatchCTSliceLocation 1
+							      >	SeriesDescription PET WB UDEN True X + TOF
+							      >	BedBegin 1
+							      >	BedEnd 7
+							      >	XOffset 0
+							      >	YOffset 0
+							      >	SaveIntermediateData 0
+							      >	MlModeRecon_End 138
+							      >	MlModeRecon_Begin 138
+							      >	CTAttenCorrModeList 3,1
+							      >	OutputImageType PtUncorrected
+							      >	ReconMethod PtIterative3D
+							      >	ImageSize 400
+							      >	Subsets 24
+FilterFWHM 2						      |	FilterFWHM 4.000000
+XYFilterType PtGaussian					      |	ReconFilter PtGaussian
+SeriesDescription PET WB Corr True X 2 mm		      |	SeriesDescription PET WB no AC
+BedBegin -1						      |	BedBegin 1
+BedEnd -1						      |	BedEnd 7

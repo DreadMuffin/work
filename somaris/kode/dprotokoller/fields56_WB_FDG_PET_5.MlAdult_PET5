@@ -3,6 +3,6 @@ insert into Topograms values ('WB_FDG_PET_5.MlAdult','PET5','1','Topogram','35',
 insert into CT values ('WB_FDG_PET_5.MlAdult','PET5','2','1','Lavdos CT WB','40','120','Off','CareDoseAEC','2.70069','18.670','4.000','3.00','0.0','50','0.500','0.8000000','Craniocaudal');
 insert into CTrecon values ('WB_FDG_PET_5.MlAdult','PET5','2','1','AC CT','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
 insert into Pause values ('WB_FDG_PET_5.MlAdult','PET5','3');
-insert into PET values ('WB_FDG_PET_5.MlAdult','PET5','4','2','PET WB','F-18','FDG','400','MegaBequerels','23/03 - 2011','13:06:00','Sinogram','Match CT FOV','1','150','Seconds','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('WB_FDG_PET_5.MlAdult','PET5','4','2','PET WB','F-18','FDG','400','MegaBequerels','Sinogram','Match CT FOV','1','150','Seconds','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('WB_FDG_PET_5.MlAdult','PET5','4','1','PET WB Corrected','Automatic/All/dunno','Corrected','Iterative','4','8','168','1','Gaussian','4','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('WB_FDG_PET_5.MlAdult','PET5','4','2','PET WB Corr. True X 2 mm','Automatic/All/dunno','Corrected','TrueX','3','21','336','1','Gaussian','2','0','0','On (1)','On','On','Off');

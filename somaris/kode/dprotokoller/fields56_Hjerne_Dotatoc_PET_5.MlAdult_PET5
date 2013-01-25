@@ -3,5 +3,5 @@ insert into Topograms values ('Hjerne_Dotatoc_PET_5.MlAdult','PET5','1','Topogra
 insert into CT values ('Hjerne_Dotatoc_PET_5.MlAdult','PET5','2','1','CT Brain','30','120','Off','CareDoseAEC','4.12323','8.010','4.000','3.00','0.0','380','1.000','1.2000000','Caudocranial');
 insert into CTrecon values ('Hjerne_Dotatoc_PET_5.MlAdult','PET5','2','1','AC CT','3.00','H19s PET very smooth','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','3.000','74');
 insert into Pause values ('Hjerne_Dotatoc_PET_5.MlAdult','PET5','3');
-insert into PET values ('Hjerne_Dotatoc_PET_5.MlAdult','PET5','4','1','PET Brain','Ga-68','Dotatoc','1','MegaBequerels','15/05 - 2012','09:34:00','List mode','Match CT FOV','1','15','Minutes','On','Off','List mode','Trues','None','435','650');
+insert into PET values ('Hjerne_Dotatoc_PET_5.MlAdult','PET5','4','1','PET Brain','Ga-68','Dotatoc','1','MegaBequerels','List mode','Match CT FOV','1','15','Minutes','On','Off','List mode','Trues','None','435','650');
 insert into PETrecon values ('Hjerne_Dotatoc_PET_5.MlAdult','PET5','4','1','PET Brain corrected 3 mm zoom 3','Automatic/All/dunno','NoRecon','Iterative3D','6','16','336','3','Gaussian','3','0','0','On (1)','On','On','Off');

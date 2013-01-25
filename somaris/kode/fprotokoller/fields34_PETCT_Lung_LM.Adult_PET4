@@ -121,7 +121,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad false
+AutoLoad 0
 RangeName "PET Lung LM"
 LLD n/a
 ULD n/a
@@ -133,7 +133,7 @@ InjectedDose 370000000.000000
 NumberOfBeds Not given. Check recon range
 BedDuration 10.000000(PtMinutes)
 TableDirectionPatient PtCraniocaudal
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtListMode32
 HistogramMode Pttrue
 PhysioInputType PtPhysioResp
@@ -148,14 +148,14 @@ Subsets 12
 Iterations 4
 Zoom 1
 FilterFWHM 5
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription Lung LM
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 3
 MlScanProtocol_End 138

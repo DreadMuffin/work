@@ -86,7 +86,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET NEMA IQ"
 LLD n/a
 ULD n/a
@@ -95,7 +95,7 @@ InjectionDate 20100909
 InjectionTime 110107.000000
 Isotope F-18
 BedDuration 540.000000(PtSeconds)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode PtPromptsRandoms
 Pharmaceutical FDG
@@ -111,12 +111,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 5
 ImageSize 200
 Iterations 3
-MatchCTSliceLocation false
+MatchCTSliceLocation 0
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData true
-ScatterCorrect true
+SaveIntermediateData 1
+ScatterCorrect 1
 SeriesDescription PET NEMA IQ
 Subsets 24
 XOffset 0

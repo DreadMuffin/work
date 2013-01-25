@@ -6,6 +6,6 @@ insert into CTrecon values ('PETCT_RespTrigger_Gated.Adult','PET4','2','2','AC C
 insert into CTrecon values ('PETCT_RespTrigger_Gated.Adult','PET4','2','3','CT Lung 2.0 B31f','2','B31f','Mediastinum','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','151');
 insert into CTrecon values ('PETCT_RespTrigger_Gated.Adult','PET4','2','4','CT Lung 2.0 B70f','2','B70f','Lung','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','151');
 insert into Pause values ('PETCT_RespTrigger_Gated.Adult','PET4','3');
-insert into PET values ('PETCT_RespTrigger_Gated.Adult','PET4','4','2','PET Lung','F-18','Fluorodeoxyglucose','370000000','Bequerels','06/09 - 2010','08:00:49','List mode','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','List mode','true','Resp','n/a','n/a');
+insert into PET values ('PETCT_RespTrigger_Gated.Adult','PET4','4','2','PET Lung','F-18','Fluorodeoxyglucose','370000000','Bequerels','List mode','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','List mode','true','Resp','n/a','n/a');
 insert into PETrecon values ('PETCT_RespTrigger_Gated.Adult','PET4','4','1','PET Lung','Automatic/All/dunno','Corrected','TrueXTOF','2','21','200','1','Gaussian','2.000000','0','0','Off ()','On','On','Off');
 insert into PETrecon values ('PETCT_RespTrigger_Gated.Adult','PET4','4','2','PET Lung Gated','Automatic/All/dunno','Corrected','TrueXTOF','2','21','200','1','Gaussian','2.000000','0','0','Off ()','On','On','Off');

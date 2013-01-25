@@ -103,7 +103,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET Brain"
 LLD n/a
 ULD n/a
@@ -112,7 +112,7 @@ InjectionDate 20081002
 InjectionTime 062315.000000
 Isotope F-18
 BedDuration 10.000000(PtMinutes)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 Pharmaceutical Fluorodeoxyglucose
@@ -128,12 +128,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 4.000000
 ImageSize 400
 Iterations 4
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET Brain
 Subsets 24
 XOffset 0

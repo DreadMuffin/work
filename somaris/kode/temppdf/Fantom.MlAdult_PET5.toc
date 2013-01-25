@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {5}Pause}{6}
 \contentsline {section}{\numberline {6}PET med spejl}{6}
 \contentsline {subsection}{\numberline {6.1}Routine}{6}
-\contentsline {subsection}{\numberline {6.2}Scan}{7}
+\contentsline {subsection}{\numberline {6.2}Scan}{6}
 \contentsline {subsection}{\numberline {6.3}Recons}{7}
 \contentsline {subsubsection}{\numberline {6.3.1}Recon 1}{7}
 \contentsline {subsubsection}{\numberline {6.3.2}Recon 2}{8}

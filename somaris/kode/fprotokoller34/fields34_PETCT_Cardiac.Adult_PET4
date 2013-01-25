@@ -86,7 +86,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET Cardiac"
 LLD n/a
 ULD n/a
@@ -95,7 +95,7 @@ InjectionDate 20081207
 InjectionTime 013705.000000
 Isotope F-18
 BedDuration 10.000000(PtMinutes)
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 Pharmaceutical Fluorodeoxyglucose
@@ -111,12 +111,12 @@ CTAttenCorrModeList 1,1
 FilterFWHM 8.000000
 ImageSize 200
 Iterations 2
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 OutputImageType PtCorrected
 ReconFilter PtGaussian
 ReconMethod PtBackprojection
-SaveIntermediateData false
-ScatterCorrect true
+SaveIntermediateData 0
+ScatterCorrect 1
 SeriesDescription PET Cardiac
 Subsets 24
 XOffset 0

@@ -3,7 +3,7 @@ insert into Topograms values ('PETCT_Cardiac.MlAdult','PET5','1','Topogram','35'
 insert into CT values ('PETCT_Cardiac.MlAdult','PET5','2','1','CT Cardiac','11','120','Off','CareDoseAEC','0.7414','3.360','4.000','3.00','0.0','170','0.500','1.5000000','Craniocaudal');
 insert into CTrecon values ('PETCT_Cardiac.MlAdult','PET5','2','1','AC CT','3.00','B18f very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','111');
 insert into Pause values ('PETCT_Cardiac.MlAdult','PET5','3');
-insert into PET values ('PETCT_Cardiac.MlAdult','PET5','4','1','PET Cardiac','F-18','FDG','10','Millicuries','30/10 - 2006','09:08:00','Sinogram','Match CT FOV','1','10','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('PETCT_Cardiac.MlAdult','PET5','4','1','PET Cardiac','F-18','FDG','10','Millicuries','Sinogram','Match CT FOV','1','10','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('PETCT_Cardiac.MlAdult','PET5','4','1','PET Cardiac','Automatic/All/dunno','Corrected','Backprojection','4','8','168','2','Gaussian','10','0','0','On (1)','On','On','Off');
 insert into CT values ('PETCT_Cardiac.MlAdult','PET5','5','1','CT Cardiac \#2','11','120','Off','CareDoseAEC','0.7414','2.700','4.000','3.00','0.0','170','0.500','1.5000000','Craniocaudal');
 insert into CTrecon values ('PETCT_Cardiac.MlAdult','PET5','5','1','AC CT \#2','3.00','B18f very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','83');

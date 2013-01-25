@@ -10,6 +10,6 @@
 \contentsline {section}{\numberline {3}Pause}{3}
 \contentsline {section}{\numberline {4}PET Brain}{3}
 \contentsline {subsection}{\numberline {4.1}Routine}{3}
-\contentsline {subsection}{\numberline {4.2}Scan}{4}
+\contentsline {subsection}{\numberline {4.2}Scan}{3}
 \contentsline {subsection}{\numberline {4.3}Recons}{4}
 \contentsline {subsubsection}{\numberline {4.3.1}Recon 1}{4}

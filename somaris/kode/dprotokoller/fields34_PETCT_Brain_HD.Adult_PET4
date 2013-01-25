@@ -5,5 +5,5 @@ insert into CTrecon values ('PETCT_Brain_HD.Adult','PET4','2','1','tmp CT Brain 
 insert into CTrecon values ('PETCT_Brain_HD.Adult','PET4','2','2','AC CT Brain','3','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','1.500','148');
 insert into CTrecon values ('PETCT_Brain_HD.Adult','PET4','2','3','CT Brain 3.0 H31s','3','H31s','Cerebrum','Off','250','0','0','None','Standard','Axial','Axial','Caudocranial','1.500','148');
 insert into Pause values ('PETCT_Brain_HD.Adult','PET4','3');
-insert into PET values ('PETCT_Brain_HD.Adult','PET4','4','1','PET Brain','F-18','Fluorodeoxyglucose','185000000','Bequerels','02/10 - 2008','06:57:53','Sinogram','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
+insert into PET values ('PETCT_Brain_HD.Adult','PET4','4','1','PET Brain','F-18','Fluorodeoxyglucose','185000000','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
 insert into PETrecon values ('PETCT_Brain_HD.Adult','PET4','4','1','PET Brain','Automatic/All/dunno','Corrected','TrueX','3','24','400','2.000000','Gaussian','2.000000','0','0','Off ()','On','On','Off');

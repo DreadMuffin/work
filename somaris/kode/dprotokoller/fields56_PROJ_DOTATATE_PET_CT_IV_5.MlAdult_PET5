@@ -4,6 +4,6 @@ insert into CT values ('PROJ_DOTATATE_PET_CT_IV_5.MlAdult','PET5','2','2','CT WB
 insert into CTrecon values ('PROJ_DOTATATE_PET_CT_IV_5.MlAdult','PET5','2','1','AC CT','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','324');
 insert into CTrecon values ('PROJ_DOTATATE_PET_CT_IV_5.MlAdult','PET5','2','2','CT WB 3.0 B30f','3.00','B30f medium smooth','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','324');
 insert into Pause values ('PROJ_DOTATATE_PET_CT_IV_5.MlAdult','PET5','3');
-insert into PET values ('PROJ_DOTATATE_PET_CT_IV_5.MlAdult','PET5','4','2','PET WB','Cu-64','Dotatate','1','MegaBequerels','21/08 - 2012','12:58:00','Sinogram','Match CT FOV','6','3','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PET values ('PROJ_DOTATATE_PET_CT_IV_5.MlAdult','PET5','4','2','PET WB','Cu-64','Dotatate','1','MegaBequerels','Sinogram','Match CT FOV','6','3','Minutes','On','Off','Sinogram','Trues','None','435','650');
 insert into PETrecon values ('PROJ_DOTATATE_PET_CT_IV_5.MlAdult','PET5','4','1','PET WB Corrected ','Automatic/All/dunno','Corrected','Iterative','4','8','168','1','Gaussian','4','0','0','On (1)','On','On','Off');
 insert into PETrecon values ('PROJ_DOTATATE_PET_CT_IV_5.MlAdult','PET5','4','2','PET WB Dotatate True X','Automatic/All/dunno','Corrected','TrueX','3','21','336','1','Gaussian','2','0','0','On (1)','On','On','Off');

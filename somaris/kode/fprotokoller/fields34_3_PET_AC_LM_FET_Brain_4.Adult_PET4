@@ -87,7 +87,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad false
+AutoLoad 0
 RangeName "PET Brain LM"
 LLD n/a
 ULD n/a
@@ -99,7 +99,7 @@ InjectedDose 185000000.0
 NumberOfBeds Not given. Check recon range
 BedDuration 20.000000(PtMinutes)
 TableDirectionPatient PtCraniocaudal
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtListMode32
 HistogramMode Ptfalse
 PhysioInputType PtPhysioNone
@@ -114,15 +114,15 @@ Subsets 12
 Iterations 4
 Zoom 1
 FilterFWHM 1.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription FET_stat_1 mm
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -133,15 +133,15 @@ Subsets 12
 Iterations 4
 Zoom 1
 FilterFWHM 5.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription FET_stat_5 mm
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -152,15 +152,15 @@ Subsets 12
 Iterations 4
 Zoom 1
 FilterFWHM 5.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription FET_stat_4Fdyn_5 mm
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -171,14 +171,14 @@ Subsets 12
 Iterations 4
 Zoom 1
 FilterFWHM 1.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription FET_STAT_25-35min_5 mm
 BedBegin 1
 BedEnd 1
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 3
 MlScanProtocol_End 138

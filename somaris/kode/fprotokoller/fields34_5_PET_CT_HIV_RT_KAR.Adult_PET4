@@ -121,7 +121,7 @@ MlPause_End 138
 pet
 PROTOCOL_ENTRY_NO 4
 MlOtherModalityEntry_Begin 138
-AutoLoad true
+AutoLoad 1
 RangeName "PET "
 LLD n/a
 ULD n/a
@@ -133,7 +133,7 @@ InjectedDose 1000000.000000
 NumberOfBeds Not given. Check recon range
 BedDuration 3.000000(PtMinutes)
 TableDirectionPatient PtCraniocaudal
-RebinnerLut Null
+RebinnerLut 0
 RebinnerMode PtOnlineHistogram
 HistogramMode Ptfalse
 PhysioInputType PtPhysioNone
@@ -148,15 +148,15 @@ Subsets 12
 Iterations 2
 Zoom 1
 FilterFWHM 4.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET WB Image check HD
 BedBegin 1
 BedEnd 4
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -167,15 +167,15 @@ Subsets 21
 Iterations 2
 Zoom 1
 FilterFWHM 2.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET_ Corr_ TrueX+TOF 2 mm
 BedBegin 1
 BedEnd 4
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
@@ -186,15 +186,15 @@ Subsets 24
 Iterations 5
 Zoom 2.000000
 FilterFWHM 2.000000
-ScatterCorrect true
+ScatterCorrect 1
 ReconFilter PtGaussian
-MatchCTSliceLocation true
+MatchCTSliceLocation 1
 SeriesDescription PET _Corr_512_5i24s_z2f2_noTOF_noPSF_PE
 BedBegin 1
 BedEnd 4
 XOffset 0
 YOffset 0
-SaveIntermediateData false
+SaveIntermediateData 0
 MlModeRecon_End 138
 pause
 PROTOCOL_ENTRY_NO 5
