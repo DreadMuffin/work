@@ -6,19 +6,19 @@ PROTOCOL_ENTRY_NO 1
 MlModeScan_Begin 138
 ApiId ""
 RangeName "Topogram"
-ScanTime 2.730
+ScanTime 5.284
 StartDelay 4.000
+TubePosition 270.0
 Current 35
 SliceWidthEffectiveTiltCorrected 0.6
 TableDirectionPatient MlCraniocaudal
-TopoLength 256.0
-TubePosition 270.0
+TopoLength 512.0
 Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 1
 MlModeRecon_Begin 138
 BodyPartExamined "ABDOMEN"
-Kernel "T80s"
+Kernel "T80f"
 Transfer1 ""
 Transfer2 ""
 Transfer3 ""
@@ -28,25 +28,25 @@ ct
 PROTOCOL_ENTRY_NO 2
 MlModeScan_Begin 138
 ApiId ""
-RangeName "AC_CT_Body"
-ScanTime 8.050
+RangeName "CT_WB"
+ScanTime 32.745
 StartDelay 2.000
 AECReferenceMAs 225
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIw 16.38
+CTDIwEffective m_1="0.000000" 16.4451
 EffectiveMAs 225
 mAs 225
-PitchFactor 0.80
+PitchFactor m_1="-1" 0.80
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 2
 TableDirectionPatient MlCraniocaudal
 TiltPos 0.0
 Voltage 120.000
 MlModeScan_End 138
-No_Of_Valid_Recons 2
+No_Of_Valid_Recons 3
 MlModeRecon_Begin 138
-NoOfImages 56
+NoOfImages 245
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -58,12 +58,12 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 4.000
 ReconType MlAxialRJ
-SeriesDescription "tmp AC_CT_Body RTD"
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT_WB RTD"
 SliceWidthEffectiveTiltCorrected_Recon 4
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
 MlModeRecon_Begin 138
-NoOfImages 112
+NoOfImages 489
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -75,7 +75,24 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 2.000
 ReconType MlAxialRJ
-SeriesDescription "AC_CT 2 mm"
+SeriesDescription m_1="$4$$5$AC_CT 2 mm $M$$A$" m_2="" "AC_CT 2 mm"
+SliceWidthEffectiveTiltCorrected_Recon 2
+Window[READ_ONLY] "Abdomen"
+MlModeRecon_End 138
+MlModeRecon_Begin 138
+NoOfImages 489
+CenterX 0
+CenterY 0
+CTScale MlCTScaleStandard
+ExtendedFOV 0
+FoVHorLength 500
+ImageOrder MlIO_Craniocaudal
+Kernel "B30f"
+Mirror MlMirrorNone
+ReconDirection MlAxial
+ReconIncr 2.000
+ReconType MlAxialRJ
+SeriesDescription m_1="CT WB$2$$3$$4$$5$$M$$A$" m_2="" "CT WB 2.0 B30f"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -90,9 +107,9 @@ AutoLoad 1
 RangeName "PET WB"
 LLD n/a
 ULD n/a
-InjectedDose 85000000.000000
-InjectionDate 20120514
-InjectionTime 103714.000000
+InjectedDose 1000000.000000
+InjectionDate 20130131
+InjectionTime 181621.000000
 Isotope F-18
 BedDuration 5.000000(PtMinutes)
 RebinnerLut 0
@@ -101,12 +118,12 @@ HistogramMode Ptfalse
 Pharmaceutical Fluorodeoxyglucose
 PhysioInputType PtPhysioNone
 NumberOfBeds Not given. Check recon range
-TableDirectionPatient PtCraniocaudal
+TableDirectionPatient PtCaudocranial
 MlModeScan_End 138
 No_Of_Valid_Recons 1
 MlModeRecon_Begin 138
 BedBegin 1
-BedEnd 1
+BedEnd 7
 CTAttenCorrModeList 1,1
 FilterFWHM 2.000000
 ImageSize 400

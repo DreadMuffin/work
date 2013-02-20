@@ -8,7 +8,7 @@ SliceWidthEffectiveTiltCorrected 0.6
 ApiId ""
 Current 35
 RangeName "Topogram"
-ScanTime 2.730
+ScanTime 2.724
 StartDelay 4.000
 TableDirectionPatient MlCraniocaudal
 TopoLength 256.0
@@ -18,7 +18,7 @@ MlModeScan_End 138
 No_Of_Valid_Recons 1
 MlModeRecon_Begin 138
 BodyPartExamined "HEAD"
-Kernel "T20s"
+Kernel "T20f"
 Transfer1 ""
 Transfer2 ""
 Transfer3 ""
@@ -30,23 +30,23 @@ MlModeScan_Begin 138
 SliceWidthEffectiveTiltCorrected 1
 AECReferenceMAs 350
 ApiId ""
-Care MlOff
+Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIw 58.072
-EffectiveMAs 340
+CTDIwEffective m_1="0.000000" 59.7805
+EffectiveMAs 350
 TiltPos 0.0
-mAs 340
-PitchFactor 0.80
+mAs 350
+PitchFactor m_1="-1" 0.80
 RangeName "CT Brain"
 RotTime 1.000
-ScanTime 48.120
+ScanTime 48.542
 StartDelay 2.000
 TableDirectionPatient MlCaudocranial
 Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 4
 MlModeRecon_Begin 138
-SliceWidthEffectiveTiltCorrected_Recon 5
+SliceWidthEffectiveTiltCorrected_Recon 1.5
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -55,11 +55,11 @@ FoVHorLength 300
 ImageOrder MlIO_Caudocranial
 Kernel "H19s"
 Mirror MlMirrorNone
-NoOfImages 45
+NoOfImages 149
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription "tmp CT Brain RTD"
-ReconIncr 5.000
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Brain RTD"
+ReconIncr 1.500
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
 MlModeRecon_Begin 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 224
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription "AC CT_1mm_Brain"
+SeriesDescription m_1="$4$$5$AC CT_1mm_Brain $M$$A$" m_2="" "AC CT_1mm_Brain"
 ReconIncr 1.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -85,14 +85,14 @@ CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
 ExtendedFOV 0
-FoVHorLength 250
+FoVHorLength 300
 ImageOrder MlIO_Caudocranial
 Kernel "H31s"
 Mirror MlMirrorNone
 NoOfImages 224
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription "CT Brain 1.0 H31s"
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Brain 1.0 H31s"
 ReconIncr 1.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -102,14 +102,14 @@ CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
 ExtendedFOV 0
-FoVHorLength 250
+FoVHorLength 300
 ImageOrder MlIO_Caudocranial
 Kernel "H31s"
 Mirror MlMirrorNone
 NoOfImages 75
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription "CT Brain 3.0 H31s"
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Brain 3.0 H31s"
 ReconIncr 3.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138

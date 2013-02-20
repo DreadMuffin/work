@@ -6,19 +6,19 @@ PROTOCOL_ENTRY_NO 1
 MlModeScan_Begin 138
 ApiId ""
 RangeName "Topogram"
-ScanTime 2.730
+ScanTime 2.724
 StartDelay 4.000
+TubePosition 0.0
 Current 35
 SliceWidthEffectiveTiltCorrected 0.6
 TableDirectionPatient MlCraniocaudal
 TopoLength 256.0
-TubePosition 0.0
 Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 1
 MlModeRecon_Begin 138
 BodyPartExamined "HEAD"
-Kernel "T20s"
+Kernel "T20f"
 Transfer1 ""
 Transfer2 ""
 Transfer3 ""
@@ -29,15 +29,15 @@ PROTOCOL_ENTRY_NO 2
 MlModeScan_Begin 138
 ApiId ""
 RangeName "CT Brain"
-ScanTime 69.330
+ScanTime 69.697
 StartDelay 2.000
 AECReferenceMAs 380
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIw 64.904
+CTDIwEffective m_1="0.000000" 64.9045
 EffectiveMAs 380
 mAs 380
-PitchFactor 0.55
+PitchFactor m_1="-1" 0.55
 RotTime 1.000
 SliceWidthEffectiveTiltCorrected 1
 TableDirectionPatient MlCraniocaudal
@@ -46,7 +46,7 @@ Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 4
 MlModeRecon_Begin 138
-NoOfImages 45
+NoOfImages 149
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -56,10 +56,10 @@ ImageOrder MlIO_Craniocaudal
 Kernel "H19s"
 Mirror MlMirrorNone
 ReconDirection MlAxial
-ReconIncr 5.000
+ReconIncr 1.500
 ReconType MlAxialRJ
-SeriesDescription "tmp CT Brain RTD"
-SliceWidthEffectiveTiltCorrected_Recon 5
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Brain RTD"
+SliceWidthEffectiveTiltCorrected_Recon 1.5
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
 MlModeRecon_Begin 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 1.000
 ReconType MlAxialRJ
-SeriesDescription "AC_CT_1mm"
+SeriesDescription m_1="$4$$5$AC_CT_1mm $M$$A$" m_2="" "AC_CT_1mm"
 SliceWidthEffectiveTiltCorrected_Recon 1
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 2.000
 ReconType MlAxialRJ
-SeriesDescription "Cranie_VIR 2.0 H30S"
+SeriesDescription m_1="Cranie_VIR$2$$4$$5$H30S $M$$A$" m_2="" "Cranie_VIR 2.0 H30S"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -109,7 +109,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 3.000
 ReconType MlAxialRJ
-SeriesDescription "AC_CT_3mm"
+SeriesDescription m_1="$4$$5$AC_CT_3mm $M$$A$" m_2="" "AC_CT_3mm"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138

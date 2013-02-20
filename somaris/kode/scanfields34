@@ -8,11 +8,11 @@ ApiId
 RangeName
 ScanTime
 StartDelay
-Current
+TubePosition
+Current 
 SliceWidthEffectiveTiltCorrected
 TableDirectionPatient
 TopoLength
-TubePosition
 Voltage
 MlModeScan_End
 No_Of_Valid_Recons

@@ -38,13 +38,16 @@ def loop(source,mname):
     listing = os.listdir(source) file"""
     for file in listing:
         try:
-            f = open(source + file, 'r').read()
-            proto = f.split("\n")
+            f = open(source + file, 'r')
+            proto = f.read().split("\n")
+            f.close()
             newProto = []
             for item in proto:
                 item = item.rstrip('\r\n:')
                 item = item.replace("\t", " ")
                 item = re.sub(' +', ' ', item)
+                if item.startswith("CurrentRatio"):
+                    continue
                 newProto.append(item)
             proto = newProto
 
@@ -79,7 +82,6 @@ def loop(source,mname):
                         searchingtc = False
                 elif item.startswith("PROTOCOL_ENTRY_NO"):
                     searching = True
-
 
             fields.append("MlScanProtocol_End")
             fields.append("Det her slutter den ikke med")

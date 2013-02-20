@@ -1,0 +1,18 @@
+insert into Protocols values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','Adult','10',NOW());
+insert into Topograms values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','1','Topogram','35','120','0','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
+insert into CT values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','2','2','CT ','170','120','Off','CareDoseAEC','11.4448','12.680','4.000','3.00','0.0','170','0.500','1.2000000','Craniocaudal');
+insert into CTrecon values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','2','1','AC CT','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
+insert into CTrecon values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','2','2','CT 3.0 B30f','3.00','B30f medium smooth','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
+insert into Pause values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','3');
+insert into PET values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','4','1','PET HEART','Cu-64','LIPOSOM','1','MegaBequerels','Sinogram','Match CT FOV','1','3','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PETrecon values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','4','1','PET HEART Day 2','Automatic/All/dunno','Corrected','TrueX','3','21','336','1','Gaussian','2','0','0','On (1)','On','On','Off');
+insert into Pause values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','5');
+insert into PET values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','6','1','PET LIVER','Cu-64','LIPOSOM','1','MegaBequerels','Sinogram','Match CT FOV','1','3','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PETrecon values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','6','1','PET LIVER Day 2','Automatic/All/dunno','Corrected','TrueX','3','21','336','1','Gaussian','2','0','0','On (1)','On','On','Off');
+insert into Pause values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','7');
+insert into PET values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','8','1','PET TUMOR','Cu-64','LIPOSOM','1','MegaBequerels','Sinogram','Match CT FOV','1','10','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PETrecon values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','8','1','PET TUMOR Day 2','Automatic/All/dunno','Corrected','TrueX','3','21','336','1','Gaussian','2','0','0','On (1)','On','On','Off');
+insert into Pause values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','9');
+insert into PET values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','10','2','PET WB','Cu-64','LIPOSOM','1','MegaBequerels','Sinogram','Match CT FOV','1','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PETrecon values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','10','1','PET WB Image check day 2','Automatic/All/dunno','Corrected','Iterative','4','8','128','1','Gaussian','2','0','0','On (1)','On','On','Off');
+insert into PETrecon values ('HUND_64Cu_Liposom_Dag2.MlAdult','PET6','10','2','PET WB True X Day 2','Automatic/All/dunno','Corrected','TrueX','3','21','336','1','Gaussian','2','0','0','On (1)','On','On','Off');

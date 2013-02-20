@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import re
-from xml.dom import minidom 
+from xml.dom import minidom
 import os
 
 print "Converting xml to plaintext"
@@ -28,7 +28,7 @@ def xmlloop(source,destination):
     replaces some lines with a style that matches PET 5 and 6."""
     listing = os.listdir(source)
     for file in listing:
-        try:
+#        try:
             proto = minidom.parse(source + file).toxml()
             proto = proto.split("\n")[2:-4]
             reconnumber = []
@@ -47,7 +47,10 @@ def xmlloop(source,destination):
                 item = item.replace("&quot;","\"")
                 item = item.lstrip(" ")[1:-1]
                 if item.startswith("MlModeEntryType EntryNo="):
-                    reconnumber.append(int(item[64]))
+                    if len(item.split(" ")) == 5:
+                        reconnumber.append(int(item[64]))
+                    else:
+                        reconnumber.append(int(item[84]))
                     if item[25] == "2":
                         startmsg = "MlModeRecon_End 138\n"
                     item = startmsg + "PROTOCOL_ENTRY_NO " + str(protonumber) + "\nMlModeScan_Begin 138"
@@ -125,8 +128,8 @@ def xmlloop(source,destination):
             f.write(fieldlist)
             f.close()
 
-        except:
-            print file + "did not compile properly"
+#        except:
+#            print file + " did not compile properly"
 
 xmlloop(path31,path32)
 xmlloop(path41,path42)

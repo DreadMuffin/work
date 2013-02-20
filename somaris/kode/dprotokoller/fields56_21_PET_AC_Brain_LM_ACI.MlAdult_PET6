@@ -1,0 +1,8 @@
+insert into Protocols values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET6','Adult','4',NOW());
+insert into Topograms values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET6','1','Topogram','35','120','1024','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
+insert into CT values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET6','2','2','CT Brain','55','120','On','CareDoseAEC','3.71345','18.670','4.000','5.00','0.0','55','0.500','0.8000000','Craniocaudal');
+insert into CTrecon values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET6','2','1','AC CT efov 700','5.00','B19f PET very smooth','Cerebrum','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
+insert into CTrecon values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET6','2','2','AC CT fov 500','5.00','B19f PET very smooth','Cerebrum','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','274');
+insert into Pause values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET6','3');
+insert into PET values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET6','4','1','PET WB','F-18','Florbetaben','1','MegaBequerels','List mode','Match CT FOV','1','20','Minutes','On','Off','List mode','Trues','None','435','650');
+insert into PETrecon values ('21_PET_AC_Brain_LM_ACI.MlAdult','PET6','4','1','PET WB Image check','Automatic/All/dunno','NoRecon','Iterative','4','14','128','2','Gaussian','4','0','0','On (1)','On','On','Off');

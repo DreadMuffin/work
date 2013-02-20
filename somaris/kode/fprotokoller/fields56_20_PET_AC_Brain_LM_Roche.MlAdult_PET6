@@ -1,0 +1,127 @@
+MlScanProtocolAttributes_Begin 138
+BodySizeOld MlAdult
+ProtocolName "20_PET_AC_Brain_LM_Roche"
+topo
+PROTOCOL_ENTRY_NO 1
+MlModeScan_Begin 138
+SliceEffectiveTiltCorrected 0.6
+ApiId -1
+Current 35
+RangeName[READ_ONLY] "Topogram"
+ScanTime 10.460
+StartDelay 4.000
+TableDirectionPatient MlCraniocaudal
+TopoLength 1024.0
+TubePosition 270.0
+Voltage 120.000
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
+BodyPartExamined "ABDOMEN"
+Kernel "T80s sharp"
+Transfer1 ""
+Transfer2 ""
+Transfer3 ""
+Window[READ_ONLY] "Topogram Body"
+MlModeRecon_End 138
+ct
+PROTOCOL_ENTRY_NO 2
+MlModeScan_Begin 138
+SliceEffective 5.00
+AECReferenceMAs 55
+ApiId -1
+Care MlOn
+CareDoseType MlCareDoseAEC
+CTDIw 3.71345
+EffectiveMAs 55
+InterPosTilt 0.0
+mAs 55
+PitchFactor 0.8000000
+RangeName "CT Brain"
+RotTime 0.500
+ScanTime 18.670
+StartDelay 4.000
+TableDirectionPatient MlCraniocaudal
+Voltage 120.000
+MlModeScan_End 138
+No_Of_Valid_Recons 2
+MlModeRecon_Begin 138
+SliceEffective 5.00
+CenterX 0
+CenterY 0
+CTScale MlCTScaleStandard
+ExtendedFOV 1
+FoVHorLength 700
+ImageOrder MlIO_Craniocaudal
+Kernel "B19f PET very smooth"
+Mirror MlMirrorNone
+NoOfImages 274
+ReconDirection MlAxial
+ReconType MlAxialRJ
+SeriesDescription "AC_CT_efov_700"
+SpiralReconIncr 3.000
+Window[READ_ONLY] "Cerebrum"
+MlModeRecon_End 138
+MlModeRecon_Begin 138
+SliceEffective 5.00
+CenterX 0
+CenterY 0
+CTScale MlCTScaleStandard
+ExtendedFOV 0
+FoVHorLength 500
+ImageOrder MlIO_Craniocaudal
+Kernel "B19f PET very smooth"
+Mirror MlMirrorNone
+NoOfImages 274
+ReconDirection MlAxial
+ReconType MlAxialRJ
+SeriesDescription "AC_CT_fov_500"
+SpiralReconIncr 3.000
+Window[READ_ONLY] "Cerebrum"
+MlModeRecon_End 138
+MlModeEntry_End 138
+pause
+PROTOCOL_ENTRY_NO 3
+MlPause_Begin 138
+MlPause_End 138
+pet
+PROTOCOL_ENTRY_NO 4
+MlModeScan_Begin 1
+AutoLoad 1
+RangeName "PET WB"
+LLD 435
+ULD 650
+Isotope F-18
+Pharmaceutical Florbetapir
+InjectionDate 20110118
+InjectionTime 143000.000000
+InjectedDose 1(PtMegaBequerels)
+NumberOfBeds 1
+BedDuration 15(PtMinutes)
+TableDirectionPatient MlCaudocranial
+RebinnerLut 0
+RebinnerMode PtListMode32
+HistogramMode PtTrues
+PhysioInputType PtPhysioNone
+MlModeScan_End 1
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 3
+CTAttenCorrModeList (1,1)
+OutputImageType PtNoRecon
+ReconMethod PtIterative
+ImageSize 128
+Subsets 14
+Iterations 4
+Zoom 2
+FilterFWHM 4
+ScatterCorrect 1
+XYFilterType PtGaussian
+MatchCTSliceLocation 1
+SeriesDescription PET WB Image check
+BedBegin -1
+BedEnd -1
+XOffset 0
+YOffset 0
+SaveIntermediateData 0
+MlModeRecon_End 3
+MlScanProtocol_End 138

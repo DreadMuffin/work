@@ -1,0 +1,26 @@
+\select@language {danish}
+\contentsline {section}{\numberline {1}Topogram}{1}
+\contentsline {subsection}{\numberline {1.1}Routine}{1}
+\contentsline {subsection}{\numberline {1.2}Scan}{1}
+\contentsline {section}{\numberline {2}CT LUNG}{1}
+\contentsline {subsection}{\numberline {2.1}Routine}{1}
+\contentsline {subsection}{\numberline {2.2}Scan}{2}
+\contentsline {subsection}{\numberline {2.3}Recons}{2}
+\contentsline {subsubsection}{\numberline {2.3.1}Recon 1}{2}
+\contentsline {subsubsection}{\numberline {2.3.2}Recon 2}{3}
+\contentsline {section}{\numberline {3}Pause}{4}
+\contentsline {section}{\numberline {4}CT WB}{4}
+\contentsline {subsection}{\numberline {4.1}Routine}{4}
+\contentsline {subsection}{\numberline {4.2}Scan}{4}
+\contentsline {subsection}{\numberline {4.3}Recons}{5}
+\contentsline {subsubsection}{\numberline {4.3.1}Recon 1}{5}
+\contentsline {subsubsection}{\numberline {4.3.2}Recon 2}{5}
+\contentsline {subsubsection}{\numberline {4.3.3}Recon 3}{6}
+\contentsline {subsubsection}{\numberline {4.3.4}Recon 4}{7}
+\contentsline {section}{\numberline {5}Pause}{7}
+\contentsline {section}{\numberline {6}PET WB}{7}
+\contentsline {subsection}{\numberline {6.1}Routine}{7}
+\contentsline {subsection}{\numberline {6.2}Scan}{8}
+\contentsline {subsection}{\numberline {6.3}Recons}{8}
+\contentsline {subsubsection}{\numberline {6.3.1}Recon 1}{8}
+\contentsline {subsubsection}{\numberline {6.3.2}Recon 2}{9}

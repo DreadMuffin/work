@@ -1,0 +1,11 @@
+insert into Protocols values ('PET_CT_WB_25_35_kg.MlChild','PET6','Child','4',NOW());
+insert into Topograms values ('PET_CT_WB_25_35_kg.MlChild','PET6','1','Topogram','35','120','0','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
+insert into CT values ('PET_CT_WB_25_35_kg.MlChild','PET6','2','4','CT WB','55','120','On','CareDoseAEC','3.70884','7.280','20.000','3.00','0.0','55','0.500','1.4000000','Craniocaudal');
+insert into CTrecon values ('PET_CT_WB_25_35_kg.MlChild','PET6','2','1','AC CT','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','174');
+insert into CTrecon values ('PET_CT_WB_25_35_kg.MlChild','PET6','2','2','WB CT 3.0 mm B30f','3.00','B30f medium smooth','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','174');
+insert into CTrecon values ('PET_CT_WB_25_35_kg.MlChild','PET6','2','3','WB CT 3.0 mm SPO cor','3.00','B30f medium smooth','Abdomen','Off','521','0','0','None','Standard','3D','Coronal','AP','3.000','167');
+insert into CTrecon values ('PET_CT_WB_25_35_kg.MlChild','PET6','2','4','WB CT 3.0 mm SPO sag','3.00','B30f medium smooth','Abdomen','Off','521','0','0','None','Standard','3D','Sagittal','LeftToRight','3.000','174');
+insert into Pause values ('PET_CT_WB_25_35_kg.MlChild','PET6','3');
+insert into PET values ('PET_CT_WB_25_35_kg.MlChild','PET6','4','2','PET WB','F-18','FDG','1','MegaBequerels','Sinogram','Match CT FOV','3','3','Minutes','On','Off','Sinogram','Trues','None','435','650');
+insert into PETrecon values ('PET_CT_WB_25_35_kg.MlChild','PET6','4','1','PET Image check','Automatic/All/dunno','Corrected','Iterative','4','8','168','1','Gaussian','4','0','0','On (1)','On','On','Off');
+insert into PETrecon values ('PET_CT_WB_25_35_kg.MlChild','PET6','4','2','PET WB True X 2 mm','Automatic/All/dunno','Corrected','TrueX','2','21','336','1','Gaussian','2','0','0','On (1)','On','On','Off');

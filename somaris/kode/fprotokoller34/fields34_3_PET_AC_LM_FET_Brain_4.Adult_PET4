@@ -6,19 +6,19 @@ PROTOCOL_ENTRY_NO 1
 MlModeScan_Begin 138
 ApiId ""
 RangeName "Topogram"
-ScanTime 2.730
+ScanTime 2.724
 StartDelay 4.000
+TubePosition 0.0
 Current 35
 SliceWidthEffectiveTiltCorrected 0.6
 TableDirectionPatient MlCraniocaudal
 TopoLength 256.0
-TubePosition 0.0
 Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 1
 MlModeRecon_Begin 138
 BodyPartExamined "HEAD"
-Kernel "T20s"
+Kernel "T20f"
 Transfer1 ""
 Transfer2 ""
 Transfer3 ""
@@ -29,15 +29,15 @@ PROTOCOL_ENTRY_NO 2
 MlModeScan_Begin 138
 ApiId ""
 RangeName "Lavdosis CT"
-ScanTime 26.200
+ScanTime 26.000
 StartDelay 2.000
 AECReferenceMAs 350
-Care MlOff
+Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIw 5.124
-EffectiveMAs 30
-mAs 30
-PitchFactor 1.50
+CTDIwEffective m_1="0.000000" 59.7805
+EffectiveMAs 350
+mAs 350
+PitchFactor m_1="-1" 1.50
 RotTime 1.000
 SliceWidthEffectiveTiltCorrected 3
 TableDirectionPatient MlCaudocranial
@@ -46,7 +46,7 @@ Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 2
 MlModeRecon_Begin 138
-NoOfImages 45
+NoOfImages 148
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -56,10 +56,10 @@ ImageOrder MlIO_Caudocranial
 Kernel "H19s"
 Mirror MlMirrorNone
 ReconDirection MlAxial
-ReconIncr 5.000
+ReconIncr 1.500
 ReconType MlAxialRJ
-SeriesDescription "tmp Lavdosis CT RTD"
-SliceWidthEffectiveTiltCorrected_Recon 5
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Lavdosis CT RTD"
+SliceWidthEffectiveTiltCorrected_Recon 1.5
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
 MlModeRecon_Begin 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 3.000
 ReconType MlAxialRJ
-SeriesDescription "AC Lavdosis CT"
+SeriesDescription m_1="AC $1$$4$$5$$M$$A$" m_2="" "AC Lavdosis CT"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -91,8 +91,8 @@ RangeName "PET Brain LM"
 LLD n/a
 ULD n/a
 InjectedDose 185000000.0
-InjectionDate 20120919
-InjectionTime 125000.000000
+InjectionDate 20121115
+InjectionTime 113701.000000
 Isotope F-18
 BedDuration 20.000000(PtMinutes)
 RebinnerLut 0
@@ -103,12 +103,12 @@ PhysioInputType PtPhysioNone
 NumberOfBeds Not given. Check recon range
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End 138
-No_Of_Valid_Recons 4
+No_Of_Valid_Recons 2
 MlModeRecon_Begin 138
 BedBegin 1
 BedEnd 1
 CTAttenCorrModeList 1,1
-FilterFWHM 1.000000
+FilterFWHM 5.000000
 ImageSize 400
 Iterations 4
 MatchCTSliceLocation 1
@@ -117,7 +117,7 @@ ReconFilter PtGaussian
 ReconMethod PtIterative3D
 SaveIntermediateData 0
 ScatterCorrect 1
-SeriesDescription FET_stat_1 mm
+SeriesDescription FET_stat_20-40_min_5 mm
 Subsets 12
 XOffset 0
 YOffset 0
@@ -136,45 +136,7 @@ ReconFilter PtGaussian
 ReconMethod PtIterative3D
 SaveIntermediateData 0
 ScatterCorrect 1
-SeriesDescription FET_stat_5 mm
-Subsets 12
-XOffset 0
-YOffset 0
-Zoom 1
-MlModeRecon_End 138
-MlModeRecon_Begin 138
-BedBegin 1
-BedEnd 1
-CTAttenCorrModeList 1,1
-FilterFWHM 5.000000
-ImageSize 400
-Iterations 4
-MatchCTSliceLocation 1
-OutputImageType PtCorrected
-ReconFilter PtGaussian
-ReconMethod PtIterative3D
-SaveIntermediateData 0
-ScatterCorrect 1
-SeriesDescription FET_stat_4Fdyn_5 mm
-Subsets 12
-XOffset 0
-YOffset 0
-Zoom 1
-MlModeRecon_End 138
-MlModeRecon_Begin 138
-BedBegin 1
-BedEnd 1
-CTAttenCorrModeList 1,1
-FilterFWHM 1.000000
-ImageSize 400
-Iterations 4
-MatchCTSliceLocation 1
-OutputImageType PtCorrected
-ReconFilter PtGaussian
-ReconMethod PtIterative3D
-SaveIntermediateData 0
-ScatterCorrect 1
-SeriesDescription FET_STAT_25-35min_5 mm
+SeriesDescription FET_stat_25-35 min_5 mm
 Subsets 12
 XOffset 0
 YOffset 0

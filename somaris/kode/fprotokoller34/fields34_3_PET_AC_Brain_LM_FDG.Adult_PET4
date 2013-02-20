@@ -6,19 +6,19 @@ PROTOCOL_ENTRY_NO 1
 MlModeScan_Begin 138
 ApiId ""
 RangeName "Topogram"
-ScanTime 2.730
+ScanTime 2.724
 StartDelay 4.000
+TubePosition 0.0
 Current 35
 SliceWidthEffectiveTiltCorrected 0.6
 TableDirectionPatient MlCraniocaudal
 TopoLength 256.0
-TubePosition 0.0
 Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 1
 MlModeRecon_Begin 138
 BodyPartExamined "HEAD"
-Kernel "T20s"
+Kernel "T20f"
 Transfer1 ""
 Transfer2 ""
 Transfer3 ""
@@ -29,15 +29,15 @@ PROTOCOL_ENTRY_NO 2
 MlModeScan_Begin 138
 ApiId ""
 RangeName "Lav CT Brain"
-ScanTime 17.570
+ScanTime 17.652
 StartDelay 2.000
 AECReferenceMAs 350
-Care MlOff
+Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIw 5.69782
-EffectiveMAs 32
-mAs 32
-PitchFactor 0.55
+CTDIwEffective m_1="0.000000" 60.9301
+EffectiveMAs 350
+mAs 350
+PitchFactor m_1="-1" 0.55
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 3
 TableDirectionPatient MlCaudocranial
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 4.000
 ReconType MlAxialRJ
-SeriesDescription "tmp Lav CT Brain RTD"
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Lav CT Brain RTD"
 SliceWidthEffectiveTiltCorrected_Recon 4
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 3.000
 ReconType MlAxialRJ
-SeriesDescription "AC CT"
+SeriesDescription m_1="$4$$5$AC CT $M$$A$" m_2="" "AC CT"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138

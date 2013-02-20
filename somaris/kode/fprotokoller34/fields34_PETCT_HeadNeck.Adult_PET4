@@ -6,19 +6,19 @@ PROTOCOL_ENTRY_NO 1
 MlModeScan_Begin 138
 ApiId ""
 RangeName "Topogram"
-ScanTime 5.290
+ScanTime 5.284
 StartDelay 4.000
+TubePosition 270.0
 Current 35
 SliceWidthEffectiveTiltCorrected 0.6
 TableDirectionPatient MlCraniocaudal
 TopoLength 512.0
-TubePosition 270.0
 Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 1
 MlModeRecon_Begin 138
 BodyPartExamined "NECK"
-Kernel "T20s"
+Kernel "T20f"
 Transfer1 ""
 Transfer2 ""
 Transfer3 ""
@@ -29,15 +29,15 @@ PROTOCOL_ENTRY_NO 2
 MlModeScan_Begin 138
 ApiId ""
 RangeName "CT HeadNeck"
-ScanTime 15.960
+ScanTime 16.078
 StartDelay 2.000
 AECReferenceMAs 150
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIw 11.4
+CTDIwEffective m_1="0.000000" 11.4465
 EffectiveMAs 150
 mAs 150
-PitchFactor 0.80
+PitchFactor m_1="-1" 0.80
 RotTime 1.000
 SliceWidthEffectiveTiltCorrected 3
 TableDirectionPatient MlCraniocaudal
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 5.000
 ReconType MlAxialRJ
-SeriesDescription "tmp CT HeadNeck RTD"
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT HeadNeck RTD"
 SliceWidthEffectiveTiltCorrected_Recon 5
 Window[READ_ONLY] "Larynx"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 2.000
 ReconType MlAxialRJ
-SeriesDescription "AC CT HeadNeck"
+SeriesDescription m_1="$4$$5$AC CT HeadNeck $M$$A$" m_2="" "AC CT HeadNeck"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY] "Larynx"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 1.500
 ReconType MlAxialRJ
-SeriesDescription "CT HeadNeck 2.0 B31s"
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT HeadNeck 2.0 B31s"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Larynx"
 MlModeRecon_End 138

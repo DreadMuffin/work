@@ -8,7 +8,7 @@ SliceWidthEffectiveTiltCorrected 0.6
 ApiId ""
 Current 35
 RangeName "Topogram"
-ScanTime 2.730
+ScanTime 2.724
 StartDelay 4.000
 TableDirectionPatient MlCraniocaudal
 TopoLength 256.0
@@ -18,7 +18,7 @@ MlModeScan_End 138
 No_Of_Valid_Recons 1
 MlModeRecon_Begin 138
 BodyPartExamined "HEAD"
-Kernel "T20s"
+Kernel "T20f"
 Transfer1 ""
 Transfer2 ""
 Transfer3 ""
@@ -30,23 +30,23 @@ MlModeScan_Begin 138
 SliceWidthEffectiveTiltCorrected 3
 AECReferenceMAs 350
 ApiId ""
-Care MlOff
+Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIw 5.124
-EffectiveMAs 30
+CTDIwEffective m_1="0.000000" 59.7805
+EffectiveMAs 350
 TiltPos 0.0
-mAs 30
-PitchFactor 1.50
+mAs 350
+PitchFactor m_1="-1" 1.50
 RangeName "Lavdosis CT"
 RotTime 1.000
-ScanTime 26.200
+ScanTime 26.000
 StartDelay 2.000
 TableDirectionPatient MlCaudocranial
 Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 2
 MlModeRecon_Begin 138
-SliceWidthEffectiveTiltCorrected_Recon 5
+SliceWidthEffectiveTiltCorrected_Recon 1.5
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -55,11 +55,11 @@ FoVHorLength 300
 ImageOrder MlIO_Caudocranial
 Kernel "H19s"
 Mirror MlMirrorNone
-NoOfImages 45
+NoOfImages 148
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription "tmp Lavdosis CT RTD"
-ReconIncr 5.000
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Lavdosis CT RTD"
+ReconIncr 1.500
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
 MlModeRecon_Begin 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 74
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription "AC Lavdosis CT"
+SeriesDescription m_1="AC $1$$4$$5$$M$$A$" m_2="" "AC Lavdosis CT"
 ReconIncr 3.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -93,8 +93,8 @@ LLD n/a
 ULD n/a
 Isotope F-18
 Pharmaceutical FET
-InjectionDate 20120919
-InjectionTime 125000.000000
+InjectionDate 20121115
+InjectionTime 113701.000000
 InjectedDose 185000000.0
 NumberOfBeds Not given. Check recon range
 BedDuration 20.000000(PtMinutes)
@@ -104,7 +104,7 @@ RebinnerMode PtListMode32
 HistogramMode Ptfalse
 PhysioInputType PtPhysioNone
 MlModeScan_End 138
-No_Of_Valid_Recons 4
+No_Of_Valid_Recons 2
 MlModeRecon_Begin 138
 CTAttenCorrModeList 1,1
 OutputImageType PtCorrected
@@ -113,11 +113,11 @@ ImageSize 400
 Subsets 12
 Iterations 4
 Zoom 1
-FilterFWHM 1.000000
+FilterFWHM 5.000000
 ScatterCorrect 1
 ReconFilter PtGaussian
 MatchCTSliceLocation 1
-SeriesDescription FET_stat_1 mm
+SeriesDescription FET_stat_20-40_min_5 mm
 BedBegin 1
 BedEnd 1
 XOffset 0
@@ -136,45 +136,7 @@ FilterFWHM 5.000000
 ScatterCorrect 1
 ReconFilter PtGaussian
 MatchCTSliceLocation 1
-SeriesDescription FET_stat_5 mm
-BedBegin 1
-BedEnd 1
-XOffset 0
-YOffset 0
-SaveIntermediateData 0
-MlModeRecon_End 138
-MlModeRecon_Begin 138
-CTAttenCorrModeList 1,1
-OutputImageType PtCorrected
-ReconMethod PtIterative3D
-ImageSize 400
-Subsets 12
-Iterations 4
-Zoom 1
-FilterFWHM 5.000000
-ScatterCorrect 1
-ReconFilter PtGaussian
-MatchCTSliceLocation 1
-SeriesDescription FET_stat_4Fdyn_5 mm
-BedBegin 1
-BedEnd 1
-XOffset 0
-YOffset 0
-SaveIntermediateData 0
-MlModeRecon_End 138
-MlModeRecon_Begin 138
-CTAttenCorrModeList 1,1
-OutputImageType PtCorrected
-ReconMethod PtIterative3D
-ImageSize 400
-Subsets 12
-Iterations 4
-Zoom 1
-FilterFWHM 1.000000
-ScatterCorrect 1
-ReconFilter PtGaussian
-MatchCTSliceLocation 1
-SeriesDescription FET_STAT_25-35min_5 mm
+SeriesDescription FET_stat_25-35 min_5 mm
 BedBegin 1
 BedEnd 1
 XOffset 0

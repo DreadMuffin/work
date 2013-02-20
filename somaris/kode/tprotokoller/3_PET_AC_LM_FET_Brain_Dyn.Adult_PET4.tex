@@ -24,13 +24,13 @@
 \subsection{Scan}\item mA: 35\item kV: 120\item Delay: 4s\item Topogram length: 256 mm\item Direction: Craniocaudal\item Tube position: Lateral\item API: API \item Kernel: 20\item Window: Topogram
 \section{Lavdosis CT}
 \subsection{Routine}
-\item Eff. mAs: 30\item kV: 120\item CARE Dose4D: Off\item CareDoseType: CareDoseAEC\item CTDlvol: 5.124mGy\item Scan time: 26.200 s\item Delay: 2.000 s\item Slice: 3 mm\item No. of images: Samme som i foerste recon, slet?(y/n)\item Tilt: 0.0 grader
+\item Eff. mAs: 350\item kV: 120\item CARE Dose4D: On\item CareDoseType: CareDoseAEC\item CTDlvol: m 1=0.000000 59.7805mGy\item Scan time: 26.000 s\item Delay: 2.000 s\item Slice: 3 mm\item No. of images: Samme som i foerste recon, slet?(y/n)\item Tilt: 0.0 grader
 \subsection{Scan}
-\item Quality ref. mAs: 350\item Eff. mAs: 30\item kV: 120\item Scan time: 26.200 s\item Rotation time: 1.000 s\item Delay: 2.000 s\item Slice: 3 mm\item Pitch: 1.50\item Direction: Caudocranial\subsection{Recons}
+\item Quality ref. mAs: 350\item Eff. mAs: 350\item kV: 120\item Scan time: 26.000 s\item Rotation time: 1.000 s\item Delay: 2.000 s\item Slice: 3 mm\item Pitch: m 1=-1 1.50\item Direction: Caudocranial\subsection{Recons}
 
 \subsubsection{Recon 1}
-\item Series description: tmp Lavdosis CT RTD
-\item Slice: 5
+\item Series description: m 1=$1$$2$$3$$4$$5$$M$$A$ m 2= Lavdosis CT RTD
+\item Slice: 1.5
 \item Kernel: H19s
 \item Window: Cerebrum
 \item Extended FoV: Off
@@ -42,10 +42,10 @@
 \item Recon job: Axial
 \item Recon Axis: Axial
 \item Image order: Caudocranial
-\item Recon increment: 5.000
-\item No. of images: 45
+\item Recon increment: 1.500
+\item No. of images: 148
 \subsubsection{Recon 2}
-\item Series description: AC Lavdosis CT
+\item Series description: m 1=AC $1$$4$$5$$M$$A$ m 2= AC Lavdosis CT
 \item Slice: 3
 \item Kernel: H19s
 \item Window: Cerebrum
@@ -79,23 +79,6 @@
 \item ULD (keV): n/a
 \subsection{Recons}
 \subsubsection{Recon 1}
-\item Series description: FET dyn 8F 5 mm 4
-\item Recon range (bed): 1 to 1
-\item Output image type: Corrected
-\item Recon method: Iterative3D
-\item Iterations: 4
-\item Subsets: 12
-\item Image size: 400
-\item Zoom: 2.500000
-\item Filter: Gaussian
-\item FWHM (mm): 5.000000
-\item Offset X: 0 mm
-\item Offset Y: 0 mm
-\item Attenuation correction: Off ()
-\item Scatter correction: On
-\item Match CT slice location: On
-\item Save intermediate data: Off
-\subsubsection{Recon 2}
 \item Series description: FET dyn 22F 5 mm 4
 \item Recon range (bed): 1 to 1
 \item Output image type: Corrected
@@ -112,24 +95,7 @@
 \item Scatter correction: On
 \item Match CT slice location: On
 \item Save intermediate data: Off
-\subsubsection{Recon 3}
-\item Series description: FET 20-40 min 1 mm 4
-\item Recon range (bed): 1 to 1
-\item Output image type: Corrected
-\item Recon method: Iterative3D
-\item Iterations: 4
-\item Subsets: 12
-\item Image size: 400
-\item Zoom: 2.500000
-\item Filter: Gaussian
-\item FWHM (mm): 1.000000
-\item Offset X: 0 mm
-\item Offset Y: 0 mm
-\item Attenuation correction: Off ()
-\item Scatter correction: On
-\item Match CT slice location: On
-\item Save intermediate data: Off
-\subsubsection{Recon 4}
+\subsubsection{Recon 2}
 \item Series description: FET 20-40 min 5 mm 4
 \item Recon range (bed): 1 to 1
 \item Output image type: Corrected
@@ -146,8 +112,8 @@
 \item Scatter correction: On
 \item Match CT slice location: On
 \item Save intermediate data: Off
-\subsubsection{Recon 5}
-\item Series description: FET dyn 22F 1 mm 4
+\subsubsection{Recon 3}
+\item Series description: FET dyn 25-35min 5mm
 \item Recon range (bed): 1 to 1
 \item Output image type: Corrected
 \item Recon method: Iterative3D
@@ -156,15 +122,15 @@
 \item Image size: 400
 \item Zoom: 2.500000
 \item Filter: Gaussian
-\item FWHM (mm): 1.000000
+\item FWHM (mm): 5.000000
 \item Offset X: 0 mm
 \item Offset Y: 0 mm
 \item Attenuation correction: Off ()
 \item Scatter correction: On
 \item Match CT slice location: On
 \item Save intermediate data: Off
-\subsubsection{Recon 6}
-\item Series description: FET DYN 25-35min 5mm
+\subsubsection{Recon 4}
+\item Series description: FET dyn 10-30min 5mm
 \item Recon range (bed): 1 to 1
 \item Output image type: Corrected
 \item Recon method: Iterative3D

@@ -6,19 +6,19 @@ PROTOCOL_ENTRY_NO 1
 MlModeScan_Begin 138
 ApiId ""
 RangeName "Topogram"
-ScanTime 2.730
+ScanTime 2.724
 StartDelay 4.000
+TubePosition 0.0
 Current 35
 SliceWidthEffectiveTiltCorrected 0.6
 TableDirectionPatient MlCraniocaudal
 TopoLength 256.0
-TubePosition 0.0
 Voltage 120.000
 MlModeScan_End 138
 No_Of_Valid_Recons 1
 MlModeRecon_Begin 138
 BodyPartExamined "HEAD"
-Kernel "T20s"
+Kernel "T20f"
 Transfer1 ""
 Transfer2 ""
 Transfer3 ""
@@ -29,24 +29,24 @@ PROTOCOL_ENTRY_NO 2
 MlModeScan_Begin 138
 ApiId ""
 RangeName "CT"
-ScanTime 26.420
+ScanTime 26.222
 StartDelay 2.000
 AECReferenceMAs 350
-Care MlOff
+Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIw 58.072
-EffectiveMAs 340
-mAs 340
-PitchFactor 1.50
+CTDIwEffective m_1="0.000000" 59.7805
+EffectiveMAs 350
+mAs 350
+PitchFactor m_1="-1" 1.50
 RotTime 1.000
 SliceWidthEffectiveTiltCorrected 1
 TableDirectionPatient MlCaudocranial
 TiltPos 0.0
 Voltage 120.000
 MlModeScan_End 138
-No_Of_Valid_Recons 5
+No_Of_Valid_Recons 4
 MlModeRecon_Begin 138
-NoOfImages 45
+NoOfImages 149
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -56,10 +56,10 @@ ImageOrder MlIO_Caudocranial
 Kernel "H19s"
 Mirror MlMirrorNone
 ReconDirection MlAxial
-ReconIncr 5.000
+ReconIncr 1.500
 ReconType MlAxialRJ
-SeriesDescription "tmp CT RTD"
-SliceWidthEffectiveTiltCorrected_Recon 5
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT RTD"
+SliceWidthEffectiveTiltCorrected_Recon 1.5
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
 MlModeRecon_Begin 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 1.000
 ReconType MlAxialRJ
-SeriesDescription "AC CT_1mm"
+SeriesDescription m_1="$4$$5$AC CT_1mm $M$$A$" m_2="" "AC CT_1mm"
 SliceWidthEffectiveTiltCorrected_Recon 1
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 1.000
 ReconType MlAxialRJ
-SeriesDescription "CT_1mm_Brain_H31s"
+SeriesDescription m_1="$4$$5$CT_1mm_Brain_H31s $M$$A$" m_2="" "CT_1mm_Brain_H31s"
 SliceWidthEffectiveTiltCorrected_Recon 1
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -109,25 +109,8 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 3.000
 ReconType MlAxialRJ
-SeriesDescription "CT_ 3.0mm_BrainH31s"
+SeriesDescription m_1="$4$$5$CT_ 3.0mm_BrainH31s $M$$A$" m_2="" "CT_ 3.0mm_BrainH31s"
 SliceWidthEffectiveTiltCorrected_Recon 3
-Window[READ_ONLY] "Cerebrum"
-MlModeRecon_End 138
-MlModeRecon_Begin 138
-NoOfImages 28
-CenterX 0
-CenterY 0
-CTScale MlCTScaleStandard
-ExtendedFOV 0
-FoVHorLength 300
-ImageOrder MlIO_Caudocranial
-Kernel "H31s"
-Mirror MlMirrorNone
-ReconDirection MlAxial
-ReconIncr 8.000
-ReconType MlAxialRJ
-SeriesDescription "CT_ 8.0mm_BrainH31s"
-SliceWidthEffectiveTiltCorrected_Recon 8
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
 pause
@@ -142,8 +125,8 @@ RangeName "PET Brain LM"
 LLD n/a
 ULD n/a
 InjectedDose 1000000.000000
-InjectionDate 20120919
-InjectionTime 125332.000000
+InjectionDate 20121115
+InjectionTime 113544.000000
 Isotope F-18
 BedDuration 40.000000(PtMinutes)
 RebinnerLut 0
@@ -154,7 +137,7 @@ PhysioInputType PtPhysioNone
 NumberOfBeds Not given. Check recon range
 TableDirectionPatient PtCraniocaudal
 MlModeScan_End 138
-No_Of_Valid_Recons 5
+No_Of_Valid_Recons 4
 MlModeRecon_Begin 138
 BedBegin 1
 BedEnd 1
@@ -177,36 +160,17 @@ MlModeRecon_End 138
 MlModeRecon_Begin 138
 BedBegin 1
 BedEnd 1
-CTAttenCorrModeList 1,4
-FilterFWHM 5.000000
-ImageSize 400
-Iterations 4
-MatchCTSliceLocation 1
-OutputImageType PtCorrected
-ReconFilter PtGaussian
-ReconMethod PtIterative3D
-SaveIntermediateData 0
-ScatterCorrect 1
-SeriesDescription FET_dyn_10-30min_5mm_CT8mm
-Subsets 12
-XOffset 0
-YOffset 0
-Zoom 2.500000
-MlModeRecon_End 138
-MlModeRecon_Begin 138
-BedBegin 1
-BedEnd 1
 CTAttenCorrModeList 1,3
 FilterFWHM 5.000000
 ImageSize 400
 Iterations 4
-MatchCTSliceLocation 1
-OutputImageType PtCorrected
+MatchCTSliceLocation 0
+OutputImageType PtUncorrected
 ReconFilter PtGaussian
 ReconMethod PtIterative3D
 SaveIntermediateData 0
-ScatterCorrect 1
-SeriesDescription FET_dyn_8f_5min_5mm_CT3mm
+ScatterCorrect 0
+SeriesDescription FET_dyn_10-30min_5mm_CT3mm
 Subsets 12
 XOffset 0
 YOffset 0
@@ -264,10 +228,10 @@ StartDelay 4.000
 AECReferenceMAs 250
 Care MlOff
 CareDoseType MlCareDose
-CTDIw 328.42
+CTDIwEffective m_1="0.000000" 253.326
 EffectiveMAs 181
 mAs 181
-PitchFactor 1.10
+PitchFactor m_1="-1" 1.00
 RotTime 0.330
 SliceWidthEffectiveTiltCorrected 5
 TableDirectionPatient MlCaudocranial
@@ -286,14 +250,14 @@ ImageOrder MlIO_Caudocranial
 Kernel "H20f"
 Mirror MlMirrorNone
 ReconDirection MlAxial
-ReconIncr 31.300
+ReconIncr 40.000
 ReconType MlAxialRJ
-SeriesDescription "tmp DynMulti4D RTD"
+SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "DynMulti4D RTD"
 SliceWidthEffectiveTiltCorrected_Recon 4
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
 MlModeRecon_Begin 138
-NoOfImages 390
+NoOfImages 480
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -305,12 +269,12 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 5.000
 ReconType MlAxialRJ
-SeriesDescription "VPCT DynMulti4D 5.0 H20f"
+SeriesDescription m_1="VPCT $1$$2$$3$$4$$5$$M$$A$" m_2="" "VPCT DynMulti4D 5.0 H20f"
 SliceWidthEffectiveTiltCorrected_Recon 5
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
 MlModeRecon_Begin 138
-NoOfImages 270
+NoOfImages 360
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -322,12 +286,12 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 7.000
 ReconType MlAxialRJ
-SeriesDescription "VPCT DynMulti4D 7.0 H20f"
+SeriesDescription m_1="VPCT $1$$2$$3$$4$$5$$M$$A$" m_2="" "VPCT DynMulti4D 7.0 H20f"
 SliceWidthEffectiveTiltCorrected_Recon 7
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
 MlModeRecon_Begin 138
-NoOfImages 180
+NoOfImages 240
 CenterX 0
 CenterY 0
 CTScale MlCTScaleStandard
@@ -339,7 +303,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 10.000
 ReconType MlAxialRJ
-SeriesDescription "VPCT DynMulti4D 10.0 H20f"
+SeriesDescription m_1="VPCT $1$$2$$3$$4$$5$$M$$A$" m_2="" "VPCT DynMulti4D 10.0 H20f"
 SliceWidthEffectiveTiltCorrected_Recon 10
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 3

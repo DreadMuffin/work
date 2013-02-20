@@ -16,7 +16,7 @@ def outapp(numbers):
     return list
 
 def topo():
-    outorder = [0,1,2,8,3,7,4,5,6,9,10,11,12,13,14,15,16,17,18,19,20,21,22]
+    outorder = [0,1,2,9,3,8,4,5,6,10,11,7,12,13,14,15,16,17,18,19,20,21,22]
     return outapp(outorder)
 
 def ct():
@@ -46,30 +46,32 @@ def pet():
 
 listing = os.listdir(source)
 for file in listing:
-    proto = open(source + file,"r").read().split("\n")
-    gindex = 3
-    protoorder = []
-    for i,item in enumerate(proto):
-        """Creates a list of the modes the protocol contains"""
-        if item =="topo" or item =="pet" or item == "ct" or item == "pause":
-            protoorder.append(item)
-    fields = proto[:3]
-    for mode in protoorder:
-        if mode == "topo":
-            fields += topo()
-            gindex += 23
-        elif mode == "ct":
-            fields += ct()
-            fields.append("MlModeEntry_End 138")
-            gindex += 21
-        elif mode == "pause":
-            fields += pause()
-            gindex += 4
-        elif mode == "pet":
-            fields += pet()
-            gindex += 21
-    fields.append("MlScanProtocol_End 138")
-    f = open(dest + file,'w')
-    f.write(("\n").join(fields))
-    f.close
-
+    try:
+        proto = open(source + file,"r").read().split("\n")
+        gindex = 3
+        protoorder = []
+        for i,item in enumerate(proto):
+            """Creates a list of the modes the protocol contains"""
+            if item =="topo" or item =="pet" or item == "ct" or item == "pause":
+                protoorder.append(item)
+        fields = proto[:3]
+        for mode in protoorder:
+            if mode == "topo":
+                fields += topo()
+                gindex += 23
+            elif mode == "ct":
+                fields += ct()
+                fields.append("MlModeEntry_End 138")
+                gindex += 21
+            elif mode == "pause":
+                fields += pause()
+                gindex += 4
+            elif mode == "pet":
+                fields += pet()
+                gindex += 21
+        fields.append("MlScanProtocol_End 138")
+        f = open(dest + file,'w')
+        f.write(("\n").join(fields))
+        f.close
+    except:
+        print file + " nope"
