@@ -32,11 +32,11 @@ AECReferenceMAs 380
 ApiId ""
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 64.9045
+CTDIwEffective 64.9045
 EffectiveMAs 380
 TiltPos 0.0
 mAs 380
-PitchFactor m_1="-1" 0.55
+PitchFactor 0.55
 RangeName "CT Brain"
 RotTime 1.000
 ScanTime 69.697
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 NoOfImages 149
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Brain RTD"
+SeriesDescription "CT Brain RTD"
 ReconIncr 1.500
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 224
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC_CT_1mm $M$$A$" m_2="" "AC_CT_1mm"
+SeriesDescription "AC_CT_1mm"
 ReconIncr 1.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 NoOfImages 112
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="Cranie_VIR$2$$4$$5$H30S $M$$A$" m_2="" "Cranie_VIR 2.0 H30S"
+SeriesDescription "Cranie_VIR 2.0 H30S"
 ReconIncr 2.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -109,7 +109,7 @@ Mirror MlMirrorNone
 NoOfImages 75
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC_CT_3mm $M$$A$" m_2="" "AC_CT_3mm"
+SeriesDescription "AC_CT_3mm"
 ReconIncr 3.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138

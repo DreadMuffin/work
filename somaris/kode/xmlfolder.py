@@ -28,7 +28,7 @@ def xmlloop(source,destination):
     replaces some lines with a style that matches PET 5 and 6."""
     listing = os.listdir(source)
     for file in listing:
-#        try:
+        try:
             proto = minidom.parse(source + file).toxml()
             proto = proto.split("\n")[2:-4]
             reconnumber = []
@@ -42,7 +42,8 @@ def xmlloop(source,destination):
 
             for i, item in enumerate(proto):
                 item = item.replace("\t"," ")
-                item = item.split("/")[0]
+                if "/" in item:
+                    item = "/".join(item.split("/")[:-1])
                 item = item.replace(">"," ")
                 item = item.replace("&quot;","\"")
                 item = item.lstrip(" ")[1:-1]
@@ -128,8 +129,8 @@ def xmlloop(source,destination):
             f.write(fieldlist)
             f.close()
 
-#        except:
-#            print file + " did not compile properly"
+        except:
+            print file + " did not compile properly"
 
 xmlloop(path31,path32)
 xmlloop(path41,path42)

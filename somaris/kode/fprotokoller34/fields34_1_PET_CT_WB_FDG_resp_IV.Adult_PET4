@@ -34,10 +34,10 @@ StartDelay 9.000
 AECReferenceMAs 100
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 7.62385
+CTDIwEffective 7.62385
 EffectiveMAs 100
 mAs 100
-PitchFactor m_1="-1" 1.40
+PitchFactor 1.40
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 5
 TableDirectionPatient MlCaudocranial
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 5.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Lunge RTD"
+SeriesDescription "Lunge RTD"
 SliceWidthEffectiveTiltCorrected_Recon 5
 Window[READ_ONLY] "Mediastinum"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 3.000
 ReconType MlAxialRJ
-SeriesDescription m_1="CT $1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Lunge 5.0 B18f"
+SeriesDescription "CT Lunge 5.0 B18f"
 SliceWidthEffectiveTiltCorrected_Recon 5
 Window[READ_ONLY] "Mediastinum"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 1.500
 ReconType MlAxialRJ
-SeriesDescription m_1="CT $1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Lunge 2.0 B70f"
+SeriesDescription "CT Lunge 2.0 B70f"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Lung"
 MlModeRecon_End 138
@@ -110,10 +110,10 @@ StartDelay 2.000
 AECReferenceMAs 225
 Care MlOff
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 1.18627
+CTDIwEffective 1.18627
 EffectiveMAs 20
 mAs 20
-PitchFactor m_1="-1" 0.00
+PitchFactor 0.00
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 10
 TableDirectionPatient MlCraniocaudal
@@ -134,7 +134,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 10.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "PreMonitoring 10.0 eFoV"
+SeriesDescription "PreMonitoring 10.0 eFoV"
 SliceWidthEffectiveTiltCorrected_Recon 10
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -148,10 +148,10 @@ StartDelay 10.000
 AECReferenceMAs 225
 Care MlOff
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 35.5881
+CTDIwEffective 35.5881
 EffectiveMAs 20
 mAs 20
-PitchFactor m_1="-1" 0.00
+PitchFactor 0.00
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 10
 TableDirectionPatient MlCraniocaudal
@@ -172,7 +172,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 10.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Monitoring 10.0 eFoV"
+SeriesDescription "Monitoring 10.0 eFoV"
 SliceWidthEffectiveTiltCorrected_Recon 10
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -186,10 +186,10 @@ StartDelay 20.000
 AECReferenceMAs 225
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 16.5147
+CTDIwEffective 16.5147
 EffectiveMAs 225
 mAs 225
-PitchFactor m_1="-1" 0.65
+PitchFactor 0.65
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 2
 TableDirectionPatient MlCraniocaudal
@@ -210,7 +210,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 4.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB RTD"
+SeriesDescription "CT WB RTD"
 SliceWidthEffectiveTiltCorrected_Recon 4
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -227,7 +227,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 2.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB 2.0 eFoV"
+SeriesDescription "CT WB 2.0 eFoV"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -244,7 +244,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 2.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB 2.0 B30f"
+SeriesDescription "CT WB 2.0 B30f"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -261,7 +261,7 @@ Mirror MlMirrorNone
 ReconDirection MlCoronal
 ReconIncr 2.000
 ReconType MlVolumeRJ
-SeriesDescription m_1="$1$$2$$4$$5$B30f $M$$A$" m_2="" "CT WB 2.0 cor B30f"
+SeriesDescription "CT WB 2.0 cor B30f"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -278,7 +278,7 @@ Mirror MlMirrorNone
 ReconDirection MlSagittal
 ReconIncr 2.000
 ReconType MlVolumeRJ
-SeriesDescription m_1="$1$$2$$4$$5$B30f $M$$A$" m_2="" "CT WB 2.0 sag B30f"
+SeriesDescription "CT WB 2.0 sag B30f"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138

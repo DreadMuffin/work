@@ -1,5 +1,5 @@
 insert into Protocols values ('lavdosisCTHjerne.Adult','PET4','Adult','2',NOW());
 insert into Topograms values ('lavdosisCTHjerne.Adult','PET4','1','Topogram','35','120','256','Lateral','4','Craniocaudal','','T20f','Topogram');
-insert into CT values ('lavdosisCTHjerne.Adult','PET4','2','2','CT Brain','30','120','On','CareDoseAEC','m 1=0.000000 5.12404','2.444','2.000','3','0.0','30','1.000','m 1=-1 1.50','Craniocaudal');
-insert into CTrecon values ('lavdosisCTHjerne.Adult','PET4','2','1','m 1=$1$$2$$3$$4$$5$$M$$A$ m 2= CT Brain RTD','1.5','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','7');
-insert into CTrecon values ('lavdosisCTHjerne.Adult','PET4','2','2','m 1=$4$$5$AC CT $M$$A$ m 2= AC CT','3','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','1');
+insert into CT values ('lavdosisCTHjerne.Adult','PET4','2','2','CT Brain','30','120','On','CareDoseAEC','5.12404','2.444','2.000','3','0.0','30','1.000','1.50','Craniocaudal');
+insert into CTrecon values ('lavdosisCTHjerne.Adult','PET4','2','1','CT Brain RTD','1.5','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','7');
+insert into CTrecon values ('lavdosisCTHjerne.Adult','PET4','2','2','AC CT','3','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','1');

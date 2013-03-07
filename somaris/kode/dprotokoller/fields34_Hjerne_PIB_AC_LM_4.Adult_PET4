@@ -1,8 +1,8 @@
 insert into Protocols values ('Hjerne_PIB_AC_LM_4.Adult','PET4','Adult','4',NOW());
 insert into Topograms values ('Hjerne_PIB_AC_LM_4.Adult','PET4','1','Topogram','35','120','256','Lateral','4','Craniocaudal','','T20f','Topogram');
-insert into CT values ('Hjerne_PIB_AC_LM_4.Adult','PET4','2','2','Lav CT Brain','32','120','Off','CareDoseAEC','m 1=0.000000 5.69736','17.652','2.000','3','0.0','350','0.500','m 1=-1 0.55','Caudocranial');
-insert into CTrecon values ('Hjerne_PIB_AC_LM_4.Adult','PET4','2','1','m 1=$1$$2$$3$$4$$5$$M$$A$ m 2= Lav CT Brain RTD','4','H31f','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','4.000','56');
-insert into CTrecon values ('Hjerne_PIB_AC_LM_4.Adult','PET4','2','2','m 1=$4$$5$AC CT $M$$A$ m 2= AC CT','3','H31f','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','3.000','74');
+insert into CT values ('Hjerne_PIB_AC_LM_4.Adult','PET4','2','2','Lav CT Brain','32','120','Off','CareDoseAEC','5.69736','17.652','2.000','3','0.0','350','0.500','0.55','Caudocranial');
+insert into CTrecon values ('Hjerne_PIB_AC_LM_4.Adult','PET4','2','1','Lav CT Brain RTD','4','H31f','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','4.000','56');
+insert into CTrecon values ('Hjerne_PIB_AC_LM_4.Adult','PET4','2','2','AC CT','3','H31f','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','3.000','74');
 insert into Pause values ('Hjerne_PIB_AC_LM_4.Adult','PET4','3');
 insert into PET values ('Hjerne_PIB_AC_LM_4.Adult','PET4','4','3','PET Brain LM','C-11','C11-PIB','185000000','Bequerels','List mode','Match CT FOV','Not given. Check recon range','30.000000','Minutes','Off','Off','List mode','false','None','n/a','n/a');
 insert into PETrecon values ('Hjerne_PIB_AC_LM_4.Adult','PET4','4','1','PIB 40-70 min 5mm','Automatic/All/dunno','Uncorrected','Iterative3D','4','12','400','1','Gaussian','5','0','0','Off ()','Off','Off','Off');

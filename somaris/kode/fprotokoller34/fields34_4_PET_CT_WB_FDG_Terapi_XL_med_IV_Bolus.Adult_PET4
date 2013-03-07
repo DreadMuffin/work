@@ -34,10 +34,10 @@ StartDelay 2.000
 AECReferenceMAs 225
 Care MlOff
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 1.78281
+CTDIwEffective 1.78281
 EffectiveMAs 20
 mAs 20
-PitchFactor m_1="-1" 0.00
+PitchFactor 0.00
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 10
 TableDirectionPatient MlCraniocaudal
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 10.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "PreMonitoring 10.0 eFoV"
+SeriesDescription "PreMonitoring 10.0 eFoV"
 SliceWidthEffectiveTiltCorrected_Recon 10
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -72,10 +72,10 @@ StartDelay 10.000
 AECReferenceMAs 225
 Care MlOff
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 53.4842
+CTDIwEffective 53.4842
 EffectiveMAs 20
 mAs 20
-PitchFactor m_1="-1" 0.00
+PitchFactor 0.00
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 10
 TableDirectionPatient MlCraniocaudal
@@ -96,7 +96,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 10.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Monitoring 10.0 eFoV"
+SeriesDescription "Monitoring 10.0 eFoV"
 SliceWidthEffectiveTiltCorrected_Recon 10
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -110,10 +110,10 @@ StartDelay 4.000
 AECReferenceMAs 240
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 26.3379
+CTDIwEffective 26.3379
 EffectiveMAs 240
 mAs 240
-PitchFactor m_1="-1" 1.05
+PitchFactor 1.05
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 2
 TableDirectionPatient MlCraniocaudal
@@ -134,7 +134,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 4.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB RTD"
+SeriesDescription "CT WB RTD"
 SliceWidthEffectiveTiltCorrected_Recon 4
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -151,7 +151,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 2.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC_CT 2 mm $M$$A$" m_2="" "AC_CT 2 mm"
+SeriesDescription "AC_CT 2 mm"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -168,7 +168,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 2.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB 2.0 B30f"
+SeriesDescription "CT WB 2.0 B30f"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -185,7 +185,7 @@ Mirror MlMirrorNone
 ReconDirection MlCoronal
 ReconIncr 2.000
 ReconType MlVolumeRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB 2.0 MPR cor"
+SeriesDescription "CT WB 2.0 MPR cor"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -202,7 +202,7 @@ Mirror MlMirrorNone
 ReconDirection MlSagittal
 ReconIncr 2.000
 ReconType MlVolumeRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB 2.0 MPR sag"
+SeriesDescription "CT WB 2.0 MPR sag"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138

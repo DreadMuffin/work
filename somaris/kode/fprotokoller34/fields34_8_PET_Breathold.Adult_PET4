@@ -34,10 +34,10 @@ StartDelay 10.000
 AECReferenceMAs 225
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 17.1537
+CTDIwEffective 17.1537
 EffectiveMAs 225
 mAs 225
-PitchFactor m_1="-1" 1.40
+PitchFactor 1.40
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 3
 TableDirectionPatient MlCaudocranial
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 5.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Lunge RTD"
+SeriesDescription "Lunge RTD"
 SliceWidthEffectiveTiltCorrected_Recon 5
 Window[READ_ONLY] "Mediastinum"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 3.000
 ReconType MlAxialRJ
-SeriesDescription m_1="CT $1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Lunge 3.0 B18f"
+SeriesDescription "CT Lunge 3.0 B18f"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY] "Mediastinum"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 3.000
 ReconType MlAxialRJ
-SeriesDescription m_1="CT $1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Lunge 3.0 B70f"
+SeriesDescription "CT Lunge 3.0 B70f"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY] "Lung"
 MlModeRecon_End 138

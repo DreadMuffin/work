@@ -108,6 +108,16 @@ def loop(source,mname):
                     elif filter(item.startswith,boollist):
                          item = (item.split(" ")[0] + " " +
                                  onoff(item.split(" ")[1]))
+                    elif "m_1=" in item:
+                        if not item.startswith("SeriesDesc"):
+                            item = (item.split(" ")[0] + " " +
+                                " ".join(item.split(" ")[2:]))
+                        elif not "m_2=" in item:
+                            print file + " is odd/wrong"
+                            item = item.strip("m_1=")
+                        else:
+                            item = (item.split(" ")[0] + " \"" +
+                                    item.split("\" \"")[-1])
                     findex+=1
                     fieldlist+=item + "\n"
             fieldlist = fieldlist[:-1]
@@ -116,7 +126,7 @@ def loop(source,mname):
             f.close()
 
         except:
-            print file
+            print file + "did not compile properly"
 
 loop(path3,"_PET3")
 loop(path4,"_PET4")

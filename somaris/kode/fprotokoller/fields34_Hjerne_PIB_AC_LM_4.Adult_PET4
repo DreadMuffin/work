@@ -32,11 +32,11 @@ AECReferenceMAs 350
 ApiId ""
 Care MlOff
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 5.69736
+CTDIwEffective 5.69736
 EffectiveMAs 32
 TiltPos 0.0
 mAs 32
-PitchFactor m_1="-1" 0.55
+PitchFactor 0.55
 RangeName "Lav CT Brain"
 RotTime 0.500
 ScanTime 17.652
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 NoOfImages 56
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Lav CT Brain RTD"
+SeriesDescription "Lav CT Brain RTD"
 ReconIncr 4.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 74
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC CT $M$$A$" m_2="" "AC CT"
+SeriesDescription "AC CT"
 ReconIncr 3.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138

@@ -32,11 +32,11 @@ AECReferenceMAs 30
 ApiId ""
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 5.12404
+CTDIwEffective 5.12404
 EffectiveMAs 30
 TiltPos 0.0
 mAs 30
-PitchFactor m_1="-1" 1.50
+PitchFactor 1.50
 RangeName "Lavdosis CT"
 RotTime 1.000
 ScanTime 2.444
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 NoOfImages 7
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Lavdosis CT RTD"
+SeriesDescription "Lavdosis CT RTD"
 ReconIncr 1.500
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 1
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC_CT $M$$A$" m_2="" "AC_CT"
+SeriesDescription "AC_CT"
 ReconIncr 3.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138

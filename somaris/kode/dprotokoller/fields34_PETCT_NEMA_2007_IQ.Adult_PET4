@@ -1,8 +1,8 @@
 insert into Protocols values ('PETCT_NEMA_2007_IQ.Adult','PET4','Adult','4',NOW());
 insert into Topograms values ('PETCT_NEMA_2007_IQ.Adult','PET4','1','Topogram','35','120','1024','Top','4','Craniocaudal','','T80f','Topogram');
-insert into CT values ('PETCT_NEMA_2007_IQ.Adult','PET4','2','2','AC CT NEMA','50','120','Off','CareDoseAEC','m 1=0.000000 3.65446','8.105','2.000','5','0.0','120','0.500','m 1=-1 0.80','Craniocaudal');
-insert into CTrecon values ('PETCT_NEMA_2007_IQ.Adult','PET4','2','1','m 1=$1$$2$$3$$4$$5$$M$$A$ m 2= AC CT NEMA RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','56');
-insert into CTrecon values ('PETCT_NEMA_2007_IQ.Adult','PET4','2','2','m 1=$1$$4$$5$$M$$A$ m 2= AC CT NEMA','5','B19f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','75');
+insert into CT values ('PETCT_NEMA_2007_IQ.Adult','PET4','2','2','AC CT NEMA','50','120','Off','CareDoseAEC','3.65446','8.105','2.000','5','0.0','120','0.500','0.80','Craniocaudal');
+insert into CTrecon values ('PETCT_NEMA_2007_IQ.Adult','PET4','2','1','AC CT NEMA RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','56');
+insert into CTrecon values ('PETCT_NEMA_2007_IQ.Adult','PET4','2','2','AC CT NEMA','5','B19f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','75');
 insert into Pause values ('PETCT_NEMA_2007_IQ.Adult','PET4','3');
 insert into PET values ('PETCT_NEMA_2007_IQ.Adult','PET4','4','1','PET NEMA IQ','F-18','Fluorodeoxyglucose','370000000','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','7.600000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
 insert into PETrecon values ('PETCT_NEMA_2007_IQ.Adult','PET4','4','1','PET NEMA IQ','Automatic/All/dunno','Corrected','Iterative3D','2','24','200','1','Gaussian','5','0','0','Off ()','On','Off','Off');

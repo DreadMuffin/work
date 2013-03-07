@@ -32,11 +32,11 @@ AECReferenceMAs 120
 ApiId ""
 Care MlOff
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 3.65446
+CTDIwEffective 3.65446
 EffectiveMAs 50
 TiltPos 0.0
 mAs 50
-PitchFactor m_1="-1" 0.80
+PitchFactor 0.80
 RangeName "AC_CT_NEMA"
 RotTime 0.500
 ScanTime 8.105
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 NoOfImages 56
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "AC_CT_NEMA RTD"
+SeriesDescription "AC_CT_NEMA RTD"
 ReconIncr 4.000
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 75
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$4$$5$$M$$A$" m_2="" "AC_CT_NEMA"
+SeriesDescription "AC_CT_NEMA"
 ReconIncr 3.000
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138

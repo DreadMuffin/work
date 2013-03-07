@@ -32,11 +32,11 @@ AECReferenceMAs 350
 ApiId ""
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 59.7805
+CTDIwEffective 59.7805
 EffectiveMAs 350
 TiltPos 0.0
 mAs 350
-PitchFactor m_1="-1" 1.50
+PitchFactor 1.50
 RangeName "CT"
 RotTime 1.000
 ScanTime 26.222
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 NoOfImages 149
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT RTD"
+SeriesDescription "CT RTD"
 ReconIncr 1.500
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 224
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC CT_1mm $M$$A$" m_2="" "AC CT_1mm"
+SeriesDescription "AC CT_1mm"
 ReconIncr 1.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 NoOfImages 224
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="CT_1.0mm_Brain $3$$4$$5$$M$$A$" m_2="" "CT_1.0mm_Brain H31s"
+SeriesDescription "CT_1.0mm_Brain H31s"
 ReconIncr 1.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -109,7 +109,7 @@ Mirror MlMirrorNone
 NoOfImages 75
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="CT_3.0mm_Brain $3$$4$$5$$M$$A$" m_2="" "CT_3.0mm_Brain H31s"
+SeriesDescription "CT_3.0mm_Brain H31s"
 ReconIncr 3.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -189,11 +189,11 @@ AECReferenceMAs 250
 ApiId ""
 Care MlOff
 CareDoseType MlCareDose
-CTDIwEffective m_1="0.000000" 253.326
+CTDIwEffective 253.326
 EffectiveMAs 181
 TiltPos 0.0
 mAs 181
-PitchFactor m_1="-1" 1.00
+PitchFactor 1.00
 RangeName "DynMulti4D"
 RotTime 0.330
 ScanTime 1.500
@@ -215,7 +215,7 @@ Mirror MlMirrorNone
 NoOfImages 90
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "DynMulti4D RTD"
+SeriesDescription "DynMulti4D RTD"
 ReconIncr 40.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -232,7 +232,7 @@ Mirror MlMirrorNone
 NoOfImages 480
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="VPCT $1$$2$$3$$4$$5$$M$$A$" m_2="" "VPCT DynMulti4D 5.0 H20f"
+SeriesDescription "VPCT DynMulti4D 5.0 H20f"
 ReconIncr 5.000
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 3

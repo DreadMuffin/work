@@ -1,9 +1,9 @@
 insert into Protocols values ('WB_FDG_PET_barn_4.Child','PET4','Child','4',NOW());
 insert into Topograms values ('WB_FDG_PET_barn_4.Child','PET4','1','Topogram','20','80','1536','Bottom','4','Craniocaudal','','T80f','Topogram');
-insert into CT values ('WB_FDG_PET_barn_4.Child','PET4','2','3','LavDosis CT','50','80','On','CareDoseAEC','m 1=0.000000 1.02557','11.011','6.000','2','0.0','50','0.500','m 1=-1 1.20','Craniocaudal');
-insert into CTrecon values ('WB_FDG_PET_barn_4.Child','PET4','2','1','m 1=$1$$2$$3$$4$$5$$M$$A$ m 2= LavDosis CT RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','119');
-insert into CTrecon values ('WB_FDG_PET_barn_4.Child','PET4','2','2','m 1=$4$$5$AC  CT $M$$A$ m 2= AC  CT','2','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','237');
-insert into CTrecon values ('WB_FDG_PET_barn_4.Child','PET4','2','3','m 1=$1$$2$$3$$4$$5$$M$$A$ m 2= LavDosis CT 3.0 B30f','3','B30f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','158');
+insert into CT values ('WB_FDG_PET_barn_4.Child','PET4','2','3','LavDosis CT','50','80','On','CareDoseAEC','1.02557','11.011','6.000','2','0.0','50','0.500','1.20','Craniocaudal');
+insert into CTrecon values ('WB_FDG_PET_barn_4.Child','PET4','2','1','LavDosis CT RTD','4','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','119');
+insert into CTrecon values ('WB_FDG_PET_barn_4.Child','PET4','2','2','AC  CT','2','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','237');
+insert into CTrecon values ('WB_FDG_PET_barn_4.Child','PET4','2','3','LavDosis CT 3.0 B30f','3','B30f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','158');
 insert into Pause values ('WB_FDG_PET_barn_4.Child','PET4','3');
 insert into PET values ('WB_FDG_PET_barn_4.Child','PET4','4','2','PET WB','F-18','Fluorodeoxyglucose','0','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','2.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
 insert into PETrecon values ('WB_FDG_PET_barn_4.Child','PET4','4','1','PET WB image check','Automatic/All/dunno','Corrected','TrueX','2','12','200','1','Gaussian','3.000000','0','0','Off ()','On','On','Off');

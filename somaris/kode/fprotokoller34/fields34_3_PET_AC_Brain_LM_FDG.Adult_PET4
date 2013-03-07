@@ -34,10 +34,10 @@ StartDelay 2.000
 AECReferenceMAs 350
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 60.9301
+CTDIwEffective 60.9301
 EffectiveMAs 350
 mAs 350
-PitchFactor m_1="-1" 0.55
+PitchFactor 0.55
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 3
 TableDirectionPatient MlCaudocranial
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 4.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Lav CT Brain RTD"
+SeriesDescription "Lav CT Brain RTD"
 SliceWidthEffectiveTiltCorrected_Recon 4
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 3.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC CT $M$$A$" m_2="" "AC CT"
+SeriesDescription "AC CT"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY] "Cerebrum"
 MlModeRecon_End 138

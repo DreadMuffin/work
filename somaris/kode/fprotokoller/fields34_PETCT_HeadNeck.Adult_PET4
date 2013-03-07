@@ -32,11 +32,11 @@ AECReferenceMAs 150
 ApiId ""
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 11.4465
+CTDIwEffective 11.4465
 EffectiveMAs 150
 TiltPos 0.0
 mAs 150
-PitchFactor m_1="-1" 0.80
+PitchFactor 0.80
 RangeName "CT HeadNeck"
 RotTime 1.000
 ScanTime 16.078
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 NoOfImages 45
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT HeadNeck RTD"
+SeriesDescription "CT HeadNeck RTD"
 ReconIncr 5.000
 Window[READ_ONLY] "Larynx"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 111
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC CT HeadNeck $M$$A$" m_2="" "AC CT HeadNeck"
+SeriesDescription "AC CT HeadNeck"
 ReconIncr 2.000
 Window[READ_ONLY] "Larynx"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 NoOfImages 148
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT HeadNeck 2.0 B31s"
+SeriesDescription "CT HeadNeck 2.0 B31s"
 ReconIncr 1.500
 Window[READ_ONLY] "Larynx"
 MlModeRecon_End 138

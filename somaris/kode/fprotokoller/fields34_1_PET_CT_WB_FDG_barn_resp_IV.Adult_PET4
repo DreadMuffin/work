@@ -32,11 +32,11 @@ AECReferenceMAs 80
 ApiId "962494eb-db00-4e54-b01b-9e42ecd67603"
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 6.09908
+CTDIwEffective 6.09908
 EffectiveMAs 80
 TiltPos 0.0
 mAs 80
-PitchFactor m_1="-1" 1.40
+PitchFactor 1.40
 RangeName "Lunge"
 RotTime 0.500
 ScanTime 8.890
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 NoOfImages 89
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "Lunge RTD"
+SeriesDescription "Lunge RTD"
 ReconIncr 5.000
 Window[READ_ONLY] "Mediastinum"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 148
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="CT $1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Lunge 5.0 B18f"
+SeriesDescription "CT Lunge 5.0 B18f"
 ReconIncr 3.000
 Window[READ_ONLY] "Mediastinum"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 NoOfImages 167
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="CT $1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Lunge 2.0 B70f"
+SeriesDescription "CT Lunge 2.0 B70f"
 ReconIncr 1.500
 Window[READ_ONLY] "Lung"
 MlModeRecon_End 138
@@ -105,11 +105,11 @@ AECReferenceMAs 80
 ApiId ""
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 5.86188
+CTDIwEffective 5.86188
 EffectiveMAs 80
 TiltPos 0.0
 mAs 80
-PitchFactor m_1="-1" 0.65
+PitchFactor 0.65
 RangeName "CT WB"
 RotTime 0.500
 ScanTime 40.242
@@ -131,7 +131,7 @@ Mirror MlMirrorNone
 NoOfImages 245
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB RTD"
+SeriesDescription "CT WB RTD"
 ReconIncr 4.000
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -148,7 +148,7 @@ Mirror MlMirrorNone
 NoOfImages 489
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB 2.0 eFoV"
+SeriesDescription "CT WB 2.0 eFoV"
 ReconIncr 2.000
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -165,7 +165,7 @@ Mirror MlMirrorNone
 NoOfImages 489
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT WB 2.0 B30f"
+SeriesDescription "CT WB 2.0 B30f"
 ReconIncr 2.000
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138

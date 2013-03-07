@@ -34,10 +34,10 @@ StartDelay 6.000
 AECReferenceMAs 50
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 1.02557
+CTDIwEffective 1.02557
 EffectiveMAs 50
 mAs 50
-PitchFactor m_1="-1" 1.20
+PitchFactor 1.20
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 2
 TableDirectionPatient MlCraniocaudal
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 4.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "LavDosis CT RTD"
+SeriesDescription "LavDosis CT RTD"
 SliceWidthEffectiveTiltCorrected_Recon 4
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 2.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC_ CT $M$$A$" m_2="" "AC_ CT"
+SeriesDescription "AC_ CT"
 SliceWidthEffectiveTiltCorrected_Recon 2
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 3.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "LavDosis CT 3.0 B30f"
+SeriesDescription "LavDosis CT 3.0 B30f"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138

@@ -32,11 +32,11 @@ AECReferenceMAs 50
 ApiId ""
 Care MlOn
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 1.02557
+CTDIwEffective 1.02557
 EffectiveMAs 50
 TiltPos 0.0
 mAs 50
-PitchFactor m_1="-1" 1.20
+PitchFactor 1.20
 RangeName "LavDosis CT"
 RotTime 0.500
 ScanTime 11.011
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 NoOfImages 119
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "LavDosis CT RTD"
+SeriesDescription "LavDosis CT RTD"
 ReconIncr 4.000
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 NoOfImages 237
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$4$$5$AC_ CT $M$$A$" m_2="" "AC_ CT"
+SeriesDescription "AC_ CT"
 ReconIncr 2.000
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -92,7 +92,7 @@ Mirror MlMirrorNone
 NoOfImages 158
 ReconDirection MlAxial
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "LavDosis CT 3.0 B30f"
+SeriesDescription "LavDosis CT 3.0 B30f"
 ReconIncr 3.000
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138

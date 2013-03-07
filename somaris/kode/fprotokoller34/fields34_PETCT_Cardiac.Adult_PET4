@@ -34,10 +34,10 @@ StartDelay 2.000
 AECReferenceMAs 170
 Care MlOff
 CareDoseType MlCareDoseAEC
-CTDIwEffective m_1="0.000000" 0.800841
+CTDIwEffective 0.800841
 EffectiveMAs 11
 mAs 11
-PitchFactor m_1="-1" 1.50
+PitchFactor 1.50
 RotTime 0.500
 SliceWidthEffectiveTiltCorrected 3
 TableDirectionPatient MlCraniocaudal
@@ -58,7 +58,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 4.000
 ReconType MlAxialRJ
-SeriesDescription m_1="$1$$2$$3$$4$$5$$M$$A$" m_2="" "CT Cardiac RTD"
+SeriesDescription "CT Cardiac RTD"
 SliceWidthEffectiveTiltCorrected_Recon 4
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
@@ -75,7 +75,7 @@ Mirror MlMirrorNone
 ReconDirection MlAxial
 ReconIncr 2.000
 ReconType MlAxialRJ
-SeriesDescription m_1="AC $1$$4$$5$$M$$A$" m_2="" "AC CT Cardiac"
+SeriesDescription "AC CT Cardiac"
 SliceWidthEffectiveTiltCorrected_Recon 3
 Window[READ_ONLY] "Abdomen"
 MlModeRecon_End 138
