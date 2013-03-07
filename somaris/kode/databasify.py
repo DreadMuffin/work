@@ -8,10 +8,9 @@ dest = "dprotokoller/"
 
 """Empties the destinationfolder, to avoid duplicates"""
 if os.getcwd()[-13:] == "/somaris/kode":
-    os.system("rm " + dest + "*")
+    os.system("rm " + dest + "* 2>/dev/null")
 
 listing = os.listdir(source)
-globalindex = 0
 
 def onoff(value):
     """Used to convert values to on or off"""
@@ -130,84 +129,87 @@ def pet(nr):
     return pet
 
 for file in listing:
-    globalindex+=3
-    proto = open(source + file,'r').read().split("\n")
-    p2 = []
-    for item in proto:
-        item = item.split(" ")[1:]
-        p2.append(" ".join(item))
+    try:
+        proto = open(source + file,'r').read().split("\n")
+        p2 = []
+        for item in proto:
+            item = item.split(" ")[1:]
+            p2.append(" ".join(item))
 
-    pfoo = []
-    for item in p2:
-        item = item.replace("\"","")
-        item = item.replace("#","\#")
-        pfoo.append(re.sub("_"," ",item))
+        pfoo = []
+        for item in p2:
+            item = item.replace("\"","")
+            item = item.replace("#","\#")
+            pfoo.append(re.sub("_"," ",item))
 
-    p2 = pfoo
+        p2 = pfoo
 
 
-    protoorder = []
+        protoorder = []
 
-    for item in proto:
-        """Creates a list of the modes the protocol contains"""
-        if item == "topo" or item == "pet" or item == "ct" or item == "pause":
-            protoorder.append(item)
-    output = []
-    protocol = []
-    name = file[9:-5]
-    scanner = file[-4:]
-    bodysize = proto[1][-5:]
-    protocol.append(name)
-    protocol.append(scanner)
-    protocol.append(bodysize)
-    length = len(protoorder)
-    protocol.append(str(length))
-    protocol.append("NOW()")
-    gindex = 3 #Global index used to indicate where the current phase starts
+        for item in proto:
+            """Creates a list of the modes the protocol contains"""
+            if (item == "topo" or item == "pet" or item == "ct" or
+                    item == "pause"):
+                protoorder.append(item)
+        output = []
+        protocol = []
+        name = file[9:-5]
+        scanner = file[-4:]
+        bodysize = proto[1][-5:]
+        protocol.append(name)
+        protocol.append(scanner)
+        protocol.append(bodysize)
+        length = len(protoorder)
+        protocol.append(str(length))
+        protocol.append("NOW()")
+        gindex = 3 #Global index used to indicate where the current phase starts
 
-    for i,item in enumerate(protoorder):
-        if item == "topo":
-            output.append(topo(i+1))
-            gindex+=23
-        elif item == "pet":
-            output.append(pet(i+1))
-            gindex+= 21
-        elif item == "ct":
-            output.append(ct(i+1))
-            gindex+=22
-        elif item == "pause":
-            output.append(pause(i+1))
-            gindex +=4
+        for i,item in enumerate(protoorder):
+            if item == "topo":
+                output.append(topo(i+1))
+                gindex+=23
+            elif item == "pet":
+                output.append(pet(i+1))
+                gindex+= 21
+            elif item == "ct":
+                output.append(ct(i+1))
+                gindex+=22
+            elif item == "pause":
+                output.append(pause(i+1))
+                gindex +=4
 
-    """Constructs a text file containing all the necessary SQL-statements to
-    insert it into a database"""
-    lines = "insert into Protocols values (\'" + "','".join(protocol) + "\');\n"
-    lines = lines.replace("'NOW()'","NOW()") 
-    for i,item in enumerate(protoorder):
-        if item == "topo":
-            lines += ("insert into Topograms values (\'" + "','".join(output[i])
-                    + "\');\n")
-        elif item == "ct":
-            lines += ("insert into CT values (\'" +
-                    "','".join(map(str,output[i][0])) + "\');\n")
-            for recon in output[i][1:]:
-                lines += ("insert into CTrecon values (\'" +
-                        "','".join(map(str,recon)) + "\');\n")
-        elif item == "pause":
-            lines += ("insert into Pause values (\'" +
+        """Constructs a text file containing all the necessary SQL-statements to
+        insert it into a database"""
+        lines = ("insert into Protocols values (\'" + "','".join(protocol) +
+                    "\');\n")
+        lines = lines.replace("'NOW()'","NOW()") 
+        for i,item in enumerate(protoorder):
+            if item == "topo":
+                lines += ("insert into Topograms values (\'" +
+                            "','".join(output[i])
+                        + "\');\n")
+            elif item == "ct":
+                lines += ("insert into CT values (\'" +
+                        "','".join(map(str,output[i][0])) + "\');\n")
+                for recon in output[i][1:]:
+                    lines += ("insert into CTrecon values (\'" +
+                            "','".join(map(str,recon)) + "\');\n")
+            elif item == "pause":
+                lines += ("insert into Pause values (\'" +
                     "','".join(map(str,output[i])) + "\');\n")
-        elif item == "pet":
-            lines += ("insert into PET values (\'" +
-            "','".join(map(str,output[i][0])) + "\');\n")
-            for recon in output[i][1:]:
-                lines += "insert into PETrecon values (\'" + "','".join(map(str,
-                    recon)) + "\');\n"
+            elif item == "pet":
+                lines += ("insert into PET values (\'" +
+                    "','".join(map(str,output[i][0])) + "\');\n")
+                for recon in output[i][1:]:
+                    lines += ("insert into PETrecon values (\'" +
+                            "','".join(map(str,recon)) + "\');\n")
 
+        f = open(dest + file,'w')
+        f.write(lines)
+        f.close()
 
-    f = open(dest + file,'w')
-    f.write(lines)
-    f.close()
-
-
+    except:
+        print file + " failed during the conversion to db statements."
 
 

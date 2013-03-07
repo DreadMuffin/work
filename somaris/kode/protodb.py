@@ -16,34 +16,13 @@ conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='mysql',
 cur = conn.cursor()
 
 cur.execute("use protokoller")
-try:
-    cur.execute("drop table Protocols;")
-except:
-    pass
-try:
-    cur.execute("drop table Topograms;")
-except:
-    pass
-try:
-    cur.execute("drop table CT;")
-except:
-    pass
-try:
-    cur.execute("drop table CTrecon;")
-except:
-    pass
-try:
-    cur.execute("drop table Pause;")
-except:
-    pass
-try:
-    cur.execute("drop table PET;")
-except:
-    pass
-try:
-    cur.execute("drop table PETrecon;")
-except:
-    pass
+tables = ["Protocols","Topograms","CT","CTrecon","Pause","PET","PETrecon"]
+
+for t in tables:
+    try:
+        cur.execute("drop table " + t + ";")
+    except:
+        pass
 
 cur.execute("create table Protocols (Protocolname varchar(200),PETscanner " +
         "char(10),Bodysize char(20),Length int,Date datetime,PRIMARY " +

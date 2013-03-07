@@ -196,7 +196,7 @@ for file in listing:
                 gindex +=4
 
 
-        output = page + "\\begin{itemize}" + output + "\n\\end{itemize}" + "\n\\end{document}"
+        output = page + "\\begin{itemize}[noitemsep]" + output + "\n\\end{itemize}" + "\n\\end{document}"
 
         f = open(path2 + file[9:] + ".tex",'w')
         f.write(output)
