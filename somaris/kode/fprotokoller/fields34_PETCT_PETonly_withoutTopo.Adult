@@ -1,8 +1,0 @@
-MlScanProtocolAttributes_Begin: 138
-BodySizeOld MlAdult
-ProtocolName "PETCT_PETonly_withoutTopo"
-PROTOCOL_ENTRY_NO: 4
-MlModeScan_Begin: 138
-ApiId ""
-ScanTime 1.000
-StartDelay 2.000
