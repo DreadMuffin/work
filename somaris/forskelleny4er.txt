@@ -1,0 +1,15 @@
+TOPO:
+Samme
+
+CT:
+Routine
+kV og mA ikke vises ikke
+Scan: Hvis Care Dose4d fjernes kan Eff. mAs og kV sættes. KV kan også sættes hvis
+Recon: En FAST mulighed ved siden af window
+Ved 3D er der en "Type" mulighed under abdomen
+
+PET
+Scan:
+Reduceret til Auto load, auto move, auto start. + sprog og API
+Attenuation correction helt amok.
+Ekstra muligheder: Save mu-map image (måske save intermediate data), metal artifact reduction, volume scaling.
