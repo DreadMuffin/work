@@ -1,6 +1,0 @@
-unikke ting ved PETCT_Wholebody
-
-Reconkind: Mlrtd
-ReconMode: MlReconSliceMode
-
-Topogram kører også reconslicemode. Måske bliver den ignoreret, når der allerede køres topogramscan først.
