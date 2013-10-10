@@ -44,6 +44,8 @@ def tubeposis(value):
         return "Top"
     elif value == "90.0":
         return "Bottom"
+    if value == "vert123":
+        return "VerticalPosition 125?"
     else: return "Lateral"
 
 def apiid(value):
@@ -61,11 +63,11 @@ def topo():
     """Converts a topogram to tex"""
     returnstring = ""
     toporoutine = "\\section{" + get(6) + "}\n\\subsection{Routine}\n" + "\\item mA: " + get(5) + "\\item kV: " + get(12)[:-4] + "\\item Topogram length: " + get(10)[:-2] + " mm\\item Tube position: " + tubeposis(get(11))
-    tscan = ("\n\\subsection{Scan}" + "\\item mA: " + get(5) + "\\item kV: " + 
+    tscan = ("\n\\subsection{Scan}" + "\\item mA: " + get(5) + "\\item kV: " +
             get(12)[:-4] + "\\item Delay: " + get(8)[:-4] + "s\\item Topogram" +
             " length: " + get(10)[:-2] + " mm\\item Direction: " + get(9)[2:] +
-            "\\item Tube position: " + tubeposis(get(11)) + "\\item API: " + 
-            apiid(get(4)) + "\\item Kernel: " + get(17)[1:-1] + "\\item " + 
+            "\\item Tube position: " + tubeposis(get(11)) + "\\item API: " +
+            apiid(get(4)) + "\\item Kernel: " + get(17)[1:-1] + "\\item " +
             "Window: " + get(21))
     returnstring = toporoutine + tscan
     return returnstring
@@ -97,8 +99,8 @@ def pet():
     """Converts a PET scan to tex"""
     returnstring = ""
     scanrange = ""
-    indose = ""
-    if int(file[-1]) > 4:
+    injdose = "0.0"
+    if int(file[-1]) > 4 and file[-2:] != "26":
         injdose = get(11).split("(")[0] + " " + get(11).split("(")[1][2:-1]
         if int(get(32)) == 1:
             scanrange = "Match CT FOV"
@@ -144,67 +146,63 @@ def pet():
 
 for file in listing:
     """Converts protocols to tex-files"""
-    try:
-        f = open(path + file,'r')
-        proto = f.read()
-        proto = proto.split("\n")
-        p2 = []
-        f.close
+  #  try:
+    f = open(path + file,'r')
+    proto = f.read()
+    proto = proto.split("\n")
+    p2 = []
+    f.close
 
-        title = file[9:]
-        title = re.sub("_","\_",title)
+    title = file[9:]
+    title = re.sub("_","\_",title)
 
-        page = template % {"title" : title}
+    page = template % {"title" : title}
 
-        for item in proto:
-            item = item.split(" ")[1:]
-            p2.append(" ".join(item))
+    for item in proto:
+        item = item.split(" ")[1:]
+        p2.append(" ".join(item))
 
-        pfoo = []
-        for item in p2:
-            item = item.replace("\"","")
-            item = item.replace("#","\#")
-            pfoo.append(re.sub("_"," ",item))
+    pfoo = []
+    for item in p2:
+        item = item.replace("\"","")
+        item = item.replace("#","\#")
+        pfoo.append(re.sub("_"," ",item))
 
-        p2 = pfoo
-
-
-        protoorder = []
-
-        for i,item in enumerate(proto):
-            """Creates a list of the modes the protocol contains"""
-            if item == "topo" or item == "pet" or item == "ct" or item == "pause":
-                protoorder.append(item)
-
-        protonavn = p2[2]
-        size = p2[1]
-        output = ""
-        gindex = 3 #Global index used to indicate where the current phase starts
-        for item in protoorder:
-            """Iterates through protoorder and converts the individual phases to tex."""
-            if item == "topo":
-                output+= topo()
-                gindex+=23
-            elif item == "pet":
-                output+= pet()
-                gindex+= 21
-            elif item == "ct":
-                output+=ct()
-                gindex+=22
-            elif item == "pause":
-                output +=pause()
-                gindex +=4
+    p2 = pfoo
 
 
-        output = page + "\\begin{itemize}[noitemsep]" + output + "\n\\end{itemize}" + "\n\\end{document}"
+    protoorder = []
 
-        f = open(path2 + file[9:] + ".tex",'w')
-        f.write(output)
-        f.close()
+    for i,item in enumerate(proto):
+        """Creates a list of the modes the protocol contains"""
+        if item == "topo" or item == "pet" or item == "ct" or item == "pause":
+            protoorder.append(item)
+    protonavn = p2[2]
+    size = p2[1]
+    output = ""
+    gindex = 3 #Global index used to indicate where the current phase starts
+    for item in protoorder:
+        """Iterates through protoorder and converts the individual phases to tex."""
+        if item == "topo":
+            output+= topo()
+            gindex+=23
+        elif item == "pet":
+            output+= pet()
+            gindex+= 21
+        elif item == "ct":
+            output+=ct()
+            gindex+=22
+        elif item == "pause":
+            output +=pause()
+            gindex +=4
 
 
+    output = page + "\\begin{itemize}[noitemsep]" + output + "\n\\end{itemize}" + "\n\\end{document}"
 
+    f = open(path2 + file[9:] + ".tex",'w')
+    f.write(output)
+    f.close()
 
-    except:
-        print file + " did not compile properly"
+#    except:
+ #       print file + " did not compile properly"
 

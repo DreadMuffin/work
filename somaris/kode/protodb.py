@@ -14,6 +14,8 @@ listing = os.listdir(source)
 conn = pymysql.connect(host='127.0.0.1', port=3306, user='root',
         passwd='mysql',db='protokoller')
 cur = conn.cursor()
+cur.execute("set autocommit = 0")
+conn.commit()
 
 cur.execute("use protokoller")
 tables = ["Protocols","Topograms","CT","CTrecon","Pause","PET","PETrecon"]
@@ -81,9 +83,8 @@ for file in listing:
         for line in lines[:-1]:
             cur.execute(line)
 
-
-
-
+conn.commit()
+conn.close()
 
 # r = cur.fetchall()
 # print r

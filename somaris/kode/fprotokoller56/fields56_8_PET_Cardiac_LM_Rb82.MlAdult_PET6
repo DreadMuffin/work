@@ -1,0 +1,154 @@
+MlScanProtocolAttributes_Begin 138
+BodySizeOld MlAdult
+ProtocolName "8_PET_Cardiac_LM_Rb82"
+topo
+PROTOCOL_ENTRY_NO 1
+MlModeScan_Begin 138
+SliceEffectiveTiltCorrected 0.6
+ApiId -1
+Current 35
+RangeName[READ_ONLY] "Topogram"
+ScanTime 2.780
+StartDelay 4.000
+TableDirectionPatient MlCraniocaudal
+TopoLength 256.0
+TubePosition 270.0
+Voltage 120.000
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
+BodyPartExamined "ABDOMEN"
+Kernel "T80s sharp"
+Transfer1 ""
+Transfer2 ""
+Transfer3 ""
+Window[READ_ONLY] "Topogram Body"
+MlModeRecon_End 138
+ct
+PROTOCOL_ENTRY_NO 2
+MlModeScan_Begin 138
+SliceEffective 3.00
+AECReferenceMAs 170
+ApiId -1
+Care MlOff
+CareDoseType MlCareDoseAEC
+CTDIw 0.7414
+EffectiveMAs 11
+InterPosTilt 0.0
+mAs 11
+PitchFactor 1.5000000
+RangeName "Lav CT Card "
+RotTime 0.500
+ScanTime 3.360
+StartDelay 4.000
+TableDirectionPatient MlCraniocaudal
+Voltage 120.000
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
+SliceEffective 3.00
+CenterX 0
+CenterY 0
+CTScale MlCTScaleStandard
+ExtendedFOV 1
+FoVHorLength 700
+ImageOrder MlIO_Craniocaudal
+Kernel "B18f very smooth"
+Mirror MlMirrorNone
+NoOfImages 111
+ReconDirection MlAxial
+ReconType MlAxialRJ
+SeriesDescription "AC_CT_NH3"
+SpiralReconIncr 2.000
+Window[READ_ONLY] "Mediastinum"
+MlModeRecon_End 138
+MlModeEntry_End 138
+pause
+PROTOCOL_ENTRY_NO 3
+MlPause_Begin 138
+MlPause_End 138
+pet
+PROTOCOL_ENTRY_NO 4
+MlModeScan_Begin 1
+AutoLoad 1
+RangeName "PET Rest LM "
+LLD 435
+ULD 650
+Isotope Rb-82
+Pharmaceutical Liquid Solution
+InjectionDate 20110726
+InjectionTime 140700.000000
+InjectedDose 1100(PtMegaBequerels)
+NumberOfBeds 1
+BedDuration 7(PtMinutes)
+TableDirectionPatient MlCraniocaudal
+RebinnerLut 0
+RebinnerMode PtListMode32
+HistogramMode PtTrues
+PhysioInputType PtPhysioECG
+MlModeScan_End 1
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 3
+CTAttenCorrModeList (1,1)
+OutputImageType PtNoRecon
+ReconMethod PtIterative
+ImageSize 168
+Subsets 8
+Iterations 4
+Zoom 2
+FilterFWHM 2
+ScatterCorrect 1
+XYFilterType PtGaussian
+MatchCTSliceLocation 1
+SeriesDescription PET_ Cardiac_Rb82_Rest
+BedBegin -1
+BedEnd -1
+XOffset 0
+YOffset 0
+SaveIntermediateData 0
+MlModeRecon_End 3
+pause
+PROTOCOL_ENTRY_NO 5
+MlPause_Begin 138
+MlPause_End 138
+pet
+PROTOCOL_ENTRY_NO 6
+MlModeScan_Begin 1
+AutoLoad 1
+RangeName "PET StressLM "
+LLD 435
+ULD 650
+Isotope Rb-82
+Pharmaceutical Liquid Solution
+InjectionDate 20110726
+InjectionTime 140700.000000
+InjectedDose 1100(PtMegaBequerels)
+NumberOfBeds 1
+BedDuration 10(PtMinutes)
+TableDirectionPatient MlCraniocaudal
+RebinnerLut 0
+RebinnerMode PtListMode32
+HistogramMode PtTrues
+PhysioInputType PtPhysioECG
+MlModeScan_End 1
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 3
+CTAttenCorrModeList (1,1)
+OutputImageType PtNoRecon
+ReconMethod PtIterative
+ImageSize 168
+Subsets 8
+Iterations 4
+Zoom 2
+FilterFWHM 2
+ScatterCorrect 1
+XYFilterType PtGaussian
+MatchCTSliceLocation 1
+SeriesDescription PET_ Cardiac_Rb82_Stress
+BedBegin -1
+BedEnd -1
+XOffset 0
+YOffset 0
+SaveIntermediateData 0
+MlModeRecon_End 3
+MlScanProtocol_End 138

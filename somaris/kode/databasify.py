@@ -86,7 +86,7 @@ def pet(nr):
     injamount = ""
     injunit = ""
     scanrange = ""
-    if int(file[-1]) > 4:
+    if int(file[-1]) > 4 and file[-2:] != "26":
         injamount = get(11).split("(")[0]
         injunit = get(11).split("(")[1][2:-1]
         if int(get(32)) == 1:
@@ -155,7 +155,10 @@ for file in listing:
         output = []
         protocol = []
         name = file[9:-5]
-        scanner = file[-4:]
+        if file[-2:] == "26":
+            scanner = "PET26"
+        else:
+            scanner = file[-4:]
         bodysize = proto[1][-5:]
         protocol.append(name)
         protocol.append(scanner)
@@ -183,7 +186,7 @@ for file in listing:
         insert it into a database"""
         lines = ("insert into Protocols values (\'" + "','".join(protocol) +
                     "\');\n")
-        lines = lines.replace("'NOW()'","NOW()") 
+        lines = lines.replace("'NOW()'","NOW()")
         for i,item in enumerate(protoorder):
             if item == "topo":
                 lines += ("insert into Topograms values (\'" +

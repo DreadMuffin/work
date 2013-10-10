@@ -1,0 +1,15 @@
+insert into Protocols values ('WB_FDG_PET_CT_KF26.Adult_','PET26','Adult','4',NOW());
+insert into Topograms values ('WB_FDG_PET_CT_KF26.Adult_','PET26','1','Topogram','35','120','1536','Top','4','Craniocaudal','','T80f','Topogram');
+insert into CT values ('WB_FDG_PET_CT_KF26.Adult_','PET26','2','8','CT WB','200','120','On','CareDoseAEC','13.4792','14.666','25.000','2','0.0','200','0.500','0.80','Craniocaudal');
+insert into CTrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','2','1','CT WB RTD','5','B19f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','5.000','171');
+insert into CTrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','2','2','AC CT WB','2','B19f','Abdomen','On','501','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','426');
+insert into CTrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','2','3','CT WB B30f 2mm','2','B30f','Abdomen','On','501','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','426');
+insert into CTrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','2','4','CT WB B70f 2mm knogle','2','B70f','Bone','Off','450','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','426');
+insert into CTrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','2','5','CT WB 2.0 HD FoV SAFIRE3','2','I30f','Abdomen','On','501','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','426');
+insert into CTrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','2','6','CT WB 2.0 HD FoV SAFDIRE5','2','I30f','Abdomen','On','501','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','426');
+insert into CTrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','2','7','CT WB 2.0 MPR cor','2','B30f','Abdomen','Off','450','0','0','None','Standard','3D','Coronal','AP','2.000','251');
+insert into CTrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','2','8','CT WB 2.0 MPR sag','2','B30f','Abdomen','Off','450','0','0','None','Standard','3D','Sagittal','LeftToRight','2.000','251');
+insert into Pause values ('WB_FDG_PET_CT_KF26.Adult_','PET26','3');
+insert into PET values ('WB_FDG_PET_CT_KF26.Adult_','PET26','4','2','PET WB','F-18','Fluorodeoxyglucose','0','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','3.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
+insert into PETrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','4','1','PET WB Image check HD','1 to 6','Corrected','TrueX','2','12','200','1','Gaussian','4.000000','0','0','Off ()','On','On','Off');
+insert into PETrecon values ('WB_FDG_PET_CT_KF26.Adult_','PET26','4','2','PET WB TrueX TOF 2mm','1 to 6','Corrected','TrueXTOF','2','21','400','1','Gaussian','2.000000','0','0','Off ()','On','On','Off');

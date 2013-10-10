@@ -20,6 +20,7 @@ pet = tfields[4].split("\n")[1:-1]
 
 path3 = "protokoller3/"
 path4 = "protokoller4/"
+path26 = "protokoller26/"
 destpath = "fprotokoller34/"
 
 boollist = ["ExtendedFOV","AutoLoad","RebinnerL","ScatterCorrect",
@@ -46,6 +47,7 @@ def loop(source,mname):
                 item = item.rstrip('\r\n:')
                 item = item.replace("\t", " ")
                 item = re.sub(' +', ' ', item)
+                """Else it gets messy with the "Current" field."""
                 if item.startswith("CurrentRatio"):
                     continue
                 newProto.append(item)
@@ -57,7 +59,7 @@ def loop(source,mname):
             fields.extend(start)
             protoorder = []
             for i, item in enumerate(proto):
-                """Creates a fieldlist which fits the file"""
+                """Creates a list of fields which fits the file"""
                 if searching:
                     if item.startswith("MlPause_Begin"):
                         searching = False
@@ -84,16 +86,23 @@ def loop(source,mname):
                     searching = True
 
             fields.append("MlScanProtocol_End")
-            fields.append("Det her slutter den ikke med")
+            fields.append("Det her slutter den ikke med") # Hack
             findex = 0
             rindex = -1
             recon = [0] * (len(protoorder) - protoorder.count("p"))
             protonr = 0
             fieldlist = ""
-            reconpos = [i for i, x in enumerate(fields) if x == "No_Of_Valid_Recons"]
+            firstStartDelay = True # hack for 4 protocols.
+            reconpos = [i for i, x in enumerate(fields)
+                    if x == "No_Of_Valid_Recons"]
             bednumbercounter = 0
             for i,item in enumerate(proto):
                 """Copies all the valid fields into the output list"""
+                if item.startswith("StartDelay") and firstStartDelay:
+                    firstStartDelay = False
+                    if proto[i+1].startswith("VertPos"):
+                        print file
+                        proto[i+1] = "TubePosition vert125"
                 if item.startswith(fields[findex]):
                     if item.startswith("No_Of_Valid_Recons"):
                         rindex+=1
@@ -119,7 +128,8 @@ def loop(source,mname):
                             item = (item.split(" ")[0] + " \"" +
                                     item.split("\" \"")[-1])
                     findex+=1
-                    fieldlist+=item + "\n"
+                    fieldlist+= item + "\n"
+#                    fieldlist+= item + "  " + str(i) + "\n"
             fieldlist = fieldlist[:-1]
             f = open(destpath + "fields34_" + file + mname,'w')
             f.write(fieldlist)
@@ -130,3 +140,4 @@ def loop(source,mname):
 
 loop(path3,"_PET3")
 loop(path4,"_PET4")
+loop(path26, "_PET26")

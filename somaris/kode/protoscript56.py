@@ -77,7 +77,7 @@ def loop(source,mname):
 
 
             fields.append("MlScanProtocol_End")
-            fields.append("Det her slutter den ikke med")
+            fields.append("Det her slutter den ikke med") #Hack
             findex = 0
             rindex = -1
             recon = [0] * (len(protoorder) - protoorder.count("p"))

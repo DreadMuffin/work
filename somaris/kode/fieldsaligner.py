@@ -74,4 +74,4 @@ for file in listing:
         f.write(("\n").join(fields))
         f.close
     except:
-        print file + " nope"
+        print file + " failed in fieldsaligner"

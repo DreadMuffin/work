@@ -1,0 +1,13 @@
+insert into Protocols values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','Adult','4',NOW());
+insert into Topograms values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','1','Topogram','35','120','512','Top','2','Craniocaudal','','T80f','Topogram');
+insert into CT values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','2','3','CT Cardiac','40','120','On','CareDoseAEC','2.65635','2.526','2.000','2','0.0','40','0.500','1.50','Craniocaudal');
+insert into CTrecon values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','2','1','CT Cardiac RTD','5','B19f','Mediastinum','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','5.000','45');
+insert into CTrecon values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','2','2','FDG AC LDCT Cardiac','2','B19f','Mediastinum','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','112');
+insert into CTrecon values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','2','3','FDG AC LDCT Cardiac B30f','2','B30f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','112');
+insert into Pause values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','3');
+insert into PET values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','4','5','PET Cardiac','F-18','Fluorodeoxyglucose','0','Bequerels','List mode','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','List mode','true','ECG','n/a','n/a');
+insert into PETrecon values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','4','1','FDG PET Cardiac Gated NAC','Automatic/All/dunno','Uncorrected','Iterative3D','4','8','400','2.000000','Gaussian','4.000000','30.000000','0','Off ()','Off','On','Off');
+insert into PETrecon values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','4','2','FDG PET Cardiac Gated stat','Automatic/All/dunno','Corrected','Iterative3D','4','8','400','2.000000','Gaussian','3.000000','30.000000','0','Off ()','On','On','Off');
+insert into PETrecon values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','4','3','FDG PET Cardiac Gated stat 5mm','Automatic/All/dunno','Corrected','Iterative3D','3','8','128','2.200000','Gaussian','5.000000','30.000000','0','Off ()','On','On','Off');
+insert into PETrecon values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','4','4','   FDG REST STAT ULTRAHD','Automatic/All/dunno','Corrected','TrueXTOF','4','21','128','2.000000','Gaussian','6.500000','30.000000','0','Off ()','On','On','Off');
+insert into PETrecon values ('Hjerte_PET_FDG_Gated_KF26.Adult_','PET26','4','5','   FDG REST EKG STAT ULTRAHD','Automatic/All/dunno','Corrected','TrueXTOF','4','21','128','2.000000','Gaussian','6.500000','30.000000','0','Off ()','On','On','Off');

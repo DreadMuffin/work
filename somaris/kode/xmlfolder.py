@@ -9,12 +9,13 @@ path31 = "xml3/"
 path32 = "protokoller3/"
 path41 = "xml4/"
 path42 = "protokoller4/"
+path261 = "xml26/"
+path262 = "protokoller26/"
 PETCTfields = [""] * 12
 
 def hellsolver(helvedelist):
     """If a file contains the dreaded PetBedsInformation line instead of
     dividing the information into seperate lines, this will extract the info."""
-    hellreturn = ""
     PETCTfields[4] = "BedDuration " + helvedelist[4].split(";")[1][:-3] + "(" + helvedelist[5].split(";")[1][:-3] + ")"
     if helvedelist[12].split(";")[1][:-3] == "PtSinogramData":
         PETCTfields[5] = ("RebinnerLut Null\n" + "RebinnerMode " +
@@ -134,3 +135,4 @@ def xmlloop(source,destination):
 
 xmlloop(path31,path32)
 xmlloop(path41,path42)
+xmlloop(path261,path262)

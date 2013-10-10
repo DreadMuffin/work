@@ -1,0 +1,15 @@
+insert into Protocols values ('PETCT_Cardiac_Perf_LM.Adult','PET4','Adult','8',NOW());
+insert into Topograms values ('PETCT_Cardiac_Perf_LM.Adult','PET4','1','Topogram','35','120','256','Lateral','4','Craniocaudal','','T80s','Topogram');
+insert into CT values ('PETCT_Cardiac_Perf_LM.Adult','PET4','2','2','CT Rest','11','120','Off','CareDoseAEC','0.8008','4.670','2.000','3','0.0','170','0.500','1.50','Craniocaudal');
+insert into CTrecon values ('PETCT_Cardiac_Perf_LM.Adult','PET4','2','1','tmp CT Rest RTD','4','B18f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','56');
+insert into CTrecon values ('PETCT_Cardiac_Perf_LM.Adult','PET4','2','2','AC CT Rest','3','B18f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','112');
+insert into Pause values ('PETCT_Cardiac_Perf_LM.Adult','PET4','3');
+insert into PET values ('PETCT_Cardiac_Perf_LM.Adult','PET4','4','1','PET Rest LM','Rb-82','Liquid Solution','1480000000','Bequerels','List mode','Match CT FOV','0','7.000000','Minutes','On','Off','List mode','PromptsRandoms','ECG','n/a','n/a');
+insert into PETrecon values ('PETCT_Cardiac_Perf_LM.Adult','PET4','4','1','Cardiac Rest LM','Automatic/All/dunno','NoRecon','Backprojection','4','12','200','1','Gaussian','5','0','0','Off ()','On','On','Off');
+insert into Pause values ('PETCT_Cardiac_Perf_LM.Adult','PET4','5');
+insert into PET values ('PETCT_Cardiac_Perf_LM.Adult','PET4','6','1','PET Stress LM','Rb-82','Liquid Solution','1480000000','Bequerels','List mode','Match CT FOV','0','7.000000','Minutes','On','Off','List mode','PromptsRandoms','ECG','n/a','n/a');
+insert into PETrecon values ('PETCT_Cardiac_Perf_LM.Adult','PET4','6','1','Cardiac Stress LM','Automatic/All/dunno','NoRecon','Backprojection','4','12','200','1','Gaussian','5','0','0','Off ()','On','On','Off');
+insert into Pause values ('PETCT_Cardiac_Perf_LM.Adult','PET4','7');
+insert into CT values ('PETCT_Cardiac_Perf_LM.Adult','PET4','8','2','CT Stress','11','120','Off','CareDoseAEC','0.8008','4.700','2.000','3','0.0','170','0.500','1.50','Craniocaudal');
+insert into CTrecon values ('PETCT_Cardiac_Perf_LM.Adult','PET4','8','1','tmp CT Stress RTD','4','B18f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','4.000','57');
+insert into CTrecon values ('PETCT_Cardiac_Perf_LM.Adult','PET4','8','2','AC CT Stress','3','B18f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','113');

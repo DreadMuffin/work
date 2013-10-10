@@ -1,0 +1,10 @@
+insert into Protocols values ('PETCT_HeadNeck.Adult_','PET26','Adult','4',NOW());
+insert into Topograms values ('PETCT_HeadNeck.Adult_','PET26','1','Topogram','35','120','512','Top','4','Craniocaudal','','T80f','Topogram');
+insert into CT values ('PETCT_HeadNeck.Adult_','PET26','2','3','CT Headneck','150','120','On','CareDoseAEC','10.1094','12.964','2.000','3','0.0','150','1.000','0.80','Craniocaudal');
+insert into CTrecon values ('PETCT_HeadNeck.Adult_','PET26','2','1','CT Headneck RTD','5','B19s','Larynx','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','5.000','70');
+insert into CTrecon values ('PETCT_HeadNeck.Adult_','PET26','2','2','AC CT Headneck','3','B19s','Larynx','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','175');
+insert into CTrecon values ('PETCT_HeadNeck.Adult_','PET26','2','3','CT Headneck 2.0 B31s','2','B31s','Larynx','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','233');
+insert into Pause values ('PETCT_HeadNeck.Adult_','PET26','3');
+insert into PET values ('PETCT_HeadNeck.Adult_','PET26','4','2','PET Headneck','F-18','Fluorodeoxyglucose','0','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
+insert into PETrecon values ('PETCT_HeadNeck.Adult_','PET26','4','1','PET Headneck','1 to 2','Corrected','TrueXTOF','2','21','200','1','Gaussian','2.000000','0','0','Off ()','On','On','Off');
+insert into PETrecon values ('PETCT_HeadNeck.Adult_','PET26','4','2','PET Headneck Uncorrected','1 to 2','Uncorrected','Iterative3D','2','24','200','1','Gaussian','4.000000','0','0','Off ()','On','On','Off');

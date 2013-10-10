@@ -1,0 +1,2 @@
+insert into Protocols values ('PETCT_PETonly_Topo.Adult_','PET26','Adult','1',NOW());
+insert into Topograms values ('PETCT_PETonly_Topo.Adult_','PET26','1','Topogram','35','120','1024','Top','4','Craniocaudal','','T80f','Topogram');

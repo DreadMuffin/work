@@ -2,3 +2,5 @@
 *.swp
 temppdf/*
 *.log
+*.aux
+*.toc

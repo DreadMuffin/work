@@ -1,0 +1,11 @@
+insert into Protocols values ('PETCT_RespTrigger_Gated.Adult_','PET26','Adult','4',NOW());
+insert into Topograms values ('PETCT_RespTrigger_Gated.Adult_','PET26','1','Topogram','35','120','512','Top','4','Craniocaudal','','T80f','Topogram');
+insert into CT values ('PETCT_RespTrigger_Gated.Adult_','PET26','2','4','CT Lung','120','120','On','CareDoseAEC','8.09128','2.714','2.000','5','0.0','120','0.500','1.40','Craniocaudal');
+insert into CTrecon values ('PETCT_RespTrigger_Gated.Adult_','PET26','2','1','CT Lung RTD','5','B19f','Mediastinum','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','5.000','45');
+insert into CTrecon values ('PETCT_RespTrigger_Gated.Adult_','PET26','2','2','AC CT Lung','5','B19f','Mediastinum','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','75');
+insert into CTrecon values ('PETCT_RespTrigger_Gated.Adult_','PET26','2','3','CT Lung 2.0 B31f','2','B31f','Mediastinum','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','150');
+insert into CTrecon values ('PETCT_RespTrigger_Gated.Adult_','PET26','2','4','CT Lung 2.0 B70f','2','B70f','Lung','Off','300','0','0','None','Standard','Axial','Axial','Craniocaudal','1.500','150');
+insert into Pause values ('PETCT_RespTrigger_Gated.Adult_','PET26','3');
+insert into PET values ('PETCT_RespTrigger_Gated.Adult_','PET26','4','2','PET Lung ','F-18','Fluorodeoxyglucose','0','Bequerels','List mode','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','List mode','true','Resp','n/a','n/a');
+insert into PETrecon values ('PETCT_RespTrigger_Gated.Adult_','PET26','4','1','PET Lung','Automatic/All/dunno','Corrected','TrueXTOF','2','21','200','1','Gaussian','2.000000','0','0','Off ()','On','On','Off');
+insert into PETrecon values ('PETCT_RespTrigger_Gated.Adult_','PET26','4','2','PET Lung Gated','Automatic/All/dunno','Corrected','TrueXTOF','2','21','200','1','Gaussian','2.000000','0','0','Off ()','On','On','Off');
