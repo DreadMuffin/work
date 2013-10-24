@@ -3,7 +3,7 @@
 import re
 import os
 
-print "Extracting data"
+print "Extracting data 5/6"
 
 FIELDS = "scanfields56"
 
@@ -18,8 +18,8 @@ pause = tfields[3].split("\n")[1:-1]
 pet = tfields[4].split("\n")[1:-1]
 
 
-path5 = "protokoller5/"
-path6 = "protokoller6/"
+path5 = "PET5/"
+path6 = "PET6/"
 destpath = "fprotokoller/"
 
 def listappend(list,input):

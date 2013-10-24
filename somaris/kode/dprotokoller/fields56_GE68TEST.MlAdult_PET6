@@ -1,8 +1,0 @@
-insert into Protocols values ('GE68TEST.MlAdult','PET6','Adult','4',NOW());
-insert into Topograms values ('GE68TEST.MlAdult','PET6','1','Topogram','35','120','0','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
-insert into CT values ('GE68TEST.MlAdult','PET6','2','1','CT WB','225','120','On','CareDoseAEC','15.1475','4.000','4.000','3.00','0.0','225','0.500','1.2000000','Craniocaudal');
-insert into CTrecon values ('GE68TEST.MlAdult','PET6','2','1','AC CT','3.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','74');
-insert into Pause values ('GE68TEST.MlAdult','PET6','3');
-insert into PET values ('GE68TEST.MlAdult','PET6','4','2','PET WB','Ge-68','Solid Solution','93.15','MegaBequerels','Sinogram','Match CT FOV','1','10','Minutes','On','Off','Sinogram','Trues','None','435','650');
-insert into PETrecon values ('GE68TEST.MlAdult','PET6','4','1','PET6 trueX','Automatic/All/dunno','Corrected','TrueX','3','21','336','1','Gaussian','2','0','0','On (1)','On','On','Off');
-insert into PETrecon values ('GE68TEST.MlAdult','PET6','4','2','PET6 Osem3D','Automatic/All/dunno','Corrected','Iterative3D','4','8','336','1','Gaussian','4','0','0','On (1)','On','On','Off');

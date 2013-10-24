@@ -42,6 +42,8 @@ def tubeposis(value):
         return "Top"
     elif value == "90.0":
         return "Bottom"
+    elif value == "vert125":
+        return "vertical 125?"
     else: return "Lateral"
 
 def apiid(value):
@@ -154,10 +156,11 @@ for file in listing:
                 protoorder.append(item)
         output = []
         protocol = []
-        name = file[9:-5]
         if file[-2:] == "26":
+            name = file[9:-6]
             scanner = "PET26"
         else:
+            name = file[9:-5]
             scanner = file[-4:]
         bodysize = proto[1][-5:]
         protocol.append(name)

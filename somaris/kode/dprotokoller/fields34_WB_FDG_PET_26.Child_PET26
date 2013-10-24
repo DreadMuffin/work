@@ -1,5 +1,0 @@
-insert into Protocols values ('WB_FDG_PET_26.Child_','PET26','Child','2',NOW());
-insert into Topograms values ('WB_FDG_PET_26.Child_','PET26','1','Topogram','50','80','512','Bottom','2','Craniocaudal','','T20f','Topogram');
-insert into CT values ('WB_FDG_PET_26.Child_','PET26','2','2','Lavdosis CT','20','80','On','CareDoseAEC','0.293338','3.385','2.000','2','0.0','20','0.500','1.00','Craniocaudal');
-insert into CTrecon values ('WB_FDG_PET_26.Child_','PET26','2','1','Lavdosis CT RTD','5','B08f','Abdomen','Off','500','0','0','None','Standard','Axial','Axial','Craniocaudal','5.000','41');
-insert into CTrecon values ('WB_FDG_PET_26.Child_','PET26','2','2','Lavdosis CT 2.0 HD FoV','2','B08f','Abdomen','On','780','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','101');

@@ -1,9 +1,0 @@
-insert into Protocols values ('Hjerne_FDG_PET_CT_6.MlAdult','PET6','Adult','4',NOW());
-insert into Topograms values ('Hjerne_FDG_PET_CT_6.MlAdult','PET6','1','Topogram','35','120','256','Lateral','4','Craniocaudal','Null','T20s standard','Topogram Head');
-insert into CT values ('Hjerne_FDG_PET_CT_6.MlAdult','PET6','2','2','CT Brain','380','120','Off','CareDoseAEC','59.4292','16.010','4.000','3.00','0.0','380','1.000','0.8000000','Caudocranial');
-insert into CTrecon values ('Hjerne_FDG_PET_CT_6.MlAdult','PET6','2','1','AC CT','3.00','H19s PET very smooth','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','1.500','148');
-insert into CTrecon values ('Hjerne_FDG_PET_CT_6.MlAdult','PET6','2','2','CT Brain 3.0 H31s','3.00','H31s medium smooth +','Cerebrum','Off','250','0','0','None','Standard','Axial','Axial','Caudocranial','1.500','148');
-insert into Pause values ('Hjerne_FDG_PET_CT_6.MlAdult','PET6','3');
-insert into PET values ('Hjerne_FDG_PET_CT_6.MlAdult','PET6','4','2','PET Brain','F-18','FDG','1','MegaBequerels','Sinogram','Match CT FOV','1','10','Minutes','On','Off','Sinogram','Trues','None','435','650');
-insert into PETrecon values ('Hjerne_FDG_PET_CT_6.MlAdult','PET6','4','1','PET Brain Corrected 3 mm Zoom 3','Automatic/All/dunno','Corrected','Iterative','6','16','336','3','Gaussian','3','0','0','On (1)','On','On','Off');
-insert into PETrecon values ('Hjerne_FDG_PET_CT_6.MlAdult','PET6','4','2','PET Brain Neurostat','Automatic/All/dunno','Corrected','Iterative','4','8','128','3','Gaussian','3','0','0','On (1)','On','On','Off');

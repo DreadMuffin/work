@@ -5,12 +5,12 @@ import os
 
 print "Converting xml to plaintext"
 
-path31 = "xml3/"
-path32 = "protokoller3/"
-path41 = "xml4/"
-path42 = "protokoller4/"
-path261 = "xml26/"
-path262 = "protokoller26/"
+path31 = "PET3/"
+path32 = "PET3noxml/"
+path41 = "PET4/"
+path42 = "PET4noxml/"
+path261 = "PET26/"
+path262 = "PET26noxml/"
 PETCTfields = [""] * 12
 
 def hellsolver(helvedelist):

@@ -1,7 +1,0 @@
-insert into Protocols values ('8_PET_Cardiac_18F_FDG_LM_Resp_Gating.MlAdult','PET6','Adult','4',NOW());
-insert into Topograms values ('8_PET_Cardiac_18F_FDG_LM_Resp_Gating.MlAdult','PET6','1','Topogram','35','120','512','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
-insert into CT values ('8_PET_Cardiac_18F_FDG_LM_Resp_Gating.MlAdult','PET6','2','1','Lav CT Card','11','120','Off','CareDoseAEC','0.7414','3.360','4.000','3.00','0.0','170','0.500','1.5000000','Craniocaudal');
-insert into CTrecon values ('8_PET_Cardiac_18F_FDG_LM_Resp_Gating.MlAdult','PET6','2','1','AC CT FDG','3.00','B18f very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','2.000','111');
-insert into Pause values ('8_PET_Cardiac_18F_FDG_LM_Resp_Gating.MlAdult','PET6','3');
-insert into PET values ('8_PET_Cardiac_18F_FDG_LM_Resp_Gating.MlAdult','PET6','4','1','PET Card LM','F-18','FDG','300','MegaBequerels','List mode','Match CT FOV','1','15','Minutes','On','Off','List mode','Trues','Resp','435','650');
-insert into PETrecon values ('8_PET_Cardiac_18F_FDG_LM_Resp_Gating.MlAdult','PET6','4','1','PET  Card FDG','Automatic/All/dunno','NoRecon','Iterative','4','8','168','2.2','Gaussian','10','3','0','On (1)','On','On','Off');

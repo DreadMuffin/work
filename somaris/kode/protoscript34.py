@@ -3,7 +3,7 @@
 import re
 import os
 
-print "Extracting data"
+print "Extracting data 3/4/26"
 
 FIELDS = "scanfields34"
 
@@ -18,9 +18,9 @@ pause = tfields[3].split("\n")[1:-1]
 pet = tfields[4].split("\n")[1:-1]
 
 
-path3 = "protokoller3/"
-path4 = "protokoller4/"
-path26 = "protokoller26/"
+path3 = "PET3noxml/"
+path4 = "PET4noxml/"
+path26 = "PET26noxml/"
 destpath = "fprotokoller34/"
 
 boollist = ["ExtendedFOV","AutoLoad","RebinnerL","ScatterCorrect",
@@ -92,7 +92,7 @@ def loop(source,mname):
             recon = [0] * (len(protoorder) - protoorder.count("p"))
             protonr = 0
             fieldlist = ""
-            firstStartDelay = True # hack for 4 protocols.
+            firstStartDelay = True # hack needed for some protocols.
             reconpos = [i for i, x in enumerate(fields)
                     if x == "No_Of_Valid_Recons"]
             bednumbercounter = 0
@@ -101,7 +101,7 @@ def loop(source,mname):
                 if item.startswith("StartDelay") and firstStartDelay:
                     firstStartDelay = False
                     if proto[i+1].startswith("VertPos"):
-                        print file
+                        print file + mname
                         proto[i+1] = "TubePosition vert125"
                 if item.startswith(fields[findex]):
                     if item.startswith("No_Of_Valid_Recons"):

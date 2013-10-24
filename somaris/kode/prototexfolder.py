@@ -44,7 +44,7 @@ def tubeposis(value):
         return "Top"
     elif value == "90.0":
         return "Bottom"
-    if value == "vert123":
+    if value == "vert125":
         return "VerticalPosition 125?"
     else: return "Lateral"
 

@@ -1,7 +1,0 @@
-insert into Protocols values ('PETCT_GantryOffset.MlAdult','PET5','Adult','4',NOW());
-insert into Topograms values ('PETCT_GantryOffset.MlAdult','PET5','1','Topogram','35','120','512','Top','4','Craniocaudal','Null','T80s sharp','Topogram Body');
-insert into CT values ('PETCT_GantryOffset.MlAdult','PET5','2','1','CT','50','120','Off','CareDoseAEC','3.37586','4.390','4.000','5.00','0.0','50','0.500','0.8000000','Craniocaudal');
-insert into CTrecon values ('PETCT_GantryOffset.MlAdult','PET5','2','1','CT 5.0','5.00','B19f PET very smooth','Abdomen','On','700','0','0','None','Standard','Axial','Axial','Craniocaudal','3.000','55');
-insert into Pause values ('PETCT_GantryOffset.MlAdult','PET5','3');
-insert into PET values ('PETCT_GantryOffset.MlAdult','PET5','4','1','PET','Ge-68','Crossed Rods','1.67','Millicuries','Sinogram','Do not match CT FOV','1','1e+007','Counts','On','Off','Sinogram','Trues','None','435','650');
-insert into PETrecon values ('PETCT_GantryOffset.MlAdult','PET5','4','1','PET Gantry Offset','Automatic/All/dunno','Uncorrected','Iterative','2','8','256','1','Gaussian','2.5','0','0','On (1)','Off','Off','Off');

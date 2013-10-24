@@ -1,3 +1,0 @@
-insert into Protocols values ('PETonly_withoutTopo.MlAdult','PET6','Adult','1',NOW());
-insert into PET values ('PETonly_withoutTopo.MlAdult','PET6','1','1','PET WB','F-18','FDG','10','Millicuries','Sinogram','Match CT FOV','5','2','Minutes','On','Off','Sinogram','Trues','None','435','650');
-insert into PETrecon values ('PETonly_withoutTopo.MlAdult','PET6','1','1','PET WB Uncorrected','Automatic/All/dunno','Uncorrected','Iterative','4','8','168','1','Gaussian','5','0','0','Off ()','Off','On','Off');
