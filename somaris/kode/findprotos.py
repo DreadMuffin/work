@@ -2,8 +2,17 @@
 
 import os
 import re
+import sys
 
+#Finds protocol names for testing purposes.
 path = "fprotokoller/"
+
+protolength = 0
+if len(sys.argv) > 1:
+    try:
+        protolength = int(sys.argv[1])
+    except:
+        print "Bad argument. Printing all protocols (That'll teach you)."
 
 def loop(dir):
     listing = os.listdir(dir)
@@ -37,7 +46,7 @@ def loop(dir):
                     reconnumber.append(0)
             elif item.startswith("No_Of_Valid_Recons"):
                 reconnumber.append(item[-1])
-        if len(protoorder) == 6:
+        if len(protoorder) == protolength or protolength == 0:
             print file
             print protoorder, reconnumber
 

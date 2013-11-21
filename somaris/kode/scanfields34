@@ -1,5 +1,6 @@
 MlScanProtocolAttributes_Begin
 BodySizeOld
+CustomProtocol
 ProtocolName
 newmode:
 PROTOCOL_ENTRY_NO

@@ -33,7 +33,8 @@ def get(index):
 
 def reconrange(start,end):
     """Translates bedstart and bedend to a string"""
-    if int(start) == int(end) and int(start) > 1:
+    if (int(start) == int(end) and int(start) > 1) or (int(start) == -1 and
+            int(end) == -1):
         return "Automatic/All/dunno"
     else: return start + " to " + end
 
@@ -146,63 +147,68 @@ def pet():
 
 for file in listing:
     """Converts protocols to tex-files"""
-  #  try:
-    f = open(path + file,'r')
-    proto = f.read()
-    proto = proto.split("\n")
-    p2 = []
-    f.close
+    try:
+        f = open(path + file,'r')
+        proto = f.read()
+        proto = proto.split("\n")
+        p2 = []
+        f.close
 
-    title = file[9:]
-    title = re.sub("_","\_",title)
+        title = file[9:]
+        title = re.sub("_","\_",title)
+        author = proto[2][:-1]
+        if author == "1":
+            author = "Custom Protocol"
+        else: author = "Standard Protocol"
 
-    page = template % {"title" : title}
+        page = template % {"title" : title,"author" : author}
 
-    for item in proto:
-        item = item.split(" ")[1:]
-        p2.append(" ".join(item))
+        for item in proto:
+            item = item.split(" ")[1:]
+            p2.append(" ".join(item))
 
-    pfoo = []
-    for item in p2:
-        item = item.replace("\"","")
-        item = item.replace("#","\#")
-        pfoo.append(re.sub("_"," ",item))
+        pfoo = []
+        for item in p2:
+            item = item.replace("\"","")
+            item = item.replace("#","\#")
+            pfoo.append(re.sub("_"," ",item))
 
-    p2 = pfoo
-
-
-    protoorder = []
-
-    for i,item in enumerate(proto):
-        """Creates a list of the modes the protocol contains"""
-        if item == "topo" or item == "pet" or item == "ct" or item == "pause":
-            protoorder.append(item)
-    protonavn = p2[2]
-    size = p2[1]
-    output = ""
-    gindex = 3 #Global index used to indicate where the current phase starts
-    for item in protoorder:
-        """Iterates through protoorder and converts the individual phases to tex."""
-        if item == "topo":
-            output+= topo()
-            gindex+=23
-        elif item == "pet":
-            output+= pet()
-            gindex+= 21
-        elif item == "ct":
-            output+=ct()
-            gindex+=22
-        elif item == "pause":
-            output +=pause()
-            gindex +=4
+        p2 = pfoo
 
 
-    output = page + "\\begin{itemize}[noitemsep]" + output + "\n\\end{itemize}" + "\n\\end{document}"
+        protoorder = []
 
-    f = open(path2 + file[9:] + ".tex",'w')
-    f.write(output)
-    f.close()
+        for i,item in enumerate(proto):
+            """Creates a list of the modes the protocol contains"""
+            if item == "topo" or item == "pet" or item == "ct" or item == "pause":
+                protoorder.append(item)
+        custom = p2[2]
+        protonavn = p2[3]
+        size = p2[1]
+        output = ""
+        gindex = 4 #Global index used to indicate where the current phase starts
+        for item in protoorder:
+            """Iterates through protoorder and converts the individual phases to tex."""
+            if item == "topo":
+                output+= topo()
+                gindex+=23
+            elif item == "pet":
+                output+= pet()
+                gindex+= 21
+            elif item == "ct":
+                output+=ct()
+                gindex+=22
+            elif item == "pause":
+                output +=pause()
+                gindex +=4
 
-#    except:
- #       print file + " did not compile properly"
+
+        output = page + "\\begin{itemize}[noitemsep]" + output + "\n\\end{itemize}" + "\n\\end{document}"
+
+        f = open(path2 + file[9:] + ".tex",'w')
+        f.write(output)
+        f.close()
+
+    except:
+        print file + " did not compile properly"
 

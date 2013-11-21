@@ -13,4 +13,6 @@ execfile("databasify.py")
 execfile("protodb.py")
 execfile("protopdf.py")
 
+os.system("cp pdf/* /var/www/protocols/pdf")
+
 

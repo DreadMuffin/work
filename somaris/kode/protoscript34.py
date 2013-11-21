@@ -101,7 +101,6 @@ def loop(source,mname):
                 if item.startswith("StartDelay") and firstStartDelay:
                     firstStartDelay = False
                     if proto[i+1].startswith("VertPos"):
-                        print file + mname
                         proto[i+1] = "TubePosition vert125"
                 if item.startswith(fields[findex]):
                     if item.startswith("No_Of_Valid_Recons"):

@@ -48,13 +48,18 @@ listing = os.listdir(source)
 for file in listing:
     try:
         proto = open(source + file,"r").read().split("\n")
-        gindex = 3
+        gindex = 4
         protoorder = []
         for i,item in enumerate(proto):
             """Creates a list of the modes the protocol contains"""
             if item =="topo" or item =="pet" or item == "ct" or item == "pause":
                 protoorder.append(item)
-        fields = proto[:3]
+        if proto[2] == "CustomProtocol true":
+            proto[2] = "CustomProtocol 1"
+        else:
+            proto[2] == "CustomProtocol 0"
+        fields = proto[:4]
+        print fields
         for mode in protoorder:
             if mode == "topo":
                 fields += topo()

@@ -26,7 +26,8 @@ for t in tables:
     except:
         pass
 
-cur.execute("create table Protocols (Protocolname varchar(200),PETscanner " +
+cur.execute("create table Protocols (Protocolname varchar(200), " +
+        "CustomProtocol char(10), PETscanner " +
         "char(10),Bodysize char(20),Length int,Date datetime,PRIMARY " +
         "KEY (Protocolname,PETscanner));")
 

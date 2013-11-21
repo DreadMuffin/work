@@ -163,13 +163,15 @@ for file in listing:
             name = file[9:-5]
             scanner = file[-4:]
         bodysize = proto[1][-5:]
+        custom = proto[2][:-1]
         protocol.append(name)
+        protocol.append(custom)
         protocol.append(scanner)
         protocol.append(bodysize)
         length = len(protoorder)
         protocol.append(str(length))
         protocol.append("NOW()")
-        gindex = 3 #Global index used to indicate where the current phase starts
+        gindex = 4 #Global index used to indicate where the current phase starts
 
         for i,item in enumerate(protoorder):
             if item == "topo":
