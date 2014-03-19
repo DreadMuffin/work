@@ -8,9 +8,6 @@ print "Creating the database"
 source = "dprotokoller/"
 listing = os.listdir(source)
 
-#conn = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock',
-#    user='root', passwd=None, db='mysql')
-
 conn = pymysql.connect(host='127.0.0.1', port=3306, user='root',
         passwd='mysql',db='protokoller')
 cur = conn.cursor()
@@ -27,7 +24,7 @@ for t in tables:
         pass
 
 cur.execute("create table Protocols (Protocolname varchar(200), " +
-        "CustomProtocol char(10), PETscanner " +
+        "CustomProtocol int, PETscanner " +
         "char(10),Bodysize char(20),Length int,Date datetime,PRIMARY " +
         "KEY (Protocolname,PETscanner));")
 

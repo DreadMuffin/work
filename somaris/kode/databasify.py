@@ -163,7 +163,7 @@ for file in listing:
             name = file[9:-5]
             scanner = file[-4:]
         bodysize = proto[1][-5:]
-        custom = proto[2][:-1]
+        custom = proto[2][-1]
         protocol.append(name)
         protocol.append(custom)
         protocol.append(scanner)

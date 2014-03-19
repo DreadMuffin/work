@@ -1,8 +1,0 @@
-insert into Protocols values ('Hjerne_FDG_PET_barn_4.Child','PET4','Child','4',NOW());
-insert into Topograms values ('Hjerne_FDG_PET_barn_4.Child','PET4','1','Topogram','50','80','256','Lateral','4','Craniocaudal','','T20f','Topogram');
-insert into CT values ('Hjerne_FDG_PET_barn_4.Child','PET4','2','2','Lav dosis CT','30','80','On','CareDoseAEC','1.43979','13.125','2.000','2','0.0','30','1.000','1.00','Caudocranial');
-insert into CTrecon values ('Hjerne_FDG_PET_barn_4.Child','PET4','2','1','Lav dosis CT RTD','4','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','4.000','56');
-insert into CTrecon values ('Hjerne_FDG_PET_barn_4.Child','PET4','2','2','AC  CT','2','H19s','Cerebrum','Off','300','0','0','None','Standard','Axial','Axial','Caudocranial','2.000','111');
-insert into Pause values ('Hjerne_FDG_PET_barn_4.Child','PET4','3');
-insert into PET values ('Hjerne_FDG_PET_barn_4.Child','PET4','4','1','PET Hjerne','F-18','Fluorodeoxyglucose','0','Bequerels','Sinogram','Match CT FOV','Not given. Check recon range','10.000000','Minutes','On','Off','Sinogram','false','None','n/a','n/a');
-insert into PETrecon values ('Hjerne_FDG_PET_barn_4.Child','PET4','4','1','PET Hjerne','Automatic/All/dunno','Corrected','Iterative3D','4','24','400','2.000000','Gaussian','4.000000','0','0','Off ()','On','On','Off');

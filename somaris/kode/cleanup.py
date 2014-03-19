@@ -10,6 +10,8 @@ paths = ["fprotokoller/","pdf/","tprotokoller/","temppdf/","fejlkorsler/",
 """In seperate line so it's easy to comment out"""
 paths.extend(["PET4noxml/","PET3noxml/","PET26noxml"])
 
+os.system("cp fprotokoller/* oldf/ 2> /dev/null")
+
 if os.getcwd()[-13:] == "/somaris/kode":
     """Empties all the directories in 'paths'. A check is made to ensure that
     I do not delete anything else due to being in another directory"""

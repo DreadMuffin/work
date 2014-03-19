@@ -1,0 +1,111 @@
+MlScanProtocolAttributes_Begin 138
+BodySizeOld MlAdult
+CustomProtocol 1
+ProtocolName "Hjerne_Dotatoc_PET_LM_6"
+topo
+PROTOCOL_ENTRY_NO 1
+MlModeScan_Begin 138
+SliceEffectiveTiltCorrected 0.6
+ApiId -1
+Current 35
+RangeName[READ_ONLY] "Topogram"
+ScanTime 0.220
+StartDelay 4.000
+TableDirectionPatient MlCraniocaudal
+TopoLength 0.0
+TubePosition 0.0
+Voltage 120.000
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
+BodyPartExamined "HEAD"
+Kernel "T20s standard"
+Transfer1 "Munch"
+Transfer2 "VIA0"
+Transfer3 ""
+Window[READ_ONLY] "Topogram Head"
+MlModeRecon_End 138
+ct
+PROTOCOL_ENTRY_NO 2
+MlModeScan_Begin 138
+SliceEffective 3.00
+AECReferenceMAs 380
+ApiId -1
+Care MlOff
+CareDoseType MlCareDoseAEC
+CTDIw 4.71218
+EffectiveMAs 30
+InterPosTilt 0.0
+mAs 30
+PitchFactor 1.2000000
+RangeName "CT Brain"
+RotTime 1.000
+ScanTime 11.230
+StartDelay 4.000
+TableDirectionPatient MlCaudocranial
+Voltage 120.000
+MlModeScan_End 138
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 138
+SliceEffective 3.00
+CenterX 0
+CenterY 0
+CTScale MlCTScaleStandard
+ExtendedFOV 0
+FoVHorLength 300
+ImageOrder MlIO_Caudocranial
+Kernel "H19s PET very smooth"
+Mirror MlMirrorNone
+NoOfImages 74
+ReconDirection MlAxial
+ReconType MlAxialRJ
+SeriesDescription "AC_CT"
+SpiralReconIncr 3.000
+Window[READ_ONLY] "Cerebrum"
+MlModeRecon_End 138
+MlModeEntry_End 138
+pause
+PROTOCOL_ENTRY_NO 3
+MlPause_Begin 138
+MlPause_End 138
+pet
+PROTOCOL_ENTRY_NO 4
+MlModeScan_Begin 1
+AutoLoad 1
+RangeName "PET Brain"
+LLD 435
+ULD 650
+Isotope Ga-68
+Pharmaceutical Dotatoc
+InjectionDate 20120619
+InjectionTime 145200.000000
+InjectedDose 1(PtMegaBequerels)
+NumberOfBeds 1
+BedDuration 15(PtMinutes)
+TableDirectionPatient MlCraniocaudal
+RebinnerLut 0
+RebinnerMode PtListMode32
+HistogramMode PtTrues
+PhysioInputType PtPhysioNone
+MlModeScan_End 1
+No_Of_Valid_Recons 1
+MlModeRecon_Begin 3
+CTAttenCorrModeList (1,1)
+OutputImageType PtNoRecon
+ReconMethod PtIterative3D
+ImageSize 336
+Subsets 16
+Iterations 6
+Zoom 3
+FilterFWHM 3
+ScatterCorrect 1
+XYFilterType PtGaussian
+MatchCTSliceLocation 1
+SeriesDescription PET Brain corrected 3 mm Zoom 3
+BedBegin -1
+BedEnd -1
+XOffset 0
+YOffset 0
+SaveIntermediateData 0
+MlModeRecon_End 3
+MlScanProtocol_End 138

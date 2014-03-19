@@ -59,7 +59,6 @@ for file in listing:
         else:
             proto[2] == "CustomProtocol 0"
         fields = proto[:4]
-        print fields
         for mode in protoorder:
             if mode == "topo":
                 fields += topo()
