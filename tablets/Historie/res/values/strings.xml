@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Historie</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hej!\nHar du lyst til at gå på opdagelse i universet på væggene?\n
+        I denne by oppe over tagene bor flere forskellige væsner... Hvad mon de laver?</string>
+    <string name="venstre">Prøv at flyv ud over byen og se om du kan finde piratgrisen eller den bittelille danserinde, der gemmer sig et sted?\n\n
+        Hvad hedder det mærkelige lille dyr?\n Hvem er den venner med?\n Hvor tror du flyveelgen skal hen?\n\n
+        Kunne du tænke dig at flyve med luftballon op i til bjergenes top?\n Hvordan tror du, der er der?</string>
+    <string name="hojre">Kan du få øje på den lille bamse?\n Den gemmer sig godt.\n\n
+        Prøv at find øen på boldbanen i fælledparken. Hvem tror du bor her? Skal de mon ud og rejse?\n\n
+        Drømmer du nogengange at du flyver?\n Hvordan er det?\n Prøv at forestil dig dit allerbedste yndlingssted i hele verden. Hvordan ser der ud?</string>
+</resources>
