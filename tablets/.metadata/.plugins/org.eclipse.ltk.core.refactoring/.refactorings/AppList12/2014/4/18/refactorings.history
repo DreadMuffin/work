@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.example.movielist12&apos; to &apos;com.example.applist12&apos;&#x0A;- Original project: &apos;AppList12&apos;&#x0A;- Original element: &apos;AppList12/src/com.example.movielist12&apos;&#x0A;- Renamed element: &apos;AppList12/src/com.example.applist12&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.example.movielist12&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.example.movielist12" name="com.example.applist12" qualified="false" references="true" stamp="1398770767053" textual="false" version="1.0"/>
+</session>

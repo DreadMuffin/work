@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
         buttonA.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.apps");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.agechoice_apps");
 				startActivity(LaunchIntent);
 			}
 		});
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
         buttonF.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.agechoice");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.agechoice_movies");
 				startActivity(LaunchIntent);
 			}
 		});
