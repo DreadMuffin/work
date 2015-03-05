@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
         buttonA.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.apps0");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.applist0");
 				startActivity(LaunchIntent);
 			}
 		});
@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
         buttonB.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.apps7");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.applist7");
 				startActivity(LaunchIntent);
 			}
 		});
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
         buttonC.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.apps3");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.applist3");
 				startActivity(LaunchIntent);
 			}
 		});
@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
         buttonD.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.apps10");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.applist10");
 				startActivity(LaunchIntent);
 			}
 		});
@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
         buttonE.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.apps12");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.applist12");
 				startActivity(LaunchIntent);
 			}
 		});

@@ -15,16 +15,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        final Button buttonA = (Button) findViewById(R.id.button_nul);
+        final Button buttonA = (Button) findViewById(R.id.Button_nul);
         buttonA.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.agelist0");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.movielist0");
 				startActivity(LaunchIntent);
 			}
 		});
 
-        final Button buttonB = (Button) findViewById(R.id.button_tre);
+        final Button buttonB = (Button) findViewById(R.id.Button_tre);
         buttonB.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 			}
 		});
 
-        final Button buttonC = (Button) findViewById(R.id.button_syv);
+        final Button buttonC = (Button) findViewById(R.id.Button_syv);
         buttonC.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
 			}
 		});
 
-        final Button buttonD = (Button) findViewById(R.id.button_ti);
+        final Button buttonD = (Button) findViewById(R.id.Button_ti);
         buttonD.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
@@ -51,11 +51,20 @@ public class MainActivity extends Activity {
 			}
 		});
 
-        final Button buttonE = (Button) findViewById(R.id.button_tolv);
+        final Button buttonE = (Button) findViewById(R.id.Button_tolv);
         buttonE.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
 				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.movielist12");
+				startActivity(LaunchIntent);
+			}
+		});
+        
+        final Button buttonF = (Button) findViewById(R.id.Button_his);
+        buttonF.setOnClickListener(new View.OnClickListener() {
+        	@Override
+			public void onClick(View v) {
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.movielisthis");
 				startActivity(LaunchIntent);
 			}
 		});

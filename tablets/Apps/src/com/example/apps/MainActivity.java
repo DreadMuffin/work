@@ -1,5 +1,6 @@
 package com.example.apps;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,7 +37,7 @@ public class MainActivity extends Activity {
         button3.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.mojang.minecraftpe.demo");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.mojang.minecraftpe.democom.sketchbookexpress");
 				startActivity(LaunchIntent);
 			}
 		});

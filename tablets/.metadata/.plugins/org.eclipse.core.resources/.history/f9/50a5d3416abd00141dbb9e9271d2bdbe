@@ -1,0 +1,104 @@
+package com.example.historie;
+
+import android.app.ActionBar.LayoutParams;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
+import android.widget.TextView;
+
+public class Historie extends Activity {
+
+	LinearLayout layoutOfPopup;
+	PopupWindow popupMessage;
+	Button button_1, insidePopupButton;
+	TextView popupText;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_historie);
+
+		
+		
+
+		//final Button button = (Button) findViewById(R.id.button_1);
+		
+		button_1 = (Button) findViewById(R.id.button_1);
+		popupText = new TextView(this);
+		insidePopupButton = new Button(this);
+		layoutOfPopup = new LinearLayout(this);
+		insidePopupButton.setText("OK");
+		popupText.setText("This is Popup Window.press OK to dismiss it.");
+		popupText.setPadding(0, 0, 0, 20);
+		layoutOfPopup.setOrientation(1);
+		layoutOfPopup.addView(popupText);
+		layoutOfPopup.addView(insidePopupButton);
+		
+	
+		
+		
+		popupMessage = new PopupWindow(layoutOfPopup, LayoutParams.MATCH_PARENT,
+				LayoutParams.WRAP_CONTENT);
+		popupMessage.setContentView(layoutOfPopup);
+	
+		
+		
+		button_1.setOnClickListener(new View.OnClickListener() {
+						
+			
+			@Override
+			public void onClick(View v) {
+				initiatePopupWindow();
+			}
+		});
+
+
+	}
+	
+	private PopupWindow pwindo;
+
+	private void initiatePopupWindow() {
+	try {
+	// We need to get the instance of the LayoutInflater
+	LayoutInflater inflater = (LayoutInflater) Historie.this
+	.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+	View layout = inflater.inflate(R.layout.screen_popup,
+	(ViewGroup) findViewById(R.id.popup_element));
+	pwindo = new PopupWindow(layout, 300, 370, true);
+	pwindo.showAtLocation(layout, Gravity.CENTER, 0, 0);
+
+	btnClosePopup = (Button) layout.findViewById(R.id.btn_close_popup);
+	btnClosePopup.setOnClickListener(cancel_button_click_listener);
+
+	} catch (Exception e) {
+	e.printStackTrace();
+	}
+	}
+
+	private OnClickListener cancel_button_click_listener = new OnClickListener() {
+	public void onClick(View v) {
+	pwindo.dismiss();
+
+	}
+	};
+
+
+	Read more: http://www.androidhub4you.com/2012/07/how-to-create-popup-window-in-android.html#ixzz3SorK1h8E
+	
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.historie, menu);
+		return true;
+	}
+
+}

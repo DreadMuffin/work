@@ -84,16 +84,16 @@ public class ImageAdapter extends BaseAdapter {
 
 		if (convertView == null) { // if it’s not recycled, initialize some
 									// attributes
+
 			LayoutInflater li = (LayoutInflater) mContext
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			v = li.inflate(R.layout.grid_item, null);
 			TextView tv = (TextView) v.findViewById(R.id.icon_text);
 			tv.setText(mTextsIds[position]);
 			ImageView iv = (ImageView) v.findViewById(R.id.icon_image);
-			// iv.setLayoutParams(new GridView.LayoutParams(85, 85));
-			// iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
 			iv.setPadding(8, 8, 8, 8);
 			iv.setImageResource(mThumbIds[position]);
+
 		} else {
 			v = (View) convertView;
 		}

@@ -26,6 +26,8 @@ public class ImageAdapter extends BaseAdapter {
 			"Teletubbies", "Thomas Tog"};
 
 	// references to our images
+	
+	
 	private Integer[] mThumbIds = { R.drawable.ballet, R.drawable.bamse,
 			R.drawable.bob, R.drawable.cirkeline, R.drawable.gurligris,
 			R.drawable.kartoffel, R.drawable.lillefinger, R.drawable.mis,

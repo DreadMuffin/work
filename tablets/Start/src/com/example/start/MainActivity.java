@@ -19,12 +19,12 @@ public class MainActivity extends Activity {
         buttonA.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.agechoice_apps");
+				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.apps");
 				startActivity(LaunchIntent);
 			}
 		});
         
-        final Button buttonE = (Button) findViewById(R.id.button_e);
+        final Button buttonE = (Button) findViewById(R.id.button_h);
         buttonE.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {

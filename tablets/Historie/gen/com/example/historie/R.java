@@ -21,20 +21,40 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int animoto=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int wphis=0x7f020002;
+        public static final int bjorni=0x7f020000;
+        public static final int bjorni200=0x7f020001;
+        public static final int bjorni500=0x7f020002;
+        public static final int elvira=0x7f020003;
+        public static final int elvira200=0x7f020004;
+        public static final int elvira500=0x7f020005;
+        public static final int elvirarot=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int odder=0x7f020008;
+        public static final int odder200=0x7f020009;
+        public static final int odder500=0x7f02000a;
+        public static final int popupwp=0x7f02000b;
+        public static final int tmp=0x7f02000c;
+        public static final int wphis=0x7f02000d;
+        public static final int wphis_old=0x7f02000e;
     }
     public static final class id {
-        public static final int Button1=0x7f080004;
-        public static final int action_settings=0x7f080005;
-        public static final int linearLayout1=0x7f080001;
-        public static final int textView1=0x7f080000;
-        public static final int textView2=0x7f080002;
-        public static final int textView3=0x7f080003;
+        public static final int action_settings=0x7f08000a;
+        public static final int btn_close_popup=0x7f080006;
+        public static final int button_1=0x7f080000;
+        public static final int button_2=0x7f080001;
+        public static final int button_3=0x7f080002;
+        public static final int imageView1=0x7f080008;
+        public static final int popup_element1=0x7f080003;
+        public static final int popup_element2=0x7f080007;
+        public static final int popup_element3=0x7f080009;
+        public static final int textView1=0x7f080004;
+        public static final int txt=0x7f080005;
     }
     public static final class layout {
         public static final int activity_historie=0x7f030000;
+        public static final int popup1=0x7f030001;
+        public static final int popup2=0x7f030002;
+        public static final int popup3=0x7f030003;
     }
     public static final class menu {
         public static final int historie=0x7f070000;

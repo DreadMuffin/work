@@ -36,14 +36,15 @@ public final class R {
         public static final int morten=0x7f02000c;
         public static final int moviewp=0x7f02000d;
         public static final int moviewp2=0x7f02000e;
-        public static final int pedersen=0x7f02000f;
-        public static final int plys=0x7f020010;
-        public static final int ponyo=0x7f020011;
-        public static final int postmand_per=0x7f020012;
-        public static final int teletubbies=0x7f020013;
-        public static final int thomas=0x7f020014;
-        public static final int timmy=0x7f020015;
-        public static final int turtles=0x7f020016;
+        public static final int moviewp_old=0x7f02000f;
+        public static final int pedersen=0x7f020010;
+        public static final int plys=0x7f020011;
+        public static final int ponyo=0x7f020012;
+        public static final int postmand_per=0x7f020013;
+        public static final int teletubbies=0x7f020014;
+        public static final int thomas=0x7f020015;
+        public static final int timmy=0x7f020016;
+        public static final int turtles=0x7f020017;
     }
     public static final class id {
         public static final int GridItem=0x7f080002;

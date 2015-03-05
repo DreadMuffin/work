@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_element1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popupwp"
+    tools:context=".Historie" >
+
+    <Button
+        android:id="@+id/btn_close_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Close" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="500dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/txt"
+        android:layout_alignLeft="@+id/txt"
+        android:layout_marginBottom="88dp"
+        android:gravity="center"
+        android:text="Frederik og Elvira"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="125dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="143dp"
+        android:text="Frederik er en matros, der på sin fridag falder over en sølvsko. Da han ser en efterlysningsplakat finder han ud af, at skoen tilhører danseren Elvira, som har familieproblemer og Frederik tilbyder at hjælpe hende. Tingene går dog ikke helt som Frederik havde regnet med og han ender i problemer med både bøller og pirater, indtil han får hjælp fra en ganske uventet kant.
+Historien om Frederik og Elvira er en fortælling om venskab, mod, kærlighed, pirater og eventyr og tager dig med ind i en verden ikke så langt fra vores egen."
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="505dp"
+        android:layout_height="505dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:src="@drawable/a4" />
+
+</RelativeLayout>
