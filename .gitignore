@@ -1,1 +1,13 @@
 *.swp
+*.pdf
+*.png
+*.jpg
+*.mp3
+
+# Eclipse
+**/gen/
+**/bin/
+**/libs/
+
+.*
+!/.gitignore

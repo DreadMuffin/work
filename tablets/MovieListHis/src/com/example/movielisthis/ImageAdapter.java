@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class ImageAdapter extends BaseAdapter {
 	private Context mContext;
@@ -20,11 +19,11 @@ public class ImageAdapter extends BaseAdapter {
 	Activity activity;
 
 	// references to our images
-	private Integer[] mThumbIds = { R.drawable.invis, R.drawable.a1, R.drawable.a2,
-			R.drawable.a3, R.drawable.a4, R.drawable.invis, R.drawable.a5,
-			R.drawable.a6, R.drawable.a7, R.drawable.a8, R.drawable.a9,
-			R.drawable.a10, R.drawable.a11, R.drawable.a12, R.drawable.a13,
-			R.drawable.a14, R.drawable.a15, R.drawable.a16, };
+	private Integer[] mThumbIds = { R.drawable.invis, R.drawable.sa1,
+			R.drawable.sa2, R.drawable.sa3, R.drawable.sa4, R.drawable.invis,
+			R.drawable.sa5, R.drawable.sa6, R.drawable.sa7, R.drawable.sa8,
+			R.drawable.sa9, R.drawable.sa10, R.drawable.sa11, R.drawable.sa12,
+			R.drawable.sa13, R.drawable.sa14, R.drawable.sa15, R.drawable.sa16, };
 
 	public ImageAdapter(Context c) {
 		mContext = c;

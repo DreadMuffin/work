@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="android.graphics.drawable.Drawable"/>
-<fullyQualifiedTypeName name="android.widget.ImageView"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.widget.PopupWindow"/>
@@ -16,4 +15,13 @@
 <fullyQualifiedTypeName name="com.example.movielisthis.R.layout"/>
 <fullyQualifiedTypeName name="com.example.movielisthis.R.drawable"/>
 <fullyQualifiedTypeName name="com.example.movielisthis.R.id"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.BitmapDrawable"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="android.media.AudioManager"/>
+<fullyQualifiedTypeName name="com.example.historie.R.id"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="com.example.historie.R.drawable"/>
+<fullyQualifiedTypeName name="com.example.newapps.R.layout"/>
+<fullyQualifiedTypeName name="com.example.newapps.R.id"/>
 </qualifiedTypeNameHistroy>

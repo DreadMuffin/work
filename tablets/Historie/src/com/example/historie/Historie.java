@@ -1,26 +1,26 @@
 package com.example.historie;
 
-import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
-import android.widget.TextView;
-import android.view.View.OnClickListener;
 
 public class Historie extends Activity {
 
 	Button button_1;
 	Button button_2;
 	Button button_3;
+	Button resize;
+	MediaPlayer mp;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -64,41 +64,91 @@ public class Historie extends Activity {
 
 	private void initiatePopupWindow(int i) {
 		try {
+
 			// We need to get the instance of the LayoutInflater
 			LayoutInflater inflater = (LayoutInflater) Historie.this
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
 			if (i == 1) {
+				if (mp != null && mp.isPlaying())
+					mp.stop();
+
+				mp = MediaPlayer.create(this, R.raw.elvira);
+				mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+				mp.start();
 
 				View layout = inflater.inflate(R.layout.popup1,
 						(ViewGroup) findViewById(R.id.popup_element1));
-				pwindo = new PopupWindow(layout, LayoutParams.MATCH_PARENT,
-						LayoutParams.MATCH_PARENT, true);
+				pwindo = new PopupWindow(layout,
+						android.view.ViewGroup.LayoutParams.MATCH_PARENT,
+						android.view.ViewGroup.LayoutParams.MATCH_PARENT, true);
+				pwindo.setBackgroundDrawable(new BitmapDrawable(getResources(),
+						""));
+				pwindo.setOutsideTouchable(true);
+				pwindo.setFocusable(true);
 				pwindo.showAtLocation(layout, Gravity.CENTER, 0, 0);
-
-				button_1 = (Button) layout.findViewById(R.id.btn_close_popup);
-				button_1.setOnClickListener(cancel_button_click_listener);
 
 			} else if (i == 2) {
+				if (mp != null && mp.isPlaying())
+					mp.stop();
+
+				mp = MediaPlayer.create(this, R.raw.odder);
+				mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+				mp.start();
+
 				View layout = inflater.inflate(R.layout.popup2,
 						(ViewGroup) findViewById(R.id.popup_element2));
-				pwindo = new PopupWindow(layout, LayoutParams.MATCH_PARENT,
-						LayoutParams.MATCH_PARENT, true);
+				pwindo = new PopupWindow(layout,
+						android.view.ViewGroup.LayoutParams.MATCH_PARENT,
+						android.view.ViewGroup.LayoutParams.MATCH_PARENT, true);
+				pwindo.setBackgroundDrawable(new BitmapDrawable(getResources(),
+						""));
+				pwindo.setOutsideTouchable(true);
+				pwindo.setFocusable(true);
 				pwindo.showAtLocation(layout, Gravity.CENTER, 0, 0);
 
-				button_1 = (Button) layout.findViewById(R.id.btn_close_popup);
-				button_1.setOnClickListener(cancel_button_click_listener);
+			} else if (i == 3) {
+				if (mp != null && mp.isPlaying())
+					mp.stop();
 
-			} else {
+				mp = MediaPlayer.create(this, R.raw.bjorni);
+				mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+				mp.start();
+
 				View layout = inflater.inflate(R.layout.popup3,
 						(ViewGroup) findViewById(R.id.popup_element3));
-				pwindo = new PopupWindow(layout, LayoutParams.MATCH_PARENT,
-						LayoutParams.MATCH_PARENT, true);
+				pwindo = new PopupWindow(layout,
+						android.view.ViewGroup.LayoutParams.MATCH_PARENT,
+						android.view.ViewGroup.LayoutParams.MATCH_PARENT, true);
+				
+		//		resize = (Button) findViewById(R.id.resize);
+				
+				
+				
+				pwindo.setBackgroundDrawable(new BitmapDrawable(getResources(),
+						""));
+				
 				pwindo.showAtLocation(layout, Gravity.CENTER, 0, 0);
 
-				button_1 = (Button) layout.findViewById(R.id.btn_close_popup);
-				button_1.setOnClickListener(cancel_button_click_listener);
+				
 
+	/*			resize.setOnClickListener(new Button.OnClickListener() {
+											
+						initiatePopupWindow(4);
+					}
+				});*/
+			} else {
+
+				View layout = inflater.inflate(R.layout.bjorni,
+						(ViewGroup) findViewById(R.id.bjorniimg));
+				pwindo = new PopupWindow(layout,
+						android.view.ViewGroup.LayoutParams.MATCH_PARENT,
+						android.view.ViewGroup.LayoutParams.MATCH_PARENT, true);
+				pwindo.setBackgroundDrawable(new BitmapDrawable(getResources(),
+						""));
+				pwindo.setOutsideTouchable(true);
+				pwindo.setFocusable(true);
+				pwindo.showAtLocation(layout, Gravity.CENTER, 0, 0);
 			}
 
 		} catch (Exception e) {
@@ -106,18 +156,13 @@ public class Historie extends Activity {
 		}
 	}
 
-	private OnClickListener cancel_button_click_listener = new OnClickListener() {
-		public void onClick(View v) {
-			pwindo.dismiss();
-
-		}
-	};
-
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.historie, menu);
-		return true;
+	public void onPause() {
+		super.onPause();
+		if (mp != null && mp.isPlaying())
+			mp.stop();
+		finish();
 	}
-
+	
+	
 }

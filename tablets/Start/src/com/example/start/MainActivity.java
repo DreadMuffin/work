@@ -2,25 +2,48 @@ package com.example.start;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
+	
+	Boolean hclicked = false;
+	Boolean fclicked = false;
+	Boolean aclicked = false;
+	
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
+        final MediaPlayer mpa = MediaPlayer.create(this, R.raw.apps);
+        final MediaPlayer mph = MediaPlayer.create(this, R.raw.historier);
+        final MediaPlayer mpf = MediaPlayer.create(this, R.raw.film);
+        
         
         final Button buttonA = (Button) findViewById(R.id.button_a);
+        
+        
+        
+        
         buttonA.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.apps");
-				startActivity(LaunchIntent);
+        		if (aclicked){      		
+        			Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.apps");
+					startActivity(LaunchIntent);
+					
+        		} else {
+        			mpa.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        			mpa.start();
+        			aclicked = true;
+        			
+        		}
 			}
 		});
         
@@ -28,8 +51,14 @@ public class MainActivity extends Activity {
         buttonE.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.historie");
-				startActivity(LaunchIntent);
+	        	if (hclicked) {
+					Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.historie");
+					startActivity(LaunchIntent);
+        		} else {
+        			mph.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        			mph.start();
+        			hclicked = true;
+        		}
 			}
 		});
         
@@ -37,8 +66,14 @@ public class MainActivity extends Activity {
         buttonF.setOnClickListener(new View.OnClickListener() {
         	@Override
 			public void onClick(View v) {
-				Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.agechoice_movies");
-				startActivity(LaunchIntent);
+        		if (fclicked) {
+					Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.example.agechoice_movies");
+					startActivity(LaunchIntent);
+        		}else {
+        			mpf.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        			mpf.start();
+        			fclicked = true;
+        		}
 			}
 		});
     }
