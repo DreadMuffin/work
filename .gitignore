@@ -3,6 +3,7 @@
 *.png
 *.jpg
 *.mp3
+*.apk
 
 # Eclipse
 **/gen/
